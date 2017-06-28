@@ -21,4 +21,20 @@ export class FoundPage {
     console.log('ionViewDidLoad FoundPage');
   }
 
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete();
+    }, 2000);
+  }
+
+  doInfinite(infiniteScroll) {
+
+    setTimeout(() => {
+      infiniteScroll.complete();
+    }, 1500);
+  }
+
 }

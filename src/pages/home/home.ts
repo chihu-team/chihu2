@@ -33,7 +33,6 @@ export class HomePage {
   }
 
   doInfinite(infiniteScroll) {
-    alert('Begin async operation');
 
     setTimeout(() => {
       infiniteScroll.complete();

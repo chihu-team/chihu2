@@ -1,3 +1,33 @@
 page-found {
-
+    ion-content {
+        background: #eee !important;
+        .fixed-content,
+        .scroll-content {
+            padding-top: 55px !important;
+            margin-top: 0 !important;
+            border-top: none !important;
+        }
+        .dv_box {
+            background: #fff;
+            margin-bottom: 10px;
+            display: -webkit-flex;
+            display: flex;
+            padding: 8px 0;
+            .dv_items {
+                flex-grow: 1;
+                text-align: center;
+                i {
+                    font-size: 2.4rem;
+                    font-weight: bolder;
+                }
+                p {
+                    margin: 6px 0 !important;
+                    color: #636363;
+                }
+            }
+        }
+    }
+    ion-refresher {
+        z-index: 99 !important;
+    }
 }

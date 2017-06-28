@@ -1,0 +1,13 @@
+swiper {
+    .swiper-container {
+        width: 100%;
+        height: 180px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        .swiper-slide {
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+    }
+}

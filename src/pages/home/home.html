@@ -18,7 +18,8 @@
 </ion-header>
 
 
-<ion-content (ionScroll)="onScroll($event)">
+<ion-content (ionScroll)="onScroll($event)" scrollY="false">
+
 
     <ion-refresher (ionRefresh)="doRefresh($event)">
         <ion-refresher-content></ion-refresher-content>
@@ -32,6 +33,7 @@
     <work></work>
     <work></work>
     <work></work>
+
 
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
         <ion-infinite-scroll-content></ion-infinite-scroll-content>
