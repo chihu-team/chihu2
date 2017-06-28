@@ -1,0 +1,60 @@
+<!--
+  Generated template for the MorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="mblue">
+        <ion-title>更多</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <section class="dv_data" (click)="pushPerson();">
+        <img src="https://avatars0.githubusercontent.com/u/11835988?v=3&s=460" />
+        <section class="dv_name_wrap">
+            <h5>Devon</h5>
+            <p>查看或编辑个人主页</p>
+        </section>
+    </section>
+
+    <ion-list no-border>
+
+        <ion-item (click)="pushFocusPage();">
+            <ion-icon name='eye' item-left color="h"></ion-icon>
+            我的关注
+        </ion-item>
+        <ion-item (click)="pushCollectPage();">
+            <ion-icon name='star' item-left color="h"></ion-icon>
+            我的收藏
+        </ion-item>
+        <ion-item (click)="pushMySharePage();">
+            <ion-icon name='document' item-left color="h"></ion-icon>
+            我的分享
+        </ion-item>
+        <ion-item (click)="pushMyQuestionPage();">
+            <ion-icon name='time' item-left color="h"></ion-icon>
+            我的提问
+        </ion-item>
+        <ion-item (click)="pushMyWorkPage();">
+            <ion-icon name='bookmarks' item-left color="h"></ion-icon>
+            我的作品
+        </ion-item>
+        <ion-item (click)="pushMyAnswerPage();">
+            <ion-icon name='play' item-left color="h"></ion-icon>
+            我的回答
+        </ion-item>
+        <ion-item (click)="pushMyLikePage();">
+            <ion-icon name='play' item-left color="h"></ion-icon>
+            我的点赞
+        </ion-item>
+        <ion-item (click)="pushSettingPage();">
+            <ion-icon name='school' item-left color="h"></ion-icon>
+            设置
+        </ion-item>
+    </ion-list>
+</ion-content>

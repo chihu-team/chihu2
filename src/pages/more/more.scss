@@ -1,0 +1,39 @@
+page-more {
+    .dv_data {
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 0 4px #c4c6c8;
+        padding: 4%;
+        margin: 8px 0;
+        overflow: hidden;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 999999px;
+            float: left;
+        }
+        .dv_name_wrap {
+            float: left;
+            margin-left: 10px;
+        }
+        h5 {
+            margin: 0 !important;
+            line-height: 25px;
+            color: #979797;
+        }
+        p {
+            margin: 0 !important;
+            line-height: 25px;
+            color: #c4c4c4;
+        }
+    }
+    ion-content {
+        background-color: #f2f4f7 !important;
+    }
+    ion-list {
+        box-shadow: 0 0 4px #c4c6c8;
+    }
+    .item-md {
+        color: #797979 !important;
+    }
+}

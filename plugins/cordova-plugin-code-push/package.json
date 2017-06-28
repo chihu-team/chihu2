@@ -1,0 +1,44 @@
+{
+  "name": "cordova-plugin-code-push",
+  "version": "1000.0.0-beta",
+  "description": "CodePush Plugin for Apache Cordova",
+  "cordova": {
+    "id": "cordova-plugin-code-push",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/cordova-plugin-code-push"
+  },
+  "keywords": [
+    "cordova",
+    "code",
+    "push",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "devDependencies": {
+    "archiver": "latest",
+    "body-parser": "latest",
+    "del": "latest",
+    "express": "latest",
+    "gulp": "latest",
+    "gulp-insert": "latest",
+    "gulp-tslint": "latest",
+    "gulp-typescript": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest",
+    "mocha-junit-reporter": "latest",
+    "q": "latest",
+    "replace": "latest",
+    "run-sequence": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  }
+}

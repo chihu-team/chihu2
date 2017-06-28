@@ -1,0 +1,24 @@
+page-home {
+    ion-content {
+        background: #eee !important;
+        .fixed-content,
+        .scroll-content {
+            padding-top: 55px !important;
+            margin-top: 0 !important;
+            border-top: none !important;
+        }
+    }
+    ion-refresher {
+        z-index: 99 !important;
+    }
+    ion-header {
+        transition: top 1000ms cubic-bezier(.19, 1.12, .65, .91) !important;
+    }
+    ion-searchbar {
+        width: 99% !important;
+    }
+    ion-refresher {}
+    .headanimate {
+        top: -90px;
+    }
+}
