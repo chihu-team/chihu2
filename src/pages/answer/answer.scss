@@ -1,0 +1,88 @@
+page-answer {
+    ion-header,
+    .toolbar-title,
+    ion-footer {
+        transition: all 1000ms cubic-bezier(.19, 1.12, .65, .91);
+    }
+    ion-footer {
+        ion-icon {
+            display: block;
+        }
+        .dv_f {
+            float: left;
+            text-align: center;
+            width: 20%;
+            color: #777777;
+        }
+    }
+    .dv_title {
+        width: 100%;
+        height: 165px;
+        padding: 3% 5%;
+        padding-top: 64px;
+        background: #488aff;
+        position: relative;
+        h2 {
+            margin: 0 !important;
+            font-size: 2rem;
+            color: #fff;
+        }
+        .user {
+            width: 90%;
+            height: 65px;
+            padding: 10px;
+            background: #fff;
+            position: absolute;
+            box-shadow: 0 0 4px #c4c6c8;
+            bottom: -36px;
+            img {
+                width: 45px;
+                height: 45px;
+                border-radius: 99999px;
+                float: left;
+                margin-right: 12px;
+            }
+            .data {
+                float: left;
+                width: 54%;
+                h4,
+                p {
+                    margin: 0 !important;
+                    font-size: 1.2rem;
+                    line-height: 22px;
+                }
+            }
+            .fork {
+                width: 65px;
+                height: 34px;
+                font-size: 1.2rem;
+                line-height: 34px;
+                float: right;
+                border: 1px solid #1e8ae8;
+                color: #1e8ae8;
+                text-align: center;
+                position: relative;
+                top: 5px;
+            }
+            .nofork {
+                border: 1px solid #a7a7a7;
+                color: #a7a7a7;
+            }
+        }
+    }
+    .dv_content {
+        padding: 5%;
+        padding-top: 18%;
+    }
+    .scroll-content {
+        margin-top: 0 !important;
+        padding-top: 0px;
+        margin-bottom: 0 !important;
+    }
+    .animate {
+        top: -90px;
+    }
+    .footanimate {
+        bottom: -78px;
+    }
+}

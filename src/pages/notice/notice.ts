@@ -15,8 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class NoticePage {
 
   page1: any = 'NoticeInformPage';
-  page2: any = 'NoticeInformPage';
-  page3: any = 'NoticeInformPage';
+  page2: any = 'NoticeThankPage';
+  page3: any = 'NoticeForkPage';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

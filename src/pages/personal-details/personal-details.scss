@@ -1,0 +1,32 @@
+page-personal-details {
+    ion-content {
+        background-color: #f2f4f7 !important;
+        .dv_ban_top {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 1px 4px #c4c6c8;
+            padding: 4%;
+            color: #797979;
+            margin-bottom: 15px;
+            .button {
+                height: 2.6rem !important;
+            }
+            .dv_ban_top_div {
+                float: left;
+                width: 33.3%;
+                height: 65px;
+                h2,
+                p {
+                    margin: 0 !important;
+                }
+                h2 {
+                    color: #424242 !important;
+                    font-weight: 300;
+                }
+                p {
+                    color: #b9b9b9 !important;
+                }
+            }
+        }
+    }
+}

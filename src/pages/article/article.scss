@@ -1,0 +1,33 @@
+page-article {
+    ion-header,
+    .toolbar-title,
+    ion-footer,
+    ion-navbar {
+        transition: all 1000ms cubic-bezier(.19, 1.12, .65, .91);
+    }
+    ion-footer {
+        ion-icon {
+            display: block;
+        }
+        .dv_f {
+            float: right;
+            text-align: center;
+            width: 20%;
+            color: #777777;
+        }
+    }
+    .scroll-content {
+        margin-top: 0 !important;
+        padding-top: 0px;
+        margin-bottom: 0 !important;
+    }
+    .animate {
+        top: -90px;
+    }
+    .bule {
+        background: #1e8ae8 !important;
+    }
+    .footanimate {
+        bottom: -78px;
+    }
+}

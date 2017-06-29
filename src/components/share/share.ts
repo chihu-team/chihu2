@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 /**
  * Generated class for the ShareComponent component.
@@ -12,11 +12,10 @@ import { Component } from '@angular/core';
 })
 export class ShareComponent {
 
-  text: string;
+  @Input() data:any = {};
 
   constructor() {
-    console.log('Hello ShareComponent Component');
-    this.text = 'Hello World';
+    
   }
 
 }

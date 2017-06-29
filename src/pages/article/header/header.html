@@ -1,0 +1,11 @@
+<!-- Generated template for the HeaderComponent component -->
+<section class="dv_banner" [style.background]="'url('+data.workbanner+')'"></section>
+<section class="user">
+    <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" />
+    <section (click)="pushPersonPage( data.uid );" class="data">
+        <h4>{{data.name}}</h4>
+        <p>创建于：{{data.time | date}}</p>
+    </section>
+    <section [hidden]="ishide" class="fork" (click)="fork();">＋ 关注</section>
+    <section [hidden]="!ishide" class="fork nofork">＋ 关注</section>
+</section>

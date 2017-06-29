@@ -1,0 +1,15 @@
+<!-- Generated template for the MesItemComponent component -->
+<ion-list>
+
+    <ion-item *ngFor="let item of items">
+        <ion-avatar item-left (click)="pushPersonPage( item.id )">
+            <img [src]="item.userimg">
+        </ion-avatar>
+        <div (click)="open( item.artid, item.type );">
+            <h2>{{item.conttext}}</h2>
+            <p>{{item.title}}</p>
+        </div>
+    </ion-item>
+
+
+</ion-list>

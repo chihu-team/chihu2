@@ -1,0 +1,20 @@
+page-personal-home {
+    ion-content {
+        background-color: #f2f4f7 !important;
+    }
+    ion-list {
+        box-shadow: 0 0 4px #c4c6c8;
+        margin-bottom: 0 !important;
+    }
+    .dv_div ion-list {
+        box-shadow: 0 0 0px transparent !important;
+    }
+    .item-md {
+        color: #797979 !important;
+    }
+    .list-header {
+        background: transparent !important;
+        border: none !important;
+        margin-bottom: 0 !important;
+    }
+}

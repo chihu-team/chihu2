@@ -8,7 +8,7 @@
 
     <ion-navbar color="mblue">
         <ion-searchbar placeholder="搜索"></ion-searchbar>
-        <ion-buttons end>
+        <ion-buttons end (click)="openMmessage();">
             <button ion-button icon-only>
               <ion-icon name="text"></ion-icon>
             </button>
@@ -25,15 +25,7 @@
         <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
 
-    <work></work>
-    <work></work>
-    <work></work>
-    <work></work>
-    <work></work>
-    <work></work>
-    <work></work>
-    <work></work>
-
+    <work [data]='items'></work>
 
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
         <ion-infinite-scroll-content></ion-infinite-scroll-content>

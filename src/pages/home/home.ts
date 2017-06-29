@@ -1,6 +1,6 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
-
+import { Headers, Http } from '@angular/http';
 /**
  * Generated class for the HomePage page.
  *
@@ -19,12 +19,32 @@ export class HomePage {
   public old_scrollTop = 0;
   public new_scrollTop = 0;
   
+  //数据
+  items = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
+  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
+    this.getdata();
+  }
+
+  //获取数据
+  getdata() {
+    
+    let url = "http://www.devonhello.com/chihu/home";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "len=1", {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.items = this.items.concat(res.json());
+        
+      });
   }
 
   doRefresh(refresher) {
-    console.log('Begin async operation', refresher);
+    this.getdata();
 
     setTimeout(() => {
       console.log('Async operation has ended');
@@ -53,6 +73,10 @@ export class HomePage {
     }
     this.old_scrollTop = scrollTop;
     this.ref.detectChanges();
+  }
+
+  openMmessage(){
+    this.navCtrl.push( 'MessagePage' );
   }
 
   ionViewDidLoad() {

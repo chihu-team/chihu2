@@ -17,6 +17,10 @@ export class MorePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  PersonalPage(){
+    this.navCtrl.push( 'PersonalPage' );
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MorePage');
   }

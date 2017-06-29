@@ -1,0 +1,29 @@
+page-personal {
+    .dv_top_ban {
+        width: 100%;
+        padding: 5%;
+        background: #488aff;
+        overflow: hidden;
+        padding-top: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 99999px;
+            float: left;
+            margin-right: 5%;
+        }
+        h2 {
+            float: left;
+            color: #fff;
+            line-height: 60px;
+            margin: 0;
+        }
+    }
+    super-tabs {
+        padding-top: 75px;
+    }
+}

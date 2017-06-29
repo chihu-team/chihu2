@@ -1,0 +1,15 @@
+<!-- Generated template for the FoodComponent component -->
+<section class="dv_content">
+    <h3>{{data.title}}</h3>
+    <p>{{data.text}}</p>
+    <h6>用料：</h6>
+
+    <ion-row *ngFor="let item of data.food">
+        <ion-col>
+            <div>{{item.name}}</div>
+        </ion-col>
+        <ion-col>
+            <div>{{item.len}}</div>
+        </ion-col>
+    </ion-row>
+</section>

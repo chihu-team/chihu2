@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Headers, Http } from '@angular/http';
 
 /**
  * Generated class for the FoundPage page.
@@ -14,7 +15,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FoundPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  //数据
+  data: any = [];
+
+  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.getdata();
+}
+
+  //获取分享数据
+  getdata() {
+    let url = "http://www.devonhello.com/chihu/share";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "len=1", {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.data = this.data.concat(res.json());
+        
+      });
   }
 
   ionViewDidLoad() {

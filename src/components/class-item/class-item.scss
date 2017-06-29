@@ -1,0 +1,70 @@
+class-item {
+    .wrap {
+        width: 100%;
+        overflow: hidden;
+        .iclass {
+            float: left;
+            color: #9a9a9a;
+            background: #fff;
+            width: 25%;
+            overflow: hidden;
+            text-align: center;
+            p {
+                margin-bottom: 0;
+            }
+            i {
+                display: block;
+                width: 55px;
+                height: 55px;
+                margin: 15% auto 0;
+                background: url('../assets/icon/favicon.png') no-repeat;
+                background-size: cover;
+            }
+            .top-0 {
+                background-position: 0 -0px;
+            }
+            .top-1 {
+                background-position: 0 -69px;
+            }
+            .top-2 {
+                background-position: 0 -138px;
+            }
+            .top-3 {
+                background-position: 0 -207px;
+            }
+            .top-4 {
+                background-position: 0 -276px;
+            }
+            .top-5 {
+                background-position: 0 -345px;
+            }
+            .top-6 {
+                background-position: 0 -414px;
+            }
+            .top-7 {
+                background-position: 0 -483px;
+            }
+            .top-8 {
+                background-position: 0 -552px;
+            }
+            .top-9 {
+                background-position: 0 -621px;
+            }
+            .top-10 {
+                background-position: 0 -690px;
+            }
+            .top-11 {
+                background-position: 0 -759px;
+            }
+            .top-12 {
+                background-position: 0 -828px;
+            }
+            .top-13 {
+                background-position: 0 -897px;
+            }
+            .top-14 {
+                background-position: 0 -966px;
+            }
+        }
+    }
+}

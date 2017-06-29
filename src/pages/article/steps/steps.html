@@ -1,0 +1,13 @@
+<!-- Generated template for the StepsComponent component -->
+<section class="dv_content">
+    <h6>做法：</h6>
+    <div *ngFor="let item of data.work; let i=index">
+        <p><span>{{i+1}}：</span>{{item.text}}</p>
+        <section *ngIf="item.src != ''" class="dv_imgs" (click)="pswpElementInit(i);" [style.background]="'url('+item.src+')'"></section>
+    </div>
+    <h6 *ngIf="data.tip != ''">提示：</h6>
+    <section *ngIf="data.tip != ''" class="dv_tips">
+        <p>{{data.tip}}</p>
+    </section>
+
+</section>
