@@ -15,18 +15,7 @@
 
 <ion-content (ionScroll)="onScroll($event)">
 
-    <section class="dv_title">
-        <h2 (click)="pushQuestionPage( data.answerid );">{{data.title}}</h2>
-        <section class="user">
-            <img (click)="pushPersonPage(data.uid);" [src]="data.userimg" />
-            <section (click)="pushPersonPage(data.uid);" class="data">
-                <h4>{{data.name}}</h4>
-                <p>发布于：{{data.time | date}}</p>
-            </section>
-            <section [hidden]="ishide" class="fork" (click)="fork();">＋ 关注</section>
-            <section [hidden]="!ishide" class="fork nofork">＋ 关注</section>
-        </section>
-    </section>
+    <header [data]="data"></header>
 
     <section class="dv_content">
         <p>{{data.text}}</p>
@@ -36,36 +25,4 @@
 
 </ion-content>
 
-<ion-footer [class.footanimate]="tabanimate">
-    <ion-toolbar color='fff'>
-        <div class="dv_f">
-            <ion-icon name="happy"></ion-icon>
-            赞同
-        </div>
-        <div class="dv_f">
-            <ion-icon name="sad"></ion-icon>
-            反对
-        </div>
-        <div [hidden]="iscoll" class="dv_f" (click)="collect();">
-            <ion-icon name="star-outline"></ion-icon>
-            收藏
-        </div>
-        <div [hidden]="!iscoll" class="dv_f" (click)="discollect();">
-            <ion-icon name="star"></ion-icon>
-            取消收藏
-        </div>
-        <div [hidden]="isthank" class="dv_f" (click)="thank();">
-            <ion-icon name="heart-outline"></ion-icon>
-            感谢
-        </div>
-        <div [hidden]="!isthank" class="dv_f">
-            <ion-icon name="heart"></ion-icon>
-            已感谢
-        </div>
-        <div class="dv_f" (click)="openComments( 2, data.name, data.uid, data._id );">
-            <ion-icon name="text"></ion-icon>
-            {{conts}}
-        </div>
-    </ion-toolbar>
-
-</ion-footer>
+<footer [data]="data" [tabanimate]="tabanimate" [_id]="_id"></footer>

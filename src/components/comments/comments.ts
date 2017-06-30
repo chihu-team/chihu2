@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Generated class for the CommentsComponent component.
@@ -12,11 +12,10 @@ import { Component } from '@angular/core';
 })
 export class CommentsComponent {
 
-  text: string;
+  @Input() data:any = [];
 
   constructor() {
-    console.log('Hello CommentsComponent Component');
-    this.text = 'Hello World';
+    
   }
 
 }

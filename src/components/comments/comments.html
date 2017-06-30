@@ -1,13 +1,13 @@
 <!-- Generated template for the CommentsComponent component -->
 <section class="item">
     <header>
-        <img src="https://avatars2.githubusercontent.com/u/11835988?v=3" alt="">
+        <img [src]="data.userimg" alt="">
         <div class="it-left">
-            <h6>DEVON</h6>
-            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:7-1</p>
+            <h6>{{data.name}}</h6>
+            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date }}</p>
         </div>
-        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 查看</div>
+        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 回复&nbsp;&nbsp;{{data.commarr.length=='0'?'':data.commarr.length}}</div>
     </header>
-    <p>啦啦撒撒撒撒撒撒撒撒撒撒撒撒撒撒撒上</p>
+    <p>{{data.text}}</p>
 
 </section>

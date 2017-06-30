@@ -1,0 +1,17 @@
+footer {
+    ion-footer {
+        transition: all 1000ms cubic-bezier(.19, 1.12, .65, .91);
+        ion-icon {
+            display: block;
+        }
+        .dv_f {
+            float: right;
+            text-align: center;
+            width: 20%;
+            color: #777777;
+        }
+    }
+    .footanimate {
+        bottom: -78px;
+    }
+}
