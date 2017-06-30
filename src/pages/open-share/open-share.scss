@@ -1,3 +1,9 @@
 page-open-share {
-
+    ion-content {
+        background-color: #f2f4f7 !important;
+    }
+    ion-list,
+    ion-list-header {
+        margin-bottom: 0 !important;
+    }
 }

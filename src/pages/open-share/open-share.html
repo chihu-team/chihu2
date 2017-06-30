@@ -6,13 +6,24 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>open-share</ion-title>
-  </ion-navbar>
+    <ion-navbar color="mblue">
+        <ion-title>
+            {{title}}
+        </ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+    <share [data]="data"></share>
+    <ion-list>
+        <ion-list-header>
+            4 个评论
+        </ion-list-header>
+    </ion-list>
+    <comments></comments>
+    <comments></comments>
+    <comments></comments>
+    <comments></comments>
 </ion-content>

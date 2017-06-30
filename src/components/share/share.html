@@ -1,5 +1,5 @@
 <!-- Generated template for the ShareComponent component -->
-<section class="item" *ngFor="let item of data">
+<section class="item" *ngFor="let item of data" (click)="pushOpenSharePage( item._id );">
     <header>
         <img [src]="item.userimg" alt="">
         <div class="it-left">

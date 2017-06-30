@@ -16,7 +16,7 @@ import { Headers, Http } from '@angular/http';
 export class ArticlePage {
   
   data:any = {};
-  _id:any;
+  _id:any = 0;
 
    //头部导航标题
   title = '';

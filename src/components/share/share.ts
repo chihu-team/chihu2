@@ -1,4 +1,5 @@
 import { Component, Input, Output } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 /**
  * Generated class for the ShareComponent component.
@@ -12,10 +13,16 @@ import { Component, Input, Output } from '@angular/core';
 })
 export class ShareComponent {
 
-  @Input() data:any = {};
+  @Input() data: any = {};
 
-  constructor() {
-    
+  constructor(public navCtrl: NavController) {
+
+  }
+
+  pushOpenSharePage(_id) {
+    this.navCtrl.push('OpenSharePage', {
+      _id: _id
+    });
   }
 
 }

@@ -1,0 +1,21 @@
+<!-- Generated template for the ShareComponent component -->
+<section class="item">
+    <header>
+        <img [src]="data.userimg" alt="">
+        <div class="it-left">
+            <h6>{{data.name}} 的心情</h6>
+            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date}}</p>
+        </div>
+        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>
+    </header>
+    <p>{{data.text}}</p>
+    <section class="imgs-wrap">
+        <div *ngFor="let item of data.img" class="imgs" [style.background]="'url('+item.src+')'"></div>
+
+    </section>
+    <section class="mark">
+        <p><i class="fa fa-eye" aria-hidden="true"></i> 21</p>
+        <p class="cen"><i class="fa fa-commenting-o" aria-hidden="true"></i> 0</p>
+        <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 8</p>
+    </section>
+</section>

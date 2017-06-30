@@ -1,0 +1,87 @@
+share {
+    .item {
+        background: #fff;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 12px;
+        p {
+            margin-bottom: 0;
+        }
+        header {
+            color: #828282;
+            width: 100%;
+            background: #fff;
+            overflow: hidden;
+            .it-left {
+                width: 50%;
+                overflow: hidden;
+                float: left;
+                margin-left: 10px;
+                h6 {
+                    line-height: 25px;
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+                .time {
+                    line-height: 25px;
+                    margin: 0;
+                }
+            }
+            .fork {
+                font-size: 12px;
+                float: right;
+                padding: 5px 12px;
+                border: 1px solid #2196f3;
+                box-sizing: border-box;
+                color: #2196f3;
+                margin-top: 6px;
+            }
+            img {
+                width: 46px;
+                height: 46px;
+                vertical-align: top;
+                border: none;
+                display: block;
+                float: left;
+                border-radius: 9999px;
+            }
+        }
+        .imgs-wrap {
+            overflow: hidden;
+            .imgs {
+                float: left;
+                width: 23%;
+                margin: 2% 2% 0% 0;
+                height: 0;
+                padding-bottom: 23%;
+                background-color: #dbe0e4;
+                background-size: cover !important;
+                background-position: center center !important;
+                background-repeat: no-repeat !important;
+            }
+        }
+        .mark {
+            background: #fff;
+            padding-top: 6px;
+            display: -webkit-flex;
+            display: flex;
+            p {
+                flex-grow: 1;
+                text-align: center;
+                color: #9a9a9a;
+                line-height: 18px;
+                font-size: 15px;
+                margin: 10px 0;
+            }
+            .cen {
+                border-left: 1px solid #9a9a9a;
+                border-right: 1px solid #9a9a9a;
+                box-sizing: border-box;
+            }
+            i {
+                color: #488aff;
+            }
+        }
+    }
+}

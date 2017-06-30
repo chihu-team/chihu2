@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="jmessage-phonegap-plugin"
+        version="2.4.9">
+
+    <name>JMessage</name>
+    <description>集成极光 IM 和推送功能</description>
+    <author>JPush</author>
+    <keywords>JMessage, JPush</keywords>
+    <license>Apache 2.0 License</license>
+
+    <preference name="APP_KEY" />
+
+    <engines>
+        <engine name="cordova" version=">=3.0"/>
+    </engines>
+
+    <!-- dependencies -->
+    <dependency id="cordova-plugin-device" />
+    <dependency id="cordova-plugin-jcore"/>
+
+    <js-module src="www/JMessagePlugin.js" name="JMessagePlugin">
+        <clobbers target="JMessage"/>
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="JMessagePlugin">
+                <param name="ios-package" value="JMessagePlugin"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Plugins/JMessageDefine.h"/>
+        <header-file src="src/ios/Plugins/JMessagePlugin.h"/>
+        <source-file src="src/ios/Plugins/JMessagePlugin.m"/>
+        <header-file src="src/ios/Plugins/JMessageHelper.h"/>
+        <source-file src="src/ios/Plugins/JMessageHelper.m"/>
+        <header-file src="src/ios/Plugins/AppDelegate+JMessage.h"/>
+        <source-file src="src/ios/Plugins/AppDelegate+JMessage.m"/>
+
+        <resource-file src="src/ios/JMessageConfig.plist" />
+
+        <framework src="src/ios/lib/JMessage.framework" custom="true" />
+        <framework src="CoreTelephony.framework" weak="true" />
+        <framework src="CoreAudio.framework" weak="true" />
+        <framework src="CoreGraphics.framework" weak="true" />
+        <framework src="SystemConfiguration.framework" weak="true" />
+        <framework src="CFNetwork.framework" weak="true" />
+        <framework src="Security.framework" weak="true" />
+        <framework src="AudioToolbox.framework" weak="true" />
+        <framework src="MobileCoreServices.framework" weak="true" />
+        <framework src="libz.tbd"/>
+        <framework src="libsqlite3.0.tbd"/>
+        <framework src="libresolv.tbd"/>
+
+        <config-file target="*JMessageConfig.plist" parent="Appkey">
+          <string>$APP_KEY</string>
+        </config-file>
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="JMessagePlugin">
+                <param name="android-package" value="cn.jiguang.cordova.im.JMessagePlugin"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- Required  一些系统要求的权限，如访问网络等-->
+            <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.WAKE_LOCK"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+            <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+            <uses-permission android:name="$PACKAGE_NAME.permission.JPUSH_MESSAGE"/>
+
+            <permission
+                android:name="$PACKAGE_NAME.permission.JPUSH_MESSAGE"
+                android:protectionLevel="signature"/>
+
+            <!-- JMessage Demo required for record audio-->
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required Push SDK核心功能-->
+            <service
+                android:name="cn.jpush.android.service.PushService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":remote">
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.REGISTER" />
+                    <action android:name="cn.jpush.android.intent.REPORT" />
+                    <action android:name="cn.jpush.android.intent.PushService" />
+                    <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                </intent-filter>
+            </service>
+
+            <!-- Required Push SDK核心功能-->
+            <receiver
+                android:name="cn.jpush.android.service.PushReceiver"
+                android:enabled="true"
+                android:exported="false">
+                <intent-filter android:priority="1000">
+                    <!--Required  显示通知栏 -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.USER_PRESENT" />
+                    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                </intent-filter>
+                <!-- Optional -->
+                <intent-filter>
+                    <action android:name="android.intent.action.PACKAGE_ADDED" />
+                    <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                    <data android:scheme="package" />
+                </intent-filter>
+            </receiver>
+
+            <!-- Required Push SDK核心功能 -->
+            <receiver
+                android:name="cn.jpush.android.service.AlarmReceiver"
+                android:exported="false" />
+
+            <!-- IM Required IM SDK核心功能-->
+            <receiver
+                android:name="cn.jpush.im.android.helpers.IMReceiver"
+                android:enabled="true"
+                android:exported="false">
+                <intent-filter android:priority="1000">
+                    <action android:name="cn.jpush.im.android.action.IM_RESPONSE" />
+                    <action android:name="cn.jpush.im.android.action.NOTIFICATION_CLICK_PROXY" />
+
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+            </receiver>
+
+            <meta-data android:name="JPUSH_APPKEY" android:value="$APP_KEY"/>
+            <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        </config-file>
+
+        <source-file src="src/android/libs/gson-2.3.1.jar" target-dir="libs"/>
+        <source-file src="src/android/libs/jmessage-android_v2.1.2.jar" target-dir="libs"/>
+        <source-file src="src/android/JMessagePlugin.java" target-dir="src/cn/jiguang/cordova/im"/>
+    </platform>
+</plugin>

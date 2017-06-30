@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JMessage PhoneGap Demo</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1,
+        maximum-scale=1, minimum-scale=1, width=device-width,
+        height=device-height, target-densitydpi=device-dpi"/>
+    <link rel="stylesheet"
+          href="css/themes/default/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript">
+        var usernameForConversation;
+
+        function onDeviceReady() {
+            // window.JPush.init();
+            console.log("on device ready");
+            checkIsLogin();
+
+            getPushRegistrationID();
+        }
+
+        <!-- Login page -->
+        function register() {
+            var username = $("#registerUsername").val();
+            var password = $("#registerPassword").val();
+
+            window.JMessage.register(username, password,
+                function (response) {
+                    console.log("login callback success" + response);
+                    alert("register ok");
+                }, function (response) {
+                    console.log("login callback fail" + response);
+                    alert(response);
+                }
+            );
+        }
+
+        function checkIsLogin() {
+            console.log("checkIsLogin...");
+            window.JMessage.getMyInfo(function (response) {
+                console.log("user is login" + response);
+                var myInfo;
+                if (device.platform == "Android") {
+                    myInfo = JSON.parse(response);
+            
+                } else {
+                    myInfo = response
+                }
+                    window.JMessage.username = myInfo.userName;
+                    window.JMessage.nickname = myInfo.nickname;
+                    window.JMessage.gender = myInfo.mGender;
+                    usernameForConversation = myInfo.userName;
+
+                gotoConversation();
+            }, function (response) {
+                console.log("User is not login.");
+                window.JMessage.username = "";
+                window.JMessage.nickname = "";
+                window.JMessage.gender = "unknown";
+            });
+        }
+
+        function updateUserInfo() {
+            window.JMessage.getMyInfo(
+                function (response) {
+                    var myInfo;
+                    if (device.platform == "Android") {
+                        myInfo = JSON.parse(response);
+                    } else {
+                        myInfo = response
+                    }
+                    
+                    console.log("user is login" + response);
+                    window.JMessage.username = myInfo.userName;
+                    window.JMessage.nickname = myInfo.nickname;
+                    window.JMessage.gender = myInfo.mGender;
+
+                    $('#myInfoUsername').val(myInfo.userName);
+                    $('#myInfoNickname').val(myInfo.nickname);
+                    $('#myInfoGender').val(myInfo.gender);
+                }, null);
+        }
+
+        function getUserDisplayName() {
+            if (window.JMessage.nickname.length == 0) {
+                return window.JMessage.username;
+            } else {
+                return window.JMessage.nickname;
+            }
+        }
+
+        function login() {
+            var username = $("#loginUsername").val();
+            var password = $("#loginPassword").val();
+            console.log("tap to login");
+            window.JMessage.login(username, password,
+                function (response) {
+                    window.JMessage.username = username;
+                    alert("login ok");
+                    gotoConversation();
+                }, null);
+        }
+
+        function gotoRegister() {
+            $.mobile.navigate("#registerPage", {transition: "slide"});
+        }
+
+
+        <!-- Conversation list page -->
+
+        $(document).on("pageshow", "#conversationListPage", function () {
+            updateConversationList();
+            document.addEventListener("jmessage.onReceiveSingleMessage",
+                updateConversationList, false);
+        });
+
+        function gotoAddConversation() {
+            window.JMessage.myGroupArray(function(response) {
+                console.log(response)
+
+            }, function(response){
+
+
+            })
+            $.mobile.navigate("#addConversationPage", {transition: "slide"});
+        }
+
+        function updateConversationList() {
+            $('#conversationList').empty().listview('refresh');
+            console.log("updateConversationList");
+            window.JMessage.getConversationList(
+                function (response) {
+                    if (device.platform == "Android") {
+                        var conversations = JSON.parse(response);
+                        for (var i = 0; i < conversations.length; i++) {
+                            insertConversation(conversations[i]);
+                        }                
+                    } else {
+                        for (var i = 0; i < response.length; i++) {
+                            insertConversation(response[i]);
+                        }
+                    }
+
+                }, function (response) {
+                    alert("Get conversation list failed.");
+                    console.log(response);
+                });
+        }
+
+        // function insertConversation(con) {
+        //     var title = con.title;
+        //     var targetId = con.targetId;
+        //     var lastMessage = con.latestText;
+        //     var insertString = "<li><a onclick=\"onClickConversationRow('"
+        //         + targetId + "')\">" + targetId + ":" + lastMessage + '</a></li>';
+        //     $('#conversationList').append(insertString).listview('refresh');
+        // }
+
+        function insertConversation(con) {
+            if (device.platform == "Android") {
+                var title = con.title;
+                var targetId = con.targetId;
+                var lastMessage = con.latestText;
+                var insertString = "<li><a onclick=\"onClickConversationRow('"
+                    + targetId + "')\">" + targetId + ":" + lastMessage + '</a></li>';
+                $('#conversationList').append(insertString).listview('refresh');
+            } else {
+                var conversationName;
+                var targetName;
+                console.log("insertConversation 666");
+                if (con.username != undefined) {
+                    conversationName = con.username;
+                    targetName = con.username;
+                } else {
+                    conversationName = con.owner;
+                    targetName = con.owner;
+                }
+
+                var lastMessage = con.lastMessage;
+                console.log(conversationName);
+                console.log(targetName);
+                console.log(lastMessage);
+
+                var insertString = "<li><a onclick=\"onClickConversationRow('"
+                    + targetName + "')\">" + conversationName + ":" + lastMessage + '</a></li>';
+                $('#conversationList').append(insertString).listview('refresh');
+            }
+
+        }
+
+        function onClickConversationRow(username) {
+            console.log("onClickConversationRow: username: " + username);
+            usernameForConversation = username;
+            $.mobile.navigate("#conversationPage", {transition: "slide"});
+        }
+
+        function naviBack() {
+            console.log("naviBack");
+            $.mobile.navigate("#conversationListPage", {transition: "pop"});
+        }
+
+        function gotoConversation() {
+            $.mobile.navigate("#conversationListPage", {transition: "slide"});
+        }
+
+
+        <!-- Conversation detail page -->
+
+        var messageArray = new Array();
+
+        $(document).on("pageshow", "#conversationPage", function() {
+            console.log("conversationPage show " + usernameForConversation);
+            document.addEventListener("jmessage.onReceiveMessage",
+                onReceiveMessage, false);
+            getMessageHistory(usernameForConversation);
+        });       
+
+        // 在收到消息后将消息对象加入到消息数组的开头。
+        function onReceiveMessage(message) {;
+            if (device.platform == "Android") {
+                message = window.JMessage.message;
+                console.log(JSON.stringify(message));
+            }
+            console.log("onreceivemessage ");
+            messageArray.unshift(message);
+            refreshConversation();
+        }
+
+        function getMessageHistory(username) {
+            $('#messageList').empty().listview('refresh');
+            //读取的是从 0 开始的 50 条聊天记录，可按实现需求传不同的值。
+            window.JMessage.getHistoryMessages("single", username,
+                '', 0, 50, function (response) {
+                    console.log("getMessageHistory ok: " + response);
+                    if (device.platform == "Android") {
+                        messageArray = JSON.parse(response);
+                        refreshConversation();
+                    } else {
+                        for (var i = 0; i< response.length ; i++) {
+                            console.log(response[i])
+                        }
+
+                        messageArray = response;
+                        refreshConversation();
+                    }
+
+                }, function (response) {
+                    alert("getMessageHistory failed");
+                    console.log("getMessageHistory fail" + response);
+                }
+            );
+        }
+
+        function sendMessage() {
+            var messageContentString = $("#messageContent").val();
+            window.JMessage.sendSingleTextMessage(
+                usernameForConversation, messageContentString, null,
+                function (response) {
+                    var msg;
+                    if (device.platform == "Android") {
+                        msg = JSON.parse(response);
+                    } else {
+                        responseobj = response[0];
+                        msg = JSON.parse(responseobj)
+                    }
+
+                    messageArray.unshift(msg);
+                    refreshConversation();                    
+                }, function (response) {
+                    console.log("send message fail" + response);
+                    alert("send message fail" + response);
+                });
+        }
+
+        function insertMessage(message) {
+
+            var fromName;
+            var createTime;
+            var createTimeStr;
+            var lastMessage;
+            var insertString;
+            if (device.platform == "Android") {
+                if (message.content.contentType == "text") {
+                    lastMessage = message.content.text;
+                }
+                fromName = message.fromName;
+                createTime = message.createTimeInMillis;
+                createTimeStr = new Date(createTime).toLocaleString();
+                if(message.from_id == window.JMessage.username) {
+                    insertString = '<li style="text-align:right"><span style="font-size:12px">'
+                    + createTimeStr
+                    + "</span><br>"
+                    + fromName + ":" + lastMessage + '</li>';
+                } else {
+                    insertString = '<li style="text-align:left" style="font-size:12px">'
+                    + createTimeStr + "</span><br>" + fromName + ":"
+                    + lastMessage + '</li>';
+                }
+                $('#messageList').append(insertString).listview('refresh');
+            } else {
+                if (message.content.msg_type == "voice") {
+                    lastMessage = "[语音消息]" + message.resourcePath;
+                }
+
+                if (message.content.msg_type == "image") {
+                    lastMessage = "[图片消息]" + message.resourcePath;
+                }
+
+
+                // var message = message.content;
+                if (message.content.msg_type == "text") {
+                    
+                    
+                    lastMessage = message.content.msg_body.text;
+                }
+
+                fromName = message.content.from_name;
+                createTimeStr = message.content.create_time;
+                if(message.content.from_id == window.JMessage.username) {
+                    insertString = '<li style="text-align:right"><span style="font-size:12px">'
+                    + createTimeStr
+                    + "</span><br>"
+                    + fromName + ":" + lastMessage + '</li>';
+                } else {
+                    insertString = '<li style="text-align:left" style="font-size:12px">'
+                    + createTimeStr + "</span><br>" + fromName + ":"
+                    + lastMessage + '</li>';
+                }                    
+
+                $('#messageList').append(insertString).listview('refresh');
+            }
+
+
+            // if(message.from_id == window.JMessage.username) {
+            //     var insertString = '<li style="text-align:right"><span style="font-size:12px">'
+            //         + createTimeStr
+            //         + "</span><br>"
+            //         + fromName + ":" + lastMessage + '</li>';
+            // } else {
+            //     insertString = '<li style="text-align:left" style="font-size:12px">'
+            //         + createTimeStr + "</span><br>" + fromName + ":"
+            //         + lastMessage + '</li>';
+            // }
+            // $('#messageList').append(insertString).listview('refresh');
+        }
+
+        function refreshConversation() {
+            $('#messageList').empty().listview('refresh');
+            for (var i = 0; i < messageArray.length; i++) {
+                insertMessage(messageArray[i]);
+            }
+        }
+
+        function addConversation() {
+            var username = $("#addConversationText").val();
+            usernameForConversation = username;
+            alert(usernameForConversation)
+            $.mobile.navigate("#conversationPage", {transition: "pop"});
+        }
+
+
+        <!-- Push page -->
+
+        // 当推送页面刷新时。
+        $(document).on("pageshow", "#pushPage", function () {
+            console.log("pushPage show username:" + usernameForConversation);
+            try {
+                window.JPush.getRegistrationID(onGetRegistrationID);
+            } catch (exception) {
+                console.log(exception);
+            }
+        });
+
+        function onGetRegistrationID(response) {
+            console.log("registrationID is " + response);
+            $("#registrationId").html(response);
+        }
+
+        function getPushRegistrationID() {
+            try {
+                window.JPush.getRegistrationID(onGetRegistrationID);
+                if (device.platform != "Android") {
+                    window.JPush.setDebugModeFromIos();
+                    window.JPush.setApplicationIconBadgeNumber(0);
+                } else {
+                    window.JPush.setDebugMode(true);
+                }
+            } catch (exception) {
+                console.log(exception);
+            }
+        }
+
+        function onOpenNotification(event) {
+            console.log("index onOpenNotification");
+            try {
+                var alertContent;
+                if (device.platform == "Android") {
+                    alertContent = event.alert;
+                } else {
+                    alertContent = event.aps.alert;
+                }
+                alert("open Notification:" + alertContent);
+            } catch (exception) {
+                console.log("JPushPlugin:onOpenNotification" + exception);
+            }
+        }
+
+        function onReceiveNotification(event) {
+            console.log("index onReceiveNotification");
+            try {
+                var alertContent;
+                if (device.platform == "Android") {
+                    alertContent = event.alert;
+                } else {
+                    alertContent = event.aps.alert;
+                }
+                $("#notificationResult").html(alertContent);
+            } catch (exception) {
+                console.log(exception);
+            }
+        }
+
+        function onReceivePushMessage(event) {
+            try {
+                var message;
+                if (device.platform == "Android") {
+                    message = event.message;
+                } else {
+                    message = event.content;
+                }
+                console.log(message);
+                $("#messageResult").html(message);
+            } catch (exception) {
+                console.log("JPushPlugin:onReceivePushMessage-->" + exception);
+            }
+        }
+
+        function onSyncOfflineMessage(event) {
+            console.log(event)
+        }
+
+        function onSetTagsWithAlias(event) {
+            try {
+                console.log("onSetTagsWithAlias");
+                var result = "result code:" + event.resultCode + " ";
+                result += "tags:" + event.tags + " ";
+                result += "alias:" + event.alias + " ";
+                $("#tagAliasResult").html(result);
+            } catch (exception) {
+                console.log(exception)
+            }
+        }
+
+        function setTagWithAlias() {
+            try {
+                var username = $("#loginUsername").val();
+                var tag1 = $("#tagText1").val();
+                var tag2 = $("#tagText2").val();
+                var tag3 = $("#tagText3").val();
+                var alias = $("#aliasText").val();
+                var dd = [];
+
+                if (tag1 != "") {
+                    dd.push(tag1);
+                }
+                if (tag2 != "") {
+                    dd.push(tag2);
+                }
+                if (tag3 != "") {
+                    dd.push(tag3);
+                }
+                window.JPush.setTagsWithAlias(dd, alias);
+            } catch (exception) {
+                console.log(exception);
+            }
+        }
+
+
+        <!-- My info page -->
+        $(document).on("pageshow", "#myInfoPage", function () {
+            $("#myInfoUsername").text(window.JMessage.username);
+            $("#myInfoNickname").val(window.JMessage.nickname);
+            $("#myInfoGender").val(window.JMessage.gender);
+        });
+
+        function logout() {
+            console.log("logout");
+            window.JMessage.logout(function(response) {
+                $.mobile.navigate("#loginPage", {transition: "pop"});
+            }, function (response) {
+                alert("logout fail");
+            });
+        }
+
+        function setUserNickname() {
+            var nickname = $("#myInfoNickname").val();
+            window.JMessage.updateMyInfo("nickname", nickname,
+                function(response) {
+                    updateUserInfo();
+                    alert("update ok");
+                }, function (response) {
+                    console.log("update nickname fail:" + response.errorDescription);
+                    alert("update fail");
+                });
+        }
+
+        function setUserGender() {
+            var gender = $("#myInfoGender").val();
+            window.JMessage.updateMyInfo("gender", gender,
+                function (response) {
+                    console.log(response);
+                    updateUserInfo();
+                    alert("update ok");
+                }, function (response) {
+                    console.log("update fail:" + response.errorDescription);
+                    alert("update fail");
+                });
+        }
+
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+            document.addEventListener("jpush.setTagsWithAlias",
+                onSetTagsWithAlias, false);
+            document.addEventListener("jpush.openNotification",
+                onOpenNotification, false);
+            document.addEventListener("jpush.receiveNotification",
+                onReceiveNotification, false);
+            document.addEventListener("jpush.receiveMessage",
+                onReceivePushMessage, false);
+
+            document.addEventListener("jmessage.onSyncOfflineMessage",
+                onSyncOfflineMessage, false);
+        }
+    </script>
+</head>
+
+<body onload="onLoad()">
+
+<!-- Login page -->
+<div data-role="page" id="loginPage">
+    <div data-role="header">
+        <h1>Login</h1>
+    </div>
+    <div data-role="content">
+        <h3>username:</h3>
+        <input type="text" placeholder="username" id="loginUsername">
+
+        <h3>password:</h3>
+        <input type="text" placeholder="password" id="loginPassword">
+        <div><h2></h2></div>
+        <input type="button" onclick="login()" value="login"/>
+        <div><h2></h2></div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+                <input type="button" onclick="gotoRegister()" value="register"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register page -->
+<div data-role="page" id="registerPage">
+    <div data-role="header">
+        <a href="#loginPage" data-icon="arrow-l">Back</a>
+        <h1>Register</h1>
+    </div>
+    <div data-role="content">
+        <h3>username:</h3>
+        <input type="text" placeholder="username" id="registerUsername">
+        <h3>password:</h3>
+        <input type="text" placeholder="password" id="registerPassword">
+        <div><h2></h2></div>
+        <input type="button" onclick="register()" value="register"/>
+    </div>
+</div>
+
+<!-- Conversation list -->
+<div data-role="page" id="conversationListPage">
+    <div data-role="header">
+        <h1>ConversationList</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#conversationListPage"
+                       class="ui-btn-active ui-state-persist">ConversationList</a>
+                </li>
+                <li><a href="#pushPage">PushSetting</a></li>
+                <li><a href="#myInfoPage">MyInfo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div data-role="content">
+            <div class="ui-grid-b">
+                <div class="ui-block-c">
+                    <input type="button" onclick="gotoAddConversation()"
+                           value="add"/>
+                </div>
+            </div>
+            <div>
+                <h4></h4>
+            </div>
+            <ul data-role="listview" id="conversationList">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Conversation page -->
+<div data-role="page" id="conversationPage">
+    <div data-role="header">
+        <a href="#conversationListPage" data-icon="arrow-l">Back</a>
+        <h1>Conversation</h1>
+    </div>
+    <div>
+        <div data-role="content">
+            <div>
+                <input type="text" id="messageContent"/>
+                <input type="button" onclick="sendMessage()" value="发送"
+                       data-inline="true"/>
+            </div>
+            <div>
+                <h4></h4>
+            </div>
+            <div>
+                <ul data-role="listview" id="messageList">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="addConversationPage">
+    <div data-role="header">
+        <a href="#conversationListPage" data-icon="arrow-l">Back</a>
+        <h1>添加会话</h1>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-b">
+            <div class="ui-block-c">
+                <!--<input type="button" onclick="naviBack()" value="返回"/>-->
+            </div>
+        </div>
+        <label for="addConversationText">username</label>
+        <input type="text" id="addConversationText"/>
+        <input type="button" onclick="addConversation()" value="确定"/>
+    </div>
+</div>
+
+<!-- Push page -->
+<div data-role="page" id="pushPage">
+    <div data-role="header">
+        <h1>Push Setting</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#conversationListPage">ConversationList</a></li>
+                <li><a href="#pushPage" class="ui-btn-active ui-state-persist">PushSetting</a>
+                </li>
+                <li><a href="#myInfoPage">MyInfo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <span name="alias" id="alias"></span>
+            <hr/>
+            <label>RegistrationID: </label>
+            <label id="registrationId">null</label>
+        </div>
+        <div data-role="fieldcontain">
+            <label>Tags: </label>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="tagText1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="tagText2"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="tagText3">
+                    </td>
+                </tr>
+            </table>
+            <label>Alias: </label>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="aliasText">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-role="fieldcontain">
+            <input type="button" onclick="setTagWithAlias()"
+                   value="Add tag and alias"/>
+        </div>
+        <div data-role="fieldcontain">
+            <label id="tagAliasPrompt">设置tag/alias结果:</label>
+            <label id="tagAliasResult">null</label>
+        </div>
+        <div data-role="fieldcontain">
+            <label id="notificationPrompt">接受的通知内容:</label>
+            <label id="notificationResult">null</label>
+        </div>
+        <div data-role="fieldcontain">
+            <label id="messagePrompt">接受的自定义消息:</label>
+            <label id="messageResult">null</label>
+        </div>
+    </div>
+</div>
+
+<!--  my info  -->
+<div data-role="page" id="myInfoPage">
+    <div data-role="header">
+        <h1>MyInfo</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#conversationListPage">ConversationList</a></li>
+                <li><a href="#pushPage">PushSetting</a></li>
+                <li><a href="#myInfoPage"
+                       class="ui-btn-active ui-state-persist">MyInfo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <label>username:</label> <label
+                    id="myInfoUsername">null:</label>
+            </div>
+
+            <label for="myInfoNickname">nickname:</label>
+            <input type="text" name="text-2" id="myInfoNickname" value=""/>
+            <input type="button" onclick="setUserNickname()"
+                   value="set nickname"/>
+
+            <label for="myInfoGender">gender:(male , female , unknown)</label>
+            <input type="text" name="text-3" id="myInfoGender" value="">
+            <input type="button" onclick="setUserGender()" value="set gender"/>
+
+            <div data-role="fieldcontain">
+                <br>
+                <input type="button" onclick="logout()" value="logout"
+                       data-theme="e"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

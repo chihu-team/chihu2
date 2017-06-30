@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-jcore",
+  "version": "1.1.5",
+  "description": "jcore for cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-jcore",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpush/cordova-plugin-jcore"
+  },
+  "keywords": [
+    "jcore",
+    "jpush",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "wilhantian, jpush",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/jpush/cordova-plugin-jcore/issues"
+  },
+  "homepage": "https://github.com/jpush/cordova-plugin-jcore#readme"
+}

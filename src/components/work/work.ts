@@ -35,7 +35,9 @@ export class WorkComponent {
 
   //打开问题
   pushQuestionPage( _id ){
-    alert( _id );
+    this.navCtrl.push('QuestionPage', {
+      _id: _id
+    });
   }
 
 }

@@ -1,0 +1,27 @@
+<!-- Generated template for the FooterComponent component -->
+<ion-footer [class.footanimate]="tabanimate">
+    <ion-toolbar color='fff'>
+        <div class="dv_f" (click)="openComments( 1, data.name, data.uid, data._id );">
+            <ion-icon name="text"></ion-icon>
+            {{conts}}
+        </div>
+        <div [hidden]="iscoll" class="dv_f" (click)="collect();">
+            <ion-icon name="star-outline"></ion-icon>
+            收藏
+        </div>
+        <div [hidden]="!iscoll" class="dv_f" (click)="discollect();">
+            <ion-icon name="star"></ion-icon>
+            取消收藏
+        </div>
+        <div [hidden]="isthank" class="dv_f" (click)="thank();">
+            <ion-icon name="heart-outline"></ion-icon>
+            感谢
+        </div>
+        <div [hidden]="!isthank" class="dv_f">
+            <ion-icon name="heart"></ion-icon>
+            已感谢
+        </div>
+
+    </ion-toolbar>
+
+</ion-footer>

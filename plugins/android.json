@@ -7,46 +7,46 @@
         "files": {}
     },
     "installed_plugins": {
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.ionic.starter"
+        "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "io.ionic.starter"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
-        "cordova-plugin-code-push": {
-            "PACKAGE_NAME": "io.ionic.starter"
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.chihu.plue"
         }
     },
     "dependent_plugins": {
         "code-push": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-file": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-zip": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "io.ionic.starter"
+            "PACKAGE_NAME": "com.chihu.plue"
         }
     }
 }
