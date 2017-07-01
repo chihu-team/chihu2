@@ -8,6 +8,8 @@ import { IonicStorageModule } from '@ionic/storage';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { UserServiceProvider } from '../providers/user-service/user-service';
+import { JmessageProvider } from '../providers/jmessage/jmessage';
+import { WorkDataProvider } from '../providers/work-data/work-data';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { UserServiceProvider } from '../providers/user-service/user-service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserServiceProvider
+    UserServiceProvider,
+    JmessageProvider,
+    WorkDataProvider
   ]
 })
 export class AppModule {}

@@ -1,6 +1,8 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
+
 /**
  * Generated class for the HomePage page.
  *
@@ -22,7 +24,7 @@ export class HomePage {
   //数据
   items = [];
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
     this.getdata();
   }
 
@@ -41,6 +43,10 @@ export class HomePage {
         this.items = this.items.concat(res.json());
         
       });
+  }
+
+  openSearch(){
+    this.navCtrl.push( 'SearchPage' );
   }
 
   doRefresh(refresher) {
@@ -77,6 +83,34 @@ export class HomePage {
 
   openMmessage(){
     this.navCtrl.push( 'MessagePage' );
+  }
+
+  //创建菜谱
+  CreateCook() {
+    this.checkLogin('SendWorkTypePage')
+    //this.navCtrl.push('Login');
+  }
+
+  //提问
+  CreateQuestion() {
+    this.checkLogin('SendQuestionPage');
+    //this.navCtrl.push('CreateQuestionType');
+  }
+
+  //分享
+  CreateShare() {
+    this.checkLogin('SendSharePage');
+    //this.navCtrl.push('CreateShare');
+  }
+
+  //检查登录状态
+  checkLogin(page) {
+
+    if (this.UserService._user._id) {
+      this.navCtrl.push(page);
+    } else {
+      this.navCtrl.push('Login');
+    }
   }
 
   ionViewDidLoad() {

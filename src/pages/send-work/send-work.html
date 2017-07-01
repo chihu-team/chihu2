@@ -1,0 +1,88 @@
+<!--
+  Generated template for the SendWorkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+    <ion-navbar color="mblue">
+        <ion-title>发布作品</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <section class="work_top">
+        <section (click)="presentActionSheet();" class="work_banner" [style.background]="'url('+ banner +')'"></section>
+        <input class="dv_work_title" [(ngModel)]="title" type="text" placeholder="写下你的菜谱名吧" />
+    </section>
+    <ion-list-header>
+        心得：
+    </ion-list-header>
+    <ion-textarea [(ngModel)]="text" placeholder="输入这道美食背后的故事"></ion-textarea>
+    <ion-list-header>
+        用料：
+    </ion-list-header>
+    <section class="dv_food_list">
+        <ion-row (press)="pressEvent(i)" *ngFor="let food of foods; let i=index">
+            <ion-col>
+                <div>{{food.name}}</div>
+            </ion-col>
+            <ion-col>
+                <div>{{food.len}}</div>
+            </ion-col>
+        </ion-row>
+    </section>
+    <br/>
+    <button (click)="showPrompt();" class="dv_button" ion-button round outline>添加材料</button>
+
+    <ion-list>
+        <ion-list-header>做法：（ 点击编辑步骤后，长按可删除 ）</ion-list-header>
+        <ion-item-group [reorder]="isReordering" (ionItemReorder)="reorderItems($event)">
+
+            <div class="sp" [class.sp_hide]="sphide"></div>
+
+            <ion-item (press)="pressEvent(i)" (click)="editItem(i)" *ngFor="let item of items; let i=index">
+
+                <section *ngIf="item.src != ''" class="imgs" [style.background]="'url('+ item.src +')'"></section>
+
+                <p>
+                    {{item.text}}
+                </p>
+            </ion-item>
+
+
+        </ion-item-group>
+    </ion-list>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col width-50>
+                <button (click)="addItem();" class="dv_edit_button" ion-button icon-left round outline>
+                    <ion-icon name="star"></ion-icon>
+                    添加步骤
+                </button>
+            </ion-col>
+            <ion-col width-50>
+                <button (click)="edit()" class="dv_edit_button" ion-button icon-left round outline>
+                    <ion-icon name="reorder"></ion-icon>
+                    编辑步骤
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-list-header>
+        Tip：
+    </ion-list-header>
+    <ion-textarea [(ngModel)]="tip" placeholder="温馨提示"></ion-textarea>
+
+    <button (click)="send();" class="dv_button" ion-button round outline>发布菜谱</button>
+    <br/>
+    <br/>
+    <br/>
+
+</ion-content>

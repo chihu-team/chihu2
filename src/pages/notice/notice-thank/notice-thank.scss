@@ -1,1 +1,14 @@
-page-notice-thank {}
+page-notice-thank {
+    ion-label {
+        white-space: inherit !important;
+    }
+    ion-list {
+        padding-bottom: 5rem !important;
+    }
+    .nomessage {
+        background-image: url('../assets/icon/nomessage.png') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
+}

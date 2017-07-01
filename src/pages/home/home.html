@@ -7,7 +7,7 @@
 <ion-header [class.headanimate]="tabanimate">
 
     <ion-navbar color="mblue">
-        <ion-searchbar placeholder="搜索"></ion-searchbar>
+        <ion-searchbar (click)="openSearch();" placeholder="搜索"></ion-searchbar>
         <ion-buttons end (click)="openMmessage();">
             <button ion-button icon-only>
               <ion-icon name="text"></ion-icon>
@@ -30,5 +30,15 @@
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
         <ion-infinite-scroll-content></ion-infinite-scroll-content>
     </ion-infinite-scroll>
+
+    <!--发布按钮-->
+    <ion-fab right bottom edge #327eff>
+        <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button (click)="CreateQuestion()" ion-fab><ion-icon name="help"></ion-icon></button>
+            <button (click)="CreateShare()" ion-fab><ion-icon name="images"></ion-icon></button>
+            <button (click)="CreateCook()" ion-fab><ion-icon name="clipboard"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
 
 </ion-content>

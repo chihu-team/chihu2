@@ -1,0 +1,72 @@
+page-send-work {
+    .work_top {
+        width: 100%;
+        border-bottom: 1px dashed #eaeaea;
+        .work_banner {
+            width: 100%;
+            height: 20rem;
+            background: #ededed;
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+        .dv_work_title {
+            text-align: center;
+            font-size: 2.3rem;
+            line-height: 7rem;
+            color: #757575;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            border: none;
+        }
+    }
+    textarea {
+        height: 8rem !important;
+    }
+    ion-list-header {
+        border-top: none !important;
+    }
+    .imgs {
+        width: 100%;
+        height: 17rem;
+        box-shadow: none !important;
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ion-label {
+        text-overflow: inherit !important;
+        white-space: normal !important;
+    }
+    .dv_button {
+        display: block;
+        margin: 2px auto;
+    }
+    .dv_edit_button {
+        margin: 0 auto 2rem;
+        display: block;
+    }
+    ion-row {
+        border-block-end: 1px solid #f3f4f5;
+        margin-bottom: 8px;
+    }
+    .dv_food_list {
+        width: 90%;
+        margin: 0 auto;
+    }
+    ion-item-group {
+        position: relative;
+        .sp {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 9999999;
+        }
+        .sp_hide {
+            display: none;
+        }
+    }
+}

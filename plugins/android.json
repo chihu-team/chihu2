@@ -27,6 +27,24 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-file-opener2": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.chihu.plue"
         }
     },
     "dependent_plugins": {
@@ -34,12 +52,6 @@
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-zip": {

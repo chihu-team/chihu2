@@ -4,6 +4,18 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-content>
-    <mes-item></mes-item>
+<ion-content [class.nomessage]="nomessage">
+
+    <ion-list>
+
+        <ion-item *ngFor="let item of items" (click)="pushPerson( item.id );">
+            <ion-avatar item-left>
+                <img [src]="item.userimg">
+            </ion-avatar>
+            <h2>{{item.name}} :➕关注了你</h2>
+
+        </ion-item>
+
+    </ion-list>
+
 </ion-content>

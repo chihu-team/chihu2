@@ -7,8 +7,20 @@
 
 
 
-<ion-content>
+<ion-content [class.nomessage]="nomessage">
 
-    <mes-item></mes-item>
+    <ion-list>
+
+        <ion-item *ngFor="let item of items">
+            <ion-avatar item-left (click)="pushPerson( item.targetid );">
+                <img [src]="item.userimg">
+            </ion-avatar>
+            <h2 (click)="pushPages( item.type, item.artid );">{{item.name}}</h2>
+            <p (click)="pushPages( item.type, item.artid );">{{item.title}}</p>
+
+        </ion-item>
+
+
+    </ion-list>
 
 </ion-content>

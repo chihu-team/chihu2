@@ -20,4 +20,7 @@ page-home {
     .headanimate {
         top: -90px;
     }
+    ion-fab[bottom][edge] {
+        bottom: 22px;
+    }
 }

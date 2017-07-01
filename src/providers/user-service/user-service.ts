@@ -28,7 +28,9 @@ export class UserServiceProvider {
   }
   storageGet() {
     this.storage.get('user').then((val) => {
-      //alert(val);
+      if (val && val._id) {
+        this._user = val;
+      }
     });
   }
 
