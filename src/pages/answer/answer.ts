@@ -1,7 +1,7 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
-
+import { DomSanitizer } from '@angular/platform-browser'
 /**
  * Generated class for the AnswerPage page.
  *
@@ -30,7 +30,7 @@ export class AnswerPage {
   isthank: boolean = false;
   conts = 0;
 
-  constructor(public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public sanitizer: DomSanitizer, public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get("_id");
     this.getdata();
 }
@@ -51,6 +51,32 @@ export class AnswerPage {
         
       });
   }
+
+  tr(html){
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
+
+  onScroll($event: any) {
+
+    let scrollTop = $event.scrollTop;
+
+    if (scrollTop > 110 && (this.old_scrollTop - scrollTop) < 0) {
+      if (!this.tabanimate) {
+        this.tabanimate = true;
+      }
+
+    } else {
+      this.tabanimate = false;
+      if (scrollTop > 100) {
+        this.title = this.data.title;
+      } else {
+        this.title = "回答";
+      }
+    }
+    this.old_scrollTop = scrollTop;
+    this.ref.detectChanges();
+  }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AnswerPage');

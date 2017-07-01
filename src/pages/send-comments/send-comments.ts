@@ -25,7 +25,7 @@ export class SendCommentsPage implements OnInit {
     this.summernote = $('#summernote');
     this.summernote.summernote(
       {
-        height: 500,
+        height: 380,
         placeholder: '文章内容...',
         callbacks: {
           onImageUpload: function (files) { //the onImageUpload API  

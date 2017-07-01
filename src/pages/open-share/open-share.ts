@@ -18,6 +18,7 @@ export class OpenSharePage {
   data: any = {};
   _id;
   title = '';
+  cont = 0;
 
   constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get('_id');
@@ -35,6 +36,7 @@ export class OpenSharePage {
     })
       .subscribe((res) => {
         this.data = res.json()[0];
+        this.cont = this.data.mark.cont;
         this.title = res.json()[0]['name'] + ' 分享了心情';
       });
   }

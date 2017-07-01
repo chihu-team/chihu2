@@ -38,6 +38,22 @@ export class FoundPage {
       });
   }
 
+  pushQueList(){
+    this.navCtrl.push( 'QuestionListPage' );
+  }
+
+  pushHotWork(){
+    this.navCtrl.push( 'HotWorkPage' );
+  }
+
+  pushHotAnswer(){
+    this.navCtrl.push( 'HotAnswerPage' );
+  }
+
+  pushHotShare(){
+    this.navCtrl.push( 'HotSharePage' );
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad FoundPage');
   }

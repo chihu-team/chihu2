@@ -18,8 +18,8 @@
     <header [data]="data"></header>
 
     <section class="dv_content">
-        <p>{{data.text}}</p>
-
+        
+        <div [innerHtml]="tr(data.text)"></div>
     </section>
 
 
