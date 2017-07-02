@@ -17,11 +17,14 @@
 
 <ion-content>
     <share [data]="data"></share>
-    <ion-list>
-        <ion-list-header>
-            {{cont}} 个评论
-        </ion-list-header>
-    </ion-list>
-    <!--<comments [data]="" ></comments>-->
-
+    <section class="wrap">
+        <ion-list>
+            <ion-list-header>
+                {{cont}} 个评论
+            </ion-list-header>
+        </ion-list>
+        <comments *ngFor="let item of items" [data]="item" [type]="type"></comments>
+    </section>
 </ion-content>
+
+<footer [data]="data"></footer>

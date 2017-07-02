@@ -19,7 +19,7 @@
             {{data.length}} 个评论
         </ion-list-header>
     </ion-list>
-    <comments *ngFor="let item of data" [data]="item"></comments>
+    <comments *ngFor="let item of data" [data]="item" [type]="type"></comments>
 </ion-content>
 
-<footer [name]="name"></footer>
+<footer [name]="name" [_id]="_id" [type]="type" [uid]="uid"></footer>

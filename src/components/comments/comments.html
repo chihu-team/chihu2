@@ -1,12 +1,12 @@
 <!-- Generated template for the CommentsComponent component -->
 <section class="item">
     <header>
-        <img [src]="data.userimg" alt="">
+        <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">
         <div class="it-left">
             <h6>{{data.name}}</h6>
             <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date }}</p>
         </div>
-        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 回复&nbsp;&nbsp;{{data.commarr.length=='0'?'':data.commarr.length}}</div>
+        <div class="fork" (click)="openComments( data._id );"><i class="fa fa-plus" aria-hidden="true"></i> 回复&nbsp;&nbsp;{{data.commarr.length=='0'?'':data.commarr.length}}</div>
     </header>
     <p>{{data.text}}</p>
 

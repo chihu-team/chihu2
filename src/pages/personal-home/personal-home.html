@@ -9,23 +9,23 @@
 
         <ion-item (click)="pushMyWorkPage();">
             <ion-icon name='eye' item-left color="h"></ion-icon>
-            我的作品
+            {{tar}}的作品
         </ion-item>
         <ion-item (click)="pushMyAnswerPage();">
             <ion-icon name='star' item-left color="h"></ion-icon>
-            我的回答
+            {{tar}}的回答
         </ion-item>
         <ion-item (click)="pushMyQuestionPage();">
             <ion-icon name='document' item-left color="h"></ion-icon>
-            我的提问
+            {{tar}}的提问
         </ion-item>
         <ion-item (click)="pushMySharePage();">
             <ion-icon name='time' item-left color="h"></ion-icon>
-            我的分享
+            {{tar}}的分享
         </ion-item>
         <ion-item (click)="pushFocusPage();">
             <ion-icon name='bookmarks' item-left color="h"></ion-icon>
-            我的关注
+            {{tar}}的关注
         </ion-item>
 
     </ion-list>
@@ -35,5 +35,6 @@
                 最新动态
             </ion-list-header>
         </ion-list>
+        <work [data]="items" [rootNavCtrl]="items"></work>
     </div>
 </ion-content>

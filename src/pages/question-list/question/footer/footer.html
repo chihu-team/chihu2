@@ -1,0 +1,19 @@
+<!-- Generated template for the FooterComponent component -->
+<ion-row>
+    <ion-col>
+        <button ion-button icon-left clear small>
+                  <ion-icon name="eye"></ion-icon>
+                  <div>{{data.fork}}</div>
+                </button>
+    </ion-col>
+    <ion-col>
+        <button ion-button icon-left clear small>
+                  <ion-icon name="text"></ion-icon>
+                  <div>{{data.answer}}</div>
+                </button>
+    </ion-col>
+    <ion-col center text-center>
+        <button [hidden]="ishide" ion-button (click)="fork();">＋关注问题</button>
+        <button [hidden]="!ishide" color="tabc" ion-button>-取消关注</button>
+    </ion-col>
+</ion-row>

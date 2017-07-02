@@ -1,31 +1,9 @@
 <!-- Generated template for the QuestionComponent component -->
-<section class="dv_top_ban" (click)="pushQuestionPage(data._id);">
-    <header>
-        <img [src]="data.userimg" alt="">
-        <div class="it-left">
-            <h6>{{data.name}}</h6>
-            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:7-1</p>
-        </div>
-        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>
-    </header>
-    <h2>{{data.title}}</h2>
-    <p>{{data.text}}</p>
-    <ion-row>
-        <ion-col>
-            <button ion-button icon-left clear small>
-                  <ion-icon name="eye"></ion-icon>
-                  <div>{{data.fork}}</div>
-                </button>
-        </ion-col>
-        <ion-col>
-            <button ion-button icon-left clear small>
-                  <ion-icon name="text"></ion-icon>
-                  <div>{{data.answer}}</div>
-                </button>
-        </ion-col>
-        <ion-col center text-center>
-
-            <button color="tabc" ion-button>＋关注问题</button>
-        </ion-col>
-    </ion-row>
+<section class="dv_top_ban">
+    <header [data]="data"></header>
+    <section (click)="pushQuestionPage(data._id);">
+        <h2>{{data.title}}</h2>
+        <p>{{data.text}}</p>
+        <footer [data]="data"></footer>
+    </section>
 </section>

@@ -1,8 +1,8 @@
 <!-- Generated template for the ClassItemComponent component -->
 <section class="wrap">
-    <div class="iclass" *ngFor="let item of arr; let i = index">
+    <div class="iclass" *ngFor="let item of arr; let i = index" (click)="openClass(item);">
         <i class="top-{{i}}"></i>
-        <p>{{item}}{{i}}</p>
+        <p>{{item}}</p>
     </div>
 
 

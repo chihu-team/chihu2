@@ -21,12 +21,12 @@
 
 <ion-content>
     <section class="dv_top_ban">
-        <img src="https://avatars2.githubusercontent.com/u/11835988?v=3&u=2a181779eb2164666606366a1df31f9c17cf7a20&s=100" />
-        <h2>Devon</h2>
+        <img [src]="userimg" />
+        <h2>{{name}}</h2>
     </section>
     <super-tabs height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">
-        <super-tab [root]="page1" title="详细信息"></super-tab>
-        <super-tab [root]="page2" title="个人主页"></super-tab>
+        <super-tab [root]="page1" [rootParams]="chatParams" title="详细信息"></super-tab>
+        <super-tab [root]="page2" [rootParams]="chatParams" title="个人主页"></super-tab>
     </super-tabs>
 
 </ion-content>

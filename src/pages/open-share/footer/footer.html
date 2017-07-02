@@ -1,0 +1,19 @@
+<!-- Generated template for the FooterComponent component -->
+<ion-footer>
+    <ion-toolbar color='fff'>
+        <div class="dv_f" (click)="sendComment( '@'+data.name, 0 );">
+            <ion-icon name="text"></ion-icon>
+            评论
+        </div>
+        <div [hidden]="islike" class="dv_f" (click)="thank();">
+            <ion-icon name="heart-outline"></ion-icon>
+            点赞
+        </div>
+        <div [hidden]="!islike" class="dv_f">
+            <ion-icon name="heart"></ion-icon>
+            取消点赞
+        </div>
+
+    </ion-toolbar>
+
+</ion-footer>

@@ -8,14 +8,20 @@
 
     <ion-navbar color="mblue">
         <ion-title>发表评论</ion-title>
-        <ion-buttons end (click)="send();">
-            <ion-title>发送</ion-title>
-        </ion-buttons>
+
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <textarea id="summernote" placeholder="Comments"></textarea>
+    <ion-list>
+        <ion-list-header>
+            输入要评论的内容
+        </ion-list-header>
+
+        <ion-textarea [(ngModel)]="text" placeholder="{{pl}}"></ion-textarea>
+
+    </ion-list>
+    <button ion-button full (click)="save();">发送</button>
 </ion-content>

@@ -40,6 +40,7 @@ export class MyQuestionPage {
       headers: headers
     })
       .subscribe((res) => {
+        
         this.items = res.json();
 
       });

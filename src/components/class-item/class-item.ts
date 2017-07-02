@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NavController } from 'ionic-angular';
 /**
  * Generated class for the ClassItemComponent component.
  *
@@ -30,8 +30,14 @@ export class ClassItemComponent {
     '其他'
   ];
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     
+  }
+  openClass( name ){
+    alert(name);
+    this.navCtrl.push( 'OpenClassPage',{
+      class: name
+    } );
   }
 
 }

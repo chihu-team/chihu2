@@ -8,11 +8,14 @@
 
     <ion-navbar color="mblue">
         <ion-title>我要回答</ion-title>
+        <ion-buttons end (click)="send();">
+            <ion-title>发布</ion-title>
+        </ion-buttons>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <textarea id="summernote" placeholder="Comments"></textarea>
 </ion-content>

@@ -18,34 +18,10 @@
 
 <ion-content (ionScroll)="onScroll($event)">
     <section class="dv_top_ban">
-        <header>
-            <img [src]="data.userimg" alt="">
-            <div class="it-left">
-                <h6>{{data.name}}</h6>
-                <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:7-1</p>
-            </div>
-            <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>
-        </header>
+        <header [data]="data"></header>
         <h2>{{data.title}}</h2>
         <p>{{data.text}}</p>
-        <ion-row>
-            <ion-col>
-                <button ion-button icon-left clear small>
-                  <ion-icon name="eye"></ion-icon>
-                  <div>{{data.fork}}</div>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button icon-left clear small>
-                  <ion-icon name="text"></ion-icon>
-                  <div>{{data.answer}}</div>
-                </button>
-            </ion-col>
-            <ion-col center text-center>
-
-                <button color="tabc" ion-button>＋ 关注</button>
-            </ion-col>
-        </ion-row>
+        <footer [data]="data"></footer>
     </section>
 
 
@@ -54,5 +30,10 @@
             4 个评论
         </ion-list-header>
     </ion-list>
-    <work [data]='items'></work>
+    <work [data]='items' [ishideTitle]="ishide"></work>
+
+    <ion-fab right bottom>
+        <button ion-fab mini (click)="add();"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+
 </ion-content>

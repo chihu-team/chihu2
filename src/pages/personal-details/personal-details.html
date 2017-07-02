@@ -11,32 +11,34 @@
     <section class="dv_ban_top">
         <div class="dv_ban_top_div">
             <p>关注的话题</p>
-            <h2>0</h2>
+            <h2>{{user.forkqus}}</h2>
         </div>
         <div class="dv_ban_top_div">
             <p>我关注的人</p>
-            <h2>0</h2>
+            <h2>{{user.forkuser}}</h2>
         </div>
         <div class="dv_ban_top_div">
             <p>关注我的人</p>
-            <h2>0</h2>
+            <h2>{{user.fork}}</h2>
         </div>
-        <p>圣诞节啊圣诞节啊设立登记撒了多久啊死了大家阿斯利康大家阿斯科利的</p>
+        <p>{{user.dec}}</p>
         <ion-row>
             <ion-col>
                 <button ion-button icon-left clear small>
                   <ion-icon name="eye"></ion-icon>
-                  <div>0</div>
+                  <div>{{user.work}}</div>
                 </button>
             </ion-col>
             <ion-col>
                 <button ion-button icon-left clear small>
                   <ion-icon name="text"></ion-icon>
-                  <div>0</div>
+                  <div>{{user.share}}</div>
                 </button>
             </ion-col>
             <ion-col center text-center>
-                <button (click)="baseic();" ion-button>编辑</button>
+                <button [hidden]="isme || ishide" (click)="fork();" ion-button>关注</button>
+                <button [hidden]="isme || !ishide" (click)="disfork();" ion-button>取消关注</button>
+                <button [hidden]="!isme" (click)="baseic();" ion-button>编辑</button>
             </ion-col>
         </ion-row>
     </section>
@@ -47,28 +49,28 @@
             <ion-icon name='eye' item-left color="h"></ion-icon>
             性别
             <ion-note item-right>
-                男
+                {{user.sex=='0'?'男':'女'}}
             </ion-note>
         </ion-item>
         <ion-item>
             <ion-icon name='star' item-left color="h"></ion-icon>
             积分
             <ion-note item-right>
-                0
+                {{user.integral}}
             </ion-note>
         </ion-item>
         <ion-item>
             <ion-icon name='document' item-left color="h"></ion-icon>
             居住地
             <ion-note item-right>
-                保密
+                {{user.city==''?'❌':city}}
             </ion-note>
         </ion-item>
         <ion-item>
             <ion-icon name='time' item-left color="h"></ion-icon>
             行业
             <ion-note item-right>
-                保密
+                {{user.job==''?'❌':job}}
             </ion-note>
         </ion-item>
 

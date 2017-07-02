@@ -19,6 +19,8 @@ export class OpenSharePage {
   _id;
   title = '';
   cont = 0;
+  items:any = [];
+  type = 3;
 
   constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get('_id');
@@ -38,11 +40,25 @@ export class OpenSharePage {
         this.data = res.json()[0];
         this.cont = this.data.mark.cont;
         this.title = res.json()[0]['name'] + ' 分享了心情';
+        this.getComment();
       });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OpenSharePage');
+  //获取评论
+  getComment() {
+
+    let url = "http://www.devonhello.com/chihu/get_comment";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "&artid=" + this._id + "&type=3", {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.items = res.json();
+        
+      });
   }
 
 }

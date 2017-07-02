@@ -1,13 +1,6 @@
 <!-- Generated template for the ShareComponent component -->
 <section class="item">
-    <header>
-        <img [src]="data.userimg" alt="">
-        <div class="it-left">
-            <h6>{{data.name}} 的心情</h6>
-            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date}}</p>
-        </div>
-        <div class="fork"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>
-    </header>
+    <header [data]="data"></header>
     <p>{{data.text}}</p>
     <section class="imgs-wrap">
         <div *ngFor="let item of data.img" class="imgs" [style.background]="'url('+item.src+')'"></div>

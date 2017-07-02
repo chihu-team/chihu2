@@ -1,72 +1,96 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the SendCommentsPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-declare var $: any;
+
 @IonicPage()
 @Component({
   selector: 'page-send-comments',
   templateUrl: 'send-comments.html',
 })
-export class SendCommentsPage implements OnInit {
+export class SendCommentsPage {
 
-  summernote: any;
+  text = '';
+  pl = '';
+  artid = '';
+  comid = '';
+  type = '';
+  targetname = '';
+  targetid = '';
+  _id = '';
+  isreply = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public UserService: UserServiceProvider, public http: Http) {
+    this.pl = this.navParams.get('pl');
+    this.artid = this.navParams.get('artid');
+    this.comid = this.navParams.get('comid');
+    this.type = this.navParams.get('type');
+    this.targetname = this.navParams.get('targetname');
+    this.targetid = this.navParams.get('targetid');
+    this._id = this.navParams.get('_id');
+    this.isreply = this.navParams.get('reply');
   }
 
-  ngOnInit() {
-    var _that = this;
-    this.summernote = $('#summernote');
-    this.summernote.summernote(
-      {
-        height: 380,
-        placeholder: '文章内容...',
-        callbacks: {
-          onImageUpload: function (files) { //the onImageUpload API  
-            var imgs = _that.upFile(files[0]);
-          }
-        },
-        toolbar: [
-          // [groupName, [list of button]]
-          ['style', ['bold', 'italic']],
-          ['fontsize', ['fontsize']],
-          ['color', ['color']],
-          ['para', ['ul', 'ol', 'paragraph']],
-          ['Insert', ['picture']]
-        ]
-      }
-    )
+  save() {
+    if (this.text.length < 1) {
+      alert("请输入评论的内容!");
+      return true;
+    }
+    if (this.comid == '0') {
+      this.postdata();
+    } else {
+      this.reply();
+    }
+
   }
 
-  upFile(file) {
-    var _data = new FormData(),
-      _that = this;
-    _data.append("file", file);
+  postdata() {
     
-    $.ajax({
-      data: _data,
-      dataType: 'text',
-      type: "POST",
-      url: "http://www.devonhello.com/cfdkAdmin/uploadimg",
-      cache: false,
-      contentType: false,
-      processData: false,
-      success: function (url) {
-        
-        _that.summernote.summernote('insertImage', "http://7xp2ia.com1.z0.glb.clouddn.com/" + url, 'image name'); // the insertImage API  
-      }
-    });
+    //this.UserService.presentLoadingDefault();
+    let url = "http://www.devonhello.com/chihu/send_comment";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "uid=" + this.UserService._user._id + "&userimg=" + this.UserService._user.userimg + "&name=" + this.UserService._user.nickname + "&artid=" + this.artid + "&type=" + this.type + "&text=" + this.text + "&targetid=" + this.targetid, {
+      headers: headers
+    })
+      .subscribe((res) => {
+        //this.UserService.presentLoadingDismiss();
+        if (res.json()['result']['ok'] == 1) {
+          this.navCtrl.pop();
+        }
+      });
   }
 
-  send() {
+  //回复
+  reply() {
 
-    alert(this.summernote.summernote('code'));
+    //this.UserService.presentLoadingDefault();
+    let url = "http://www.devonhello.com/chihu/reply_comment";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "_id=" + this._id + "&name=" + this.UserService._user.nickname + "&targetname=" + this.targetname + "&targetid=" + this.targetid + "&text=" + this.text + "&uid=" + this.UserService._user._id + "&artid=" + this.artid + "&type=" + this.type + "&userimg=" + this.UserService._user.userimg + "&reply=" + this.isreply, {
+      headers: headers
+    })
+      .subscribe((res) => {
+
+        if (res.json()['ok'] == 1) {
+          //this.UserService.presentLoadingDismiss();
+          this.navCtrl.pop();
+        }
+      });
   }
+
+
 
 }

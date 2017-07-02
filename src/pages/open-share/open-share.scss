@@ -1,6 +1,9 @@
 page-open-share {
     ion-content {
         background-color: #f2f4f7 !important;
+        .wrap {
+            padding-bottom: 100px !important;
+        }
     }
     ion-list,
     ion-list-header {

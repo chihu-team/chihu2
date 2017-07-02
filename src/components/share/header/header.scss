@@ -1,0 +1,46 @@
+header {
+    .header {
+        color: #828282;
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+        .it-left {
+            width: 50%;
+            overflow: hidden;
+            float: left;
+            margin-left: 10px;
+            h6 {
+                line-height: 25px;
+                margin: 0;
+                font-size: 14px;
+                font-weight: normal;
+            }
+            .time {
+                line-height: 25px;
+                margin: 0;
+            }
+        }
+        .fork {
+            font-size: 12px;
+            float: right;
+            padding: 5px 12px;
+            border: 1px solid #2196f3;
+            box-sizing: border-box;
+            color: #2196f3;
+            margin-top: 6px;
+        }
+        img {
+            width: 46px;
+            height: 46px;
+            vertical-align: top;
+            border: none;
+            display: block;
+            float: left;
+            border-radius: 9999px;
+        }
+        .nofork {
+            border: 1px solid red;
+            color: red;
+        }
+    }
+}

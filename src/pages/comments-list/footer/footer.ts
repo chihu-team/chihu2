@@ -15,15 +15,23 @@ import { NavController } from 'ionic-angular';
 export class FooterComponent {
 
   @Input() name:any = '';
+  @Input() _id:any = '';
+  @Input() uid:any = '';
+  @Input() type:any = '';
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
     
   }
 
-  sendComment( name, comid ){
-    alert(name);
-    alert(comid);
-    this.navCtrl.push('SendCommentsPage');
+  sendComment( pl, comid ){
+    
+    this.navCtrl.push('SendCommentsPage', {
+      pl: pl,
+      artid: this._id,
+      comid: comid,
+      type: this.type,
+      targetid: this.uid
+    });
   }
 
 }
