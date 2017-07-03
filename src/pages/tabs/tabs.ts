@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Tabs, NavParams, Content, Platform, ToastController } from 'ionic-angular';
+import { CodePush } from '@ionic-native/code-push';
 
 @IonicPage()
 @Component({
@@ -17,14 +18,15 @@ export class TabsPage {
   @ViewChild('myTabs') tabs: Tabs;
   itimer = null;
 
-  constructor(public platform: Platform, public navCtrl: NavController, public toastCtrl: ToastController) {
+  constructor(public codePush: CodePush, public platform: Platform, public navCtrl: NavController, public toastCtrl: ToastController) {
     this.pageBack();
+    this.codePush.sync();
   }
 
   pageBack() {
 
     this.platform.registerBackButtonAction((): any => {
-
+      
       let activeVC = this.navCtrl.getActive();
       let page = activeVC.instance;
       page.tabs

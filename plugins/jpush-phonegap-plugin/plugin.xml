@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="jpush-phonegap-plugin"
+  version="3.1.8">
+
+    <name>JPush</name>
+    <description>JPush for cordova plugin</description>
+    <author>JPush</author>
+    <keywords>JPush,push</keywords>
+    <license>MIT License</license>
+
+    <preference name="APP_KEY" />
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
+
+    <!-- dependencies -->
+    <dependency id="cordova-plugin-device" />
+    <dependency id="cordova-plugin-jcore" />
+
+    <js-module src="www/JPushPlugin.js" name="JPushPlugin">
+        <clobbers target="JPush" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="JPushPlugin">
+                <param name="ios-package" value="JPushPlugin" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Plugins/JPushDefine.h" />
+        <header-file src="src/ios/Plugins/JPushPlugin.h" />
+        <source-file src="src/ios/Plugins/JPushPlugin.m" />
+        <header-file src="src/ios/Plugins/AppDelegate+JPush.h" />
+        <source-file src="src/ios/Plugins/AppDelegate+JPush.m" />
+
+        <header-file src="src/ios/lib/JPUSHService.h" />
+        <source-file src="src/ios/lib/jpush-ios-3.0.5.a" framework="true" />
+        <resource-file src="src/ios/JPushConfig.plist" />
+
+        <framework src="CFNetwork.framework" weak="true" />
+        <framework src="CoreFoundation.framework" weak="true" />
+        <framework src="CoreTelephony.framework" weak="true" />
+        <framework src="SystemConfiguration.framework" weak="true" />
+        <framework src="CoreGraphics.framework" weak="true" />
+        <framework src="Foundation.framework" weak="true" />
+        <framework src="UIKit.framework" weak="true" />
+        <framework src="Security.framework" weak="true" />
+        <framework src="libz.tbd" weak="true" />
+        <framework src="AdSupport.framework" weak="true" />
+        <framework src="UserNotifications.framework" weak="true" />
+        <framework src="libresolv.tbd" weak="true" />
+
+        <config-file target="*JPushConfig.plist" parent="Appkey">
+            <string>$APP_KEY</string>
+        </config-file>
+
+        <hook type="after_platform_add" src="hooks/iosEnablePush.js" />
+        <hook type="after_plugin_install" src="hooks/iosEnablePush.js" />
+        <hook type="before_plugin_uninstall" src="hooks/iosDisablePush.js" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="JPushPlugin">
+                <param name="android-package" value="cn.jiguang.cordova.push.JPushPlugin" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- Required  一些系统要求的权限，如访问网络等-->
+            <uses-permission android:name="$PACKAGE_NAME.permission.JPUSH_MESSAGE" />
+            <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.VIBRATE" />
+            <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+            <permission android:name="$PACKAGE_NAME.permission.JPUSH_MESSAGE"
+               android:protectionLevel="signature" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <!-- Required SDK核心功能-->
+            <activity android:name="cn.jpush.android.ui.PushActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="orientation|keyboardHidden">
+                <intent-filter>
+                    <action android:name="cn.jpush.android.ui.PushActivity" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+            </activity>
+
+            <!-- Rich push 核心功能 since 2.0.6-->
+            <activity android:name="cn.jpush.android.ui.PopWinActivity"
+                android:theme="@style/MyDialogStyle"
+                android:exported="false">
+            </activity>
+
+            <!-- Required  SDK核心功能-->
+            <service android:name="cn.jpush.android.service.DownloadService"
+               android:enabled="true"
+               android:exported="false">
+            </service>
+
+            <!-- Required SDK 核心功能-->
+            <service android:name="cn.jpush.android.service.PushService"
+              android:enabled="true"
+              android:exported="false"
+              android:process=":remote">
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.REGISTER" />
+                    <action android:name="cn.jpush.android.intent.REPORT" />
+                    <action android:name="cn.jpush.android.intent.PushService" />
+                    <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                </intent-filter>
+            </service>
+
+            <!-- Required SDK核心功能-->
+            <receiver android:name="cn.jpush.android.service.PushReceiver"
+              android:enabled="true"
+              android:exported="false">
+                <intent-filter android:priority="1000">
+                    <!--Required  显示通知栏 -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.USER_PRESENT" />
+                    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                </intent-filter>
+                <!-- Optional -->
+                <intent-filter>
+                    <action android:name="android.intent.action.PACKAGE_ADDED" />
+                    <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                    <data android:scheme="package" />
+                </intent-filter>
+            </receiver>
+
+            <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+            <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+            <service android:name="cn.jpush.android.service.DaemonService"
+               android:enabled="true"
+               android:exported="true">
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.DaemonService" />
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+            </service>
+
+            <!-- User defined.  For test only  用户自定义的广播接收器 -->
+            <receiver
+              android:name="cn.jiguang.cordova.push.MyReceiver"
+              android:enabled="true">
+                <intent-filter android:priority="1000">
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                    <!-- Required  显示通知栏 -->
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                    <!-- Required  用户注册SDK的intent -->
+                    <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                    <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                    <!-- Required  用户接收SDK消息的intent -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                    <!-- Required  用户接收SDK通知栏信息的intent -->
+                    <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                    <!-- Required  用户打开自定义通知栏的intent -->
+                    <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                    <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+            </receiver>
+
+            <!-- Required SDK核心功能-->
+            <receiver
+              android:name="cn.jpush.android.service.AlarmReceiver"
+              android:exported="false" />
+
+            <!-- Required. Enable it you can get statistics data with channel -->
+            <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default" />
+            <meta-data android:name="JPUSH_APPKEY" android:value="$APP_KEY" />
+        </config-file>
+
+        <source-file src="src/android/libs/jpush-android_v3.0.6.jar" target-dir="libs" />
+
+        <source-file src="src/android/MyReceiver.java" target-dir="src/cn/jiguang/cordova/push" />
+        <source-file src="src/android/JPushPlugin.java" target-dir="src/cn/jiguang/cordova/push" />
+
+        <source-file src="src/android/res/drawable-hdpi/jpush_richpush_btn_selector.xml"
+          target-dir="res/drawable" />
+        <source-file src="src/android/res/drawable-hdpi/jpush_richpush_progressbar.xml"
+          target-dir="res/drawable" />
+
+        <source-file src="src/android/res/drawable-hdpi/jpush_ic_richpush_actionbar_back.png"
+          target-dir="res/drawable-hdpi" />
+        <source-file src="src/android/res/drawable-hdpi/jpush_ic_richpush_actionbar_divider.png"
+          target-dir="res/drawable-hdpi" />
+
+        <source-file src="src/android/res/layout/jpush_popwin_layout.xml" target-dir="res/layout" />
+        <source-file src="src/android/res/layout/jpush_webview_layout.xml" target-dir="res/layout" />
+        <source-file src="src/android/res/layout/test_notification_layout.xml" target-dir="res/layout" />
+
+        <source-file src="src/android/res/values/jpush_style.xml" target-dir="res/values" />
+    </platform>
+</plugin>

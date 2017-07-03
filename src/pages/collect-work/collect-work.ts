@@ -27,7 +27,7 @@ export class CollectWorkPage {
 
 //获取数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/my_collect_work";
+    let url = "http://www.devonhello.com/chihu2/my_collect_work";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -38,10 +38,6 @@ export class CollectWorkPage {
       .subscribe((res) => {
         this.items = this.items.concat(res.json());
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CollectWorkPage');
   }
 
 }

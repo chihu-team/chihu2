@@ -34,7 +34,7 @@ export class ClassItemComponent {
     
   }
   openClass( name ){
-    alert(name);
+    
     this.navCtrl.push( 'OpenClassPage',{
       class: name
     } );

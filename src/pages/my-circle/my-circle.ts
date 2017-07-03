@@ -17,8 +17,4 @@ export class MyCirclePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyCirclePage');
-  }
-
 }

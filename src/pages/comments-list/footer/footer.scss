@@ -5,6 +5,10 @@ footer {
         height: 55px;
     }
     .input-wrap {
+        button {
+            position: relative !important;
+            top: 10px !important;
+        }
         ion-textarea {
             position: static;
         }

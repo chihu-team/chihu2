@@ -23,7 +23,7 @@ export class HotWorkPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/hot_work";
+    let url = "http://www.devonhello.com/chihu2/hot_work";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -35,10 +35,6 @@ export class HotWorkPage {
         this.data = res.json();
 
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HotWorkPage');
   }
 
 }

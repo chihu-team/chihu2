@@ -32,7 +32,7 @@ export class SendQuestionPage {
 
   postdata() {
 
-    let url = "http://www.devonhello.com/chihu/send_question";
+    let url = "http://www.devonhello.com/chihu2/send_question";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -47,10 +47,6 @@ export class SendQuestionPage {
         }
 
       });
-  }
-
-  ionViewWillLeave() {
-    //this.UserService.presentLoadingDismiss();
   }
 
 }

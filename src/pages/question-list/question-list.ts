@@ -23,7 +23,7 @@ export class QuestionListPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/queslist";
+    let url = "http://www.devonhello.com/chihu2/queslist";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -35,12 +35,6 @@ export class QuestionListPage {
         this.data = this.data.concat(res.json());
 
       });
-  }
-
-  
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad QuestionListPage');
   }
 
 }

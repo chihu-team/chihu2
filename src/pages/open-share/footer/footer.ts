@@ -53,7 +53,7 @@ export class FooterComponent implements OnChanges {
   checklike() {
 
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu/checkcollshare";
+      let url = "http://www.devonhello.com/chihu2/checkcollshare";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');

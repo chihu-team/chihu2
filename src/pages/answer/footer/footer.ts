@@ -53,7 +53,7 @@ export class FooterComponent implements OnChanges {
   checkcoll() {
 
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu/checkcollart";
+      let url = "http://www.devonhello.com/chihu2/checkcollart";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -77,7 +77,7 @@ export class FooterComponent implements OnChanges {
   //检查是否已经关注
   checkthank() {
 
-    let url = "http://www.devonhello.com/chihu/checkthank";
+    let url = "http://www.devonhello.com/chihu2/checkthank";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -103,7 +103,7 @@ export class FooterComponent implements OnChanges {
         return true;
       }
 
-      let url = "http://www.devonhello.com/chihu/thank";
+      let url = "http://www.devonhello.com/chihu2/thank";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -135,7 +135,7 @@ export class FooterComponent implements OnChanges {
         return true;
       }
 
-      let url = "http://www.devonhello.com/chihu/coll_article";
+      let url = "http://www.devonhello.com/chihu2/coll_article";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');

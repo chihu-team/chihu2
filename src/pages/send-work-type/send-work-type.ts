@@ -27,8 +27,4 @@ export class SendWorkTypePage {
     this.navCtrl.push('SendWorkPage');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SendWorkTypePage');
-  }
-
 }

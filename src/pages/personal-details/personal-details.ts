@@ -38,7 +38,7 @@ export class PersonalDetailsPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/getuserdata";
+    let url = "http://www.devonhello.com/chihu2/getuserdata";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -59,7 +59,7 @@ export class PersonalDetailsPage {
   //检查是否已经关注
   checkfork() {
 
-    let url = "http://www.devonhello.com/chihu/checkfork";
+    let url = "http://www.devonhello.com/chihu2/checkfork";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -87,7 +87,7 @@ export class PersonalDetailsPage {
 
     } else {
 
-      let url = "http://www.devonhello.com/chihu/forkuser";
+      let url = "http://www.devonhello.com/chihu2/forkuser";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -108,7 +108,7 @@ export class PersonalDetailsPage {
   //取消关注
   disfork() {
 
-    let url = "http://www.devonhello.com/chihu/disfork_user";
+    let url = "http://www.devonhello.com/chihu2/disfork_user";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

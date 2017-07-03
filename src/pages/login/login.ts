@@ -27,7 +27,7 @@ export class LoginPage {
       return true;
     }
 
-    let url = "http://www.devonhello.com/chihu/login";
+    let url = "http://www.devonhello.com/chihu2/login";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -46,10 +46,6 @@ export class LoginPage {
   //注册
   regist() {
     this.navCtrl.push('RegisterPage');
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
   }
 
 }

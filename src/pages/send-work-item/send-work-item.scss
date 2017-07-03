@@ -1,3 +1,30 @@
 page-send-work-item {
-
+    .work_top {
+        width: 100%;
+        border-bottom: 1px dashed #eaeaea;
+        .work_banner {
+            width: 100%;
+            height: 20rem;
+            background: #ededed;
+            background-size: cover !important;
+            background-position: center center !important;
+        }
+        .dv_work_title {
+            text-align: center;
+            font-size: 2.3rem;
+            line-height: 7rem;
+            color: #757575;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            border: none;
+        }
+    }
+    textarea {
+        height: 8rem !important;
+    }
+    .dv_button {
+        display: block;
+        margin: 2px auto;
+    }
 }

@@ -54,7 +54,7 @@ export class SendCommentsPage {
   postdata() {
     
     //this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu/send_comment";
+    let url = "http://www.devonhello.com/chihu2/send_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -74,7 +74,7 @@ export class SendCommentsPage {
   reply() {
 
     //this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu/reply_comment";
+    let url = "http://www.devonhello.com/chihu2/reply_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

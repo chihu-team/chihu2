@@ -60,7 +60,7 @@ export class HeaderComponent implements OnChanges {
   checkfork() {
     
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu/checkfork";
+      let url = "http://www.devonhello.com/chihu2/checkfork";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');

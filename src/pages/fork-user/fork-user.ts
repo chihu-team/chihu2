@@ -27,7 +27,7 @@ export class ForkUserPage {
 
   //获取数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/myfork";
+    let url = "http://www.devonhello.com/chihu2/myfork";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -47,8 +47,6 @@ export class ForkUserPage {
     });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ForkUserPage');
-  }
+  
 
 }

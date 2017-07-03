@@ -33,8 +33,4 @@ export class MyCollectPage {
 
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyCollectPage');
-  }
-
 }

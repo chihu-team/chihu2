@@ -24,7 +24,7 @@ export class HotAnswerPage {
   //获取数据
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/hot_answer";
+    let url = "http://www.devonhello.com/chihu2/hot_answer";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -38,8 +38,5 @@ export class HotAnswerPage {
       });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HotAnswerPage');
-  }
 
 }

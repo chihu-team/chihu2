@@ -79,15 +79,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-code-push": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Microsoft/cordova-plugin-code-push",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-zip": {
         "source": {
             "type": "registry",
@@ -164,5 +155,23 @@
         "variables": {
             "PHOTO_LIBRARY_USAGE_DESCRIPTION": "选择图片"
         }
+    },
+    "jpush-phonegap-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "jpush-phonegap-plugin"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_KEY": "941091783c37cd0fcb5a0737"
+        }
+    },
+    "cordova-plugin-code-push": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-code-push@latest"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -17,45 +17,15 @@
 
 <ion-content>
     <ion-list>
-        <ion-item>
+
+        <ion-item *ngFor="let item of items" (click)="pushArticlePage( item._id );">
             <ion-thumbnail item-start>
-                <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
+                <img [src]="item.workbanner">
             </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
+            <h2>{{item.title}}</h2>
+            <p>{{item.text==""?"......":item.text}}</p>
+
         </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-                <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
-            </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
-        </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-                <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
-            </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
-        </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-                <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
-            </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
-        </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-                <img src="http://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
-            </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
-        </ion-item>
+
     </ion-list>
 </ion-content>

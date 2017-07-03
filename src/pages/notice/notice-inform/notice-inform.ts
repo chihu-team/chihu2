@@ -34,7 +34,7 @@ export class NoticeInformPage {
       return true;
     }
 
-    let url = "http://www.devonhello.com/chihu/getinform";
+    let url = "http://www.devonhello.com/chihu2/getinform";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -86,7 +86,7 @@ export class SendWorkItemPage {
   seleImgType(type) {
     var _that = this;
     this.camera.getPicture({
-      quality: 90,
+      quality: 80,
       allowEdit: true,
       sourceType: type,
       correctOrientation: true,
@@ -99,7 +99,7 @@ export class SendWorkItemPage {
 
   up(path) {
     //this.UserService.presentLoadingDefault();
-    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu/upload", {})
+    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
         //alert(JSON.stringify(data));

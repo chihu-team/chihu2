@@ -46,7 +46,7 @@ export class PersonalPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/getuserdata";
+    let url = "http://www.devonhello.com/chihu2/getuserdata";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -58,9 +58,6 @@ export class PersonalPage {
         this.name = res.json()[0].name;
         this.userimg = res.json()[0].userimg;
       });
-  }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PersonalPage');
   }
 
 }

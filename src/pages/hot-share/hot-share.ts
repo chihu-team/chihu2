@@ -23,7 +23,7 @@ export class HotSharePage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/hot_share";
+    let url = "http://www.devonhello.com/chihu2/hot_share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -35,10 +35,6 @@ export class HotSharePage {
         this.data = res.json();
 
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HotSharePage');
   }
 
 }

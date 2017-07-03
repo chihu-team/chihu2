@@ -31,7 +31,7 @@ export class HomePage {
   //获取数据
   getdata() {
     
-    let url = "http://www.devonhello.com/chihu/home";
+    let url = "http://www.devonhello.com/chihu2/home";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -111,10 +111,6 @@ export class HomePage {
     } else {
       this.navCtrl.push('Login');
     }
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
   }
 
 }

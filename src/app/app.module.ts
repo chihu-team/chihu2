@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { CodePush } from '@ionic-native/code-push';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { JmessageProvider } from '../providers/jmessage/jmessage';
@@ -31,6 +32,7 @@ import { WorkDataProvider } from '../providers/work-data/work-data';
   providers: [
     StatusBar,
     SplashScreen,
+    CodePush,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserServiceProvider,
     JmessageProvider,

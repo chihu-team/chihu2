@@ -33,7 +33,7 @@ export class MyAnswerPage {
   //获取数据
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/my_answer";
+    let url = "http://www.devonhello.com/chihu2/my_answer";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -45,10 +45,6 @@ export class MyAnswerPage {
         this.items = this.items.concat(res.json());
         
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyAnswerPage');
   }
 
 }

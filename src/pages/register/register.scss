@@ -1,3 +1,13 @@
 page-register {
-
+    .dv_logo {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 999999px;
+        margin: 0 auto 4rem;
+    }
+    ion-content {
+        overflow: hidden !important;
+        height: 100% !important;
+    }
 }

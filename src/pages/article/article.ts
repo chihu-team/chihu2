@@ -34,7 +34,7 @@ export class ArticlePage {
 
 //获取文章数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/article_dec";
+    let url = "http://www.devonhello.com/chihu2/article_dec";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -73,8 +73,6 @@ export class ArticlePage {
     this.ref.detectChanges();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ArticlePage');
-  }
+  
 
 }

@@ -40,7 +40,7 @@ export class NoticeForkPage {
       return true;
     }
 
-    let url = "http://www.devonhello.com/chihu/getfork";
+    let url = "http://www.devonhello.com/chihu2/getfork";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

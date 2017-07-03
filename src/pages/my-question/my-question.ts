@@ -31,7 +31,7 @@ export class MyQuestionPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/my_question";
+    let url = "http://www.devonhello.com/chihu2/my_question";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -44,10 +44,6 @@ export class MyQuestionPage {
         this.items = res.json();
 
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyQuestionPage');
   }
 
 }

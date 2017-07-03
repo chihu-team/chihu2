@@ -37,7 +37,7 @@ export class AnswerPage {
 
 //获取文章数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/answer_dec";
+    let url = "http://www.devonhello.com/chihu2/answer_dec";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -30,7 +30,7 @@ export class MyWorkPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/my_work";
+    let url = "http://www.devonhello.com/chihu2/my_work";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -42,10 +42,6 @@ export class MyWorkPage {
         this.items = res.json();
 
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyWorkPage');
   }
 
 }

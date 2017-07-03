@@ -111,7 +111,7 @@ export class SendWorkPage {
 
   postdata() {
     //this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu/send_article";
+    let url = "http://www.devonhello.com/chihu2/send_article";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -193,7 +193,7 @@ export class SendWorkPage {
   seleImgType(type) {
     var _that = this;
     this.camera.getPicture({
-      quality: 90,
+      quality: 80,
       allowEdit: true,
       sourceType: type,
       correctOrientation: true,
@@ -206,7 +206,7 @@ export class SendWorkPage {
 
   up(path) {
     //this.UserService.presentLoadingDefault();
-    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu/upload", {})
+    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
         //alert(JSON.stringify(data));
@@ -221,20 +221,16 @@ export class SendWorkPage {
 
   //添加步骤
   addItem() {
-    this.navCtrl.push('WorkItem', {
+    this.navCtrl.push('SendWorkItemPage', {
       idx: -1
     });
   }
 
   //修改步骤信息
   editItem(idx) {
-    this.navCtrl.push('WorkItem', {
+    this.navCtrl.push('SendWorkItemPage', {
       idx: idx
     });
-  }
-
-  ionViewWillLeave() {
-    //this.UserService.presentLoadingDismiss();
   }
 
 }

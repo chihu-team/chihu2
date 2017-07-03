@@ -36,7 +36,7 @@ export class NoticeThankPage {
       return true;
     }
 
-    let url = "http://www.devonhello.com/chihu/getthank";
+    let url = "http://www.devonhello.com/chihu2/getthank";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

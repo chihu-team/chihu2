@@ -37,7 +37,7 @@ export class FooterComponent implements OnChanges {
 
   checkfork() {
     if (this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu/checkforkquestion";
+      let url = "http://www.devonhello.com/chihu2/checkforkquestion";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -57,7 +57,7 @@ export class FooterComponent implements OnChanges {
 
   fork() {
     if (this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu/forkquestion";
+      let url = "http://www.devonhello.com/chihu2/forkquestion";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');

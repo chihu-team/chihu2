@@ -33,7 +33,7 @@ export class CommentsListPage {
 //获取评论
   getComment() {
 
-    let url = "http://www.devonhello.com/chihu/get_comment";
+    let url = "http://www.devonhello.com/chihu2/get_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -52,10 +52,6 @@ export class CommentsListPage {
     if(this.isget){
       this.getComment();
     }
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CommentsListPage');
   }
 
 }

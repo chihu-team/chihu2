@@ -29,7 +29,7 @@ export class MySharePage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu/my_share";
+    let url = "http://www.devonhello.com/chihu2/my_share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -41,10 +41,6 @@ export class MySharePage {
         this.data = res.json();
 
       });
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MySharePage');
   }
 
 }

@@ -24,7 +24,7 @@ export class FoundPage {
 
   //获取分享数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/share";
+    let url = "http://www.devonhello.com/chihu2/share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -52,10 +52,6 @@ export class FoundPage {
 
   pushHotShare(){
     this.navCtrl.push( 'HotSharePage' );
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FoundPage');
   }
 
   doRefresh(refresher) {

@@ -31,7 +31,7 @@ export class PersonalHomePage {
 
   //获取数据
   getdata() {
-    let url = "http://www.devonhello.com/chihu/new_list";
+    let url = "http://www.devonhello.com/chihu2/new_list";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -44,7 +44,7 @@ export class SendSharePage {
 
   postdata() {
 
-    let url = "http://www.devonhello.com/chihu/send_share";
+    let url = "http://www.devonhello.com/chihu2/send_share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -63,7 +63,7 @@ export class SendSharePage {
 
   up(path) {
 
-    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu/upload", {})
+    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
         //alert(JSON.stringify(data));
@@ -145,7 +145,7 @@ export class SendSharePage {
   seleImgType(type) {
     var _that = this;
     this.camera.getPicture({
-      quality: 90,
+      quality: 80,
       allowEdit: true,
       sourceType: type,
       correctOrientation: true,
@@ -159,10 +159,6 @@ export class SendSharePage {
     }, (err) => {
       // Handle error
     });
-  }
-
-  ionViewWillLeave() {
-    //this.UserService.presentLoadingDismiss();
   }
 
 }

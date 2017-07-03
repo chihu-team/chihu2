@@ -31,8 +31,4 @@ export class MyForkPage {
     }
 }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyForkPage');
-  }
-
 }
