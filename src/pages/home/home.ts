@@ -109,7 +109,7 @@ export class HomePage {
     if (this.UserService._user._id) {
       this.navCtrl.push(page);
     } else {
-      this.navCtrl.push('Login');
+      this.navCtrl.push('LoginPage');
     }
   }
 

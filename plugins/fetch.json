@@ -166,10 +166,18 @@
             "APP_KEY": "941091783c37cd0fcb5a0737"
         }
     },
+    "cordova-hot-code-push-plugin": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-hot-code-push-plugin"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "cordova-plugin-code-push": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-code-push@latest"
+            "id": "cordova-plugin-code-push@~1.9.4-beta"
         },
         "is_top_level": true,
         "variables": {}

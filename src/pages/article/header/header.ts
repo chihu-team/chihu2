@@ -49,7 +49,7 @@ export class HeaderComponent implements OnChanges {
       })
         .subscribe((res) => {
           if (res.json()['result']['ok'] == 1) {
-            this.ishide = true;
+            this.ishide = false;
 
           }
         });
