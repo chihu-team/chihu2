@@ -99,7 +99,6 @@ export class FooterComponent implements OnChanges {
   thank() {
     if (this.UserService._user._id) {
       if (this.UserService._user._id == this.data['uid']) {
-        alert("无需感谢自己");
         return true;
       }
 
@@ -131,7 +130,6 @@ export class FooterComponent implements OnChanges {
 
     if (this.UserService._user._id) {
       if (this.UserService._user._id == this.data['uid']) {
-        alert("无需收藏自己的作品");
         return true;
       }
 
@@ -155,9 +153,22 @@ export class FooterComponent implements OnChanges {
       this.navCtrl.push("LoginPage");
     }
 
+  }
 
+  discollect() {
+    
+    let url = "http://www.devonhello.com/chihu2/discoll_article";
 
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
 
+    this.http.post(url, "artid=" + this._id + "&uid=" + this.UserService._user._id + "&type=1", {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.iscoll = false;
+
+      });
   }
 
 }

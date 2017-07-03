@@ -28,13 +28,21 @@ export class HotWorkPage {
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post(url, "type=1", {
+    this.http.post(url, "type=1" + "&len=" + this.data.length , {
       headers: headers
     })
       .subscribe((res) => {
-        this.data = res.json();
+        this.data = this.data.concat(res.json());
 
       });
+  }
+
+  doInfinite(infiniteScroll) {
+
+    this.getdata();
+    setTimeout(() => {
+      infiniteScroll.complete();
+    }, 1500);
   }
 
 }

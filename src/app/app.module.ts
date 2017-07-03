@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { AppVersion } from '@ionic-native/app-version';
 import { StatusBar } from '@ionic-native/status-bar';
 import { CodePush } from '@ionic-native/code-push';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,6 +32,7 @@ import { WorkDataProvider } from '../providers/work-data/work-data';
   ],
   providers: [
     StatusBar,
+    AppVersion,
     SplashScreen,
     CodePush,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

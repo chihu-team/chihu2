@@ -18,6 +18,7 @@ export class UserServiceProvider {
     _id: null,
   }
   public _user: any;
+  Version = '1.0';
 
   constructor(public http: Http, public storage: Storage) {
     this._user = this._init;
@@ -40,6 +41,13 @@ export class UserServiceProvider {
     this._user = obj;
     this.storage.set('user', this._user);
     this.storageGet();
+  }
+
+  //清除缓存
+  clearStorage() {
+    this.storage.clear();
+    this._user = this._init;
+    //this.Platform.exitApp();
   }
 
 

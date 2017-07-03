@@ -25,13 +25,18 @@ export class FooterComponent {
 
   sendComment( pl, comid ){
     
-    this.navCtrl.push('SendCommentsPage', {
+    if( this.UserService._user._id ){
+      this.navCtrl.push('SendCommentsPage', {
       pl: pl,
       artid: this._id,
       comid: comid,
       type: this.type,
       targetid: this.uid
     });
+    }else{
+      this.navCtrl.push( 'LoginPage' );
+    }
+
   }
 
 }

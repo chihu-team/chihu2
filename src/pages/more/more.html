@@ -15,9 +15,9 @@
 
 <ion-content>
     <section class="dv_data" (click)="PersonalPage();">
-        <img src="https://avatars0.githubusercontent.com/u/11835988?v=3&s=460" />
+        <img [src]="mimg" />
         <section class="dv_name_wrap">
-            <h5>Devon</h5>
+            <h5>{{name}}</h5>
             <p>查看或编辑个人主页</p>
         </section>
     </section>

@@ -1,6 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Tabs, NavParams, Content, Platform, ToastController } from 'ionic-angular';
 import { CodePush } from '@ionic-native/code-push';
+import { AppVersion } from '@ionic-native/app-version';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 @IonicPage()
 @Component({
@@ -18,15 +20,20 @@ export class TabsPage {
   @ViewChild('myTabs') tabs: Tabs;
   itimer = null;
 
-  constructor(public codePush: CodePush, public platform: Platform, public navCtrl: NavController, public toastCtrl: ToastController) {
-    this.pageBack();
-    this.codePush.sync();
+  constructor(public appVersion: AppVersion, public UserService: UserServiceProvider, public codePush: CodePush, public platform: Platform, public navCtrl: NavController, public toastCtrl: ToastController) {
+    setTimeout(()=>{
+      this.pageBack();
+    },1000);
   }
 
   pageBack() {
 
     this.platform.registerBackButtonAction((): any => {
-      
+      const downloadProgress = (progress) => { }
+      this.codePush.sync({}, downloadProgress);
+      this.appVersion.getVersionNumber().then((version) => {
+        this.UserService.Version = version;
+      });
       let activeVC = this.navCtrl.getActive();
       let page = activeVC.instance;
       page.tabs

@@ -17,6 +17,7 @@ export class FoundPage {
 
   //数据
   data: any = [];
+  _refresher = null;
 
   constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this.getdata();
@@ -29,12 +30,14 @@ export class FoundPage {
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post(url, "len=1", {
+    this.http.post(url, "len=" + this.data.length, {
       headers: headers
     })
       .subscribe((res) => {
         this.data = this.data.concat(res.json());
-        
+        if( this._refresher ){
+          this._refresher.complete();
+        }
       });
   }
 
@@ -55,15 +58,18 @@ export class FoundPage {
   }
 
   doRefresh(refresher) {
-    console.log('Begin async operation', refresher);
+    
+    this.data = [];
+    this.getdata();
 
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      refresher.complete();
-    }, 2000);
+    this._refresher = refresher;
+
   }
 
   doInfinite(infiniteScroll) {
+
+    //alert(1);
+    this.getdata();
 
     setTimeout(() => {
       infiniteScroll.complete();

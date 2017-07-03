@@ -41,6 +41,7 @@ export class RegisterPage {
       .subscribe((res) => {
         if (res.json()[0]['_id']) {
           this.userdata = res.json()[0];
+          this.UserService.setUser(this.userdata);
           this.navCtrl.popToRoot();
         } else {
 

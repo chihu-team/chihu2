@@ -8,6 +8,6 @@
             <p>发布于：{{data.time | date}}</p>
         </section>
         <section [hidden]="!ishide" class="fork" (click)="fork();">＋ 关注</section>
-        <section [hidden]="ishide" class="fork nofork">取消关注</section>
+        <section [hidden]="ishide" class="fork nofork" (click)="unfork();">取消关注</section>
     </section>
 </section>

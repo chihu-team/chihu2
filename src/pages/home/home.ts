@@ -20,7 +20,8 @@ export class HomePage {
   tabanimate: boolean = false;
   public old_scrollTop = 0;
   public new_scrollTop = 0;
-  
+  _refresher = null;
+
   //数据
   items = [];
 
@@ -30,36 +31,38 @@ export class HomePage {
 
   //获取数据
   getdata() {
-    
+
     let url = "http://www.devonhello.com/chihu2/home";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post(url, "len=1", {
+    this.http.post(url, "len=" + this.items.length, {
       headers: headers
     })
       .subscribe((res) => {
+        if (this._refresher) {
+          this._refresher.complete();
+        }
         this.items = this.items.concat(res.json());
-        
+
       });
   }
 
-  openSearch(){
-    this.navCtrl.push( 'SearchPage' );
+  openSearch() {
+    this.navCtrl.push('SearchPage');
   }
 
   doRefresh(refresher) {
+    this.items = [];
     this.getdata();
 
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      refresher.complete();
-    }, 2000);
+    this._refresher = refresher;
   }
 
   doInfinite(infiniteScroll) {
 
+    this.getdata();
     setTimeout(() => {
       infiniteScroll.complete();
     }, 1500);
@@ -81,26 +84,23 @@ export class HomePage {
     this.ref.detectChanges();
   }
 
-  openMmessage(){
-    this.navCtrl.push( 'MessagePage' );
+  openMmessage() {
+    this.navCtrl.push('MessagePage');
   }
 
   //创建菜谱
   CreateCook() {
     this.checkLogin('SendWorkTypePage')
-    //this.navCtrl.push('Login');
   }
 
   //提问
   CreateQuestion() {
     this.checkLogin('SendQuestionPage');
-    //this.navCtrl.push('CreateQuestionType');
   }
 
   //分享
   CreateShare() {
     this.checkLogin('SendSharePage');
-    //this.navCtrl.push('CreateShare');
   }
 
   //检查登录状态

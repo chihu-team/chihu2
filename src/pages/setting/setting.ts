@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the SettingPage page.
@@ -14,11 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SettingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  Version = '';
+  ishide: boolean = true;
+
+  constructor(public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.Version = this.UserService.Version;
+    if (this.UserService._user._id) {
+      this.ishide = false;
+    }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingPage');
+  out() {
+    this.UserService.clearStorage();
+    this.navCtrl.pop();
   }
 
 }

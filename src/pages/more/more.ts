@@ -15,7 +15,20 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 })
 export class MorePage {
 
+  name:any='';
+  mimg:any='';
+
   constructor(public UserService : UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.init();
+  }
+
+  ionViewDidEnter() {
+    this.init();
+  }
+
+  init(){
+    this.name = this.UserService._user.nickname;
+    this.mimg = this.UserService._user.userimg;
   }
 
   PersonalPage(){

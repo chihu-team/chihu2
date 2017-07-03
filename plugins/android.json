@@ -7,22 +7,22 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-file": {
@@ -34,37 +34,44 @@
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
-        "cordova-plugin-app-version": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
-        "cordova-plugin-camera": {
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
-        "com.synconset.imagepicker": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "jmessage-phonegap-plugin": {
+            "APP_KEY": "941091783c37cd0fcb5a0737",
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "jpush-phonegap-plugin": {
             "APP_KEY": "941091783c37cd0fcb5a0737",
             "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-code-push": {
-            "PACKAGE_NAME": "com.chihu.plue"
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "cordova-plugin-jcore": {
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
         "code-push": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-zip": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "cordova-plugin-jcore": {
             "PACKAGE_NAME": "com.chihu.plue"
         }
     }

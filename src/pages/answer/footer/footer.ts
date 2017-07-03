@@ -23,24 +23,24 @@ export class FooterComponent implements OnChanges {
   ischeck = false;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
-    
+
   }
 
-  ngOnChanges(ch){
+  ngOnChanges(ch) {
     try {
-      if(ch['data'].currentValue && ch['data'].currentValue.uid){
-      //console.log( ch['data'].currentValue.uid );
-      this.conts = this.data.mark.cont;
-      this.checkcoll();
-    }
+      if (ch['data'].currentValue && ch['data'].currentValue.uid) {
+        //console.log( ch['data'].currentValue.uid );
+        this.conts = this.data.mark.cont;
+        this.checkcoll();
+      }
     } catch (error) {
-      
+
     }
-    
-    
+
+
   }
 
-  pushCommentsListPage( type, name, uid, _id ) {
+  pushCommentsListPage(type, name, uid, _id) {
     this.navCtrl.push('CommentsListPage', {
       type: type,
       _id: _id,
@@ -69,9 +69,23 @@ export class FooterComponent implements OnChanges {
         });
 
 
-    }else{
+    } else {
       this.ischeck = true;
     }
+  }
+
+  discollect() {
+    let url = "http://www.devonhello.com/chihu2/discoll_article";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "artid=" + this._id + "&uid=" + this.UserService._user._id + "&type=0", {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.iscoll = false;
+      });
   }
 
   //检查是否已经关注

@@ -32,9 +32,17 @@ export class OpenClassPage {
       headers: headers
     })
       .subscribe((res) => {
-        this.items = res.json();
+        this.items = this.items.concat(res.json());
         
       });
+  }
+
+  doInfinite(infiniteScroll) {
+
+    this.getdata();
+    setTimeout(() => {
+      infiniteScroll.complete();
+    }, 1500);
   }
 
   //打开作品

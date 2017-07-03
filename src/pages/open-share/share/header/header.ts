@@ -57,16 +57,47 @@ export class HeaderComponent implements OnChanges {
 
   //关注
   fork() {
-    alert(this.UserService._user._id);
+    
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      alert('开始关注');
+      let url = "http://www.devonhello.com/chihu2/forkuser";
+
+      var headers = new Headers();
+      headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+      this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id + "&name=" + this.UserService._user.nickname + "&uname=" + this.data['name'] + "&userimg=" + this.UserService._user.userimg + "&uuserimg=" + this.data['userimg'], {
+        headers: headers
+      })
+        .subscribe((res) => {
+          if (res.json()['result']['ok'] == 1) {
+            this.ishide = false;
+
+          }
+        });
     } else {
       if (this.UserService._user._id) {
-        alert('me');
+        
         return true;
       }
       this.navCtrl.push("LoginPage");
     }
+  }
+
+  //取消关注
+  unfork() {
+    let url = "http://www.devonhello.com/chihu2/unforkuser";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
+      headers: headers
+    })
+      .subscribe((res) => {
+        if (res.json()['result']['ok'] == 1) {
+          this.ishide = true;
+
+        }
+      });
   }
 
   //查看TA的个人页面
