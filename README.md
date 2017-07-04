@@ -17,7 +17,7 @@
 Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 <br/>
 <br/>
-⚠️⚠️⚠️<a href="https://github.com/kongdewen1994/chihu1/blob/master/README.md">「吃乎1」，请跳转</a>
+⚠️⚠️⚠️<a href="https://github.com/kongdewen1994/chihu/blob/master/README.md">「吃乎1」，请跳转</a>
 <br/>
 > 作者：Devon。
 
