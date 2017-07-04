@@ -43,7 +43,7 @@ export class SendSharePage {
   }
 
   postdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/send_share";
 
     var headers = new Headers();
@@ -53,16 +53,16 @@ export class SendSharePage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         if (res.json()['result']['ok'] == '1') {
-
           this.navCtrl.pop();
         }
-
+        
       });
   }
 
   up(path) {
-
+    this.UserService.presentLoadingDefault();
     this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
@@ -70,9 +70,10 @@ export class SendSharePage {
         var idata = JSON.parse(data["response"]);
         this.postimg.push(idata);
         this.items.push(idata['src']);
-
+        this.UserService.presentLoadingDismiss();
       }, (err) => {
         // error
+        this.UserService.presentLoadingDismiss();
         alert('err');
       })
   }

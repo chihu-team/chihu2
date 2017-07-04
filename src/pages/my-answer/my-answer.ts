@@ -32,7 +32,7 @@ export class MyAnswerPage {
 
   //获取数据
   getdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/my_answer";
 
     var headers = new Headers();
@@ -42,8 +42,8 @@ export class MyAnswerPage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         this.items = this.items.concat(res.json());
-        
       });
   }
 

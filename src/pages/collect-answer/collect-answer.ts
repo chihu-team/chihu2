@@ -16,11 +16,9 @@ export class CollectAnswerPage {
 
   //数据存储
   items = [];
-  rootNavCtrl: NavController;
   id;
 
   constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
-    this.rootNavCtrl = navParams.get('rootNavCtrl');
     this.id = this.navParams.data._id;
     this.getdata();
   }

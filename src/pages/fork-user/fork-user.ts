@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the ForkUserPage page.
  *
@@ -19,7 +20,7 @@ export class ForkUserPage {
   rootNavCtrl: NavController;
   id: any;
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this.rootNavCtrl = navParams.get('rootNavCtrl');
     this.id = this.navParams.data._id;
     this.getdata();
@@ -27,6 +28,7 @@ export class ForkUserPage {
 
   //获取数据
   getdata() {
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/myfork";
 
     var headers = new Headers();
@@ -36,6 +38,7 @@ export class ForkUserPage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         this.items = res.json();
       });
   }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { UserServiceProvider } from '../../providers/user-service/user-service';
+import { Headers, Http } from '@angular/http';
 /**
  * Generated class for the SendAnswerPage page.
  *
@@ -16,8 +17,13 @@ declare var $: any;
 export class SendAnswerPage implements OnInit {
 
   summernote: any;
+  _id;
+  title;
+  text;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this._id = this.navParams.get('id');
+    this.title = this.navParams.get('title');
   }
 
   ngOnInit() {
@@ -45,10 +51,11 @@ export class SendAnswerPage implements OnInit {
   }
 
   upFile(file) {
+    this.UserService.presentLoadingDefault();
     var _data = new FormData(),
       _that = this;
     _data.append("file", file);
-    
+
     $.ajax({
       data: _data,
       dataType: 'text',
@@ -58,15 +65,34 @@ export class SendAnswerPage implements OnInit {
       contentType: false,
       processData: false,
       success: function (url) {
-        
+
         _that.summernote.summernote('insertImage', "http://7xp2ia.com1.z0.glb.clouddn.com/" + url, 'image name'); // the insertImage API  
-      }
+        _that.UserService.presentLoadingDismiss();
+    }
     });
   }
 
   send() {
+    this.text = this.summernote.summernote('code');
+    if (this.text < 10) {
+      alert("内容太短...至少10个字符");
+      return true;
+    }
+    this.UserService.presentLoadingDefault();
 
-    alert(this.summernote.summernote('code'));
+    let url = "http://www.devonhello.com/chihu2/send_answer";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "uid=" + this.UserService._user._id + "&answerid=" + this._id + "&name=" + this.UserService._user.nickname + "&userimg=" + this.UserService._user.userimg + "&title=" + this.title + "&text=" + this.text, {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
+        this.navCtrl.pop();
+      });
+
   }
 
 }

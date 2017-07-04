@@ -110,7 +110,7 @@ export class SendWorkPage {
   }
 
   postdata() {
-    //this.UserService.presentLoadingDefault();
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/send_article";
 
     var headers = new Headers();
@@ -120,8 +120,8 @@ export class SendWorkPage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         if (res.json()['result']['ok'] == '1') {
-          //this.UserService.presentLoadingDismiss();
           this.navCtrl.popToRoot();
         }
 
@@ -205,16 +205,17 @@ export class SendWorkPage {
   }
 
   up(path) {
-    //this.UserService.presentLoadingDefault();
+    this.UserService.presentLoadingDefault();
     this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
         //alert(JSON.stringify(data));
         var response = JSON.parse(data["response"]);
         this.banner = response['src'];
-        //this.UserService.presentLoadingDismiss();
+        this.UserService.presentLoadingDismiss();
       }, (err) => {
         // error
+        this.UserService.presentLoadingDismiss();
         alert('err');
       })
   }

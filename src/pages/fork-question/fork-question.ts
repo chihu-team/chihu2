@@ -42,9 +42,7 @@ export class ForkQuestionPage {
       headers: headers
     })
       .subscribe((res) => {
-
         this.data = res.json();
-        alert(this.data.length);
       });
   }
 

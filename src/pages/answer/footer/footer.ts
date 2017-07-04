@@ -20,7 +20,7 @@ export class FooterComponent implements OnChanges {
   conts: any = 0;
   iscoll: boolean = false;
   isthank: boolean = false;
-  ischeck = false;
+  ischecking = false;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
 
@@ -52,7 +52,8 @@ export class FooterComponent implements OnChanges {
   //检查是否已经收藏
   checkcoll() {
 
-    if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
+    if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id && !this.ischecking) {
+      this.ischecking = true;
       let url = "http://www.devonhello.com/chihu2/checkcollart";
 
       var headers = new Headers();
@@ -69,12 +70,11 @@ export class FooterComponent implements OnChanges {
         });
 
 
-    } else {
-      this.ischeck = true;
     }
   }
 
   discollect() {
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/discoll_article";
 
     var headers = new Headers();
@@ -85,6 +85,7 @@ export class FooterComponent implements OnChanges {
     })
       .subscribe((res) => {
         this.iscoll = false;
+        this.UserService.presentLoadingDismiss();
       });
   }
 
@@ -102,8 +103,8 @@ export class FooterComponent implements OnChanges {
       .subscribe((res) => {
         if (res.json().length != "0") {
           this.isthank = true;
-          this.ischeck = true;
         }
+        this.ischecking = false;
       });
 
 
@@ -111,12 +112,11 @@ export class FooterComponent implements OnChanges {
 
   //感谢
   thank() {
-    if (this.UserService._user._id) {
+    if (this.UserService._user._id && !this.ischecking) {
       if (this.UserService._user._id == this.data['uid']) {
-        alert("无需感谢自己");
         return true;
       }
-
+      this.UserService.presentLoadingDefault();
       let url = "http://www.devonhello.com/chihu2/thank";
 
       var headers = new Headers();
@@ -127,13 +127,16 @@ export class FooterComponent implements OnChanges {
           headers: headers
         })
         .subscribe((res) => {
-          if (res.json()['result']['ok'] == 1) {
-
+          if (res.json()) {
             this.isthank = true;
-
           }
+          this.UserService.presentLoadingDismiss();
         });
-    } else if (this.ischeck) {
+    } else {
+      if (this.UserService._user._id) {
+        this.checkcoll();
+        return true;
+      }
       //未登录跳转登陆
       this.navCtrl.push("LoginPage");
     }
@@ -143,12 +146,11 @@ export class FooterComponent implements OnChanges {
   //收藏
   collect() {
 
-    if (this.UserService._user._id) {
+    if (this.UserService._user._id && !this.ischecking) {
       if (this.UserService._user._id == this.data['uid']) {
-        alert("无需收藏自己的作品");
         return true;
       }
-
+      this.UserService.presentLoadingDefault();
       let url = "http://www.devonhello.com/chihu2/coll_article";
 
       var headers = new Headers();
@@ -158,13 +160,16 @@ export class FooterComponent implements OnChanges {
         headers: headers
       })
         .subscribe((res) => {
-          if (res.json()['result']['ok'] == 1) {
-
+          if (res.json()) {
             this.iscoll = true;
-
           }
+          this.UserService.presentLoadingDismiss();
         });
-    } else if (this.ischeck) {
+    } else {
+      if (this.UserService._user._id) {
+        this.checkcoll();
+        return true;
+      }
       //未登录跳转登陆
       this.navCtrl.push("LoginPage");
     }

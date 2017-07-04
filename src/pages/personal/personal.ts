@@ -40,7 +40,7 @@ export class PersonalPage {
       this.name = this.UserService._user.nickname;
       this.userimg = this.UserService._user.userimg;
     }
-    //alert(this.chatParams.tar);
+    this.UserService.presentLoadingDefault();
   }
 
 

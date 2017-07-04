@@ -43,6 +43,7 @@ export class SendCommentsPage {
       alert("请输入评论的内容!");
       return true;
     }
+    this.UserService.presentLoadingDefault();
     if (this.comid == '0') {
       this.postdata();
     } else {
@@ -63,8 +64,9 @@ export class SendCommentsPage {
       headers: headers
     })
       .subscribe((res) => {
-        //this.UserService.presentLoadingDismiss();
-        if (res.json()['result']['ok'] == 1) {
+        this.UserService.presentLoadingDismiss();
+        if (res.json()) {
+          
           this.navCtrl.pop();
         }
       });
@@ -84,8 +86,8 @@ export class SendCommentsPage {
     })
       .subscribe((res) => {
 
-        if (res.json()['ok'] == 1) {
-          //this.UserService.presentLoadingDismiss();
+        if (res.json()) {
+          this.UserService.presentLoadingDismiss();
           this.navCtrl.pop();
         }
       });

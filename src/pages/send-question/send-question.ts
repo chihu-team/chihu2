@@ -31,7 +31,7 @@ export class SendQuestionPage {
   }
 
   postdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/send_question";
 
     var headers = new Headers();
@@ -41,11 +41,11 @@ export class SendQuestionPage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         if (res.json()['result']['ok'] == '1') {
-
           this.navCtrl.pop();
         }
-
+        
       });
   }
 

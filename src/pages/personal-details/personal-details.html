@@ -36,8 +36,8 @@
                 </button>
             </ion-col>
             <ion-col center text-center>
-                <button [hidden]="isme || ishide" (click)="fork();" ion-button>关注</button>
-                <button [hidden]="isme || !ishide" (click)="disfork();" ion-button>取消关注</button>
+                <button [hidden]="isme || isfork" (click)="fork();" ion-button>关注</button>
+                <button [hidden]="isme || !isfork" (click)="disfork();" ion-button>取消关注</button>
                 <button [hidden]="!isme" (click)="baseic();" ion-button>编辑</button>
             </ion-col>
         </ion-row>

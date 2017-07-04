@@ -30,7 +30,7 @@ export class MyQuestionPage {
   }
 
   getdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/my_question";
 
     var headers = new Headers();
@@ -40,9 +40,8 @@ export class MyQuestionPage {
       headers: headers
     })
       .subscribe((res) => {
-        
+        this.UserService.presentLoadingDismiss();
         this.items = res.json();
-
       });
   }
 

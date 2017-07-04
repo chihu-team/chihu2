@@ -5,11 +5,11 @@
             <ion-icon name="text"></ion-icon>
             评论
         </div>
-        <div [hidden]="islike" class="dv_f" (click)="thank();">
+        <div [hidden]="islike" class="dv_f" (click)="like();">
             <ion-icon name="heart-outline"></ion-icon>
             点赞
         </div>
-        <div [hidden]="!islike" class="dv_f">
+        <div [hidden]="!islike" class="dv_f" (click)="unlike();">
             <ion-icon name="heart"></ion-icon>
             取消点赞
         </div>

@@ -1,6 +1,7 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the ArticlePage page.
@@ -27,13 +28,15 @@ export class ArticlePage {
   old_scrollTop = 0;
   conts = 0;
 
-  constructor( public ref: ChangeDetectorRef, public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+  constructor( public UserService: UserServiceProvider, public ref: ChangeDetectorRef, public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this._id = this.navParams.get("_id");
     this.getdata();
+    
 }
 
 //获取文章数据
   getdata() {
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/article_dec";
 
     var headers = new Headers();
@@ -44,6 +47,7 @@ export class ArticlePage {
     })
       .subscribe((res) => {
         this.data = res.json()[0];
+        this.UserService.presentLoadingDismiss();
       });
   }
 
@@ -74,5 +78,4 @@ export class ArticlePage {
   }
 
   
-
 }

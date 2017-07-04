@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { Http } from '@angular/http';
+import { Headers, Http } from '@angular/http';
+import { AlertController, LoadingController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 
 /*
@@ -19,18 +20,64 @@ export class UserServiceProvider {
   }
   public _user: any;
   Version = '1.0';
+  
+  loading;
 
-  constructor(public http: Http, public storage: Storage) {
+  //关注的人
+  _my_fork_user:any = [];
+
+  constructor(public http: Http, public storage: Storage, public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
     this._user = this._init;
 
     this.storage.ready().then(() => {
       this.storageGet();
     });
   }
+
+  //获取数据
+  get_fork_user() {
+    
+    let url = "http://www.devonhello.com/chihu2/myfork";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "id=" + this._user._id, {
+      headers: headers
+    })
+      .subscribe((res) => {
+        this._my_fork_user = res.json();
+        this.presentLoadingDismiss();
+      });
+  }
+
+
+  checkisfork(uid){
+    for (var i = 0; i < this._my_fork_user.length; i ++) {
+        if(this._my_fork_user[i]['uid'] == uid){
+          return true;
+        }
+    }
+    return false;
+  }
+
+
+  presentLoadingDefault() {
+        this.loading = this.loadingCtrl.create({
+            content: '吃乎正在加载中...'
+        });
+        this.loading.present();
+    }
+
+    presentLoadingDismiss() {
+        this.loading.dismiss();
+    }
+
   storageGet() {
     this.storage.get('user').then((val) => {
       if (val && val._id) {
         this._user = val;
+        this.get_fork_user();
       }
     });
   }
@@ -47,7 +94,6 @@ export class UserServiceProvider {
   clearStorage() {
     this.storage.clear();
     this._user = this._init;
-    //this.Platform.exitApp();
   }
 
 

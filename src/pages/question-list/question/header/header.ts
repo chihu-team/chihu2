@@ -16,7 +16,7 @@ export class HeaderComponent implements OnChanges {
 
   @Input() data: any = {};
   //是否关注
-  ishide: boolean = true;
+  isfork: boolean = false;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
 
@@ -36,37 +36,62 @@ export class HeaderComponent implements OnChanges {
   //检查是否已经关注
   checkfork() {
 
-    if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu2/checkfork";
-
-      var headers = new Headers();
-      headers.append('Content-Type', 'application/x-www-form-urlencoded');
-
-      this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
-        headers: headers
-      })
-        .subscribe((res) => {
-          console.log(res.json());
-          if (res.json().length != "0") {
-            this.ishide = false;
-          }
-        });
-    }
+    this.isfork = this.UserService.checkisfork(this.data['uid']);
 
   }
 
   //关注
   fork() {
-    alert(this.UserService._user._id);
+    this.checkfork();
+    if (this.isfork) {
+      return true;
+    }
+    this.UserService.presentLoadingDefault();
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      alert('开始关注');
+      let url = "http://www.devonhello.com/chihu2/forkuser";
+
+      var headers = new Headers();
+      headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+      this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id + "&name=" + this.UserService._user.nickname + "&uname=" + this.data['name'] + "&userimg=" + this.UserService._user.userimg + "&uuserimg=" + this.data['userimg'], {
+        headers: headers
+      })
+        .subscribe((res) => {
+          if (res.json()) {
+            this.isfork = true;
+          }
+          this.UserService.get_fork_user();
+        });
     } else {
+      this.UserService.presentLoadingDismiss();
       if (this.UserService._user._id) {
-        alert('me');
         return true;
       }
       this.navCtrl.push("LoginPage");
     }
+  }
+
+  //取消关注
+  unfork() {
+    this.checkfork();
+    if (!this.isfork) {
+      return true;
+    }
+    this.UserService.presentLoadingDefault();
+    let url = "http://www.devonhello.com/chihu2/disfork_user";
+
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/x-www-form-urlencoded');
+
+    this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
+      headers: headers
+    })
+      .subscribe((res) => {
+        if (res.json()) {
+          this.isfork = false;
+        }
+        this.UserService.get_fork_user();
+      });
   }
 
   //查看TA的个人页面

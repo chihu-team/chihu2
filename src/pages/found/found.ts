@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the FoundPage page.
@@ -19,12 +20,13 @@ export class FoundPage {
   data: any = [];
   _refresher = null;
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this.getdata();
 }
 
   //获取分享数据
   getdata() {
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/share";
 
     var headers = new Headers();
@@ -35,6 +37,7 @@ export class FoundPage {
     })
       .subscribe((res) => {
         this.data = this.data.concat(res.json());
+        this.UserService.presentLoadingDismiss();
         if( this._refresher ){
           this._refresher.complete();
         }

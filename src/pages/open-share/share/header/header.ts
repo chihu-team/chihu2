@@ -16,7 +16,7 @@ export class HeaderComponent implements OnChanges {
 
   @Input() data: any = {};
   //是否关注
-  ishide: boolean = true;
+  isfork: boolean = false;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
 
@@ -36,28 +36,17 @@ export class HeaderComponent implements OnChanges {
   //检查是否已经关注
   checkfork() {
 
-    if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu2/checkfork";
-
-      var headers = new Headers();
-      headers.append('Content-Type', 'application/x-www-form-urlencoded');
-
-      this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
-        headers: headers
-      })
-        .subscribe((res) => {
-          console.log(res.json());
-          if (res.json().length != "0") {
-            this.ishide = false;
-          }
-        });
-    }
+    this.isfork = this.UserService.checkisfork(this.data['uid']);
 
   }
 
   //关注
   fork() {
-    
+    this.checkfork();
+    if (this.isfork) {
+      return true;
+    }
+    this.UserService.presentLoadingDefault();
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
       let url = "http://www.devonhello.com/chihu2/forkuser";
 
@@ -68,14 +57,13 @@ export class HeaderComponent implements OnChanges {
         headers: headers
       })
         .subscribe((res) => {
-          if (res.json()['result']['ok'] == 1) {
-            this.ishide = false;
-
+          if (res.json()) {
+            this.isfork = true;
           }
+          this.UserService.get_fork_user();
         });
     } else {
       if (this.UserService._user._id) {
-        
         return true;
       }
       this.navCtrl.push("LoginPage");
@@ -84,6 +72,11 @@ export class HeaderComponent implements OnChanges {
 
   //取消关注
   unfork() {
+    this.checkfork();
+    if (!this.isfork) {
+      return true;
+    }
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/unforkuser";
 
     var headers = new Headers();
@@ -93,10 +86,10 @@ export class HeaderComponent implements OnChanges {
       headers: headers
     })
       .subscribe((res) => {
-        if (res.json()['result']['ok'] == 1) {
-          this.ishide = true;
-
+        if (res.json()) {
+          this.isfork = false;
         }
+        this.UserService.get_fork_user();
       });
   }
 

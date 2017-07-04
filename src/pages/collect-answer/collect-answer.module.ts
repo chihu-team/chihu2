@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { CollectAnswerPage } from './collect-answer';
-import { WorkComponentModule } from '../../components/work/work.module';
+import { WorkComponentModule } from './work/work.module';
 
 @NgModule({
   declarations: [

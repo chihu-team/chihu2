@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the CommentsListPage page.
@@ -22,7 +23,7 @@ export class CommentsListPage {
   name:any;
   isget = false;
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get('_id');
     this.type = this.navParams.get('type');
     this.name = this.navParams.get('name');
@@ -32,7 +33,7 @@ export class CommentsListPage {
 
 //获取评论
   getComment() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/get_comment";
 
     var headers = new Headers();
@@ -45,6 +46,7 @@ export class CommentsListPage {
         
         this.data = res.json();
         this.isget = true;
+        this.UserService.presentLoadingDismiss();
       });
   }
 

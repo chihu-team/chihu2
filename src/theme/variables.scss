@@ -47,3 +47,11 @@ $colors: ( primary: #488aff, secondary: #32db64, danger: #f53d3d, tran: transpar
 // --------------------------------------------------
 @import "roboto";
 @import "noto-sans";
+ion-backdrop {
+    opacity: 0 !important;
+}
+
+.loading-wrapper {
+    box-shadow: 0px 0px 50px rgba(23, 23, 23, 0.68) !important;
+    color: rgb(71, 137, 252) !important;
+}

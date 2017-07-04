@@ -28,7 +28,7 @@ export class MySharePage {
   }
 
   getdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/my_share";
 
     var headers = new Headers();
@@ -38,8 +38,8 @@ export class MySharePage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         this.data = res.json();
-
       });
   }
 

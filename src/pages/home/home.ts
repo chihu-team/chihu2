@@ -31,6 +31,7 @@ export class HomePage {
 
   //获取数据
   getdata() {
+    this.UserService.presentLoadingDefault();
 
     let url = "http://www.devonhello.com/chihu2/home";
 
@@ -45,7 +46,7 @@ export class HomePage {
           this._refresher.complete();
         }
         this.items = this.items.concat(res.json());
-
+        this.UserService.presentLoadingDismiss();
       });
   }
 

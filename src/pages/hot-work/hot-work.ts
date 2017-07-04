@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
-
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the HotWorkPage page.
  *
@@ -17,12 +17,12 @@ export class HotWorkPage {
 
   data: any = [];
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this.getdata();
   }
 
   getdata() {
-
+    this.UserService.presentLoadingDefault();
     let url = "http://www.devonhello.com/chihu2/hot_work";
 
     var headers = new Headers();
@@ -32,8 +32,8 @@ export class HotWorkPage {
       headers: headers
     })
       .subscribe((res) => {
+        this.UserService.presentLoadingDismiss();
         this.data = this.data.concat(res.json());
-
       });
   }
 

@@ -2,6 +2,8 @@ import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser'
+import { UserServiceProvider } from '../../providers/user-service/user-service';
+
 /**
  * Generated class for the AnswerPage page.
  *
@@ -30,7 +32,7 @@ export class AnswerPage {
   isthank: boolean = false;
   conts = 0;
 
-  constructor(public sanitizer: DomSanitizer, public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public sanitizer: DomSanitizer, public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get("_id");
     this.getdata();
 }
@@ -75,11 +77,6 @@ export class AnswerPage {
     }
     this.old_scrollTop = scrollTop;
     this.ref.detectChanges();
-  }
-  
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AnswerPage');
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, OnChanges } from '@angular/core';
 
 /**
  * Generated class for the ShareComponent component.
@@ -10,7 +10,7 @@ import { Component, Input, Output } from '@angular/core';
   selector: 'share',
   templateUrl: 'share.html'
 })
-export class ShareComponent {
+export class ShareComponent implements OnChanges {
 
   @Input() data:any = {};
   cont:any = 0;
@@ -18,6 +18,18 @@ export class ShareComponent {
 
   constructor() {
     
+  }
+
+  ngOnChanges(ch) {
+
+    try {
+      if (ch['data'].currentValue && ch['data'].currentValue.uid) {
+        //console.log( ch['data'].currentValue.uid );
+        this.cont = this.data.mark.cont;
+        this.like = this.data.mark.like;
+      }
+    } catch (error) { }
+
   }
 
 }
