@@ -1,2 +1,116 @@
-webpackJsonp([44],{243:function(n,l,t){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),t.d(l,"SendAnswerPageModuleNgFactory",function(){return g});var e=t(0),u=t(484),o=t(14),a=t(28),i=t(88),r=t(145),s=t(146),c=t(147),_=t(148),d=t(149),h=t(485),b=t(367),f=t(89),p=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var t in l)l.hasOwnProperty(t)&&(n[t]=l[t])};return function(l,t){function e(){this.constructor=l}n(l,t),l.prototype=null===t?Object.create(t):(e.prototype=t.prototype,new e)}}(),m=function(n){function l(l){return n.call(this,l,[r.a,s.a,c.a,_.a,d.a,h.a],[])||this}return p(l,n),Object.defineProperty(l.prototype,"_NgLocalization_7",{get:function(){return null==this.__NgLocalization_7&&(this.__NgLocalization_7=new o.a(this.parent.get(e.c))),this.__NgLocalization_7},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_8",{get:function(){return null==this.__ɵi_8&&(this.__ɵi_8=new a.a),this.__ɵi_8},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_9",{get:function(){return null==this.__FormBuilder_9&&(this.__FormBuilder_9=new a.b),this.__FormBuilder_9},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new o.d,this._ɵba_1=new a.c,this._FormsModule_2=new a.d,this._ReactiveFormsModule_3=new a.e,this._IonicModule_4=new i.b,this._IonicPageModule_5=new i.c,this._SendAnswerPageModule_6=new u.a,this._LAZY_LOADED_TOKEN_10=b.a,this._SendAnswerPageModule_6},l.prototype.getInternal=function(n,l){return n===o.d?this._CommonModule_0:n===a.c?this._ɵba_1:n===a.d?this._FormsModule_2:n===a.e?this._ReactiveFormsModule_3:n===i.b?this._IonicModule_4:n===i.c?this._IonicPageModule_5:n===u.a?this._SendAnswerPageModule_6:n===o.e?this._NgLocalization_7:n===a.a?this._ɵi_8:n===a.b?this._FormBuilder_9:n===f.d?this._LAZY_LOADED_TOKEN_10:l},l.prototype.destroyInternal=function(){},l}(e.x),g=new e.y(m,u.a)},253:function(n,l,t){"use strict";function e(n){return o._14(2,[o._20(402653184,1,{_fixedContent:0}),o._20(402653184,2,{_scrollContent:0}),(n()(),o._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),o._21(null,0),(n()(),o._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),o._21(null,1),o._21(null,2)],null,null)}function u(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,e,f)),o._17(4374528,null,0,a.a,[i.c,r.b,s.a,o.H,o.I,c.a,_.a,o.g,[2,d.a],[2,h.a]],null,null)],null,function(n,l){n(l,0,0,o._18(l,1).statusbarPadding,o._18(l,1)._hasRefresher)})}t.d(l,"b",function(){return f}),l.a=e;var o=t(0),a=t(20),i=t(1),r=t(3),s=t(8),c=t(6),_=t(27),d=t(4),h=t(16),b=[],f=o._13({encapsulation:2,styles:b,data:{}});o._19("ion-content",a.a,u,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(n,l,t){"use strict";function e(n){return o._14(0,[(n()(),o._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),o._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,l,t){var e=!0,u=n.component;if("click"===l){e=!1!==u.backButtonClick(t)&&e}return e},r.a,r.b)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._17(1097728,null,0,s.a,[[8,"bar-button"],c.c,o.H,o.I],null,null),(n()(),o._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._17(147456,null,0,_.a,[c.c,o.H,o.I],{name:[0,"name"]},null),(n()(),o._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),o._15(null,["",""])),o._21(null,0),o._21(null,1),o._21(null,2),(n()(),o._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._21(null,3)],function(n,l){var t=l.component;n(l,1,0,"toolbar-background","toolbar-background-"+t._mode);n(l,3,0,"back-button","back-button-"+t._mode);n(l,6,0,"back-button-icon","back-button-icon-"+t._mode),n(l,7,0,t._bbIcon);n(l,9,0,"back-button-text","back-button-text-"+t._mode);n(l,15,0,"toolbar-content","toolbar-content-"+t._mode)},function(n,l){var t=l.component;n(l,2,0,t._hideBb),n(l,5,0,o._18(l,7)._hidden),n(l,10,0,t._backText)})}function u(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,e,p)),o._17(49152,null,0,i.a,[d.a,[2,h.a],[2,b.a],c.c,o.H,o.I],null,null)],null,function(n,l){n(l,0,0,o._18(l,1)._hidden,o._18(l,1)._sbPadding)})}t.d(l,"b",function(){return p}),l.a=e;var o=t(0),a=t(14),i=t(35),r=t(53),s=t(17),c=t(1),_=t(37),d=t(6),h=t(4),b=t(16),f=[],p=o._13({encapsulation:2,styles:f,data:{}});o._19("ion-navbar",i.a,u,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(n,l,t){"use strict";function e(n){return o._14(2,[(n()(),o._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),o._17(278528,null,0,a.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._21(null,0)],function(n,l){n(l,1,0,"toolbar-title","toolbar-title-"+l.component._mode)},null)}function u(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-title",[],null,null,null,e,d)),o._17(49152,null,0,i.a,[r.c,o.H,o.I,[2,s.a],[2,c.a]],null,null)],null,null)}t.d(l,"b",function(){return d}),l.a=e;var o=t(0),a=t(14),i=t(87),r=t(1),s=t(36),c=t(35),_=[],d=o._13({encapsulation:2,styles:_,data:{}});o._19("ion-title",i.a,u,{color:"color",mode:"mode"},{},["*"])},367:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var e=(t(0),t(52),t(86),t(26)),u=(this&&this.__decorate,this&&this.__metadata,function(){function n(n,l,t,e){this.http=n,this.UserService=l,this.navCtrl=t,this.navParams=e,this._id=this.navParams.get("id"),this.title=this.navParams.get("title")}return n.prototype.ngOnInit=function(){var n=this;this.summernote=$("#summernote"),this.summernote.summernote({height:380,placeholder:"文章内容...",callbacks:{onImageUpload:function(l){n.upFile(l[0])}},toolbar:[["style",["bold","italic"]],["fontsize",["fontsize"]],["color",["color"]],["para",["ul","ol","paragraph"]],["Insert",["picture"]]]})},n.prototype.upFile=function(n){this.UserService.presentLoadingDefault();var l=new FormData,t=this;l.append("file",n),$.ajax({data:l,dataType:"text",type:"POST",url:"http://www.devonhello.com/cfdkAdmin/uploadimg",cache:!1,contentType:!1,processData:!1,success:function(n){t.summernote.summernote("insertImage","http://7xp2ia.com1.z0.glb.clouddn.com/"+n,"image name"),t.UserService.presentLoadingDismiss()}})},n.prototype.send=function(){var n=this;if(this.text=this.summernote.summernote("code"),this.text<10)return alert("内容太短...至少10个字符"),!0;this.UserService.presentLoadingDefault();var l=new e.l;l.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/send_answer","uid="+this.UserService._user._id+"&answerid="+this._id+"&name="+this.UserService._user.nickname+"&userimg="+this.UserService._user.userimg+"&title="+this.title+"&text="+this.text,{headers:l}).subscribe(function(l){n.UserService.presentLoadingDismiss(),n.navCtrl.pop()})},n}())},484:function(n,l,t){"use strict";t.d(l,"a",function(){return e});var e=(t(0),t(52),t(367),this&&this.__decorate,function(){function n(){}return n}())},485:function(n,l,t){"use strict";function e(n){return o._14(0,[(n()(),o._15(null,["\n"])),(n()(),o._16(0,null,null,19,"ion-header",[["no-border",""]],null,null,null,null,null)),o._17(16384,null,0,a.a,[i.c,o.H,o.I,[2,r.a]],null,null),(n()(),o._15(null,["\n\n    "])),(n()(),o._16(0,null,null,15,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,s.a,s.b)),o._17(49152,null,0,c.a,[_.a,[2,r.a],[2,d.a],i.c,o.H,o.I],{color:[0,"color"]},null),(n()(),o._15(3,["\n        "])),(n()(),o._16(0,null,3,2,"ion-title",[],null,null,null,h.a,h.b)),o._17(49152,null,0,b.a,[i.c,o.H,o.I,[2,f.a],[2,c.a]],null,null),(n()(),o._15(0,["我要回答"])),(n()(),o._15(3,["\n        "])),(n()(),o._16(0,null,2,7,"ion-buttons",[["end",""]],null,[[null,"click"]],function(n,l,t){var e=!0,u=n.component;if("click"===l){e=!1!==u.send()&&e}return e},null,null)),o._17(16384,null,1,m.a,[i.c,o.H,o.I,[2,f.a],[2,c.a]],null,null),o._20(603979776,1,{_buttons:1}),(n()(),o._15(null,["\n            "])),(n()(),o._16(0,null,null,2,"ion-title",[],null,null,null,h.a,h.b)),o._17(49152,null,0,b.a,[i.c,o.H,o.I,[2,f.a],[2,c.a]],null,null),(n()(),o._15(0,["发布"])),(n()(),o._15(null,["\n        "])),(n()(),o._15(3,["\n    "])),(n()(),o._15(null,["\n\n"])),(n()(),o._15(null,["\n\n\n"])),(n()(),o._16(0,null,null,4,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,g.a,g.b)),o._17(4374528,null,0,k.a,[i.c,v.b,w.a,o.H,o.I,_.a,y.a,o.g,[2,r.a],[2,d.a]],null,null),(n()(),o._15(1,["\n    "])),(n()(),o._16(0,null,1,0,"textarea",[["id","summernote"],["placeholder","Comments"]],null,null,null,null,null)),(n()(),o._15(1,["\n"]))],function(n,l){n(l,5,0,"mblue")},function(n,l){n(l,4,0,o._18(l,5)._hidden,o._18(l,5)._sbPadding),n(l,22,0,o._18(l,23).statusbarPadding,o._18(l,23)._hasRefresher)})}function u(n){return o._14(0,[(n()(),o._16(0,null,null,1,"page-send-answer",[],null,null,null,e,x)),o._17(114688,null,0,p.a,[I.k,C.a,d.a,S.a],null,null)],function(n,l){n(l,1,0)},null)}t.d(l,"a",function(){return H});var o=t(0),a=t(90),i=t(1),r=t(4),s=t(254),c=t(35),_=t(6),d=t(16),h=t(255),b=t(87),f=t(36),p=t(367),m=t(98),g=t(253),k=t(20),v=t(3),w=t(8),y=t(27),I=t(26),C=t(86),S=t(11),P=[],x=o._13({encapsulation:2,styles:P,data:{}}),H=o._19("page-send-answer",p.a,u,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/44.main.js.map
+webpackJsonp([44],{
+
+/***/ 284:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(392);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginPageModule = (function () {
+    function LoginPageModule() {
+    }
+    return LoginPageModule;
+}());
+LoginPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]
+        ]
+    })
+], LoginPageModule);
+
+//# sourceMappingURL=login.module.js.map
+
+/***/ }),
+
+/***/ 392:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams, UserService, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.UserService = UserService;
+        this.http = http;
+    }
+    LoginPage.prototype.login = function () {
+        var _this = this;
+        if (!this.name || !this.pass) {
+            return true;
+        }
+        var url = "http://www.devonhello.com/chihu2/login";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "name=" + this.name + "&pass=" + this.pass, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            if (res.json()[0]['_id']) {
+                _this.UserService.setUser(res.json()[0]);
+                _this.navCtrl.pop();
+            }
+        });
+    };
+    //注册
+    LoginPage.prototype.regist = function () {
+        this.navCtrl.push('RegisterPage');
+    };
+    return LoginPage;
+}());
+LoginPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-login',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/login/login.html"*/'<!--\n  Generated template for the LoginPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>登陆</ion-title>\n        <ion-buttons end (click)="regist();">\n            <ion-title>注册</ion-title>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n    <img class="dv_logo" src="https://avatars2.githubusercontent.com/u/11835988?v=3&u=2a181779eb2164666606366a1df31f9c17cf7a20&s=100" />\n\n    <ion-list>\n\n        <ion-item>\n            <ion-label floating>账号：</ion-label>\n            <ion-input type="text" [(ngModel)]="name"></ion-input>\n        </ion-item>\n\n        <ion-item>\n            <ion-label floating>密码：</ion-label>\n            <ion-input type="password" [(ngModel)]="pass"></ion-input>\n        </ion-item>\n\n    </ion-list>\n\n    <div padding>\n        <button ion-button color="secondary" (click)="login();" block>登录</button>\n    </div>\n\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/login/login.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]])
+], LoginPage);
+
+//# sourceMappingURL=login.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=44.main.js.map

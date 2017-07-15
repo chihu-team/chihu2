@@ -1,7 +1,7 @@
 <!-- Generated template for the ShareComponent component -->
-<section class="item" *ngFor="let item of data" (click)="pushOpenSharePage( item._id );">
+<section class="item" *ngFor="let item of data">
     <header [data]="item"></header>
-    <section>
+    <section (click)="pushOpenSharePage( item._id );">
         <p>{{item.text}}</p>
         <section class="imgs-wrap">
             <div *ngFor="let item2 of item.img" class="imgs" [style.background]="'url('+item2.src+')'"></div>

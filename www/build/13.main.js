@@ -1,2 +1,372 @@
-webpackJsonp([13],{218:function(n,l,u){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),u.d(l,"HotSharePageModuleNgFactory",function(){return k});var t=u(0),a=u(431),o=u(14),e=u(28),i=u(88),r=u(274),s=u(275),c=u(145),_=u(146),d=u(147),f=u(148),h=u(149),p=u(432),b=u(338),g=u(89),m=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var u in l)l.hasOwnProperty(u)&&(n[u]=l[u])};return function(l,u){function t(){this.constructor=l}n(l,u),l.prototype=null===u?Object.create(u):(t.prototype=u.prototype,new t)}}(),v=function(n){function l(l){return n.call(this,l,[c.a,_.a,d.a,f.a,h.a,p.a],[])||this}return m(l,n),Object.defineProperty(l.prototype,"_NgLocalization_9",{get:function(){return null==this.__NgLocalization_9&&(this.__NgLocalization_9=new o.a(this.parent.get(t.c))),this.__NgLocalization_9},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_10",{get:function(){return null==this.__ɵi_10&&(this.__ɵi_10=new e.a),this.__ɵi_10},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_11",{get:function(){return null==this.__FormBuilder_11&&(this.__FormBuilder_11=new e.b),this.__FormBuilder_11},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new o.d,this._ɵba_1=new e.c,this._FormsModule_2=new e.d,this._ReactiveFormsModule_3=new e.e,this._IonicModule_4=new i.b,this._HeaderComponentModule_5=new r.a,this._ShareComponentModule_6=new s.a,this._IonicPageModule_7=new i.c,this._HotSharePageModule_8=new a.a,this._LAZY_LOADED_TOKEN_12=b.a,this._HotSharePageModule_8},l.prototype.getInternal=function(n,l){return n===o.d?this._CommonModule_0:n===e.c?this._ɵba_1:n===e.d?this._FormsModule_2:n===e.e?this._ReactiveFormsModule_3:n===i.b?this._IonicModule_4:n===r.a?this._HeaderComponentModule_5:n===s.a?this._ShareComponentModule_6:n===i.c?this._IonicPageModule_7:n===a.a?this._HotSharePageModule_8:n===o.e?this._NgLocalization_9:n===e.a?this._ɵi_10:n===e.b?this._FormBuilder_11:n===g.d?this._LAZY_LOADED_TOKEN_12:l},l.prototype.destroyInternal=function(){},l}(t.x),k=new t.y(v,a.a)},253:function(n,l,u){"use strict";function t(n){return o._14(2,[o._20(402653184,1,{_fixedContent:0}),o._20(402653184,2,{_scrollContent:0}),(n()(),o._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),o._21(null,0),(n()(),o._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),o._21(null,1),o._21(null,2)],null,null)}function a(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,t,p)),o._17(4374528,null,0,e.a,[i.c,r.b,s.a,o.H,o.I,c.a,_.a,o.g,[2,d.a],[2,f.a]],null,null)],null,function(n,l){n(l,0,0,o._18(l,1).statusbarPadding,o._18(l,1)._hasRefresher)})}u.d(l,"b",function(){return p}),l.a=t;var o=u(0),e=u(20),i=u(1),r=u(3),s=u(8),c=u(6),_=u(27),d=u(4),f=u(16),h=[],p=o._13({encapsulation:2,styles:h,data:{}});o._19("ion-content",e.a,a,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(n,l,u){"use strict";function t(n){return o._14(0,[(n()(),o._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),o._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,l,u){var t=!0,a=n.component;if("click"===l){t=!1!==a.backButtonClick(u)&&t}return t},r.a,r.b)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._17(1097728,null,0,s.a,[[8,"bar-button"],c.c,o.H,o.I],null,null),(n()(),o._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._17(147456,null,0,_.a,[c.c,o.H,o.I],{name:[0,"name"]},null),(n()(),o._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),o._15(null,["",""])),o._21(null,0),o._21(null,1),o._21(null,2),(n()(),o._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._21(null,3)],function(n,l){var u=l.component;n(l,1,0,"toolbar-background","toolbar-background-"+u._mode);n(l,3,0,"back-button","back-button-"+u._mode);n(l,6,0,"back-button-icon","back-button-icon-"+u._mode),n(l,7,0,u._bbIcon);n(l,9,0,"back-button-text","back-button-text-"+u._mode);n(l,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(n,l){var u=l.component;n(l,2,0,u._hideBb),n(l,5,0,o._18(l,7)._hidden),n(l,10,0,u._backText)})}function a(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,t,b)),o._17(49152,null,0,i.a,[d.a,[2,f.a],[2,h.a],c.c,o.H,o.I],null,null)],null,function(n,l){n(l,0,0,o._18(l,1)._hidden,o._18(l,1)._sbPadding)})}u.d(l,"b",function(){return b}),l.a=t;var o=u(0),e=u(14),i=u(35),r=u(53),s=u(17),c=u(1),_=u(37),d=u(6),f=u(4),h=u(16),p=[],b=o._13({encapsulation:2,styles:p,data:{}});o._19("ion-navbar",i.a,a,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(n,l,u){"use strict";function t(n){return o._14(2,[(n()(),o._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),o._17(278528,null,0,e.k,[o.t,o.u,o.H,o.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),o._21(null,0)],function(n,l){n(l,1,0,"toolbar-title","toolbar-title-"+l.component._mode)},null)}function a(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-title",[],null,null,null,t,d)),o._17(49152,null,0,i.a,[r.c,o.H,o.I,[2,s.a],[2,c.a]],null,null)],null,null)}u.d(l,"b",function(){return d}),l.a=t;var o=u(0),e=u(14),i=u(87),r=u(1),s=u(36),c=u(35),_=[],d=o._13({encapsulation:2,styles:_,data:{}});o._19("ion-title",i.a,a,{color:"color",mode:"mode"},{},["*"])},269:function(n,l,u){"use strict";u.d(l,"a",function(){return t});var t=(u(0),u(52),this&&this.__decorate,this&&this.__metadata,function(){function n(n){this.navCtrl=n,this.data={}}return n.prototype.pushPersonPage=function(n){this.navCtrl.push("PersonalPage",{_id:n})},n}())},270:function(n,l,u){"use strict";u.d(l,"a",function(){return t});var t=(u(0),u(52),this&&this.__decorate,this&&this.__metadata,function(){function n(n){this.navCtrl=n,this.data={}}return n.prototype.pushOpenSharePage=function(n){this.navCtrl.push("OpenSharePage",{_id:n})},n}())},274:function(n,l,u){"use strict";u.d(l,"a",function(){return t});var t=(u(0),u(52),u(269),this&&this.__decorate,function(){function n(){}return n}())},275:function(n,l,u){"use strict";u.d(l,"a",function(){return t});var t=(u(0),u(52),u(270),u(274),this&&this.__decorate,function(){function n(){}return n}())},280:function(n,l,u){"use strict";function t(n){return i._14(0,[(n()(),i._16(0,null,null,2,"div",[["class","infinite-loading-spinner"]],null,null,null,null,null)),(n()(),i._16(0,null,null,1,"ion-spinner",[],[[2,"spinner-paused",null]],null,null,r.a,r.b)),i._17(114688,null,0,s.a,[c.c,i.H,i.I],{name:[0,"name"]},null)],function(n,l){n(l,2,0,l.component.loadingSpinner)},function(n,l){n(l,1,0,i._18(l,2)._paused)})}function a(n){return i._14(0,[(n()(),i._16(0,null,null,0,"div",[["class","infinite-loading-text"]],[[8,"innerHTML",1]],null,null,null,null))],null,function(n,l){n(l,0,0,l.component.loadingText)})}function o(n){return i._14(0,[(n()(),i._16(0,null,null,4,"div",[["class","infinite-loading"]],null,null,null,null,null)),(n()(),i._24(16777216,null,null,1,null,t)),i._17(16384,null,0,_.m,[i.L,i.N],{ngIf:[0,"ngIf"]},null),(n()(),i._24(16777216,null,null,1,null,a)),i._17(16384,null,0,_.m,[i.L,i.N],{ngIf:[0,"ngIf"]},null)],function(n,l){var u=l.component;n(l,2,0,u.loadingSpinner),n(l,4,0,u.loadingText)},null)}function e(n){return i._14(0,[(n()(),i._16(0,null,null,1,"ion-infinite-scroll-content",[],[[1,"state",0]],null,null,o,p)),i._17(114688,null,0,d.a,[f.a,c.c],null,null)],function(n,l){n(l,1,0)},function(n,l){n(l,0,0,i._18(l,1).inf.state)})}u.d(l,"b",function(){return p}),l.a=o;var i=u(0),r=u(151),s=u(38),c=u(1),_=u(14),d=u(94),f=u(58),h=[],p=i._13({encapsulation:2,styles:h,data:{}});i._19("ion-infinite-scroll-content",d.a,e,{loadingSpinner:"loadingSpinner",loadingText:"loadingText"},{},[])},292:function(n,l,u){"use strict";function t(n){return o._14(0,[o._26(0,e.n,[o.c]),(n()(),o._15(null,["\n"])),(n()(),o._16(0,null,null,14,"section",[["class","header"]],null,null,null,null,null)),(n()(),o._15(null,["\n    "])),(n()(),o._16(0,null,null,0,"img",[["alt",""]],[[8,"src",4]],[[null,"click"]],function(n,l,u){var t=!0,a=n.component;if("click"===l){t=!1!==a.pushPersonPage(a.data.uid)&&t}return t},null,null)),(n()(),o._15(null,["\n    "])),(n()(),o._16(0,null,null,9,"div",[["class","it-left"]],null,null,null,null,null)),(n()(),o._15(null,["\n        "])),(n()(),o._16(0,null,null,1,"h6",[],null,null,null,null,null)),(n()(),o._15(null,[""," 分享了心情"])),(n()(),o._15(null,["\n        "])),(n()(),o._16(0,null,null,3,"p",[["class","time"]],null,null,null,null,null)),(n()(),o._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-clock-o"]],null,null,null,null,null)),(n()(),o._15(null,[":",""])),o._27(1),(n()(),o._15(null,["\n    "])),(n()(),o._15(null,["\n\n"]))],null,function(n,l){var u=l.component;n(l,4,0,u.data.userimg),n(l,9,0,u.data.name),n(l,13,0,o._28(l,13,0,n(l,14,0,o._18(l,0),u.data.time)))})}function a(n){return o._14(0,[(n()(),o._16(0,null,null,1,"header",[],null,null,null,t,c)),o._17(49152,null,0,i.a,[r.a],null,null)],null,null)}u.d(l,"b",function(){return c}),l.a=t;var o=u(0),e=u(14),i=u(269),r=u(16),s=[],c=o._13({encapsulation:2,styles:s,data:{}});o._19("header",i.a,a,{data:"data"},{},[])},293:function(n,l,u){"use strict";function t(n){return i._14(0,[(n()(),i._16(0,null,null,0,"div",[["class","imgs"]],[[4,"background",null]],null,null,null,null))],null,function(n,l){n(l,0,0,"url("+l.context.$implicit.src+")")})}function a(n){return i._14(0,[(n()(),i._16(0,null,null,31,"section",[["class","item"]],null,[[null,"click"]],function(n,l,u){var t=!0,a=n.component;if("click"===l){t=!1!==a.pushOpenSharePage(n.context.$implicit._id)&&t}return t},null,null)),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,1,"header",[],null,null,null,r.a,r.b)),i._17(49152,null,0,s.a,[c.a],{data:[0,"data"]},null),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,25,"section",[],null,null,null,null,null)),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,1,"p",[],null,null,null,null,null)),(n()(),i._15(null,["",""])),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,4,"section",[["class","imgs-wrap"]],null,null,null,null,null)),(n()(),i._15(null,["\n            "])),(n()(),i._24(16777216,null,null,1,null,t)),i._17(802816,null,0,_.l,[i.L,i.N,i.t],{ngForOf:[0,"ngForOf"]},null),(n()(),i._15(null,["\n\n        "])),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,13,"section",[["class","mark"]],null,null,null,null,null)),(n()(),i._15(null,["\n            "])),(n()(),i._16(0,null,null,2,"p",[],null,null,null,null,null)),(n()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-eye"]],null,null,null,null,null)),(n()(),i._15(null,[" 0"])),(n()(),i._15(null,["\n            "])),(n()(),i._16(0,null,null,2,"p",[["class","cen"]],null,null,null,null,null)),(n()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-commenting-o"]],null,null,null,null,null)),(n()(),i._15(null,[" ",""])),(n()(),i._15(null,["\n            "])),(n()(),i._16(0,null,null,2,"p",[],null,null,null,null,null)),(n()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-thumbs-o-up"]],null,null,null,null,null)),(n()(),i._15(null,[" ",""])),(n()(),i._15(null,["\n        "])),(n()(),i._15(null,["\n    "])),(n()(),i._15(null,["\n"]))],function(n,l){n(l,3,0,l.context.$implicit),n(l,13,0,l.context.$implicit.img)},function(n,l){n(l,8,0,l.context.$implicit.text),n(l,24,0,l.context.$implicit.mark.cont),n(l,28,0,l.context.$implicit.mark.like)})}function o(n){return i._14(0,[(n()(),i._15(null,["\n"])),(n()(),i._24(16777216,null,null,1,null,a)),i._17(802816,null,0,_.l,[i.L,i.N,i.t],{ngForOf:[0,"ngForOf"]},null)],function(n,l){n(l,2,0,l.component.data)},null)}function e(n){return i._14(0,[(n()(),i._16(0,null,null,1,"share",[],null,null,null,o,h)),i._17(49152,null,0,d.a,[c.a],null,null)],null,null)}u.d(l,"b",function(){return h}),l.a=o;var i=u(0),r=u(292),s=u(269),c=u(16),_=u(14),d=u(270),f=[],h=i._13({encapsulation:2,styles:f,data:{}});i._19("share",d.a,e,{data:"data"},{},[])},338:function(n,l,u){"use strict";u.d(l,"a",function(){return a});var t=(u(0),u(52),u(26)),a=(u(86),this&&this.__decorate,this&&this.__metadata,function(){function n(n,l,u,t){this.UserService=n,this.http=l,this.navCtrl=u,this.navParams=t,this.data=[],this.getdata()}return n.prototype.getdata=function(){var n=this;this.UserService.presentLoadingDefault();var l=new t.l;l.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/hot_share","len="+this.data.length,{headers:l}).subscribe(function(l){n.UserService.presentLoadingDismiss(),n.data=n.data.concat(l.json())})},n.prototype.doInfinite=function(n){this.getdata(),setTimeout(function(){n.complete()},1500)},n}())},431:function(n,l,u){"use strict";u.d(l,"a",function(){return t});var t=(u(0),u(52),u(338),u(275),this&&this.__decorate,function(){function n(){}return n}())},432:function(n,l,u){"use strict";function t(n){return o._14(0,[(n()(),o._15(null,["\n"])),(n()(),o._16(0,null,null,10,"ion-header",[["no-border",""]],null,null,null,null,null)),o._17(16384,null,0,e.a,[i.c,o.H,o.I,[2,r.a]],null,null),(n()(),o._15(null,["\n\n    "])),(n()(),o._16(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,s.a,s.b)),o._17(49152,null,0,c.a,[_.a,[2,r.a],[2,d.a],i.c,o.H,o.I],{color:[0,"color"]},null),(n()(),o._15(3,["\n        "])),(n()(),o._16(0,null,3,2,"ion-title",[],null,null,null,f.a,f.b)),o._17(49152,null,0,h.a,[i.c,o.H,o.I,[2,p.a],[2,c.a]],null,null),(n()(),o._15(0,["人气分享"])),(n()(),o._15(3,["\n    "])),(n()(),o._15(null,["\n\n"])),(n()(),o._15(null,["\n\n\n"])),(n()(),o._16(0,null,null,12,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,b.a,b.b)),o._17(4374528,null,0,g.a,[i.c,m.b,v.a,o.H,o.I,_.a,k.a,o.g,[2,r.a],[2,d.a]],null,null),(n()(),o._15(1,["\n    "])),(n()(),o._16(0,null,1,1,"share",[],null,null,null,I.a,I.b)),o._17(49152,null,0,y.a,[d.a],{data:[0,"data"]},null),(n()(),o._15(1,["\n\n    "])),(n()(),o._16(0,null,1,5,"ion-infinite-scroll",[],null,[[null,"ionInfinite"]],function(n,l,u){var t=!0,a=n.component;if("ionInfinite"===l){t=!1!==a.doInfinite(u)&&t}return t},null,null)),o._17(1196032,null,0,w.a,[g.a,o.g,o.H,v.a],null,{ionInfinite:"ionInfinite"}),(n()(),o._15(null,["\n        "])),(n()(),o._16(0,null,null,1,"ion-infinite-scroll-content",[],[[1,"state",0]],null,null,P.a,P.b)),o._17(114688,null,0,x.a,[w.a,i.c],null,null),(n()(),o._15(null,["\n    "])),(n()(),o._15(1,["\n"]))],function(n,l){var u=l.component;n(l,5,0,"mblue"),n(l,17,0,u.data),n(l,23,0)},function(n,l){n(l,4,0,o._18(l,5)._hidden,o._18(l,5)._sbPadding),n(l,13,0,o._18(l,14).statusbarPadding,o._18(l,14)._hasRefresher),n(l,22,0,o._18(l,23).inf.state)})}function a(n){return o._14(0,[(n()(),o._16(0,null,null,1,"page-hot-share",[],null,null,null,t,L)),o._17(49152,null,0,C.a,[H.a,S.k,d.a,O.a],null,null)],null,null)}u.d(l,"a",function(){return F});var o=u(0),e=u(90),i=u(1),r=u(4),s=u(254),c=u(35),_=u(6),d=u(16),f=u(255),h=u(87),p=u(36),b=u(253),g=u(20),m=u(3),v=u(8),k=u(27),I=u(293),y=u(270),C=u(338),w=u(58),P=u(280),x=u(94),H=u(86),S=u(26),O=u(11),M=[],L=o._13({encapsulation:2,styles:M,data:{}}),F=o._19("page-hot-share",C.a,a,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/13.main.js.map
+webpackJsonp([13],{
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyCirclePageModule", function() { return MyCirclePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_circle__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_share_share_module__ = __webpack_require__(330);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var MyCirclePageModule = (function () {
+    function MyCirclePageModule() {
+    }
+    return MyCirclePageModule;
+}());
+MyCirclePageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__my_circle__["a" /* MyCirclePage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__components_share_share_module__["a" /* ShareComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__my_circle__["a" /* MyCirclePage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__my_circle__["a" /* MyCirclePage */]
+        ]
+    })
+], MyCirclePageModule);
+
+//# sourceMappingURL=my-circle.module.js.map
+
+/***/ }),
+
+/***/ 328:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__header__ = __webpack_require__(329);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var HeaderComponentModule = (function () {
+    function HeaderComponentModule() {
+    }
+    return HeaderComponentModule;
+}());
+HeaderComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__header__["a" /* HeaderComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__header__["a" /* HeaderComponent */]
+        ]
+    })
+], HeaderComponentModule);
+
+//# sourceMappingURL=header.module.js.map
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the HeaderComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var HeaderComponent = (function () {
+    function HeaderComponent(UserService, http, navCtrl) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.data = {};
+        //是否关注
+        this.isfork = false;
+    }
+    HeaderComponent.prototype.ngOnChanges = function (ch) {
+        try {
+            if (ch['data'].currentValue && ch['data'].currentValue.uid) {
+                //console.log( ch['data'].currentValue.uid );
+                this.checkfork();
+            }
+        }
+        catch (error) { }
+    };
+    //关注
+    HeaderComponent.prototype.fork = function () {
+        var _this = this;
+        this.checkfork();
+        if (this.isfork) {
+            return true;
+        }
+        this.UserService.presentLoadingDefault();
+        if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
+            var url = "http://www.devonhello.com/chihu2/forkuser";
+            var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Headers */]();
+            headers.append('Content-Type', 'application/x-www-form-urlencoded');
+            this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id + "&name=" + this.UserService._user.nickname + "&uname=" + this.data['name'] + "&userimg=" + this.UserService._user.userimg + "&uuserimg=" + this.data['userimg'], {
+                headers: headers
+            })
+                .subscribe(function (res) {
+                if (res.json()) {
+                    _this.isfork = true;
+                }
+                _this.UserService.get_fork_user();
+            });
+        }
+        else {
+            if (this.UserService._user._id) {
+                return true;
+            }
+            this.navCtrl.push("LoginPage");
+        }
+    };
+    //取消关注
+    HeaderComponent.prototype.unfork = function () {
+        var _this = this;
+        this.checkfork();
+        if (!this.isfork) {
+            return true;
+        }
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/unforkuser";
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            if (res.json()) {
+                _this.isfork = false;
+            }
+            _this.UserService.get_fork_user();
+        });
+    };
+    //检查是否已经关注
+    HeaderComponent.prototype.checkfork = function () {
+        this.isfork = this.UserService.checkisfork(this.data['uid']);
+    };
+    //查看TA的个人页面
+    HeaderComponent.prototype.pushPersonPage = function (_id) {
+        this.navCtrl.push('PersonalPage', {
+            _id: _id
+        });
+    };
+    return HeaderComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], HeaderComponent.prototype, "data", void 0);
+HeaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'header',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/share/header/header.html"*/'<!-- Generated template for the HeaderComponent component -->\n<section class="header">\n    <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">\n    <div class="it-left">\n        <h6>{{data.name}} 分享了心情</h6>\n        <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date}}</p>\n    </div>\n    <div [hidden]="isfork" class="fork" (click)="fork();"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>\n    <div [hidden]="!isfork" class="fork nofork" (click)="unfork();"><i class="fa fa-plus" aria-hidden="true"></i> 取消关注</div>\n</section>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/share/header/header.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], HeaderComponent);
+
+//# sourceMappingURL=header.js.map
+
+/***/ }),
+
+/***/ 330:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__share__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__header_header_module__ = __webpack_require__(328);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ShareComponentModule = (function () {
+    function ShareComponentModule() {
+    }
+    return ShareComponentModule;
+}());
+ShareComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__share__["a" /* ShareComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__header_header_module__["a" /* HeaderComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__share__["a" /* ShareComponent */]
+        ]
+    })
+], ShareComponentModule);
+
+//# sourceMappingURL=share.module.js.map
+
+/***/ }),
+
+/***/ 331:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ShareComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var ShareComponent = (function () {
+    function ShareComponent(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.data = {};
+    }
+    ShareComponent.prototype.pushOpenSharePage = function (_id) {
+        this.navCtrl.push('OpenSharePage', {
+            _id: _id
+        });
+    };
+    return ShareComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], ShareComponent.prototype, "data", void 0);
+ShareComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'share',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/share/share.html"*/'<!-- Generated template for the ShareComponent component -->\n<section class="item" *ngFor="let item of data" (click)="pushOpenSharePage( item._id );">\n    <header [data]="item"></header>\n    <section>\n        <p>{{item.text}}</p>\n        <section class="imgs-wrap">\n            <div *ngFor="let item2 of item.img" class="imgs" [style.background]="\'url(\'+item2.src+\')\'"></div>\n\n        </section>\n        <section class="mark">\n            <p><i class="fa fa-eye" aria-hidden="true"></i> 0</p>\n            <p class="cen"><i class="fa fa-commenting-o" aria-hidden="true"></i> {{item.mark.cont}}</p>\n            <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> {{item.mark.like}}</p>\n        </section>\n    </section>\n</section>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/share/share.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], ShareComponent);
+
+//# sourceMappingURL=share.js.map
+
+/***/ }),
+
+/***/ 396:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyCirclePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the MyCirclePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var MyCirclePage = (function () {
+    function MyCirclePage(UserService, http, navCtrl, navParams) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.data = [];
+        this.getforkdata();
+    }
+    //获取关注的分享
+    MyCirclePage.prototype.getforkdata = function () {
+        var _this = this;
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/getmyforkshare";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "id=" + this.UserService._user._id, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.UserService.presentLoadingDismiss();
+            console.log(_this.data);
+            _this.data = res.json();
+        });
+    };
+    return MyCirclePage;
+}());
+MyCirclePage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-my-circle',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/my-circle/my-circle.html"*/'<!--\n  Generated template for the MyCirclePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>朋友圈</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <share [data]="data"></share>\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/my-circle/my-circle.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], MyCirclePage);
+
+//# sourceMappingURL=my-circle.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=13.main.js.map

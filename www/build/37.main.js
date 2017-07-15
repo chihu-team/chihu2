@@ -1,2 +1,148 @@
-webpackJsonp([37],{210:function(n,l,t){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),t.d(l,"CollectWorkPageModuleNgFactory",function(){return v});var u=t(0),e=t(412),o=t(14),i=t(28),r=t(88),a=t(386),c=t(145),_=t(146),s=t(147),d=t(148),h=t(149),f=t(413),p=t(327),m=t(89),g=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var t in l)l.hasOwnProperty(t)&&(n[t]=l[t])};return function(l,t){function u(){this.constructor=l}n(l,t),l.prototype=null===t?Object.create(t):(u.prototype=t.prototype,new u)}}(),b=function(n){function l(l){return n.call(this,l,[c.a,_.a,s.a,d.a,h.a,f.a],[])||this}return g(l,n),Object.defineProperty(l.prototype,"_NgLocalization_8",{get:function(){return null==this.__NgLocalization_8&&(this.__NgLocalization_8=new o.a(this.parent.get(u.c))),this.__NgLocalization_8},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_9",{get:function(){return null==this.__ɵi_9&&(this.__ɵi_9=new i.a),this.__ɵi_9},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_10",{get:function(){return null==this.__FormBuilder_10&&(this.__FormBuilder_10=new i.b),this.__FormBuilder_10},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new o.d,this._ɵba_1=new i.c,this._FormsModule_2=new i.d,this._ReactiveFormsModule_3=new i.e,this._IonicModule_4=new r.b,this._WorkComponentModule_5=new a.a,this._IonicPageModule_6=new r.c,this._CollectWorkPageModule_7=new e.a,this._LAZY_LOADED_TOKEN_11=p.a,this._CollectWorkPageModule_7},l.prototype.getInternal=function(n,l){return n===o.d?this._CommonModule_0:n===i.c?this._ɵba_1:n===i.d?this._FormsModule_2:n===i.e?this._ReactiveFormsModule_3:n===r.b?this._IonicModule_4:n===a.a?this._WorkComponentModule_5:n===r.c?this._IonicPageModule_6:n===e.a?this._CollectWorkPageModule_7:n===o.e?this._NgLocalization_8:n===i.a?this._ɵi_9:n===i.b?this._FormBuilder_10:n===m.d?this._LAZY_LOADED_TOKEN_11:l},l.prototype.destroyInternal=function(){},l}(u.x),v=new u.y(b,e.a)},253:function(n,l,t){"use strict";function u(n){return o._14(2,[o._20(402653184,1,{_fixedContent:0}),o._20(402653184,2,{_scrollContent:0}),(n()(),o._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),o._21(null,0),(n()(),o._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),o._21(null,1),o._21(null,2)],null,null)}function e(n){return o._14(0,[(n()(),o._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,u,p)),o._17(4374528,null,0,i.a,[r.c,a.b,c.a,o.H,o.I,_.a,s.a,o.g,[2,d.a],[2,h.a]],null,null)],null,function(n,l){n(l,0,0,o._18(l,1).statusbarPadding,o._18(l,1)._hasRefresher)})}t.d(l,"b",function(){return p}),l.a=u;var o=t(0),i=t(20),r=t(1),a=t(3),c=t(8),_=t(6),s=t(27),d=t(4),h=t(16),f=[],p=o._13({encapsulation:2,styles:f,data:{}});o._19("ion-content",i.a,e,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},327:function(n,l,t){"use strict";t.d(l,"a",function(){return e});var u=(t(0),t(52),t(26)),e=(t(86),this&&this.__decorate,this&&this.__metadata,function(){function n(n,l,t,u){this.UserService=n,this.http=l,this.navCtrl=t,this.navParams=u,this.items=[],this.rootNavCtrl=u.get("rootNavCtrl"),this.id=this.navParams.data._id,this.getdata()}return n.prototype.getdata=function(){var n=this;this.UserService.presentLoadingDefault();var l=new u.l;l.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/my_collect_work","id="+this.id+"&type=1",{headers:l}).subscribe(function(l){n.UserService.presentLoadingDismiss(),n.items=n.items.concat(l.json())})},n}())},328:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),this&&this.__decorate,this&&this.__metadata,function(){function n(n,l){this.navCtrl=n,this.navParams=l,this.data={},this.irootNavCtrl=this.navParams.get("rootNavCtrl")}return n.prototype.pushArticlePage=function(n){this.irootNavCtrl.push("ArticlePage",{_id:n})},n}())},386:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),t(328),this&&this.__decorate,function(){function n(){}return n}())},412:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),t(327),t(386),this&&this.__decorate,function(){function n(){}return n}())},413:function(n,l,t){"use strict";function u(n){return o._14(0,[(n()(),o._15(null,["\n"])),(n()(),o._16(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,i.a,i.b)),o._17(4374528,null,0,r.a,[a.c,c.b,_.a,o.H,o.I,s.a,d.a,o.g,[2,h.a],[2,f.a]],null,null),(n()(),o._15(1,["\n    "])),(n()(),o._16(0,null,1,1,"work",[],null,null,null,p.a,p.b)),o._17(49152,null,0,m.a,[f.a,g.a],{data:[0,"data"]},null),(n()(),o._15(1,["\n"]))],function(n,l){n(l,5,0,l.component.items)},function(n,l){n(l,1,0,o._18(l,2).statusbarPadding,o._18(l,2)._hasRefresher)})}function e(n){return o._14(0,[(n()(),o._16(0,null,null,1,"page-collect-work",[],null,null,null,u,P)),o._17(49152,null,0,b.a,[v.a,w.k,f.a,g.a],null,null)],null,null)}t.d(l,"a",function(){return C});var o=t(0),i=t(253),r=t(20),a=t(1),c=t(3),_=t(8),s=t(6),d=t(27),h=t(4),f=t(16),p=t(414),m=t(328),g=t(11),b=t(327),v=t(86),w=t(26),y=[],P=o._13({encapsulation:2,styles:y,data:{}}),C=o._19("page-collect-work",b.a,e,{},{},[])},414:function(n,l,t){"use strict";function u(n){return i._14(0,[(n()(),i._16(0,null,null,23,"section",[["class","item"]],null,[[null,"click"]],function(n,l,t){var u=!0,e=n.component;if("click"===l){u=!1!==e.pushArticlePage(n.context.$implicit.artid)&&u}return u},null,null)),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,11,"header",[],null,null,null,null,null)),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,0,"img",[["alt",""]],[[8,"src",4]],null,null,null,null)),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,1,"h4",[],null,null,null,null,null)),(n()(),i._15(null,[""," 分享的作品"])),(n()(),i._15(null,["\n        "])),(n()(),i._16(0,null,null,3,"p",[["class","time"]],null,null,null,null,null)),(n()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-clock-o"]],null,null,null,null,null)),(n()(),i._15(null,[":",""])),i._27(1),(n()(),i._15(null,["\n    "])),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,0,"section",[["class","banner"]],[[4,"background",null]],null,null,null,null)),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,2,"h5",[],null,null,null,null,null)),(n()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-cutlery"]],null,null,null,null,null)),(n()(),i._15(null,["  ",""])),(n()(),i._15(null,["\n    "])),(n()(),i._16(0,null,null,1,"p",[],null,null,null,null,null)),(n()(),i._15(null,["",""])),(n()(),i._15(null,["\n"]))],null,function(n,l){n(l,4,0,l.context.$implicit.userimg),n(l,7,0,l.context.$implicit.name),n(l,11,0,i._28(l,11,0,n(l,12,0,i._18(l.parent,0),l.context.$implicit.time))),n(l,15,0,"url("+l.context.$implicit.workbanner+")"),n(l,19,0,l.context.$implicit.title),n(l,22,0,l.context.$implicit.text)})}function e(n){return i._14(0,[i._26(0,r.n,[i.c]),(n()(),i._15(null,["\n"])),(n()(),i._24(16777216,null,null,1,null,u)),i._17(802816,null,0,r.l,[i.L,i.N,i.t],{ngForOf:[0,"ngForOf"]},null)],function(n,l){n(l,3,0,l.component.data)},null)}function o(n){return i._14(0,[(n()(),i._16(0,null,null,1,"work",[],null,null,null,e,d)),i._17(49152,null,0,a.a,[c.a,_.a],null,null)],null,null)}t.d(l,"b",function(){return d}),l.a=e;var i=t(0),r=t(14),a=t(328),c=t(16),_=t(11),s=[],d=i._13({encapsulation:2,styles:s,data:{}});i._19("work",a.a,o,{data:"data"},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/37.main.js.map
+webpackJsonp([37],{
+
+/***/ 307:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendAnswerPageModule", function() { return SendAnswerPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__send_answer__ = __webpack_require__(421);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SendAnswerPageModule = (function () {
+    function SendAnswerPageModule() {
+    }
+    return SendAnswerPageModule;
+}());
+SendAnswerPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__send_answer__["a" /* SendAnswerPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__send_answer__["a" /* SendAnswerPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__send_answer__["a" /* SendAnswerPage */]
+        ]
+    })
+], SendAnswerPageModule);
+
+//# sourceMappingURL=send-answer.module.js.map
+
+/***/ }),
+
+/***/ 421:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendAnswerPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SendAnswerPage = (function () {
+    function SendAnswerPage(http, UserService, navCtrl, navParams) {
+        this.http = http;
+        this.UserService = UserService;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this._id = this.navParams.get('id');
+        this.title = this.navParams.get('title');
+    }
+    SendAnswerPage.prototype.ngOnInit = function () {
+        var _that = this;
+        this.summernote = $('#summernote');
+        this.summernote.summernote({
+            height: 380,
+            placeholder: '文章内容...',
+            callbacks: {
+                onImageUpload: function (files) {
+                    var imgs = _that.upFile(files[0]);
+                }
+            },
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['Insert', ['picture']]
+            ]
+        });
+    };
+    SendAnswerPage.prototype.upFile = function (file) {
+        this.UserService.presentLoadingDefault();
+        var _data = new FormData(), _that = this;
+        _data.append("file", file);
+        $.ajax({
+            data: _data,
+            dataType: 'text',
+            type: "POST",
+            url: "http://www.devonhello.com/cfdkAdmin/uploadimg",
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (url) {
+                _that.summernote.summernote('insertImage', "http://7xp2ia.com1.z0.glb.clouddn.com/" + url, 'image name'); // the insertImage API  
+                _that.UserService.presentLoadingDismiss();
+            }
+        });
+    };
+    SendAnswerPage.prototype.send = function () {
+        var _this = this;
+        this.text = this.summernote.summernote('code');
+        if (this.text < 10) {
+            alert("内容太短...至少10个字符");
+            return true;
+        }
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/send_answer";
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "uid=" + this.UserService._user._id + "&answerid=" + this._id + "&name=" + this.UserService._user.nickname + "&userimg=" + this.UserService._user.userimg + "&title=" + this.title + "&text=" + this.text, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.UserService.presentLoadingDismiss();
+            _this.navCtrl.pop();
+        });
+    };
+    return SendAnswerPage;
+}());
+SendAnswerPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-send-answer',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/send-answer/send-answer.html"*/'<!--\n  Generated template for the SendAnswerPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>我要回答</ion-title>\n        <ion-buttons end (click)="send();">\n            <ion-title>发布</ion-title>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <textarea id="summernote" placeholder="Comments"></textarea>\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/send-answer/send-answer.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], SendAnswerPage);
+
+//# sourceMappingURL=send-answer.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=37.main.js.map

@@ -1,3 +1,1983 @@
-webpackJsonp([3],{233:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),e.d(n,"NoticePageModuleNgFactory",function(){return v});var i=e(0),o=e(461),s=e(14),a=e(28),r=e(88),l=e(279),c=e(261),u=e(145),h=e(146),d=e(147),b=e(148),p=e(149),f=e(462),g=e(353),_=e(89),y=this&&this.__extends||function(){var t=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,n){t.__proto__=n}||function(t,n){for(var e in n)n.hasOwnProperty(e)&&(t[e]=n[e])};return function(n,e){function i(){this.constructor=n}t(n,e),n.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}}(),m=function(t){function n(n){return t.call(this,n,[u.a,h.a,d.a,b.a,p.a,f.a],[])||this}return y(n,t),Object.defineProperty(n.prototype,"_NgLocalization_8",{get:function(){return null==this.__NgLocalization_8&&(this.__NgLocalization_8=new s.a(this.parent.get(i.c))),this.__NgLocalization_8},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵi_9",{get:function(){return null==this.__ɵi_9&&(this.__ɵi_9=new a.a),this.__ɵi_9},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_FormBuilder_10",{get:function(){return null==this.__FormBuilder_10&&(this.__FormBuilder_10=new a.b),this.__FormBuilder_10},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_SuperTabsController_12",{get:function(){return null==this.__SuperTabsController_12&&(this.__SuperTabsController_12=new c.a),this.__SuperTabsController_12},enumerable:!0,configurable:!0}),n.prototype.createInternal=function(){return this._CommonModule_0=new s.d,this._ɵba_1=new a.c,this._FormsModule_2=new a.d,this._ReactiveFormsModule_3=new a.e,this._IonicModule_4=new r.b,this._IonicPageModule_5=new r.c,this._SuperTabsModule_6=new l.a,this._NoticePageModule_7=new o.a,this._LAZY_LOADED_TOKEN_11=g.a,this._NoticePageModule_7},n.prototype.getInternal=function(t,n){return t===s.d?this._CommonModule_0:t===a.c?this._ɵba_1:t===a.d?this._FormsModule_2:t===a.e?this._ReactiveFormsModule_3:t===r.b?this._IonicModule_4:t===r.c?this._IonicPageModule_5:t===l.a?this._SuperTabsModule_6:t===o.a?this._NoticePageModule_7:t===s.e?this._NgLocalization_8:t===a.a?this._ɵi_9:t===a.b?this._FormBuilder_10:t===_.d?this._LAZY_LOADED_TOKEN_11:t===c.a?this._SuperTabsController_12:n},n.prototype.destroyInternal=function(){},n}(i.x),v=new i.y(m,o.a)},260:function(t,n,e){"use strict";e.d(n,"a",function(){return d});var i=e(0),o=e(52),s=e(9),a=(e.n(s),e(267)),r=e(266),l=e(261),c=e(152),u=(e.n(c),e(297)),h=(e.n(u),e(298)),d=(e.n(h),function(){function t(t,n,e,o,a,r,l,c){var u=this;this.viewCtrl=n,this._app=e,this.el=o,this.rnd=a,this.superTabsCtrl=r,this.linker=l,this.domCtrl=c,this.indicatorColor="primary",this.badgeColor="primary",this.config={},this.tabsPlacement="top",this.tabSelect=new i.z,this._isToolbarVisible=!0,this._tabs=[],this._scrollTabs=!1,this._selectedTabIndex=0,this.watches=[],this.hasIcons=!1,this.hasTitles=!1,this.init=!1,this.parent=t,this.parent?this.parent.registerChildNav(this):n&&n.getNav()?(this.parent=n.getNav(),this.parent.registerChildNav(this)):this._app&&this._app._setRootNav(this);var h=[s.Observable.fromEvent(window,"orientationchange"),s.Observable.fromEvent(window,"resize")];n&&(n._setContent(this),n._setContentRef(o),h.push(n.didEnter)),this.watches.push(s.Observable.merge.apply(this,h).debounceTime(10).subscribe(function(){u.setMaxIndicatorPosition(),u.updateTabWidth(),u.setFixedIndicatorWidth(),u.refreshTabWidths(),u.tabsContainer.refreshDimensions(),u.tabsContainer.slideTo(u.selectedTabIndex),u.alignIndicatorPosition(),u.refreshContainerHeight()}))}return Object.defineProperty(t.prototype,"height",{get:function(){return this.el.nativeElement.offsetHeight},set:function(t){this.rnd.setStyle(this.el.nativeElement,"height",t+"px")},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"selectedTabIndex",{get:function(){return this._selectedTabIndex},set:function(t){this._selectedTabIndex=Number(t),this.init&&this.alignIndicatorPosition(!0)},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"scrollTabs",{get:function(){return this._scrollTabs},set:function(t){this._scrollTabs="boolean"!=typeof t||!0===t},enumerable:!0,configurable:!0}),t.prototype.ngOnInit=function(){var t={dragThreshold:10,maxDragAngle:40,sideMenuThreshold:50,transitionDuration:300,transitionEase:"cubic-bezier(0.35, 0, 0.25, 1)",shortSwipeDuration:300};for(var n in this.config)t[n]=this.config[n];this.config=t,this.id=this.id||"super-tabs-"+ ++b,this.superTabsCtrl.registerInstance(this),"bottom"===this.tabsPlacement&&this.rnd.addClass(this.getElementRef().nativeElement,"tabs-placement-bottom")},t.prototype.ngAfterContentInit=function(){this.updateTabWidth(),this.toolbar.tabs=this._tabs},t.prototype.ngAfterViewInit=function(){var t=this,n=this.linker.initNav(this);n&&!n.component&&(this.selectedTabIndex=this.linker.getSelectedTabIndex(this,n.name,this.selectedTabIndex)),this.linker.navChange("switch"),this.hasTitles||this.hasIcons||(this._isToolbarVisible=!1),this.tabsContainer.slideTo(this.selectedTabIndex,!1),this.refreshTabStates(),this.setFixedIndicatorWidth(),this.setMaxIndicatorPosition(),setTimeout(function(){return t.alignIndicatorPosition()},100),this.refreshContainerHeight(),this.init=!0},t.prototype.ngOnDestroy=function(){this.watches.forEach(function(t){t.unsubscribe&&t.unsubscribe()}),this.parent.unregisterChildNav(this),this.superTabsCtrl.unregisterInstance(this.id)},t.prototype.setBadge=function(t,n){this.getTabById(t).setBadge(n)},t.prototype.clearBadge=function(t){this.getTabById(t).clearBadge()},t.prototype.increaseBadge=function(t,n){this.getTabById(t).increaseBadge(n)},t.prototype.decreaseBadge=function(t,n){this.getTabById(t).decreaseBadge(n)},t.prototype.enableTabsSwipe=function(t){this.tabsContainer.enableTabsSwipe(t)},t.prototype.enableTabSwipe=function(t,n){this.tabsContainer.enableTabSwipe(this.getTabIndexById(t),n)},t.prototype.showToolbar=function(t){this._isToolbarVisible=t,this.refreshContainerHeight()},t.prototype.slideTo=function(t){"string"==typeof t&&(t=this.getTabIndexById(t)),this.selectedTabIndex=t,this.tabsContainer.slideTo(t)},t.prototype.getActiveChildNav=function(){return this._tabs[this.selectedTabIndex]},t.prototype.addTab=function(t){t.rootParams=t.rootParams||{},t.rootParams.rootNavCtrl=this.parent,t.tabId=t.tabId||"super-tabs-"+this.id+"-tab-"+this._tabs.length,this._tabs.push(t),t.icon&&(this.hasIcons=!0),t.title&&(this.hasTitles=!0),t.setWidth(this.el.nativeElement.offsetWidth)},t.prototype.onDrag=function(){var t=this;this._isToolbarVisible&&this.domCtrl.write(function(){var n=t.tabsContainer.tabWidth,e=t.tabsContainer.containerWidth,i=Math.abs(t.tabsContainer.containerPosition/e);if(t.scrollTabs){var o=n*t.selectedTabIndex,s=t.getRelativeIndicatorPosition(),a=t.getSegmentButtonWidth(),r=void 0,l=void 0,c=void 0,u=void 0,h=o-Math.abs(t.tabsContainer.containerPosition);i=Math.abs(h/n),h<0?(r=t.getRelativeIndicatorPosition(t.selectedTabIndex+1),l=t.getSegmentButtonWidth(t.selectedTabIndex+1),c=s+i*(r-s)):(r=t.getRelativeIndicatorPosition(t.selectedTabIndex-1),l=t.getSegmentButtonWidth(t.selectedTabIndex-1),c=s-i*(s-r));u=a+i*(l-a),(a>l&&u<l||a<l&&u>l)&&(u=l),t.alignTabButtonsContainer(),t.toolbar.setIndicatorProperties(u,c)}else t.toolbar.setIndicatorPosition(Math.min(i*n,t.maxIndicatorPosition))})},t.prototype.onTabChange=function(t){if(t<=this._tabs.length){var n=this.getActiveTab(),e=n.getActive();e&&(e._willLeave(!1),e._didLeave()),this.selectedTabIndex=t,this.linker.navChange("switch"),this.refreshTabStates(),e=this.getActiveTab().getActive(),e&&(e._willEnter(),e._didEnter()),this.tabSelect.emit({index:t,id:this._tabs[t].tabId})}},t.prototype.onToolbarTabSelect=function(t){this.tabsContainer.slideTo(t),this.onTabChange(t)},t.prototype.onContainerTabSelect=function(t){t.changed&&this.onTabChange(t.index),this.alignIndicatorPosition(!0)},t.prototype.refreshTabStates=function(){var t=this;this._tabs.forEach(function(n,e){n.setActive(e===t.selectedTabIndex),n.load(Math.abs(t.selectedTabIndex-e)<2)})},t.prototype.updateTabWidth=function(){this.tabsContainer.tabWidth=this.el.nativeElement.offsetWidth},t.prototype.refreshContainerHeight=function(){var t=0;this._isToolbarVisible&&(this.hasTitles&&this.hasIcons?t=72:(this.hasTitles||this.hasIcons)&&(t=48)),this.rnd.setStyle(this.tabsContainer.getNativeElement(),"height","calc(100% - "+t+"px)")},t.prototype.refreshTabWidths=function(){var t=this.el.nativeElement.offsetWidth;this._tabs.forEach(function(n){n.setWidth(t)})},t.prototype.alignTabButtonsContainer=function(t){var n=this.el.nativeElement.offsetWidth,e=this.toolbar.indicatorWidth,i=this.toolbar.indicatorPosition,o=this.toolbar.segmentPosition;if(this.toolbar.segmentWidth<=n)return void(0!==this.toolbar.segmentPosition&&this.toolbar.setSegmentPosition(0,t));var s;if(i+e+(n/2-e/2)>n+o){s=o+(i+e+(n/2-e/2)-n-o);var a=this.toolbar.segmentWidth-n;s=s<a?s:a}else{if(!(i-(n/2-e/2)<o))return;s=i-(n/2-e/2),s=s>=0?s:0}this.toolbar.setSegmentPosition(s,t)},t.prototype.getRelativeIndicatorPosition=function(t){void 0===t&&(t=this.selectedTabIndex);for(var n=0,e=0;e<this.toolbar.segmentButtonWidths.length;e++)t>Number(e)&&(n+=this.toolbar.segmentButtonWidths[e]);return n},t.prototype.getAbsoluteIndicatorPosition=function(){var t=this.selectedTabIndex*this.tabsContainer.tabWidth/this._tabs.length;return t<=this.maxIndicatorPosition?t:this.maxIndicatorPosition},t.prototype.getSegmentButtonWidth=function(t){if(void 0===t&&(t=this.selectedTabIndex),this._isToolbarVisible)return this.toolbar.segmentButtonWidths[t]},t.prototype.setMaxIndicatorPosition=function(){this.el&&this.el.nativeElement&&(this.maxIndicatorPosition=this.el.nativeElement.offsetWidth-this.el.nativeElement.offsetWidth/this._tabs.length)},t.prototype.setFixedIndicatorWidth=function(){!this.scrollTabs&&this._isToolbarVisible&&this.toolbar.setIndicatorWidth(this.el.nativeElement.offsetWidth/this._tabs.length,!1)},t.prototype.alignIndicatorPosition=function(t){void 0===t&&(t=!1),this._isToolbarVisible&&(this.scrollTabs?(this.toolbar.alignIndicator(this.getRelativeIndicatorPosition(),this.getSegmentButtonWidth(),t),this.alignTabButtonsContainer(t)):this.toolbar.setIndicatorPosition(this.getAbsoluteIndicatorPosition(),t))},t.prototype.getTabIndexById=function(t){return this._tabs.findIndex(function(n){return n.tabId===t})},t.prototype.getTabById=function(t){return this._tabs.find(function(n){return n.tabId===t})},t.prototype.getActiveTab=function(){return this._tabs[this.selectedTabIndex]},t.prototype.getElementRef=function(){return this.el},t.prototype.initPane=function(){return!0},t.prototype.paneChanged=function(){},t.prototype.getSelected=function(){},t.prototype.setTabbarPosition=function(){},t}());d.decorators=[{type:i._22,args:[{selector:"super-tabs",template:'\n    <super-tabs-toolbar [tabsPlacement]="tabsPlacement" [hidden]="!_isToolbarVisible" [config]="config"\n                        [color]="toolbarBackground"\n                        [tabsColor]="toolbarColor" [indicatorColor]="indicatorColor" [badgeColor]="badgeColor"\n                        [scrollTabs]="scrollTabs"\n                        [selectedTab]="selectedTabIndex"\n                        (tabSelect)="onToolbarTabSelect($event)"></super-tabs-toolbar>\n    <super-tabs-container [config]="config" [tabsCount]="_tabs.length" [selectedTabIndex]="selectedTabIndex"\n                          (tabSelect)="onContainerTabSelect($event)" (onDrag)="onDrag($event)">\n      <ng-content></ng-content>\n    </super-tabs-container>\n  ',encapsulation:i._0.None,providers:[{provide:o.f,useExisting:e.i(i._9)(function(){return d})}]}]}],d.ctorParameters=function(){return[{type:o.c,decorators:[{type:i.D}]},{type:o.g,decorators:[{type:i.D}]},{type:o.h},{type:i.H},{type:i._29},{type:l.a},{type:o.i},{type:o.j}]},d.propDecorators={toolbarBackground:[{type:i._30}],toolbarColor:[{type:i._30}],indicatorColor:[{type:i._30}],badgeColor:[{type:i._30}],config:[{type:i._30}],id:[{type:i._30}],height:[{type:i._30}],selectedTabIndex:[{type:i._30}],scrollTabs:[{type:i._30}],tabsPlacement:[{type:i._30}],tabSelect:[{type:i._31}],toolbar:[{type:i._32,args:[a.a]}],tabsContainer:[{type:i._32,args:[r.a]}]};var b=-1},261:function(t,n,e){"use strict";e.d(n,"a",function(){return o});var i=e(0),o=function(){function t(){this.instances=[]}return t.prototype.setBadge=function(t,n,e){var i=this.getInstance(e);i&&i.setBadge(t,n)},t.prototype.clearBadge=function(t,n){var e=this.getInstance(n);e&&e.clearBadge(t)},t.prototype.increaseBadge=function(t,n,e){void 0===n&&(n=1);var i=this.getInstance(e);i&&i.increaseBadge(t,n)},t.prototype.decreaseBadge=function(t,n,e){void 0===n&&(n=1);var i=this.getInstance(e);i&&i.decreaseBadge(t,n)},t.prototype.enableTabsSwipe=function(t,n){var e=this.getInstance(n);e&&e.enableTabsSwipe(t)},t.prototype.enableTabSwipe=function(t,n,e){var i=this.getInstance(e);i&&i.enableTabSwipe(t,n)},t.prototype.showToolbar=function(t,n){var e=this.getInstance(n);e&&e.showToolbar(t)},t.prototype.slideTo=function(t,n){var e=this.getInstance(n);e&&e.slideTo(t)},t.prototype.registerInstance=function(t){this.instances.push(t)},t.prototype.unregisterInstance=function(t){var n=this.getInstanceIndex(t);n>-1&&this.instances.splice(n,1)},t.prototype.getInstanceIndex=function(t){return this.instances.findIndex(function(n){return n.id===t})},t.prototype.getInstance=function(t){return!!t&&this.instances[this.getInstanceIndex(t)]||this.instances[0]},t}();o.decorators=[{type:i.C}],o.ctorParameters=function(){return[]}},264:function(t,n,e){"use strict";e.d(n,"a",function(){return o});var i=e(0),o=function(){function t(t){this._el=t,this.selected=!1,this.select=new i.z}return t.prototype.onClick=function(){this.select.emit(this)},t.prototype.getNativeElement=function(){return this._el.nativeElement},t}();o.decorators=[{type:i._22,args:[{selector:"super-tab-button",template:'\n    <ion-icon *ngIf="!!icon" [name]="icon" [color]="color"></ion-icon>\n    <span class="title" *ngIf="!!title" ion-text [color]="color">{{ title }}</span>\n    <ion-badge mode="md" [color]="badgeColor">{{ badge }}</ion-badge>\n    \x3c!--<span class="badge badge-md {{ \'badge-md-\' + badgeColor }}">{{ badge }}</span>--\x3e\n    <div class="button-effect"></div>\n  ',host:{"[class.selected]":"selected","(click)":"onClick()","[class.title-only]":"!!title && !icon","[class.icon-only]":"!title && !!icon","[class.title-and-icon]":"!!title && !!icon",tappable:"",role:"button"},changeDetection:i._34.OnPush,encapsulation:i._0.None}]}],o.ctorParameters=function(){return[{type:i.H}]},o.propDecorators={selected:[{type:i._30}],title:[{type:i._30}],icon:[{type:i._30}],badge:[{type:i._30}],badgeColor:[{type:i._30}],color:[{type:i._30}],select:[{type:i._31}]}},265:function(t,n,e){"use strict";e.d(n,"a",function(){return l});var i=e(0),o=e(52),s=e(18),a=e(260),r=this&&this.__extends||function(){var t=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,n){t.__proto__=n}||function(t,n){for(var e in n)n.hasOwnProperty(e)&&(t[e]=n[e])};return function(n,e){function i(){this.constructor=n}t(n,e),n.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}}(),l=function(t){function n(n,e,i,o,s,a,r,l,c,u,h,d,b,p){var f=t.call(this,n,e,i,o,s,a,r,l,c,u,d,b,h)||this;return f.linker=d,f._dom=b,f.cd=p,f.loaded=!1,f.init=new Promise(function(t){return f.initResolve=t}),f}return r(n,t),Object.defineProperty(n.prototype,"tabTitle",{get:function(){return this.title},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"index",{get:function(){return this.parent.getTabIndexById(this.tabId)},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_tabId",{get:function(){return this.tabId},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"swipeBackEnabled",{get:function(){return this._sbEnabled},set:function(t){this._sbEnabled=!!t,this._swipeBackCheck()},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_vp",{set:function(t){this.setViewport(t)},enumerable:!0,configurable:!0}),n.prototype.ngOnInit=function(){this.parent.addTab(this)},n.prototype.ngAfterViewInit=function(){this.initResolve()},n.prototype.ngOnDestroy=function(){this.destroy()},n.prototype.setActive=function(t){t?(this.cd.reattach(),this.cd.detectChanges()):t||this.cd.detach()},n.prototype.load=function(t){var n=this;t&&!this.loaded&&this.init.then(function(){n.push(n.root,n.rootParams,{animate:!1}),n.loaded=!0})},n.prototype.setBadge=function(t){this.badge=t},n.prototype.clearBadge=function(){delete this.badge},n.prototype.increaseBadge=function(t){void 0===t&&(t=1),this.badge+=t},n.prototype.decreaseBadge=function(t){void 0===t&&(t=1),this.badge=Math.max(0,this.badge-t)},n.prototype.setWidth=function(t){this.setElementStyle("width",t+"px")},n}(o.k);l.decorators=[{type:i._22,args:[{selector:"super-tab",template:'<div #viewport></div><div class="nav-decor"></div>',encapsulation:i._0.None}]}],l.ctorParameters=function(){return[{type:a.a},{type:o.h},{type:o.l},{type:o.b},{type:i.H},{type:i.g},{type:i.I},{type:i.K},{type:o.m},{type:s.a},{type:i.p},{type:o.i,decorators:[{type:i.D}]},{type:o.j},{type:i.T}]},l.propDecorators={title:[{type:i._30}],icon:[{type:i._30}],root:[{type:i._30}],rootParams:[{type:i._30}],tabId:[{type:i._30,args:["id"]}],badge:[{type:i._30}],swipeBackEnabled:[{type:i._30}],_vp:[{type:i._32,args:["viewport",{read:i.L}]}]}},266:function(t,n,e){"use strict";e.d(n,"a",function(){return a});var i=e(0),o=e(52),s=e(278),a=function(){function t(t,n,e,o){this.el=t,this.rnd=n,this.plt=e,this.ngZone=o,this.tabsCount=0,this.tabSelect=new i.z,this.onDrag=new i.z,this.containerPosition=0,this.tabWidth=0,this.containerWidth=0,this.globalSwipeEnabled=!0,this.swipeEnabledPerTab={}}return t.prototype.ngAfterViewInit=function(){this.init()},t.prototype.ngOnDestroy=function(){this.gesture&&this.gesture.destroy()},t.prototype.enableTabsSwipe=function(t){this.globalSwipeEnabled=t},t.prototype.enableTabSwipe=function(t,n){this.swipeEnabledPerTab[t]=n},t.prototype.refreshDimensions=function(){this.calculateContainerWidth(),this.setContainerWidth(),this.refreshMinMax()},t.prototype.getNativeElement=function(){return this.el.nativeElement},t.prototype.init=function(){var t=this;this.refreshDimensions(),this.gesture=new s.a(this.plt,this.container.nativeElement,this.config,this.rnd),this.gesture.onMove=function(n){!1!==t.globalSwipeEnabled&&!1!==t.swipeEnabledPerTab[t.selectedTabIndex]&&(t.containerPosition===t.maxPosX&&n>=0||t.containerPosition===t.minPosX&&n<=0||(t.containerPosition+=n,t.plt.raf(function(){t.onDrag.emit(),t.moveContainer()})))},this.gesture.onEnd=function(n,e){if(!1!==t.globalSwipeEnabled&&!1!==t.swipeEnabledPerTab[t.selectedTabIndex]){var i=Math.round(t.containerPosition/t.tabWidth);i===t.selectedTabIndex&&n&&(e<0&&i++||e>0&&i--);var o=Math.max(t.minPosX,Math.min(t.maxPosX,i*t.tabWidth));i=o/t.tabWidth,o!==t.containerPosition?t.plt.raf(function(){t.moveContainer(!0,o,function(){return t.ngZone.run(function(){return t.setSelectedTab(i)})})}):t.setSelectedTab(i)}}},t.prototype.setSelectedTab=function(t){this.tabSelect.emit({index:t,changed:t!==this.selectedTabIndex}),this.selectedTabIndex=t},t.prototype.calculateContainerWidth=function(){this.containerWidth=this.tabWidth*this.tabsCount},t.prototype.setContainerWidth=function(){this.rnd.setStyle(this.container.nativeElement,"width",this.containerWidth+"px")},t.prototype.slideTo=function(t,n){var e=this;void 0===n&&(n=!0),this.plt.raf(function(){return e.moveContainer(n,t*e.tabWidth)})},t.prototype.moveContainer=function(t,n,e){void 0===t&&(t=!1),void 0===e&&(e=function(){});var i=this.container.nativeElement;t?(-1===i.style[this.plt.Css.transform].indexOf("all")&&this.rnd.setStyle(i,this.plt.Css.transition,"all "+this.config.transitionDuration+"ms "+this.config.transitionEase),this.rnd.setStyle(i,this.plt.Css.transform,"translate3d("+-1*n+"px, 0, 0)"),this.containerPosition=n):(n&&(this.containerPosition=n),"initial"!==i.style[this.plt.Css.transform]&&this.rnd.setStyle(i,this.plt.Css.transition,"initial"),this.containerPosition=Math.max(this.minPosX,Math.min(this.maxPosX,this.containerPosition)),this.rnd.setStyle(i,this.plt.Css.transform,"translate3d("+-1*this.containerPosition+"px, 0, 0)")),e()},t.prototype.refreshMinMax=function(){this.minPosX=0,this.maxPosX=(this.tabsCount-1)*this.tabWidth},t}();a.decorators=[{type:i._22,args:[{selector:"super-tabs-container",template:"<div #container><ng-content></ng-content></div>",encapsulation:i._0.None}]}],a.ctorParameters=function(){return[{type:i.H},{type:i._29},{type:o.b},{type:i.g}]},a.propDecorators={config:[{type:i._30}],tabsCount:[{type:i._30}],selectedTabIndex:[{type:i._30}],tabSelect:[{type:i._31}],onDrag:[{type:i._31}],container:[{type:i._32,args:["container"]}]}},267:function(t,n,e){"use strict";e.d(n,"a",function(){return r});var i=e(0),o=e(52),s=e(278),a=e(264),r=function(){function t(t,n,e,o){this.el=t,this.plt=n,this.rnd=e,this.domCtrl=o,this.color="",this.tabsColor="",this.badgeColor="",this.scrollTabs=!1,this.indicatorColor="",this.selectedTab=0,this.indicatorPosition=0,this.indicatorWidth=0,this.tabSelect=new i.z,this.segmentPosition=0,this.segmentButtonWidths=[],this.segmentWidth=0,this.tabs=[],this.animationState={indicator:!1,segment:!1}}return t.prototype.ngAfterViewInit=function(){var t=this;this.gesture=new s.a(this.plt,this.tabButtonsContainer.nativeElement,this.config,this.rnd),this.gesture.onMove=function(n){var e=t.segmentPosition+n,i=t.el.nativeElement.offsetWidth,o=t.segmentWidth;e=Math.max(0,Math.min(e,o-i)),t.setSegmentPosition(e)},this.scrollTabs&&this.plt.timeout(function(){t.indexSegmentButtonWidths()},10)},t.prototype.ngOnDestroy=function(){this.gesture&&this.gesture.destroy()},t.prototype.onTabSelect=function(t){this.tabSelect.emit(t)},t.prototype.alignIndicator=function(t,n,e){this.setIndicatorProperties(n,t,e)},t.prototype.setIndicatorPosition=function(t,n){this.setIndicatorProperties(this.indicatorWidth,t,n)},t.prototype.setIndicatorWidth=function(t,n){this.setIndicatorProperties(t,this.indicatorPosition,n)},t.prototype.setIndicatorProperties=function(t,n,e){this.indicatorWidth=t,this.indicatorPosition=n;var i=t/100;this.toggleAnimation("indicator",e),this.rnd.setStyle(this.indicator.nativeElement,this.plt.Css.transform,"translate3d("+(n-this.segmentPosition)+"px, 0, 0) scale3d("+i+", 1, 1)")},t.prototype.setSegmentPosition=function(t,n){this.segmentPosition=t,this.toggleAnimation("segment",n),this.rnd.setStyle(this.tabButtonsBar.nativeElement,this.plt.Css.transform,"translate3d("+-1*t+"px,0,0)"),this.setIndicatorPosition(this.indicatorPosition,n)},t.prototype.toggleAnimation=function(t,n){if(this.config&&0!==this.config.transitionDuration&&this.animationState[t]!==n){this.animationState[t]=n;var e="indicator"===t?this.indicator.nativeElement:this.tabButtonsBar.nativeElement,i=n?"all "+this.config.transitionDuration+"ms "+this.config.transitionEase:"initial";this.rnd.setStyle(e,this.plt.Css.transition,i)}},t.prototype.indexSegmentButtonWidths=function(){var t=[],n=0;this.tabButtons.forEach(function(e,i){t[i]=e.getNativeElement().offsetWidth,n+=t[i]}),this.segmentButtonWidths=t,this.segmentWidth=n},t}();r.decorators=[{type:i._22,args:[{selector:"super-tabs-toolbar",template:'\n    <ion-toolbar [color]="color" mode="md" [class.scroll-tabs]="scrollTabs">\n      <div class="tab-buttons-container" #tabButtonsContainer>\n        <div *ngIf="tabsPlacement === \'bottom\'" class="indicator {{ \'button-md-\' + indicatorColor }}" #indicator></div>\n        <div class="tab-buttons" #tabButtons>\n          <super-tab-button *ngFor="let tab of tabs; let i = index" (select)="selectedTab !== i && onTabSelect(i)" [title]="tab.title" [icon]="tab.icon" [badge]="tab.badge" [selected]="selectedTab === i" [color]="tabsColor" [badgeColor]="badgeColor"></super-tab-button>\n        </div>\n        <div *ngIf="tabsPlacement === \'top\'" class="indicator {{ \'button-md-\' + indicatorColor }}" #indicator></div>\n      </div>\n    </ion-toolbar>\n  ',encapsulation:i._0.None}]}],r.ctorParameters=function(){return[{type:i.H},{type:o.b},{type:i._29},{type:o.j}]},r.propDecorators={color:[{type:i._30}],tabsColor:[{type:i._30}],badgeColor:[{type:i._30}],scrollTabs:[{type:i._30}],indicatorColor:[{type:i._30}],selectedTab:[{type:i._30}],config:[{type:i._30}],tabsPlacement:[{type:i._30}],tabSelect:[{type:i._31}],tabButtons:[{type:i._33,args:[a.a]}],tabButtonsContainer:[{type:i._32,args:["tabButtonsContainer"]}],indicator:[{type:i._32,args:["indicator"]}],tabButtonsBar:[{type:i._32,args:["tabButtons"]}]}},272:function(t,n,e){"use strict";function i(t){return s._14(2,[(t()(),s._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),s._17(278528,null,0,a.k,[s.t,s.u,s.H,s.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),s._21(null,0),s._21(null,1),s._21(null,2),(t()(),s._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),s._17(278528,null,0,a.k,[s.t,s.u,s.H,s.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),s._21(null,3)],function(t,n){var e=n.component;t(n,1,0,"toolbar-background","toolbar-background-"+e._mode);t(n,6,0,"toolbar-content","toolbar-content-"+e._mode)},null)}function o(t){return s._14(0,[(t()(),s._16(0,null,null,1,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,i,u)),s._17(49152,null,0,r.a,[l.c,s.H,s.I],null,null)],null,function(t,n){t(n,0,0,s._18(n,1)._sbPadding)})}e.d(n,"b",function(){return u}),n.a=i;var s=e(0),a=e(14),r=e(36),l=e(1),c=[],u=s._13({encapsulation:2,styles:c,data:{}});s._19("ion-toolbar",r.a,o,{color:"color",mode:"mode"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},278:function(t,n,e){"use strict";e.d(n,"a",function(){return o});var i=e(10),o=function(){function t(t,n,e,i){this.plt=t,this.el=n,this.config=e,this.rnd=i,this.leftThreshold=0,this.rightThreshold=0,this.listeners=[],this.listeners.push(i.listen(n,"touchstart",this._onStart.bind(this)),i.listen(n,"touchmove",this._onMove.bind(this)),i.listen(n,"touchend",this._onEnd.bind(this))),"both"!==e.sideMenu&&"left"!==e.sideMenu||(this.leftThreshold=e.sideMenuThreshold),"both"!==e.sideMenu&&"right"!==e.sideMenu||(this.rightThreshold=e.sideMenuThreshold)}return t.prototype.destroy=function(){this.listeners.forEach(function(t){return t()})},t.prototype._onStart=function(t){var n=e.i(i.a)(t),o=this.plt.width();if(n.x<this.leftThreshold||n.x>o-this.rightThreshold)return void(this.shouldCapture=!1);this.initialCoords=n,this.config.shortSwipeDuration>0&&(this.initialTimestamp=Date.now()),this.lastPosX=n.x},t.prototype._onMove=function(t){var n=e.i(i.a)(t);if(!this.isDragging){if("boolean"!=typeof this.shouldCapture&&this.checkGesture(n),!0!==this.shouldCapture)return;this.isDragging=!0}t.stopPropagation(),t.preventDefault();var o=this.lastPosX-n.x;this.onMove&&this.onMove(o),this.lastPosX=n.x},t.prototype._onEnd=function(t){var n=e.i(i.a)(t);if(!0===this.shouldCapture)if(this.config.shortSwipeDuration>0){var o=Date.now()-this.initialTimestamp;o<=this.config.shortSwipeDuration?this.onEnd&&this.onEnd(!0,n.x-this.initialCoords.x):this.onEnd&&this.onEnd(!1)}else this.onEnd&&this.onEnd(!1);this.isDragging=!1,this.shouldCapture=void 0},t.prototype.checkGesture=function(t){var n=this.config.maxDragAngle*(Math.PI/180),e=Math.cos(n),i=t.x-this.initialCoords.x,o=t.y-this.initialCoords.y;if(Math.sqrt(i*i+o*o)>=this.config.dragThreshold){var s=Math.atan2(o,i),a=Math.cos(s);this.shouldCapture=Math.abs(a)>e}},t}()},279:function(t,n,e){"use strict";e.d(n,"a",function(){return h});var i=e(0),o=e(52),s=e(265),a=e(260),r=e(261),l=e(267),c=e(266),u=e(264),h=function(){function t(){}return t.forRoot=function(){return{ngModule:t,providers:[r.a]}},t}();h.decorators=[{type:i._12,args:[{declarations:[s.a,a.a,l.a,c.a,u.a],imports:[o.n],exports:[s.a,a.a]}]}],h.ctorParameters=function(){return[]}},286:function(t,n,e){"use strict";function i(t){return r._14(0,[(t()(),r._16(0,null,null,1,"ion-icon",[["role","img"]],[[2,"hide",null]],null,null,null,null)),r._17(147456,null,0,l.a,[c.c,r.H,r.I],{color:[0,"color"],name:[1,"name"]},null)],function(t,n){var e=n.component;t(n,1,0,e.color,e.icon)},function(t,n){t(n,0,0,r._18(n,1)._hidden)})}function o(t){return r._14(0,[(t()(),r._16(0,null,null,2,"span",[["class","title"],["ion-text",""]],null,null,null,null,null)),r._17(16384,null,0,u.a,[c.c,r.H,r.I],{color:[0,"color"]},null),(t()(),r._15(null,["",""]))],function(t,n){t(n,1,0,n.component.color)},function(t,n){t(n,2,0,n.component.title)})}function s(t){return r._14(2,[(t()(),r._15(null,["\n    "])),(t()(),r._24(16777216,null,null,1,null,i)),r._17(16384,null,0,h.m,[r.L,r.N],{ngIf:[0,"ngIf"]},null),(t()(),r._15(null,["\n    "])),(t()(),r._24(16777216,null,null,1,null,o)),r._17(16384,null,0,h.m,[r.L,r.N],{ngIf:[0,"ngIf"]},null),(t()(),r._15(null,["\n    "])),(t()(),r._16(0,null,null,2,"ion-badge",[["mode","md"]],null,null,null,null,null)),r._17(16384,null,0,d.a,[c.c,r.H,r.I],{color:[0,"color"],mode:[1,"mode"]},null),(t()(),r._15(null,["",""])),(t()(),r._15(null,["\n    "])),(t()(),r._15(null,["\n    "])),(t()(),r._16(0,null,null,0,"div",[["class","button-effect"]],null,null,null,null,null)),(t()(),r._15(null,["\n  "]))],function(t,n){var e=n.component;t(n,2,0,!!e.icon),t(n,5,0,!!e.title);t(n,8,0,e.badgeColor,"md")},function(t,n){t(n,9,0,n.component.badge)})}function a(t){return r._14(0,[(t()(),r._16(0,null,null,1,"super-tab-button",[["role","button"],["tappable",""]],[[2,"selected",null],[2,"title-only",null],[2,"icon-only",null],[2,"title-and-icon",null]],[[null,"click"]],function(t,n,e){var i=!0;if("click"===n){i=!1!==r._18(t,1).onClick()&&i}return i},s,f)),r._17(49152,null,0,b.a,[r.H],null,null)],null,function(t,n){t(n,0,0,r._18(n,1).selected,!!r._18(n,1).title&&!r._18(n,1).icon,!r._18(n,1).title&&!!r._18(n,1).icon,!!r._18(n,1).title&&!!r._18(n,1).icon)})}e.d(n,"b",function(){return f}),n.a=s;var r=e(0),l=e(37),c=e(1),u=e(107),h=e(14),d=e(100),b=e(264),p=[],f=r._13({encapsulation:2,styles:p,data:{}});r._19("super-tab-button",b.a,a,{selected:"selected",title:"title",icon:"icon",badge:"badge",badgeColor:"badgeColor",color:"color"},{select:"select"},[])},287:function(t,n,e){"use strict";function i(t){return s._14(0,[s._20(402653184,1,{_vp:0}),(t()(),s._16(16777216,[[1,3],["viewport",1]],null,0,"div",[],null,null,null,null,null)),(t()(),s._16(0,null,null,0,"div",[["class","nav-decor"]],null,null,null,null,null))],null,null)}function o(t){return s._14(0,[(t()(),s._16(0,null,null,1,"super-tab",[],null,null,null,i,g)),s._17(4440064,null,0,a.a,[r.a,l.a,c.c,u.b,s.H,s.g,s.I,s.K,h.a,d.a,s.p,[2,b.b],p.a,s.T],null,null)],function(t,n){t(n,1,0)},null)}e.d(n,"b",function(){return g}),n.a=i;var s=e(0),a=e(265),r=e(260),l=e(6),c=e(1),u=e(3),h=e(7),d=e(18),b=e(13),p=e(8),f=[],g=s._13({encapsulation:2,styles:f,data:{}});s._19("super-tab",a.a,o,{color:"color",mode:"mode",swipeBackEnabled:"swipeBackEnabled",title:"title",icon:"icon",root:"root",rootParams:"rootParams",tabId:"id",badge:"badge"},{},[])},288:function(t,n,e){"use strict";function i(t){return s._14(0,[s._20(402653184,1,{container:0}),(t()(),s._16(0,[[1,0],["container",1]],null,1,"div",[],null,null,null,null,null)),s._21(null,0)],null,null)}function o(t){return s._14(0,[(t()(),s._16(0,null,null,1,"super-tabs-container",[],null,null,null,i,c)),s._17(4374528,null,0,a.a,[s.H,s._29,r.b,s.g],null,null)],null,null)}e.d(n,"b",function(){return c}),n.a=i;var s=e(0),a=e(266),r=e(3),l=[],c=s._13({encapsulation:2,styles:l,data:{}});s._19("super-tabs-container",a.a,o,{config:"config",tabsCount:"tabsCount",selectedTabIndex:"selectedTabIndex"},{tabSelect:"tabSelect",onDrag:"onDrag"},["*"])},289:function(t,n,e){"use strict";function i(t){return l._14(0,[(t()(),l._16(0,[[3,0],["indicator",1]],null,0,"div",[],[[8,"className",0]],null,null,null,null))],null,function(t,n){var e=n.component
-;t(n,0,0,l._25(1,"indicator ","button-md-"+e.indicatorColor,""))})}function o(t){return l._14(0,[(t()(),l._16(0,null,null,1,"super-tab-button",[["role","button"],["tappable",""]],[[2,"selected",null],[2,"title-only",null],[2,"icon-only",null],[2,"title-and-icon",null]],[[null,"select"],[null,"click"]],function(t,n,e){var i=!0,o=t.component;if("click"===n){i=!1!==l._18(t,1).onClick()&&i}if("select"===n){i=!1!==(o.selectedTab!==t.context.index&&o.onTabSelect(t.context.index))&&i}return i},c.a,c.b)),l._17(49152,[[1,4]],0,u.a,[l.H],{selected:[0,"selected"],title:[1,"title"],icon:[2,"icon"],badge:[3,"badge"],badgeColor:[4,"badgeColor"],color:[5,"color"]},{select:"select"})],function(t,n){var e=n.component;t(n,1,0,e.selectedTab===n.context.index,n.context.$implicit.title,n.context.$implicit.icon,n.context.$implicit.badge,e.badgeColor,e.tabsColor)},function(t,n){t(n,0,0,l._18(n,1).selected,!!l._18(n,1).title&&!l._18(n,1).icon,!l._18(n,1).title&&!!l._18(n,1).icon,!!l._18(n,1).title&&!!l._18(n,1).icon)})}function s(t){return l._14(0,[(t()(),l._16(0,[[3,0],["indicator",1]],null,0,"div",[],[[8,"className",0]],null,null,null,null))],null,function(t,n){var e=n.component;t(n,0,0,l._25(1,"indicator ","button-md-"+e.indicatorColor,""))})}function a(t){return l._14(0,[l._20(671088640,1,{tabButtons:1}),l._20(402653184,2,{tabButtonsContainer:0}),l._20(671088640,3,{indicator:0}),l._20(402653184,4,{tabButtonsBar:0}),(t()(),l._15(null,["\n    "])),(t()(),l._16(0,null,null,17,"ion-toolbar",[["class","toolbar"],["mode","md"]],[[2,"scroll-tabs",null],[2,"statusbar-padding",null]],null,null,h.a,h.b)),l._17(49152,null,0,d.a,[b.c,l.H,l.I],{color:[0,"color"],mode:[1,"mode"]},null),(t()(),l._15(3,["\n      "])),(t()(),l._16(0,[[2,0],["tabButtonsContainer",1]],3,13,"div",[["class","tab-buttons-container"]],null,null,null,null,null)),(t()(),l._15(null,["\n        "])),(t()(),l._24(16777216,null,null,1,null,i)),l._17(16384,null,0,p.m,[l.L,l.N],{ngIf:[0,"ngIf"]},null),(t()(),l._15(null,["\n        "])),(t()(),l._16(0,[[4,0],["tabButtons",1]],null,4,"div",[["class","tab-buttons"]],null,null,null,null,null)),(t()(),l._15(null,["\n          "])),(t()(),l._24(16777216,null,null,1,null,o)),l._17(802816,null,0,p.l,[l.L,l.N,l.t],{ngForOf:[0,"ngForOf"]},null),(t()(),l._15(null,["\n        "])),(t()(),l._15(null,["\n        "])),(t()(),l._24(16777216,null,null,1,null,s)),l._17(16384,null,0,p.m,[l.L,l.N],{ngIf:[0,"ngIf"]},null),(t()(),l._15(null,["\n      "])),(t()(),l._15(3,["\n    "])),(t()(),l._15(null,["\n  "]))],function(t,n){var e=n.component;t(n,6,0,e.color,"md"),t(n,11,0,"bottom"===e.tabsPlacement),t(n,16,0,e.tabs),t(n,20,0,"top"===e.tabsPlacement)},function(t,n){t(n,5,0,n.component.scrollTabs,l._18(n,6)._sbPadding)})}function r(t){return l._14(0,[(t()(),l._16(0,null,null,1,"super-tabs-toolbar",[],null,null,null,a,m)),l._17(4374528,null,0,f.a,[l.H,g.b,l._29,_.a],null,null)],null,null)}e.d(n,"b",function(){return m}),n.a=a;var l=e(0),c=e(286),u=e(264),h=e(272),d=e(36),b=e(1),p=e(14),f=e(267),g=e(3),_=e(8),y=[],m=l._13({encapsulation:2,styles:y,data:{}});l._19("super-tabs-toolbar",f.a,r,{color:"color",tabsColor:"tabsColor",badgeColor:"badgeColor",scrollTabs:"scrollTabs",indicatorColor:"indicatorColor",selectedTab:"selectedTab",config:"config",tabsPlacement:"tabsPlacement"},{tabSelect:"tabSelect"},[])},290:function(t,n,e){"use strict";function i(t){return s._14(0,[s._20(402653184,1,{toolbar:0}),s._20(402653184,2,{tabsContainer:0}),(t()(),s._15(null,["\n    "])),(t()(),s._16(0,null,null,1,"super-tabs-toolbar",[],[[8,"hidden",0]],[[null,"tabSelect"]],function(t,n,e){var i=!0,o=t.component;if("tabSelect"===n){i=!1!==o.onToolbarTabSelect(e)&&i}return i},r.a,r.b)),s._17(4374528,[[1,4]],0,l.a,[s.H,c.b,s._29,u.a],{color:[0,"color"],tabsColor:[1,"tabsColor"],badgeColor:[2,"badgeColor"],scrollTabs:[3,"scrollTabs"],indicatorColor:[4,"indicatorColor"],selectedTab:[5,"selectedTab"],config:[6,"config"],tabsPlacement:[7,"tabsPlacement"]},{tabSelect:"tabSelect"}),(t()(),s._15(null,["\n    "])),(t()(),s._16(0,null,null,4,"super-tabs-container",[],null,[[null,"tabSelect"],[null,"onDrag"]],function(t,n,e){var i=!0,o=t.component;if("tabSelect"===n){i=!1!==o.onContainerTabSelect(e)&&i}if("onDrag"===n){i=!1!==o.onDrag(e)&&i}return i},h.a,h.b)),s._17(4374528,[[2,4]],0,d.a,[s.H,s._29,c.b,s.g],{config:[0,"config"],tabsCount:[1,"tabsCount"],selectedTabIndex:[2,"selectedTabIndex"]},{tabSelect:"tabSelect",onDrag:"onDrag"}),(t()(),s._15(0,["\n      "])),s._21(0,0),(t()(),s._15(0,["\n    "])),(t()(),s._15(null,["\n  "]))],function(t,n){var e=n.component;t(n,4,0,e.toolbarBackground,e.toolbarColor,e.badgeColor,e.scrollTabs,e.indicatorColor,e.selectedTabIndex,e.config,e.tabsPlacement),t(n,7,0,e.config,e._tabs.length,e.selectedTabIndex)},function(t,n){t(n,3,0,!n.component._isToolbarVisible)})}function o(t){return s._14(0,[(t()(),s._16(0,null,null,2,"super-tabs",[],null,null,null,i,v)),s._17(5488640,null,0,a.a,[[2,b.a],[2,p.a],f.a,s.H,s._29,g.a,_.b,u.a],null,null),s._23(6144,null,y.a,null,[a.a])],function(t,n){t(n,1,0)},null)}e.d(n,"b",function(){return v}),n.a=i;var s=e(0),a=e(260),r=e(289),l=e(267),c=e(3),u=e(8),h=e(288),d=e(266),b=e(16),p=e(4),f=e(6),g=e(261),_=e(13),y=e(21),m=[],v=s._13({encapsulation:2,styles:m,data:{}});s._19("super-tabs",a.a,o,{toolbarBackground:"toolbarBackground",toolbarColor:"toolbarColor",indicatorColor:"indicatorColor",badgeColor:"badgeColor",config:"config",id:"id",height:"height",selectedTabIndex:"selectedTabIndex",scrollTabs:"scrollTabs",tabsPlacement:"tabsPlacement"},{tabSelect:"tabSelect"},["*"])},295:function(t,n,e){"use strict";e(265),e(260),e(261),e(279)},296:function(t,n,e){"use strict";var i=function(){function t(n,e){void 0===e&&(e=t.now),this.SchedulerAction=n,this.now=e}return t.prototype.schedule=function(t,n,e){return void 0===n&&(n=0),new this.SchedulerAction(this,t).schedule(e,n)},t.now=Date.now?Date.now:function(){return+new Date},t}();n.Scheduler=i},297:function(t,n,e){"use strict";var i=e(9),o=e(153);i.Observable.merge=o.merge},298:function(t,n,e){"use strict";var i=e(9),o=e(299);i.Observable.prototype.debounceTime=o.debounceTime},299:function(t,n,e){"use strict";function i(t,n){return void 0===n&&(n=r.async),this.lift(new l(t,n))}function o(t){t.debouncedNext()}var s=this&&this.__extends||function(t,n){function e(){this.constructor=t}for(var i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);t.prototype=null===n?Object.create(n):(e.prototype=n.prototype,new e)},a=e(22),r=e(303);n.debounceTime=i;var l=function(){function t(t,n){this.dueTime=t,this.scheduler=n}return t.prototype.call=function(t,n){return n.subscribe(new c(t,this.dueTime,this.scheduler))},t}(),c=function(t){function n(n,e,i){t.call(this,n),this.dueTime=e,this.scheduler=i,this.debouncedSubscription=null,this.lastValue=null,this.hasValue=!1}return s(n,t),n.prototype._next=function(t){this.clearDebounce(),this.lastValue=t,this.hasValue=!0,this.add(this.debouncedSubscription=this.scheduler.schedule(o,this.dueTime,this))},n.prototype._complete=function(){this.debouncedNext(),this.destination.complete()},n.prototype.debouncedNext=function(){this.clearDebounce(),this.hasValue&&(this.destination.next(this.lastValue),this.lastValue=null,this.hasValue=!1)},n.prototype.clearDebounce=function(){var t=this.debouncedSubscription;null!==t&&(this.remove(t),t.unsubscribe(),this.debouncedSubscription=null)},n}(a.Subscriber)},300:function(t,n,e){"use strict";var i=this&&this.__extends||function(t,n){function e(){this.constructor=t}for(var i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);t.prototype=null===n?Object.create(n):(e.prototype=n.prototype,new e)},o=e(30),s=function(t){function n(n,e){t.call(this)}return i(n,t),n.prototype.schedule=function(t,n){return void 0===n&&(n=0),this},n}(o.Subscription);n.Action=s},301:function(t,n,e){"use strict";var i=this&&this.__extends||function(t,n){function e(){this.constructor=t}for(var i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);t.prototype=null===n?Object.create(n):(e.prototype=n.prototype,new e)},o=e(23),s=e(300),a=function(t){function n(n,e){t.call(this,n,e),this.scheduler=n,this.work=e,this.pending=!1}return i(n,t),n.prototype.schedule=function(t,n){if(void 0===n&&(n=0),this.closed)return this;this.state=t,this.pending=!0;var e=this.id,i=this.scheduler;return null!=e&&(this.id=this.recycleAsyncId(i,e,n)),this.delay=n,this.id=this.id||this.requestAsyncId(i,this.id,n),this},n.prototype.requestAsyncId=function(t,n,e){return void 0===e&&(e=0),o.root.setInterval(t.flush.bind(t,this),e)},n.prototype.recycleAsyncId=function(t,n,e){return void 0===e&&(e=0),null!==e&&this.delay===e&&!1===this.pending?n:o.root.clearInterval(n)&&void 0||void 0},n.prototype.execute=function(t,n){if(this.closed)return new Error("executing a cancelled action");this.pending=!1;var e=this._execute(t,n);if(e)return e;!1===this.pending&&null!=this.id&&(this.id=this.recycleAsyncId(this.scheduler,this.id,null))},n.prototype._execute=function(t,n){var e=!1,i=void 0;try{this.work(t)}catch(t){e=!0,i=!!t&&t||new Error(t)}if(e)return this.unsubscribe(),i},n.prototype._unsubscribe=function(){var t=this.id,n=this.scheduler,e=n.actions,i=e.indexOf(this);this.work=null,this.delay=null,this.state=null,this.pending=!1,this.scheduler=null,-1!==i&&e.splice(i,1),null!=t&&(this.id=this.recycleAsyncId(n,t,null))},n}(s.Action);n.AsyncAction=a},302:function(t,n,e){"use strict";var i=this&&this.__extends||function(t,n){function e(){this.constructor=t}for(var i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);t.prototype=null===n?Object.create(n):(e.prototype=n.prototype,new e)},o=e(296),s=function(t){function n(){t.apply(this,arguments),this.actions=[],this.active=!1,this.scheduled=void 0}return i(n,t),n.prototype.flush=function(t){var n=this.actions;if(this.active)return void n.push(t);var e;this.active=!0;do{if(e=t.execute(t.state,t.delay))break}while(t=n.shift());if(this.active=!1,e){for(;t=n.shift();)t.unsubscribe();throw e}},n}(o.Scheduler);n.AsyncScheduler=s},303:function(t,n,e){"use strict";var i=e(301),o=e(302);n.async=new o.AsyncScheduler(i.AsyncAction)},353:function(t,n,e){"use strict";e.d(n,"a",function(){return i});var i=(e(0),e(52),this&&this.__decorate,this&&this.__metadata,function(){function t(t,n){this.navCtrl=t,this.navParams=n,this.page1="NoticeInformPage",this.page2="NoticeThankPage",this.page3="NoticeForkPage"}return t}())},461:function(t,n,e){"use strict";e.d(n,"a",function(){return i});var i=(e(0),e(52),e(353),e(295),this&&this.__decorate,function(){function t(){}return t}())},462:function(t,n,e){"use strict";function i(t){return s._14(0,[(t()(),s._15(null,["\n"])),(t()(),s._16(0,null,null,12,"super-tabs",[["height","100%"],["indicatorColor","light"],["selectedTabIndex","0"],["sliderColor","light"],["tabColor","light"],["toolbarBackground","mblue"],["toolbarColor","light"]],null,null,null,a.a,a.b)),s._17(5488640,null,0,r.a,[[2,l.a],[2,c.a],u.a,s.H,s._29,h.a,d.b,b.a],{toolbarBackground:[0,"toolbarBackground"],toolbarColor:[1,"toolbarColor"],indicatorColor:[2,"indicatorColor"],height:[3,"height"],selectedTabIndex:[4,"selectedTabIndex"]},null),s._23(6144,null,p.a,null,[r.a]),(t()(),s._15(0,["\n    "])),(t()(),s._16(0,null,0,1,"super-tab",[["title","通知"]],null,null,null,f.a,f.b)),s._17(4440064,null,0,g.a,[r.a,u.a,_.c,y.b,s.H,s.g,s.I,s.K,m.a,v.a,s.p,[2,d.b],b.a,s.T],{title:[0,"title"],root:[1,"root"]},null),(t()(),s._15(0,["\n    "])),(t()(),s._16(0,null,0,1,"super-tab",[["title","赞与感谢"]],null,null,null,f.a,f.b)),s._17(4440064,null,0,g.a,[r.a,u.a,_.c,y.b,s.H,s.g,s.I,s.K,m.a,v.a,s.p,[2,d.b],b.a,s.T],{title:[0,"title"],root:[1,"root"]},null),(t()(),s._15(0,["\n    "])),(t()(),s._16(0,null,0,1,"super-tab",[["title","关注"]],null,null,null,f.a,f.b)),s._17(4440064,null,0,g.a,[r.a,u.a,_.c,y.b,s.H,s.g,s.I,s.K,m.a,v.a,s.p,[2,d.b],b.a,s.T],{title:[0,"title"],root:[1,"root"]},null),(t()(),s._15(0,["\n"]))],function(t,n){var e=n.component;t(n,2,0,"mblue","light","light","100%","0");t(n,6,0,"通知",e.page1);t(n,9,0,"赞与感谢",e.page2);t(n,12,0,"关注",e.page3)},null)}function o(t){return s._14(0,[(t()(),s._16(0,null,null,1,"page-notice",[],null,null,null,i,P)),s._17(49152,null,0,T.a,[l.a,I.a],null,null)],null,null)}e.d(n,"a",function(){return x});var s=e(0),a=e(290),r=e(260),l=e(16),c=e(4),u=e(6),h=e(261),d=e(13),b=e(8),p=e(21),f=e(287),g=e(265),_=e(1),y=e(3),m=e(7),v=e(18),T=e(353),I=e(11),C=[],P=s._13({encapsulation:2,styles:C,data:{}}),x=s._19("page-notice",T.a,o,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/3.main.js.map
+webpackJsonp([3],{
+
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyCollectPageModule", function() { return MyCollectPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__my_collect__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic2_super_tabs__ = __webpack_require__(332);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var MyCollectPageModule = (function () {
+    function MyCollectPageModule() {
+    }
+    return MyCollectPageModule;
+}());
+MyCollectPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__my_collect__["a" /* MyCollectPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__my_collect__["a" /* MyCollectPage */]),
+            __WEBPACK_IMPORTED_MODULE_3_ionic2_super_tabs__["a" /* SuperTabsModule */].forRoot()
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__my_collect__["a" /* MyCollectPage */]
+        ]
+    })
+], MyCollectPageModule);
+
+//# sourceMappingURL=my-collect.module.js.map
+
+/***/ }),
+
+/***/ 319:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabs; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__super_tabs_toolbar__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__super_tabs_container__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_super_tabs_controller__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_fromEvent__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_merge__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_debounceTime__);
+
+
+
+
+
+
+
+
+
+var SuperTabs = (function () {
+    function SuperTabs(parent, viewCtrl, _app, el, rnd, superTabsCtrl, linker, domCtrl) {
+        var _this = this;
+        this.viewCtrl = viewCtrl;
+        this._app = _app;
+        this.el = el;
+        this.rnd = rnd;
+        this.superTabsCtrl = superTabsCtrl;
+        this.linker = linker;
+        this.domCtrl = domCtrl;
+        /**
+         * Color of the slider that moves based on what tab is selected
+         */
+        this.indicatorColor = 'primary';
+        /**
+         * Badge color
+         */
+        this.badgeColor = 'primary';
+        /**
+         * Configuration
+         */
+        this.config = {};
+        /**
+         * Tab buttons placement. Can be `top` or `bottom`.
+         * @type {string}
+         */
+        this.tabsPlacement = 'top';
+        /**
+         * Emits the tab index when the selected tab changes
+         * @type {EventEmitter<Object>}
+         */
+        this.tabSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+        /**
+         * Indicates whether the toolbar is visible
+         * @private
+         */
+        this._isToolbarVisible = true;
+        /**
+         * @private
+         */
+        this._tabs = [];
+        /**
+         * Indicates whether the tab buttons should scroll
+         * @type {boolean}
+         * @private
+         */
+        this._scrollTabs = false;
+        /**
+         * Selected tab index
+         * @type {number}
+         * @private
+         */
+        this._selectedTabIndex = 0;
+        /**
+         * Any observable subscriptions that we should unsubscribe from when destroying this component
+         * @type {Array<Subscription>}
+         * @private
+         */
+        this.watches = [];
+        /**
+         * Indicates whether any of the tabs has an icon
+         * @type {boolean}
+         * @private
+         */
+        this.hasIcons = false;
+        /**
+         * Indicates whether any of the tabs has a title
+         * @type {boolean}
+         * @private
+         */
+        this.hasTitles = false;
+        /**
+         * Indicates whether the component has finished initializing
+         * @type {boolean}
+         * @private
+         */
+        this.init = false;
+        this.parent = parent;
+        if (this.parent) {
+            this.parent.registerChildNav(this);
+        }
+        else if (viewCtrl && viewCtrl.getNav()) {
+            this.parent = viewCtrl.getNav();
+            this.parent.registerChildNav(this);
+        }
+        else if (this._app) {
+            this._app._setRootNav(this);
+        }
+        var obsToMerge = [
+            __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].fromEvent(window, 'orientationchange'),
+            __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].fromEvent(window, 'resize')
+        ];
+        if (viewCtrl) {
+            viewCtrl._setContent(this);
+            viewCtrl._setContentRef(el);
+            obsToMerge.push(viewCtrl.didEnter);
+        }
+        // re-adjust the height of the slider when the orientation changes
+        this.watches.push(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(this, obsToMerge)
+            .debounceTime(10)
+            .subscribe(function () {
+            _this.setMaxIndicatorPosition();
+            _this.updateTabWidth();
+            _this.setFixedIndicatorWidth();
+            _this.refreshTabWidths();
+            _this.tabsContainer.refreshDimensions();
+            _this.tabsContainer.slideTo(_this.selectedTabIndex);
+            _this.alignIndicatorPosition();
+            _this.refreshContainerHeight();
+        }));
+    }
+    Object.defineProperty(SuperTabs.prototype, "height", {
+        get: function () {
+            return this.el.nativeElement.offsetHeight;
+        },
+        /**
+         * Height of the tabs
+         */
+        set: function (val) {
+            this.rnd.setStyle(this.el.nativeElement, 'height', val + 'px');
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTabs.prototype, "selectedTabIndex", {
+        get: function () {
+            return this._selectedTabIndex;
+        },
+        /**
+         * The initial selected tab index
+         * @param val {number} tab index
+         */
+        set: function (val) {
+            this._selectedTabIndex = Number(val);
+            this.init && this.alignIndicatorPosition(true);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTabs.prototype, "scrollTabs", {
+        get: function () {
+            return this._scrollTabs;
+        },
+        /**
+         * Set to true to enable tab buttons scrolling
+         * @param val
+         */
+        set: function (val) {
+            this._scrollTabs = typeof val !== 'boolean' || val === true;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SuperTabs.prototype.ngOnInit = function () {
+        var defaultConfig = {
+            dragThreshold: 10,
+            maxDragAngle: 40,
+            sideMenuThreshold: 50,
+            transitionDuration: 300,
+            transitionEase: 'cubic-bezier(0.35, 0, 0.25, 1)',
+            shortSwipeDuration: 300
+        };
+        for (var prop in this.config) {
+            defaultConfig[prop] = this.config[prop];
+        }
+        this.config = defaultConfig;
+        this.id = this.id || "super-tabs-" + ++superTabsIds;
+        this.superTabsCtrl.registerInstance(this);
+        if (this.tabsPlacement === 'bottom') {
+            this.rnd.addClass(this.getElementRef().nativeElement, 'tabs-placement-bottom');
+        }
+    };
+    SuperTabs.prototype.ngAfterContentInit = function () {
+        this.updateTabWidth();
+        this.toolbar.tabs = this._tabs;
+    };
+    SuperTabs.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        var tabsSegment = this.linker.initNav(this);
+        if (tabsSegment && !tabsSegment.component) {
+            this.selectedTabIndex = this.linker.getSelectedTabIndex(this, tabsSegment.name, this.selectedTabIndex);
+        }
+        this.linker.navChange('switch');
+        if (!this.hasTitles && !this.hasIcons)
+            this._isToolbarVisible = false;
+        this.tabsContainer.slideTo(this.selectedTabIndex, false);
+        this.refreshTabStates();
+        this.setFixedIndicatorWidth();
+        // we need this to make sure the "slide" thingy doesn't move outside the screen
+        this.setMaxIndicatorPosition();
+        setTimeout(function () { return _this.alignIndicatorPosition(); }, 100);
+        this.refreshContainerHeight();
+        this.init = true;
+    };
+    SuperTabs.prototype.ngOnDestroy = function () {
+        this.watches.forEach(function (watch) {
+            watch.unsubscribe && watch.unsubscribe();
+        });
+        this.parent.unregisterChildNav(this);
+        this.superTabsCtrl.unregisterInstance(this.id);
+    };
+    /**
+     * Sets the badge number for a specific tab
+     * @param tabId {string} tab ID
+     * @param value {number} badge number
+     */
+    SuperTabs.prototype.setBadge = function (tabId, value) {
+        this.getTabById(tabId).setBadge(value);
+    };
+    /**
+     * Clears the badge for a specific tab
+     * @param tabId {string} tab ID
+     */
+    SuperTabs.prototype.clearBadge = function (tabId) {
+        this.getTabById(tabId).clearBadge();
+    };
+    /**
+     * Increases the badge value for a specific tab
+     * @param tabId {string} tab ID
+     * @param increaseBy {number} the number to increase by
+     */
+    SuperTabs.prototype.increaseBadge = function (tabId, increaseBy) {
+        this.getTabById(tabId).increaseBadge(increaseBy);
+    };
+    SuperTabs.prototype.decreaseBadge = function (tabId, decreaseBy) {
+        this.getTabById(tabId).decreaseBadge(decreaseBy);
+    };
+    SuperTabs.prototype.enableTabsSwipe = function (enable) {
+        this.tabsContainer.enableTabsSwipe(enable);
+    };
+    SuperTabs.prototype.enableTabSwipe = function (tabId, enable) {
+        this.tabsContainer.enableTabSwipe(this.getTabIndexById(tabId), enable);
+    };
+    SuperTabs.prototype.showToolbar = function (show) {
+        this._isToolbarVisible = show;
+        this.refreshContainerHeight();
+    };
+    SuperTabs.prototype.slideTo = function (indexOrId) {
+        if (typeof indexOrId === 'string') {
+            indexOrId = this.getTabIndexById(indexOrId);
+        }
+        this.selectedTabIndex = indexOrId;
+        this.tabsContainer.slideTo(indexOrId);
+    };
+    SuperTabs.prototype.getActiveChildNav = function () {
+        return this._tabs[this.selectedTabIndex];
+    };
+    SuperTabs.prototype.addTab = function (tab) {
+        tab.rootParams = tab.rootParams || {};
+        tab.rootParams.rootNavCtrl = this.parent;
+        tab.tabId = tab.tabId || "super-tabs-" + this.id + "-tab-" + this._tabs.length;
+        this._tabs.push(tab);
+        if (tab.icon) {
+            this.hasIcons = true;
+        }
+        if (tab.title) {
+            this.hasTitles = true;
+        }
+        tab.setWidth(this.el.nativeElement.offsetWidth);
+    };
+    /**
+     * We listen to drag events to move the "slide" thingy along with the slides
+     */
+    SuperTabs.prototype.onDrag = function () {
+        var _this = this;
+        if (!this._isToolbarVisible)
+            return;
+        this.domCtrl.write(function () {
+            var singleSlideWidth = _this.tabsContainer.tabWidth, slidesWidth = _this.tabsContainer.containerWidth;
+            var percentage = Math.abs(_this.tabsContainer.containerPosition / slidesWidth);
+            if (_this.scrollTabs) {
+                var originalSlideStart = singleSlideWidth * _this.selectedTabIndex, originalPosition = _this.getRelativeIndicatorPosition(), originalWidth = _this.getSegmentButtonWidth();
+                var nextPosition = void 0, nextWidth = void 0, indicatorPosition = void 0, indicatorWidth = void 0;
+                var deltaTabPos = originalSlideStart - Math.abs(_this.tabsContainer.containerPosition);
+                percentage = Math.abs(deltaTabPos / singleSlideWidth);
+                if (deltaTabPos < 0) {
+                    // going to next slide
+                    nextPosition = _this.getRelativeIndicatorPosition(_this.selectedTabIndex + 1);
+                    nextWidth = _this.getSegmentButtonWidth(_this.selectedTabIndex + 1);
+                    indicatorPosition = originalPosition + percentage * (nextPosition - originalPosition);
+                }
+                else {
+                    // going to previous slide
+                    nextPosition = _this.getRelativeIndicatorPosition(_this.selectedTabIndex - 1);
+                    nextWidth = _this.getSegmentButtonWidth(_this.selectedTabIndex - 1);
+                    indicatorPosition = originalPosition - percentage * (originalPosition - nextPosition);
+                }
+                var deltaWidth = nextWidth - originalWidth;
+                indicatorWidth = originalWidth + percentage * deltaWidth;
+                if ((originalWidth > nextWidth && indicatorWidth < nextWidth) || (originalWidth < nextWidth && indicatorWidth > nextWidth)) {
+                    // this is only useful on desktop, because you are able to drag and swipe through multiple tabs at once
+                    // which results in the indicator width to be super small/big since it's changing based on the current/next widths
+                    indicatorWidth = nextWidth;
+                }
+                _this.alignTabButtonsContainer();
+                _this.toolbar.setIndicatorProperties(indicatorWidth, indicatorPosition);
+            }
+            else {
+                _this.toolbar.setIndicatorPosition(Math.min(percentage * singleSlideWidth, _this.maxIndicatorPosition));
+            }
+        });
+    };
+    /**
+     * Runs when the user clicks on a segment button
+     * @param index
+     */
+    SuperTabs.prototype.onTabChange = function (index) {
+        if (index <= this._tabs.length) {
+            var currentTab = this.getActiveTab();
+            var activeView = currentTab.getActive();
+            if (activeView) {
+                activeView._willLeave(false);
+                activeView._didLeave();
+            }
+            this.selectedTabIndex = index;
+            this.linker.navChange('switch');
+            this.refreshTabStates();
+            activeView = this.getActiveTab().getActive();
+            if (activeView) {
+                activeView._willEnter();
+                activeView._didEnter();
+            }
+            this.tabSelect.emit({
+                index: index,
+                id: this._tabs[index].tabId
+            });
+        }
+    };
+    SuperTabs.prototype.onToolbarTabSelect = function (index) {
+        this.tabsContainer.slideTo(index);
+        this.onTabChange(index);
+    };
+    SuperTabs.prototype.onContainerTabSelect = function (ev) {
+        if (ev.changed) {
+            this.onTabChange(ev.index);
+        }
+        this.alignIndicatorPosition(true);
+    };
+    SuperTabs.prototype.refreshTabStates = function () {
+        var _this = this;
+        this._tabs.forEach(function (tab, i) {
+            tab.setActive(i === _this.selectedTabIndex);
+            tab.load(Math.abs(_this.selectedTabIndex - i) < 2);
+        });
+    };
+    SuperTabs.prototype.updateTabWidth = function () {
+        this.tabsContainer.tabWidth = this.el.nativeElement.offsetWidth;
+    };
+    SuperTabs.prototype.refreshContainerHeight = function () {
+        var heightOffset = 0;
+        if (this._isToolbarVisible) {
+            if (this.hasTitles && this.hasIcons) {
+                heightOffset = 72;
+            }
+            else if (this.hasTitles || this.hasIcons) {
+                heightOffset = 48;
+            }
+        }
+        this.rnd.setStyle(this.tabsContainer.getNativeElement(), 'height', "calc(100% - " + heightOffset + "px)");
+    };
+    SuperTabs.prototype.refreshTabWidths = function () {
+        var width = this.el.nativeElement.offsetWidth;
+        this._tabs.forEach(function (tab) {
+            tab.setWidth(width);
+        });
+    };
+    SuperTabs.prototype.alignTabButtonsContainer = function (animate) {
+        var mw = this.el.nativeElement.offsetWidth, // max width
+        iw = this.toolbar.indicatorWidth, // indicator width
+        ip = this.toolbar.indicatorPosition, // indicatorPosition
+        sp = this.toolbar.segmentPosition; // segment position
+        if (this.toolbar.segmentWidth <= mw) {
+            if (this.toolbar.segmentPosition !== 0) {
+                this.toolbar.setSegmentPosition(0, animate);
+            }
+            return;
+        }
+        var pos;
+        if (ip + iw + (mw / 2 - iw / 2) > mw + sp) {
+            // we need to move the segment container to the left
+            var delta = (ip + iw + (mw / 2 - iw / 2)) - mw - sp;
+            pos = sp + delta;
+            var max = this.toolbar.segmentWidth - mw;
+            pos = pos < max ? pos : max;
+        }
+        else if (ip - (mw / 2 - iw / 2) < sp) {
+            // we need to move the segment container to the right
+            pos = ip - (mw / 2 - iw / 2);
+            pos = pos >= 0 ? pos : 0;
+        }
+        else
+            return; // no need to move the segment container
+        this.toolbar.setSegmentPosition(pos, animate);
+    };
+    SuperTabs.prototype.getRelativeIndicatorPosition = function (index) {
+        if (index === void 0) { index = this.selectedTabIndex; }
+        var position = 0;
+        for (var i = 0; i < this.toolbar.segmentButtonWidths.length; i++) {
+            if (index > Number(i)) {
+                position += this.toolbar.segmentButtonWidths[i];
+            }
+        }
+        return position;
+    };
+    SuperTabs.prototype.getAbsoluteIndicatorPosition = function () {
+        var position = this.selectedTabIndex * this.tabsContainer.tabWidth / this._tabs.length;
+        return position <= this.maxIndicatorPosition ? position : this.maxIndicatorPosition;
+    };
+    /**
+     * Gets the width of a tab button when `scrollTabs` is set to `true`
+     */
+    SuperTabs.prototype.getSegmentButtonWidth = function (index) {
+        if (index === void 0) { index = this.selectedTabIndex; }
+        if (!this._isToolbarVisible)
+            return;
+        return this.toolbar.segmentButtonWidths[index];
+    };
+    SuperTabs.prototype.setMaxIndicatorPosition = function () {
+        if (this.el && this.el.nativeElement) {
+            this.maxIndicatorPosition = this.el.nativeElement.offsetWidth - (this.el.nativeElement.offsetWidth / this._tabs.length);
+        }
+    };
+    SuperTabs.prototype.setFixedIndicatorWidth = function () {
+        if (this.scrollTabs || !this._isToolbarVisible)
+            return;
+        // the width of the "slide", should be equal to the width of a single `ion-segment-button`
+        // we'll just calculate it instead of querying for a segment button
+        this.toolbar.setIndicatorWidth(this.el.nativeElement.offsetWidth / this._tabs.length, false);
+    };
+    /**
+     * Aligns slide position with selected tab
+     */
+    SuperTabs.prototype.alignIndicatorPosition = function (animate) {
+        if (animate === void 0) { animate = false; }
+        if (!this._isToolbarVisible)
+            return;
+        if (this.scrollTabs) {
+            this.toolbar.alignIndicator(this.getRelativeIndicatorPosition(), this.getSegmentButtonWidth(), animate);
+            this.alignTabButtonsContainer(animate);
+        }
+        else {
+            this.toolbar.setIndicatorPosition(this.getAbsoluteIndicatorPosition(), animate);
+        }
+    };
+    SuperTabs.prototype.getTabIndexById = function (tabId) {
+        return this._tabs.findIndex(function (tab) { return tab.tabId === tabId; });
+    };
+    SuperTabs.prototype.getTabById = function (tabId) {
+        return this._tabs.find(function (tab) { return tab.tabId === tabId; });
+    };
+    SuperTabs.prototype.getActiveTab = function () {
+        return this._tabs[this.selectedTabIndex];
+    };
+    // needed since we're implementing RootNode
+    SuperTabs.prototype.getElementRef = function () { return this.el; };
+    // needed since we're implementing RootNode
+    SuperTabs.prototype.initPane = function () { return true; };
+    // needed since we're implementing RootNode
+    SuperTabs.prototype.paneChanged = function () { };
+    // needed to make Ionic Framework think this is a tabs component... needed for Deeplinking
+    SuperTabs.prototype.getSelected = function () { };
+    // needed to make Ionic Framework think this is a tabs component... needed for Deeplinking
+    SuperTabs.prototype.setTabbarPosition = function () { };
+    return SuperTabs;
+}());
+
+SuperTabs.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */], args: [{
+                selector: 'super-tabs',
+                template: "\n    <super-tabs-toolbar [tabsPlacement]=\"tabsPlacement\" [hidden]=\"!_isToolbarVisible\" [config]=\"config\"\n                        [color]=\"toolbarBackground\"\n                        [tabsColor]=\"toolbarColor\" [indicatorColor]=\"indicatorColor\" [badgeColor]=\"badgeColor\"\n                        [scrollTabs]=\"scrollTabs\"\n                        [selectedTab]=\"selectedTabIndex\"\n                        (tabSelect)=\"onToolbarTabSelect($event)\"></super-tabs-toolbar>\n    <super-tabs-container [config]=\"config\" [tabsCount]=\"_tabs.length\" [selectedTabIndex]=\"selectedTabIndex\"\n                          (tabSelect)=\"onContainerTabSelect($event)\" (onDrag)=\"onDrag($event)\">\n      <ng-content></ng-content>\n    </super-tabs-container>\n  ",
+                encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ViewEncapsulation */].None,
+                providers: [
+                    {
+                        provide: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* RootNode */],
+                        useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* forwardRef */])(function () { return SuperTabs; })
+                    }
+                ]
+            },] },
+];
+/** @nocollapse */
+SuperTabs.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Optional */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Optional */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* App */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_5__providers_super_tabs_controller__["a" /* SuperTabsController */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* DeepLinker */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* DomController */], },
+]; };
+SuperTabs.propDecorators = {
+    'toolbarBackground': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'toolbarColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'indicatorColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'badgeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'config': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'id': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'height': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'selectedTabIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'scrollTabs': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabsPlacement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabSelect': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */] },],
+    'toolbar': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_3__super_tabs_toolbar__["a" /* SuperTabsToolbar */],] },],
+    'tabsContainer': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_4__super_tabs_container__["a" /* SuperTabsContainer */],] },],
+};
+var superTabsIds = -1;
+//# sourceMappingURL=super-tabs.js.map
+
+/***/ }),
+
+/***/ 320:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabsController; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+var SuperTabsController = (function () {
+    function SuperTabsController() {
+        this.instances = [];
+    }
+    SuperTabsController.prototype.setBadge = function (tabId, value, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.setBadge(tabId, value);
+    };
+    SuperTabsController.prototype.clearBadge = function (tabId, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.clearBadge(tabId);
+    };
+    SuperTabsController.prototype.increaseBadge = function (tabId, increaseBy, tabsId) {
+        if (increaseBy === void 0) { increaseBy = 1; }
+        var instance = this.getInstance(tabsId);
+        instance && instance.increaseBadge(tabId, increaseBy);
+    };
+    SuperTabsController.prototype.decreaseBadge = function (tabId, decreaseBy, tabsId) {
+        if (decreaseBy === void 0) { decreaseBy = 1; }
+        var instance = this.getInstance(tabsId);
+        instance && instance.decreaseBadge(tabId, decreaseBy);
+    };
+    /**
+     * Enables/disables swiping on a specific tabs instance
+     * @param enable
+     * @param [tabsId]
+     */
+    SuperTabsController.prototype.enableTabsSwipe = function (enable, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.enableTabsSwipe(enable);
+    };
+    /**
+     * Enables/disables swiping when this tab is active
+     * @param tabId
+     * @param enable
+     * @param [tabsId]
+     */
+    SuperTabsController.prototype.enableTabSwipe = function (tabId, enable, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.enableTabSwipe(tabId, enable);
+    };
+    SuperTabsController.prototype.showToolbar = function (show, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.showToolbar(show);
+    };
+    SuperTabsController.prototype.slideTo = function (tabIndexOrId, tabsId) {
+        var instance = this.getInstance(tabsId);
+        instance && instance.slideTo(tabIndexOrId);
+    };
+    /**
+     * @private
+     */
+    SuperTabsController.prototype.registerInstance = function (instance) {
+        this.instances.push(instance);
+    };
+    /**
+     * @private
+     */
+    SuperTabsController.prototype.unregisterInstance = function (id) {
+        var instanceIndex = this.getInstanceIndex(id);
+        if (instanceIndex > -1)
+            this.instances.splice(instanceIndex, 1);
+    };
+    SuperTabsController.prototype.getInstanceIndex = function (id) {
+        return this.instances.findIndex(function (instance) { return instance.id === id; });
+    };
+    SuperTabsController.prototype.getInstance = function (id) {
+        return (!!id && this.instances[this.getInstanceIndex(id)]) || this.instances[0];
+    };
+    return SuperTabsController;
+}());
+
+SuperTabsController.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */] },
+];
+/** @nocollapse */
+SuperTabsController.ctorParameters = function () { return []; };
+//# sourceMappingURL=super-tabs-controller.js.map
+
+/***/ }),
+
+/***/ 322:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabButton; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+
+var SuperTabButton = (function () {
+    function SuperTabButton(_el) {
+        this._el = _el;
+        this.selected = false;
+        this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+    }
+    SuperTabButton.prototype.onClick = function () {
+        this.select.emit(this);
+    };
+    SuperTabButton.prototype.getNativeElement = function () {
+        return this._el.nativeElement;
+    };
+    return SuperTabButton;
+}());
+
+SuperTabButton.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */], args: [{
+                selector: 'super-tab-button',
+                template: "\n    <ion-icon *ngIf=\"!!icon\" [name]=\"icon\" [color]=\"color\"></ion-icon>\n    <span class=\"title\" *ngIf=\"!!title\" ion-text [color]=\"color\">{{ title }}</span>\n    <ion-badge mode=\"md\" [color]=\"badgeColor\">{{ badge }}</ion-badge>\n    <!--<span class=\"badge badge-md {{ 'badge-md-' + badgeColor }}\">{{ badge }}</span>-->\n    <div class=\"button-effect\"></div>\n  ",
+                host: {
+                    '[class.selected]': 'selected',
+                    '(click)': 'onClick()',
+                    '[class.title-only]': '!!title && !icon',
+                    '[class.icon-only]': '!title && !!icon',
+                    '[class.title-and-icon]': '!!title && !!icon',
+                    'tappable': '',
+                    'role': 'button'
+                },
+                changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ChangeDetectionStrategy */].OnPush,
+                encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ViewEncapsulation */].None
+            },] },
+];
+/** @nocollapse */
+SuperTabButton.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */], },
+]; };
+SuperTabButton.propDecorators = {
+    'selected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'title': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'icon': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'badge': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'badgeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'color': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'select': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */] },],
+};
+//# sourceMappingURL=super-tab-button.js.map
+
+/***/ }),
+
+/***/ 323:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTab; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular_transitions_transition_controller__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__super_tabs__ = __webpack_require__(319);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+var SuperTab = (function (_super) {
+    __extends(SuperTab, _super);
+    function SuperTab(parent, app, config, plt, el, zone, rnd, cfr, gestureCtrl, transCtrl, errorHandler, linker, _dom, cd) {
+        var _this = _super.call(this, parent, app, config, plt, el, zone, rnd, cfr, gestureCtrl, transCtrl, linker, _dom, errorHandler) || this;
+        _this.linker = linker;
+        _this._dom = _dom;
+        _this.cd = cd;
+        /**
+         * Indicates whether the tab has been loaded
+         * @type {boolean}
+         */
+        _this.loaded = false;
+        _this.init = new Promise(function (resolve) { return _this.initResolve = resolve; });
+        return _this;
+    }
+    Object.defineProperty(SuperTab.prototype, "tabTitle", {
+        // TODO find less hacky approach
+        // needed to make Ionic Framework think this is a tabs component... needed for Deeplinking
+        get: function () {
+            return this.title;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTab.prototype, "index", {
+        // needed to make Ionic Framework think this is a tabs component... needed for Deeplinking
+        get: function () {
+            return this.parent.getTabIndexById(this.tabId);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTab.prototype, "_tabId", {
+        get: function () {
+            return this.tabId;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTab.prototype, "swipeBackEnabled", {
+        /**
+         * Enable/disable swipe to go back for iOS
+         * @return {boolean}
+         */
+        get: function () {
+            return this._sbEnabled;
+        },
+        set: function (val) {
+            this._sbEnabled = !!val;
+            this._swipeBackCheck();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SuperTab.prototype, "_vp", {
+        /**
+         * @hidden
+         */
+        set: function (val) {
+            this.setViewport(val);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SuperTab.prototype.ngOnInit = function () {
+        this.parent.addTab(this);
+    };
+    SuperTab.prototype.ngAfterViewInit = function () {
+        this.initResolve();
+    };
+    SuperTab.prototype.ngOnDestroy = function () {
+        this.destroy();
+    };
+    SuperTab.prototype.setActive = function (active) {
+        if (active) {
+            this.cd.reattach();
+            this.cd.detectChanges();
+        }
+        else if (!active) {
+            this.cd.detach();
+        }
+    };
+    SuperTab.prototype.load = function (load) {
+        var _this = this;
+        if (load && !this.loaded) {
+            this.init.then(function () {
+                _this.push(_this.root, _this.rootParams, { animate: false });
+                _this.loaded = true;
+            });
+        }
+    };
+    SuperTab.prototype.setBadge = function (value) {
+        this.badge = value;
+    };
+    SuperTab.prototype.clearBadge = function () {
+        delete this.badge;
+    };
+    SuperTab.prototype.increaseBadge = function (increaseBy) {
+        if (increaseBy === void 0) { increaseBy = 1; }
+        this.badge += increaseBy;
+    };
+    SuperTab.prototype.decreaseBadge = function (decreaseBy) {
+        if (decreaseBy === void 0) { decreaseBy = 1; }
+        this.badge = Math.max(0, this.badge - decreaseBy);
+    };
+    SuperTab.prototype.setWidth = function (width) {
+        this.setElementStyle('width', width + 'px');
+    };
+    return SuperTab;
+}(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* NavControllerBase */]));
+
+SuperTab.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */], args: [{
+                selector: 'super-tab',
+                template: '<div #viewport></div><div class="nav-decor"></div>',
+                encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ViewEncapsulation */].None
+            },] },
+];
+/** @nocollapse */
+SuperTab.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_3__super_tabs__["a" /* SuperTabs */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* App */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* Config */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* NgZone */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Renderer */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* ComponentFactoryResolver */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* GestureController */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2_ionic_angular_transitions_transition_controller__["a" /* TransitionController */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* ErrorHandler */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* DeepLinker */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Optional */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* DomController */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* ChangeDetectorRef */], },
+]; };
+SuperTab.propDecorators = {
+    'title': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'icon': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'root': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'rootParams': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabId': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */], args: ['id',] },],
+    'badge': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'swipeBackEnabled': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    '_vp': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: ['viewport', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ViewContainerRef */] },] },],
+};
+//# sourceMappingURL=super-tab.js.map
+
+/***/ }),
+
+/***/ 324:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabsContainer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__super_tabs_pan_gesture__ = __webpack_require__(326);
+
+
+
+var SuperTabsContainer = (function () {
+    function SuperTabsContainer(el, rnd, plt, ngZone) {
+        this.el = el;
+        this.rnd = rnd;
+        this.plt = plt;
+        this.ngZone = ngZone;
+        /**
+         * Number of tabs
+         * @type {number}
+         */
+        this.tabsCount = 0;
+        /**
+         * Notifies when a tab is selected
+         * @type {EventEmitter<Object>}
+         */
+        this.tabSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+        /**
+         * Notifies when the container is being dragged
+         * @type {EventEmitter<TouchEvent>}
+         */
+        this.onDrag = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+        // View bindings
+        /**
+         * Container position
+         * @type {number}
+         */
+        this.containerPosition = 0;
+        /**
+         * Single tab width
+         * @type {number}
+         */
+        this.tabWidth = 0;
+        /**
+         * Container width (sum of tab widths)
+         * @type {number}
+         */
+        this.containerWidth = 0;
+        this.globalSwipeEnabled = true;
+        this.swipeEnabledPerTab = {};
+    }
+    SuperTabsContainer.prototype.ngAfterViewInit = function () {
+        this.init();
+    };
+    SuperTabsContainer.prototype.ngOnDestroy = function () {
+        this.gesture && this.gesture.destroy();
+    };
+    SuperTabsContainer.prototype.enableTabsSwipe = function (enable) {
+        this.globalSwipeEnabled = enable;
+    };
+    SuperTabsContainer.prototype.enableTabSwipe = function (tabIndex, enable) {
+        this.swipeEnabledPerTab[tabIndex] = enable;
+    };
+    SuperTabsContainer.prototype.refreshDimensions = function () {
+        this.calculateContainerWidth();
+        this.setContainerWidth();
+        this.refreshMinMax();
+    };
+    SuperTabsContainer.prototype.getNativeElement = function () {
+        return this.el.nativeElement;
+    };
+    SuperTabsContainer.prototype.init = function () {
+        var _this = this;
+        this.refreshDimensions();
+        this.gesture = new __WEBPACK_IMPORTED_MODULE_2__super_tabs_pan_gesture__["a" /* SuperTabsPanGesture */](this.plt, this.container.nativeElement, this.config, this.rnd);
+        this.gesture.onMove = function (delta) {
+            if (_this.globalSwipeEnabled === false)
+                return;
+            if (_this.swipeEnabledPerTab[_this.selectedTabIndex] === false)
+                return;
+            if ((_this.containerPosition === _this.maxPosX && delta >= 0) || (_this.containerPosition === _this.minPosX && delta <= 0))
+                return;
+            _this.containerPosition += delta;
+            _this.plt.raf(function () {
+                _this.onDrag.emit();
+                _this.moveContainer();
+            });
+        };
+        this.gesture.onEnd = function (shortSwipe, shortSwipeDelta) {
+            if (_this.globalSwipeEnabled === false)
+                return;
+            if (_this.swipeEnabledPerTab[_this.selectedTabIndex] === false)
+                return;
+            // get tab index based on container position
+            var tabIndex = Math.round(_this.containerPosition / _this.tabWidth);
+            // handle short swipes
+            // only short swipe if we didn't change tab already in this gesture
+            (tabIndex === _this.selectedTabIndex) && shortSwipe && ((shortSwipeDelta < 0 && tabIndex++) || (shortSwipeDelta > 0 && tabIndex--));
+            // get location based on tab index
+            var position = Math.max(_this.minPosX, Math.min(_this.maxPosX, tabIndex * _this.tabWidth));
+            tabIndex = position / _this.tabWidth;
+            // move container if we changed position
+            if (position !== _this.containerPosition) {
+                _this.plt.raf(function () {
+                    _this.moveContainer(true, position, function () { return _this.ngZone.run(function () { return _this.setSelectedTab(tabIndex); }); });
+                });
+            }
+            else
+                _this.setSelectedTab(tabIndex);
+        };
+    };
+    SuperTabsContainer.prototype.setSelectedTab = function (index) {
+        this.tabSelect.emit({ index: index, changed: index !== this.selectedTabIndex });
+        this.selectedTabIndex = index;
+    };
+    SuperTabsContainer.prototype.calculateContainerWidth = function () {
+        this.containerWidth = this.tabWidth * this.tabsCount;
+    };
+    SuperTabsContainer.prototype.setContainerWidth = function () {
+        this.rnd.setStyle(this.container.nativeElement, 'width', this.containerWidth + 'px');
+    };
+    SuperTabsContainer.prototype.slideTo = function (index, animate) {
+        var _this = this;
+        if (animate === void 0) { animate = true; }
+        this.plt.raf(function () { return _this.moveContainer(animate, index * _this.tabWidth); });
+    };
+    SuperTabsContainer.prototype.moveContainer = function (animate, positionX, callback) {
+        if (animate === void 0) { animate = false; }
+        if (callback === void 0) { callback = function () { }; }
+        var el = this.container.nativeElement;
+        if (animate) {
+            if (el.style[this.plt.Css.transform].indexOf('all') === -1) {
+                this.rnd.setStyle(el, this.plt.Css.transition, "all " + this.config.transitionDuration + "ms " + this.config.transitionEase);
+            }
+            this.rnd.setStyle(el, this.plt.Css.transform, "translate3d(" + -1 * positionX + "px, 0, 0)");
+            this.containerPosition = positionX;
+        }
+        else {
+            if (positionX) {
+                this.containerPosition = positionX;
+            }
+            if (el.style[this.plt.Css.transform] !== 'initial') {
+                this.rnd.setStyle(el, this.plt.Css.transition, 'initial');
+            }
+            this.containerPosition = Math.max(this.minPosX, Math.min(this.maxPosX, this.containerPosition));
+            this.rnd.setStyle(el, this.plt.Css.transform, "translate3d(" + -1 * this.containerPosition + "px, 0, 0)");
+        }
+        callback();
+    };
+    SuperTabsContainer.prototype.refreshMinMax = function () {
+        this.minPosX = 0;
+        this.maxPosX = (this.tabsCount - 1) * this.tabWidth;
+    };
+    return SuperTabsContainer;
+}());
+
+SuperTabsContainer.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */], args: [{
+                selector: 'super-tabs-container',
+                template: '<div #container><ng-content></ng-content></div>',
+                encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ViewEncapsulation */].None
+            },] },
+];
+/** @nocollapse */
+SuperTabsContainer.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* NgZone */], },
+]; };
+SuperTabsContainer.propDecorators = {
+    'config': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabsCount': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'selectedTabIndex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabSelect': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */] },],
+    'onDrag': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */] },],
+    'container': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: ['container',] },],
+};
+//# sourceMappingURL=super-tabs-container.js.map
+
+/***/ }),
+
+/***/ 325:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabsToolbar; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__super_tabs_pan_gesture__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__super_tab_button__ = __webpack_require__(322);
+
+
+
+
+var SuperTabsToolbar = (function () {
+    function SuperTabsToolbar(el, plt, rnd, domCtrl) {
+        this.el = el;
+        this.plt = plt;
+        this.rnd = rnd;
+        this.domCtrl = domCtrl;
+        this.color = '';
+        this.tabsColor = '';
+        this.badgeColor = '';
+        this.scrollTabs = false;
+        this.indicatorColor = '';
+        this.selectedTab = 0;
+        this.indicatorPosition = 0;
+        this.indicatorWidth = 0;
+        this.tabSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* EventEmitter */]();
+        /**
+         * @private
+         */
+        this.segmentPosition = 0;
+        /**
+         * The width of each button
+         */
+        this.segmentButtonWidths = [];
+        /**
+         * The segment width
+         */
+        this.segmentWidth = 0;
+        this.tabs = [];
+        this.animationState = {
+            indicator: false,
+            segment: false
+        };
+    }
+    SuperTabsToolbar.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.gesture = new __WEBPACK_IMPORTED_MODULE_2__super_tabs_pan_gesture__["a" /* SuperTabsPanGesture */](this.plt, this.tabButtonsContainer.nativeElement, this.config, this.rnd);
+        this.gesture.onMove = function (delta) {
+            var newCPos = _this.segmentPosition + delta;
+            var mw = _this.el.nativeElement.offsetWidth, cw = _this.segmentWidth;
+            newCPos = Math.max(0, Math.min(newCPos, cw - mw));
+            _this.setSegmentPosition(newCPos);
+        };
+        if (this.scrollTabs) {
+            this.plt.timeout(function () {
+                _this.indexSegmentButtonWidths();
+            }, 10);
+        }
+    };
+    SuperTabsToolbar.prototype.ngOnDestroy = function () {
+        this.gesture && this.gesture.destroy();
+    };
+    SuperTabsToolbar.prototype.onTabSelect = function (index) {
+        this.tabSelect.emit(index);
+    };
+    SuperTabsToolbar.prototype.alignIndicator = function (position, width, animate) {
+        this.setIndicatorProperties(width, position, animate);
+    };
+    SuperTabsToolbar.prototype.setIndicatorPosition = function (position, animate) {
+        this.setIndicatorProperties(this.indicatorWidth, position, animate);
+    };
+    SuperTabsToolbar.prototype.setIndicatorWidth = function (width, animate) {
+        this.setIndicatorProperties(width, this.indicatorPosition, animate);
+    };
+    SuperTabsToolbar.prototype.setIndicatorProperties = function (width, position, animate) {
+        this.indicatorWidth = width;
+        this.indicatorPosition = position;
+        var scale = width / 100;
+        this.toggleAnimation('indicator', animate);
+        this.rnd.setStyle(this.indicator.nativeElement, this.plt.Css.transform, 'translate3d(' + (position - this.segmentPosition) + 'px, 0, 0) scale3d(' + scale + ', 1, 1)');
+    };
+    SuperTabsToolbar.prototype.setSegmentPosition = function (position, animate) {
+        this.segmentPosition = position;
+        this.toggleAnimation('segment', animate);
+        this.rnd.setStyle(this.tabButtonsBar.nativeElement, this.plt.Css.transform, "translate3d(" + -1 * position + "px,0,0)");
+        this.setIndicatorPosition(this.indicatorPosition, animate);
+    };
+    /**
+     * Enables/disables animation
+     * @param el
+     * @param animate
+     */
+    SuperTabsToolbar.prototype.toggleAnimation = function (el, animate) {
+        if (!this.config || this.config.transitionDuration === 0)
+            return;
+        // only change style if the value changed
+        if (this.animationState[el] === animate)
+            return;
+        this.animationState[el] = animate;
+        var _el = el === 'indicator' ? this.indicator.nativeElement : this.tabButtonsBar.nativeElement;
+        var value = animate ? "all " + this.config.transitionDuration + "ms " + this.config.transitionEase : 'initial';
+        this.rnd.setStyle(_el, this.plt.Css.transition, value);
+    };
+    /**
+     * Indexes the segment button widths
+     */
+    SuperTabsToolbar.prototype.indexSegmentButtonWidths = function () {
+        var index = [], total = 0;
+        this.tabButtons.forEach(function (btn, i) {
+            index[i] = btn.getNativeElement().offsetWidth;
+            total += index[i];
+        });
+        this.segmentButtonWidths = index;
+        this.segmentWidth = total;
+    };
+    return SuperTabsToolbar;
+}());
+
+SuperTabsToolbar.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */], args: [{
+                selector: 'super-tabs-toolbar',
+                template: "\n    <ion-toolbar [color]=\"color\" mode=\"md\" [class.scroll-tabs]=\"scrollTabs\">\n      <div class=\"tab-buttons-container\" #tabButtonsContainer>\n        <div *ngIf=\"tabsPlacement === 'bottom'\" class=\"indicator {{ 'button-md-' + indicatorColor }}\" #indicator></div>\n        <div class=\"tab-buttons\" #tabButtons>\n          <super-tab-button *ngFor=\"let tab of tabs; let i = index\" (select)=\"selectedTab !== i && onTabSelect(i)\" [title]=\"tab.title\" [icon]=\"tab.icon\" [badge]=\"tab.badge\" [selected]=\"selectedTab === i\" [color]=\"tabsColor\" [badgeColor]=\"badgeColor\"></super-tab-button>\n        </div>\n        <div *ngIf=\"tabsPlacement === 'top'\" class=\"indicator {{ 'button-md-' + indicatorColor }}\" #indicator></div>\n      </div>\n    </ion-toolbar>\n  ",
+                encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ViewEncapsulation */].None
+            },] },
+];
+/** @nocollapse */
+SuperTabsToolbar.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* DomController */], },
+]; };
+SuperTabsToolbar.propDecorators = {
+    'color': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabsColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'badgeColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'scrollTabs': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'indicatorColor': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'selectedTab': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'config': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabsPlacement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */] },],
+    'tabSelect': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */] },],
+    'tabButtons': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* ViewChildren */], args: [__WEBPACK_IMPORTED_MODULE_3__super_tab_button__["a" /* SuperTabButton */],] },],
+    'tabButtonsContainer': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: ['tabButtonsContainer',] },],
+    'indicator': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: ['indicator',] },],
+    'tabButtonsBar': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* ViewChild */], args: ['tabButtons',] },],
+};
+//# sourceMappingURL=super-tabs-toolbar.js.map
+
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabsPanGesture; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular_util_dom__ = __webpack_require__(10);
+
+var SuperTabsPanGesture = (function () {
+    function SuperTabsPanGesture(plt, el, config, rnd) {
+        this.plt = plt;
+        this.el = el;
+        this.config = config;
+        this.rnd = rnd;
+        this.leftThreshold = 0;
+        this.rightThreshold = 0;
+        this.listeners = [];
+        this.listeners.push(rnd.listen(el, 'touchstart', this._onStart.bind(this)), rnd.listen(el, 'touchmove', this._onMove.bind(this)), rnd.listen(el, 'touchend', this._onEnd.bind(this)));
+        if (config.sideMenu === 'both' || config.sideMenu === 'left') {
+            this.leftThreshold = config.sideMenuThreshold;
+        }
+        if (config.sideMenu === 'both' || config.sideMenu === 'right') {
+            this.rightThreshold = config.sideMenuThreshold;
+        }
+    }
+    SuperTabsPanGesture.prototype.destroy = function () {
+        this.listeners.forEach(function (fn) { return fn(); });
+    };
+    SuperTabsPanGesture.prototype._onStart = function (ev) {
+        var coords = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ionic_angular_util_dom__["a" /* pointerCoord */])(ev), vw = this.plt.width();
+        if (coords.x < this.leftThreshold || coords.x > vw - this.rightThreshold) {
+            // ignore this gesture, it started in the side menu touch zone
+            this.shouldCapture = false;
+            return;
+        }
+        // the starting point looks good, let's see what happens when we move
+        this.initialCoords = coords;
+        if (this.config.shortSwipeDuration > 0)
+            this.initialTimestamp = Date.now();
+        this.lastPosX = coords.x;
+    };
+    SuperTabsPanGesture.prototype._onMove = function (ev) {
+        var coords = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ionic_angular_util_dom__["a" /* pointerCoord */])(ev);
+        if (!this.isDragging) {
+            if (typeof this.shouldCapture !== 'boolean')
+                // we haven't decided yet if we want to capture this gesture
+                this.checkGesture(coords);
+            if (this.shouldCapture === true)
+                // gesture is good, let's capture all next onTouchMove events
+                this.isDragging = true;
+            else
+                return;
+        }
+        // stop anything else from capturing these events, to make sure the content doesn't slide
+        ev.stopPropagation();
+        ev.preventDefault();
+        // get delta X
+        var deltaX = this.lastPosX - coords.x;
+        // emit value
+        this.onMove && this.onMove(deltaX);
+        // update last X value
+        this.lastPosX = coords.x;
+    };
+    SuperTabsPanGesture.prototype._onEnd = function (ev) {
+        var coords = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ionic_angular_util_dom__["a" /* pointerCoord */])(ev);
+        if (this.shouldCapture === true) {
+            if (this.config.shortSwipeDuration > 0) {
+                var deltaTime = Date.now() - this.initialTimestamp;
+                if (deltaTime <= this.config.shortSwipeDuration)
+                    this.onEnd && this.onEnd(true, coords.x - this.initialCoords.x);
+                else
+                    this.onEnd && this.onEnd(false);
+            }
+            else
+                this.onEnd && this.onEnd(false);
+        }
+        this.isDragging = false;
+        this.shouldCapture = undefined;
+    };
+    SuperTabsPanGesture.prototype.checkGesture = function (newCoords) {
+        var radians = this.config.maxDragAngle * (Math.PI / 180), maxCosine = Math.cos(radians), deltaX = newCoords.x - this.initialCoords.x, deltaY = newCoords.y - this.initialCoords.y, distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        if (distance >= this.config.dragThreshold) {
+            // swipe is long enough so far
+            // lets check the angle
+            var angle = Math.atan2(deltaY, deltaX), cosine = Math.cos(angle);
+            this.shouldCapture = Math.abs(cosine) > maxCosine;
+        }
+    };
+    return SuperTabsPanGesture;
+}());
+
+//# sourceMappingURL=super-tabs-pan-gesture.js.map
+
+/***/ }),
+
+/***/ 332:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_super_tab__ = __webpack_require__(323);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_super_tabs__ = __webpack_require__(319);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_super_tabs_controller__ = __webpack_require__(320);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__super_tabs_module__ = __webpack_require__(333);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__super_tabs_module__["a"]; });
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 333:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuperTabsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_super_tab__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_super_tabs__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_super_tabs_controller__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_super_tabs_toolbar__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_super_tabs_container__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_super_tab_button__ = __webpack_require__(322);
+
+
+
+
+
+
+
+
+var SuperTabsModule = (function () {
+    function SuperTabsModule() {
+    }
+    SuperTabsModule.forRoot = function () {
+        return {
+            ngModule: SuperTabsModule,
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_4__providers_super_tabs_controller__["a" /* SuperTabsController */]
+            ]
+        };
+    };
+    return SuperTabsModule;
+}());
+
+SuperTabsModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */], args: [{
+                declarations: [
+                    __WEBPACK_IMPORTED_MODULE_2__components_super_tab__["a" /* SuperTab */],
+                    __WEBPACK_IMPORTED_MODULE_3__components_super_tabs__["a" /* SuperTabs */],
+                    __WEBPACK_IMPORTED_MODULE_5__components_super_tabs_toolbar__["a" /* SuperTabsToolbar */],
+                    __WEBPACK_IMPORTED_MODULE_6__components_super_tabs_container__["a" /* SuperTabsContainer */],
+                    __WEBPACK_IMPORTED_MODULE_7__components_super_tab_button__["a" /* SuperTabButton */]
+                ],
+                imports: [
+                    __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */]
+                ],
+                exports: [
+                    __WEBPACK_IMPORTED_MODULE_2__components_super_tab__["a" /* SuperTab */],
+                    __WEBPACK_IMPORTED_MODULE_3__components_super_tabs__["a" /* SuperTabs */]
+                ]
+            },] },
+];
+/** @nocollapse */
+SuperTabsModule.ctorParameters = function () { return []; };
+//# sourceMappingURL=super-tabs.module.js.map
+
+/***/ }),
+
+/***/ 334:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * An execution context and a data structure to order tasks and schedule their
+ * execution. Provides a notion of (potentially virtual) time, through the
+ * `now()` getter method.
+ *
+ * Each unit of work in a Scheduler is called an {@link Action}.
+ *
+ * ```ts
+ * class Scheduler {
+ *   now(): number;
+ *   schedule(work, delay?, state?): Subscription;
+ * }
+ * ```
+ *
+ * @class Scheduler
+ */
+var Scheduler = (function () {
+    function Scheduler(SchedulerAction, now) {
+        if (now === void 0) { now = Scheduler.now; }
+        this.SchedulerAction = SchedulerAction;
+        this.now = now;
+    }
+    /**
+     * Schedules a function, `work`, for execution. May happen at some point in
+     * the future, according to the `delay` parameter, if specified. May be passed
+     * some context object, `state`, which will be passed to the `work` function.
+     *
+     * The given arguments will be processed an stored as an Action object in a
+     * queue of actions.
+     *
+     * @param {function(state: ?T): ?Subscription} work A function representing a
+     * task, or some unit of work to be executed by the Scheduler.
+     * @param {number} [delay] Time to wait before executing the work, where the
+     * time unit is implicit and defined by the Scheduler itself.
+     * @param {T} [state] Some contextual data that the `work` function uses when
+     * called by the Scheduler.
+     * @return {Subscription} A subscription in order to be able to unsubscribe
+     * the scheduled work.
+     */
+    Scheduler.prototype.schedule = function (work, delay, state) {
+        if (delay === void 0) { delay = 0; }
+        return new this.SchedulerAction(this, work).schedule(state, delay);
+    };
+    Scheduler.now = Date.now ? Date.now : function () { return +new Date(); };
+    return Scheduler;
+}());
+exports.Scheduler = Scheduler;
+//# sourceMappingURL=Scheduler.js.map
+
+/***/ }),
+
+/***/ 335:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(9);
+var merge_1 = __webpack_require__(199);
+Observable_1.Observable.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
+
+/***/ }),
+
+/***/ 336:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(9);
+var debounceTime_1 = __webpack_require__(337);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
+
+/***/ }),
+
+/***/ 337:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscriber_1 = __webpack_require__(27);
+var async_1 = __webpack_require__(341);
+/**
+ * Emits a value from the source Observable only after a particular time span
+ * has passed without another source emission.
+ *
+ * <span class="informal">It's like {@link delay}, but passes only the most
+ * recent value from each burst of emissions.</span>
+ *
+ * <img src="./img/debounceTime.png" width="100%">
+ *
+ * `debounceTime` delays values emitted by the source Observable, but drops
+ * previous pending delayed emissions if a new value arrives on the source
+ * Observable. This operator keeps track of the most recent value from the
+ * source Observable, and emits that only when `dueTime` enough time has passed
+ * without any other value appearing on the source Observable. If a new value
+ * appears before `dueTime` silence occurs, the previous value will be dropped
+ * and will not be emitted on the output Observable.
+ *
+ * This is a rate-limiting operator, because it is impossible for more than one
+ * value to be emitted in any time window of duration `dueTime`, but it is also
+ * a delay-like operator since output emissions do not occur at the same time as
+ * they did on the source Observable. Optionally takes a {@link IScheduler} for
+ * managing timers.
+ *
+ * @example <caption>Emit the most recent click after a burst of clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.debounceTime(1000);
+ * result.subscribe(x => console.log(x));
+ *
+ * @see {@link auditTime}
+ * @see {@link debounce}
+ * @see {@link delay}
+ * @see {@link sampleTime}
+ * @see {@link throttleTime}
+ *
+ * @param {number} dueTime The timeout duration in milliseconds (or the time
+ * unit determined internally by the optional `scheduler`) for the window of
+ * time required to wait for emission silence before emitting the most recent
+ * source value.
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
+ * managing the timers that handle the timeout for each value.
+ * @return {Observable} An Observable that delays the emissions of the source
+ * Observable by the specified `dueTime`, and may drop some values if they occur
+ * too frequently.
+ * @method debounceTime
+ * @owner Observable
+ */
+function debounceTime(dueTime, scheduler) {
+    if (scheduler === void 0) { scheduler = async_1.async; }
+    return this.lift(new DebounceTimeOperator(dueTime, scheduler));
+}
+exports.debounceTime = debounceTime;
+var DebounceTimeOperator = (function () {
+    function DebounceTimeOperator(dueTime, scheduler) {
+        this.dueTime = dueTime;
+        this.scheduler = scheduler;
+    }
+    DebounceTimeOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new DebounceTimeSubscriber(subscriber, this.dueTime, this.scheduler));
+    };
+    return DebounceTimeOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var DebounceTimeSubscriber = (function (_super) {
+    __extends(DebounceTimeSubscriber, _super);
+    function DebounceTimeSubscriber(destination, dueTime, scheduler) {
+        _super.call(this, destination);
+        this.dueTime = dueTime;
+        this.scheduler = scheduler;
+        this.debouncedSubscription = null;
+        this.lastValue = null;
+        this.hasValue = false;
+    }
+    DebounceTimeSubscriber.prototype._next = function (value) {
+        this.clearDebounce();
+        this.lastValue = value;
+        this.hasValue = true;
+        this.add(this.debouncedSubscription = this.scheduler.schedule(dispatchNext, this.dueTime, this));
+    };
+    DebounceTimeSubscriber.prototype._complete = function () {
+        this.debouncedNext();
+        this.destination.complete();
+    };
+    DebounceTimeSubscriber.prototype.debouncedNext = function () {
+        this.clearDebounce();
+        if (this.hasValue) {
+            this.destination.next(this.lastValue);
+            this.lastValue = null;
+            this.hasValue = false;
+        }
+    };
+    DebounceTimeSubscriber.prototype.clearDebounce = function () {
+        var debouncedSubscription = this.debouncedSubscription;
+        if (debouncedSubscription !== null) {
+            this.remove(debouncedSubscription);
+            debouncedSubscription.unsubscribe();
+            this.debouncedSubscription = null;
+        }
+    };
+    return DebounceTimeSubscriber;
+}(Subscriber_1.Subscriber));
+function dispatchNext(subscriber) {
+    subscriber.debouncedNext();
+}
+//# sourceMappingURL=debounceTime.js.map
+
+/***/ }),
+
+/***/ 338:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscription_1 = __webpack_require__(30);
+/**
+ * A unit of work to be executed in a {@link Scheduler}. An action is typically
+ * created from within a Scheduler and an RxJS user does not need to concern
+ * themselves about creating and manipulating an Action.
+ *
+ * ```ts
+ * class Action<T> extends Subscription {
+ *   new (scheduler: Scheduler, work: (state?: T) => void);
+ *   schedule(state?: T, delay: number = 0): Subscription;
+ * }
+ * ```
+ *
+ * @class Action<T>
+ */
+var Action = (function (_super) {
+    __extends(Action, _super);
+    function Action(scheduler, work) {
+        _super.call(this);
+    }
+    /**
+     * Schedules this action on its parent Scheduler for execution. May be passed
+     * some context object, `state`. May happen at some point in the future,
+     * according to the `delay` parameter, if specified.
+     * @param {T} [state] Some contextual data that the `work` function uses when
+     * called by the Scheduler.
+     * @param {number} [delay] Time to wait before executing the work, where the
+     * time unit is implicit and defined by the Scheduler.
+     * @return {void}
+     */
+    Action.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        return this;
+    };
+    return Action;
+}(Subscription_1.Subscription));
+exports.Action = Action;
+//# sourceMappingURL=Action.js.map
+
+/***/ }),
+
+/***/ 339:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var root_1 = __webpack_require__(28);
+var Action_1 = __webpack_require__(338);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var AsyncAction = (function (_super) {
+    __extends(AsyncAction, _super);
+    function AsyncAction(scheduler, work) {
+        _super.call(this, scheduler, work);
+        this.scheduler = scheduler;
+        this.work = work;
+        this.pending = false;
+    }
+    AsyncAction.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        if (this.closed) {
+            return this;
+        }
+        // Always replace the current state with the new state.
+        this.state = state;
+        // Set the pending flag indicating that this action has been scheduled, or
+        // has recursively rescheduled itself.
+        this.pending = true;
+        var id = this.id;
+        var scheduler = this.scheduler;
+        //
+        // Important implementation note:
+        //
+        // Actions only execute once by default, unless rescheduled from within the
+        // scheduled callback. This allows us to implement single and repeat
+        // actions via the same code path, without adding API surface area, as well
+        // as mimic traditional recursion but across asynchronous boundaries.
+        //
+        // However, JS runtimes and timers distinguish between intervals achieved by
+        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of
+        // serial `setTimeout` calls can be individually delayed, which delays
+        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to
+        // guarantee the interval callback will be invoked more precisely to the
+        // interval period, regardless of load.
+        //
+        // Therefore, we use `setInterval` to schedule single and repeat actions.
+        // If the action reschedules itself with the same delay, the interval is not
+        // canceled. If the action doesn't reschedule, or reschedules with a
+        // different delay, the interval will be canceled after scheduled callback
+        // execution.
+        //
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, delay);
+        }
+        this.delay = delay;
+        // If this action has already an async Id, don't request a new one.
+        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);
+        return this;
+    };
+    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);
+    };
+    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        // If this action is rescheduled with the same delay time, don't clear the interval id.
+        if (delay !== null && this.delay === delay && this.pending === false) {
+            return id;
+        }
+        // Otherwise, if the action's delay time is different from the current delay,
+        // or the action has been rescheduled before it's executed, clear the interval id
+        return root_1.root.clearInterval(id) && undefined || undefined;
+    };
+    /**
+     * Immediately executes this action and the `work` it contains.
+     * @return {any}
+     */
+    AsyncAction.prototype.execute = function (state, delay) {
+        if (this.closed) {
+            return new Error('executing a cancelled action');
+        }
+        this.pending = false;
+        var error = this._execute(state, delay);
+        if (error) {
+            return error;
+        }
+        else if (this.pending === false && this.id != null) {
+            // Dequeue if the action didn't reschedule itself. Don't call
+            // unsubscribe(), because the action could reschedule later.
+            // For example:
+            // ```
+            // scheduler.schedule(function doWork(counter) {
+            //   /* ... I'm a busy worker bee ... */
+            //   var originalAction = this;
+            //   /* wait 100ms before rescheduling the action */
+            //   setTimeout(function () {
+            //     originalAction.schedule(counter + 1);
+            //   }, 100);
+            // }, 1000);
+            // ```
+            this.id = this.recycleAsyncId(this.scheduler, this.id, null);
+        }
+    };
+    AsyncAction.prototype._execute = function (state, delay) {
+        var errored = false;
+        var errorValue = undefined;
+        try {
+            this.work(state);
+        }
+        catch (e) {
+            errored = true;
+            errorValue = !!e && e || new Error(e);
+        }
+        if (errored) {
+            this.unsubscribe();
+            return errorValue;
+        }
+    };
+    AsyncAction.prototype._unsubscribe = function () {
+        var id = this.id;
+        var scheduler = this.scheduler;
+        var actions = scheduler.actions;
+        var index = actions.indexOf(this);
+        this.work = null;
+        this.delay = null;
+        this.state = null;
+        this.pending = false;
+        this.scheduler = null;
+        if (index !== -1) {
+            actions.splice(index, 1);
+        }
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, null);
+        }
+    };
+    return AsyncAction;
+}(Action_1.Action));
+exports.AsyncAction = AsyncAction;
+//# sourceMappingURL=AsyncAction.js.map
+
+/***/ }),
+
+/***/ 340:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Scheduler_1 = __webpack_require__(334);
+var AsyncScheduler = (function (_super) {
+    __extends(AsyncScheduler, _super);
+    function AsyncScheduler() {
+        _super.apply(this, arguments);
+        this.actions = [];
+        /**
+         * A flag to indicate whether the Scheduler is currently executing a batch of
+         * queued actions.
+         * @type {boolean}
+         */
+        this.active = false;
+        /**
+         * An internal ID used to track the latest asynchronous task such as those
+         * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
+         * others.
+         * @type {any}
+         */
+        this.scheduled = undefined;
+    }
+    AsyncScheduler.prototype.flush = function (action) {
+        var actions = this.actions;
+        if (this.active) {
+            actions.push(action);
+            return;
+        }
+        var error;
+        this.active = true;
+        do {
+            if (error = action.execute(action.state, action.delay)) {
+                break;
+            }
+        } while (action = actions.shift()); // exhaust the scheduler queue
+        this.active = false;
+        if (error) {
+            while (action = actions.shift()) {
+                action.unsubscribe();
+            }
+            throw error;
+        }
+    };
+    return AsyncScheduler;
+}(Scheduler_1.Scheduler));
+exports.AsyncScheduler = AsyncScheduler;
+//# sourceMappingURL=AsyncScheduler.js.map
+
+/***/ }),
+
+/***/ 341:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var AsyncAction_1 = __webpack_require__(339);
+var AsyncScheduler_1 = __webpack_require__(340);
+/**
+ *
+ * Async Scheduler
+ *
+ * <span class="informal">Schedule task as if you used setTimeout(task, duration)</span>
+ *
+ * `async` scheduler schedules tasks asynchronously, by putting them on the JavaScript
+ * event loop queue. It is best used to delay tasks in time or to schedule tasks repeating
+ * in intervals.
+ *
+ * If you just want to "defer" task, that is to perform it right after currently
+ * executing synchronous code ends (commonly achieved by `setTimeout(deferredTask, 0)`),
+ * better choice will be the {@link asap} scheduler.
+ *
+ * @example <caption>Use async scheduler to delay task</caption>
+ * const task = () => console.log('it works!');
+ *
+ * Rx.Scheduler.async.schedule(task, 2000);
+ *
+ * // After 2 seconds logs:
+ * // "it works!"
+ *
+ *
+ * @example <caption>Use async scheduler to repeat task in intervals</caption>
+ * function task(state) {
+ *   console.log(state);
+ *   this.schedule(state + 1, 1000); // `this` references currently executing Action,
+ *                                   // which we reschedule with new state and delay
+ * }
+ *
+ * Rx.Scheduler.async.schedule(task, 3000, 0);
+ *
+ * // Logs:
+ * // 0 after 3s
+ * // 1 after 4s
+ * // 2 after 5s
+ * // 3 after 6s
+ *
+ * @static true
+ * @name async
+ * @owner Scheduler
+ */
+exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
+//# sourceMappingURL=async.js.map
+
+/***/ }),
+
+/***/ 397:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyCollectPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the MyCollectPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var MyCollectPage = (function () {
+    function MyCollectPage(UserService, navCtrl, navParams) {
+        this.UserService = UserService;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.page1 = 'CollectWorkPage';
+        this.page2 = 'CollectAnswerPage';
+        this._id = 0;
+        this.chatParams = {
+            _id: this._id
+        };
+        if (this.navParams.get("id")) {
+            this._id = this.navParams.get("id");
+            this.chatParams._id = this._id;
+        }
+        else {
+            this.chatParams._id = this.UserService._user._id;
+        }
+    }
+    return MyCollectPage;
+}());
+MyCollectPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-my-collect',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/my-collect/my-collect.html"*/'<!--\n  Generated template for the MyCollectPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>我的收藏</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <super-tabs height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">\n        <super-tab [root]="page1" [rootParams]="chatParams" title="作品收藏"></super-tab>\n        <super-tab [root]="page2" [rootParams]="chatParams" title="回答收藏"></super-tab>\n    </super-tabs>\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/my-collect/my-collect.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], MyCollectPage);
+
+//# sourceMappingURL=my-collect.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.main.js.map

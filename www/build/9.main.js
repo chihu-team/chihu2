@@ -1,2 +1,486 @@
-webpackJsonp([9],{239:function(l,n,u){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),u.d(n,"QuestionListPageModuleNgFactory",function(){return w});var t=u(0),e=u(476),i=u(14),o=u(28),a=u(88),r=u(285),s=u(284),c=u(308),_=u(145),d=u(146),h=u(147),f=u(148),p=u(149),b=u(477),m=u(362),k=u(89),v=this&&this.__extends||function(){var l=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(l,n){l.__proto__=n}||function(l,n){for(var u in n)n.hasOwnProperty(u)&&(l[u]=n[u])};return function(n,u){function t(){this.constructor=n}l(n,u),n.prototype=null===u?Object.create(u):(t.prototype=u.prototype,new t)}}(),g=function(l){function n(n){return l.call(this,n,[_.a,d.a,h.a,f.a,p.a,b.a],[])||this}return v(n,l),Object.defineProperty(n.prototype,"_NgLocalization_10",{get:function(){return null==this.__NgLocalization_10&&(this.__NgLocalization_10=new i.a(this.parent.get(t.c))),this.__NgLocalization_10},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵi_11",{get:function(){return null==this.__ɵi_11&&(this.__ɵi_11=new o.a),this.__ɵi_11},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_FormBuilder_12",{get:function(){return null==this.__FormBuilder_12&&(this.__FormBuilder_12=new o.b),this.__FormBuilder_12},enumerable:!0,configurable:!0}),n.prototype.createInternal=function(){return this._CommonModule_0=new i.d,this._ɵba_1=new o.c,this._FormsModule_2=new o.d,this._ReactiveFormsModule_3=new o.e,this._IonicModule_4=new a.b,this._HeaderComponentModule_5=new r.a,this._FooterComponentModule_6=new s.a,this._QuestionComponentModule_7=new c.a,this._IonicPageModule_8=new a.c,this._QuestionListPageModule_9=new e.a,this._LAZY_LOADED_TOKEN_13=m.a,this._QuestionListPageModule_9},n.prototype.getInternal=function(l,n){return l===i.d?this._CommonModule_0:l===o.c?this._ɵba_1:l===o.d?this._FormsModule_2:l===o.e?this._ReactiveFormsModule_3:l===a.b?this._IonicModule_4:l===r.a?this._HeaderComponentModule_5:l===s.a?this._FooterComponentModule_6:l===c.a?this._QuestionComponentModule_7:l===a.c?this._IonicPageModule_8:l===e.a?this._QuestionListPageModule_9:l===i.e?this._NgLocalization_10:l===o.a?this._ɵi_11:l===o.b?this._FormBuilder_12:l===k.d?this._LAZY_LOADED_TOKEN_13:n},n.prototype.destroyInternal=function(){},n}(t.x),w=new t.y(g,e.a)},253:function(l,n,u){"use strict";function t(l){return i._14(2,[i._20(402653184,1,{_fixedContent:0}),i._20(402653184,2,{_scrollContent:0}),(l()(),i._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),i._21(null,0),(l()(),i._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),i._21(null,1),i._21(null,2)],null,null)}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,t,p)),i._17(4374528,null,0,o.a,[a.c,r.b,s.a,i.H,i.I,c.a,_.a,i.g,[2,d.a],[2,h.a]],null,null)],null,function(l,n){l(n,0,0,i._18(n,1).statusbarPadding,i._18(n,1)._hasRefresher)})}u.d(n,"b",function(){return p}),n.a=t;var i=u(0),o=u(20),a=u(1),r=u(3),s=u(8),c=u(6),_=u(27),d=u(4),h=u(16),f=[],p=i._13({encapsulation:2,styles:f,data:{}});i._19("ion-content",o.a,e,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(l,n,u){"use strict";function t(l){return i._14(0,[(l()(),i._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),i._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.backButtonClick(u)&&t}return t},r.a,r.b)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i._17(1097728,null,0,s.a,[[8,"bar-button"],c.c,i.H,i.I],null,null),(l()(),i._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i._17(147456,null,0,_.a,[c.c,i.H,i.I],{name:[0,"name"]},null),(l()(),i._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),i._15(null,["",""])),i._21(null,0),i._21(null,1),i._21(null,2),(l()(),i._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i._21(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode),l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb),l(n,5,0,i._18(n,7)._hidden),l(n,10,0,u._backText)})}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,t,b)),i._17(49152,null,0,a.a,[d.a,[2,h.a],[2,f.a],c.c,i.H,i.I],null,null)],null,function(l,n){l(n,0,0,i._18(n,1)._hidden,i._18(n,1)._sbPadding)})}u.d(n,"b",function(){return b}),n.a=t;var i=u(0),o=u(14),a=u(35),r=u(53),s=u(17),c=u(1),_=u(37),d=u(6),h=u(4),f=u(16),p=[],b=i._13({encapsulation:2,styles:p,data:{}});i._19("ion-navbar",a.a,e,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(l,n,u){"use strict";function t(l){return i._14(2,[(l()(),i._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),i._17(278528,null,0,o.k,[i.t,i.u,i.H,i.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),i._21(null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"ion-title",[],null,null,null,t,d)),i._17(49152,null,0,a.a,[r.c,i.H,i.I,[2,s.a],[2,c.a]],null,null)],null,null)}u.d(n,"b",function(){return d}),n.a=t;var i=u(0),o=u(14),a=u(87),r=u(1),s=u(36),c=u(35),_=[],d=i._13({encapsulation:2,styles:_,data:{}});i._19("ion-title",a.a,e,{color:"color",mode:"mode"},{},["*"])},276:function(l,n,u){"use strict";u.d(n,"a",function(){return e});var t=(u(0),u(86),u(26)),e=(u(52),this&&this.__decorate,this&&this.__metadata,function(){function l(l,n,u){this.UserService=l,this.http=n,this.navCtrl=u,this.data={},this.ishide=!0}return l.prototype.ngOnChanges=function(l){try{l.data.currentValue&&l.data.currentValue._id&&(this._id=l.data.currentValue._id,this.checkfork())}catch(l){}},l.prototype.checkfork=function(){var l=this;if(this.UserService._user._id){var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/checkforkquestion","artid="+this._id+"&id="+this.UserService._user._id,{headers:n}).subscribe(function(n){"0"==n.json().length&&(l.ishide=!1)})}},l.prototype.fork=function(){var l=this;if(this.UserService._user._id){var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/forkquestion","uid="+this.data.uid+"&artid="+this._id+"&id="+this.UserService._user._id+"&name="+this.UserService._user.nickname+"&userimg="+this.UserService._user.userimg+"&title="+this.data.title,{headers:n}).subscribe(function(n){1==n.json().result.ok&&(l.ishide=!0,alert("关注成功"))})}else this.navCtrl.push("LoginPage")},l}())},277:function(l,n,u){"use strict";u.d(n,"a",function(){return e});var t=(u(0),u(86),u(26)),e=(u(52),this&&this.__decorate,this&&this.__metadata,function(){function l(l,n,u){this.UserService=l,this.http=n,this.navCtrl=u,this.data={},this.isfork=!1}return l.prototype.ngOnChanges=function(l){try{l.data.currentValue&&l.data.currentValue.uid&&this.checkfork()}catch(l){}},l.prototype.checkfork=function(){this.isfork=this.UserService.checkisfork(this.data.uid)},l.prototype.fork=function(){var l=this;if(this.checkfork(),this.isfork)return!0;if(this.UserService.presentLoadingDefault(),this.UserService._user._id!=this.data.uid&&this.UserService._user._id){var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/forkuser","uid="+this.data.uid+"&id="+this.UserService._user._id+"&name="+this.UserService._user.nickname+"&uname="+this.data.name+"&userimg="+this.UserService._user.userimg+"&uuserimg="+this.data.userimg,{headers:n}).subscribe(function(n){n.json()&&(l.isfork=!0),l.UserService.get_fork_user()})}else{if(this.UserService.presentLoadingDismiss(),this.UserService._user._id)return!0;this.navCtrl.push("LoginPage")}},l.prototype.unfork=function(){var l=this;if(this.checkfork(),!this.isfork)return!0;this.UserService.presentLoadingDefault();var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/disfork_user","uid="+this.data.uid+"&id="+this.UserService._user._id,{headers:n}).subscribe(function(n){n.json()&&(l.isfork=!1),l.UserService.get_fork_user()})},l.prototype.pushPersonPage=function(l){this.navCtrl.push("PersonalPage",{_id:l})},l}())},284:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(276),this&&this.__decorate,function(){function l(){}return l}())},285:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(277),this&&this.__decorate,function(){function l(){}return l}())},294:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),this&&this.__decorate,this&&this.__metadata,function(){function l(l){this.navCtrl=l,this.data={}}return l.prototype.pushQuestionPage=function(l){this.navCtrl.push("QuestionPage",{_id:l})},l}())},306:function(l,n,u){"use strict";function t(l){return i._14(0,[(l()(),i._15(null,["\n"])),(l()(),i._16(0,null,null,42,"ion-row",[["class","row"]],null,null,null,null,null)),i._17(16384,null,0,o.a,[],null,null),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,12,"ion-col",[["class","col"]],null,null,null,null,null)),i._17(16384,null,0,a.a,[],null,null),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,8,"button",[["clear",""],["icon-left",""],["ion-button",""],["small",""]],null,null,null,r.a,r.b)),i._17(1097728,null,0,s.a,[[8,""],c.c,i.H,i.I],{small:[0,"small"],clear:[1,"clear"]},null),(l()(),i._15(0,["\n                  "])),(l()(),i._16(0,null,0,1,"ion-icon",[["name","eye"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i._17(147456,null,0,_.a,[c.c,i.H,i.I],{name:[0,"name"]},null),(l()(),i._15(0,["\n                  "])),(l()(),i._16(0,null,0,1,"div",[],null,null,null,null,null)),(l()(),i._15(null,["",""])),(l()(),i._15(0,["\n                "])),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,12,"ion-col",[["class","col"]],null,null,null,null,null)),i._17(16384,null,0,a.a,[],null,null),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,8,"button",[["clear",""],["icon-left",""],["ion-button",""],["small",""]],null,null,null,r.a,r.b)),i._17(1097728,null,0,s.a,[[8,""],c.c,i.H,i.I],{small:[0,"small"],clear:[1,"clear"]},null),(l()(),i._15(0,["\n                  "])),(l()(),i._16(0,null,0,1,"ion-icon",[["name","text"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i._17(147456,null,0,_.a,[c.c,i.H,i.I],{name:[0,"name"]},null),(l()(),i._15(0,["\n                  "])),(l()(),i._16(0,null,0,1,"div",[],null,null,null,null,null)),(l()(),i._15(null,["",""])),(l()(),i._15(0,["\n                "])),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,10,"ion-col",[["center",""],["class","col"],["text-center",""]],null,null,null,null,null)),i._17(16384,null,0,a.a,[],null,null),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,2,"button",[["ion-button",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.fork()&&t}return t},r.a,r.b)),i._17(1097728,null,0,s.a,[[8,""],c.c,i.H,i.I],null,null),(l()(),i._15(0,["＋关注问题"])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,2,"button",[["color","tabc"],["ion-button",""]],[[8,"hidden",0]],null,null,r.a,r.b)),i._17(1097728,null,0,s.a,[[8,""],c.c,i.H,i.I],{color:[0,"color"]},null),(l()(),i._15(0,["-取消关注"])),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n"]))],function(l,n){l(n,8,0,"","");l(n,11,0,"eye");l(n,22,0,"","");l(n,25,0,"text");l(n,40,0,"tabc")},function(l,n){var u=n.component;l(n,10,0,i._18(n,11)._hidden),l(n,14,0,u.data.fork),l(n,24,0,i._18(n,25)._hidden),l(n,28,0,u.data.answer),l(n,35,0,u.ishide),l(n,39,0,!u.ishide)})}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"footer",[],null,null,null,t,m)),i._17(573440,null,0,d.a,[h.a,f.k,p.a],null,null)],null,null)}u.d(n,"b",function(){return m}),n.a=t;var i=u(0),o=u(96),a=u(95),r=u(53),s=u(17),c=u(1),_=u(37),d=u(276),h=u(86),f=u(26),p=u(16),b=[],m=i._13({encapsulation:2,styles:b,data:{}});i._19("footer",d.a,e,{data:"data"},{},[])},307:function(l,n,u){"use strict";function t(l){return i._14(0,[i._26(0,o.n,[i.c]),(l()(),i._15(null,["\n"])),(l()(),i._16(0,null,null,22,"section",[["class","header"]],null,null,null,null,null)),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,0,"img",[["alt",""]],[[8,"src",4]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.pushPersonPage(e.data.uid)&&t}return t},null,null)),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,9,"div",[["class","it-left"]],null,null,null,null,null)),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,1,"h6",[],null,null,null,null,null)),(l()(),i._15(null,[""," 分享了心情"])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,3,"p",[["class","time"]],null,null,null,null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-clock-o"]],null,null,null,null,null)),(l()(),i._15(null,[":",""])),i._27(1),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,2,"div",[["class","fork"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.fork()&&t}return t},null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-plus"]],null,null,null,null,null)),(l()(),i._15(null,[" 关注"])),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,2,"div",[["class","fork nofork"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.unfork()&&t}return t},null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-plus"]],null,null,null,null,null)),(l()(),i._15(null,[" 取消关注"])),(l()(),i._15(null,["\n"]))],null,function(l,n){var u=n.component;l(n,4,0,u.data.userimg),l(n,9,0,u.data.name),l(n,13,0,i._28(n,13,0,l(n,14,0,i._18(n,0),u.data.time))),l(n,17,0,u.isfork),l(n,21,0,!u.isfork)})}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"header",[],null,null,null,t,d)),i._17(573440,null,0,a.a,[r.a,s.k,c.a],null,null)],null,null)}u.d(n,"b",function(){return d}),n.a=t;var i=u(0),o=u(14),a=u(277),r=u(86),s=u(26),c=u(16),_=[],d=i._13({encapsulation:2,styles:_,data:{}});i._19("header",a.a,e,{data:"data"},{},[])},308:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(294),u(285),u(284),this&&this.__decorate,function(){function l(){}return l}())},362:function(l,n,u){"use strict";u.d(n,"a",function(){return e});var t=(u(0),u(52),u(26)),e=(u(86),this&&this.__decorate,this&&this.__metadata,function(){function l(l,n,u,t){this.UserService=l,this.http=n,this.navCtrl=u,this.navParams=t,this.data=[],this.getdata()}return l.prototype.getdata=function(){var l=this;this.UserService.presentLoadingDefault();var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/queslist","len="+this.data.length,{headers:n}).subscribe(function(n){l.UserService.presentLoadingDismiss(),l.data=l.data.concat(n.json())})},l}())},363:function(l,n,u){"use strict";function t(l){return i._14(0,[(l()(),i._15(null,["\n"])),(l()(),i._16(0,null,null,16,"section",[["class","dv_top_ban"]],null,null,null,null,null)),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,1,"header",[],null,null,null,o.a,o.b)),i._17(573440,null,0,a.a,[r.a,s.k,c.a],{data:[0,"data"]},null),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,10,"section",[],null,[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.pushQuestionPage(e.data._id)&&t}return t},null,null)),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,1,"h2",[],null,null,null,null,null)),(l()(),i._15(null,["",""])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,1,"p",[],null,null,null,null,null)),(l()(),i._15(null,["",""])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,1,"footer",[],null,null,null,d.a,d.b)),i._17(573440,null,0,h.a,[r.a,s.k,c.a],{data:[0,"data"]},null),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,u.data),l(n,15,0,u.data)},function(l,n){var u=n.component;l(n,9,0,u.data.title),l(n,12,0,u.data.text)})}function e(l){return i._14(0,[(l()(),i._16(0,null,null,1,"question",[],null,null,null,t,p)),i._17(49152,null,0,_.a,[c.a],null,null)],null,null)}u.d(n,"b",function(){return p}),n.a=t;var i=u(0),o=u(307),a=u(277),r=u(86),s=u(26),c=u(16),_=u(294),d=u(306),h=u(276),f=[],p=i._13({encapsulation:2,styles:f,data:{}});i._19("question",_.a,e,{data:"data"},{},[])},476:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(362),u(308),this&&this.__decorate,function(){function l(){}return l}())},477:function(l,n,u){"use strict";function t(l){return o._14(0,[(l()(),o._16(0,null,null,1,"question",[],null,null,null,a.a,a.b)),o._17(49152,null,0,r.a,[s.a],{data:[0,"data"]},null)],function(l,n){l(n,1,0,n.context.$implicit)},null)}function e(l){return o._14(0,[(l()(),o._15(null,["\n"])),(l()(),o._16(0,null,null,10,"ion-header",[["no-border",""]],null,null,null,null,null)),o._17(16384,null,0,c.a,[_.c,o.H,o.I,[2,d.a]],null,null),(l()(),o._15(null,["\n\n    "])),(l()(),o._16(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,h.a,h.b)),o._17(49152,null,0,f.a,[p.a,[2,d.a],[2,s.a],_.c,o.H,o.I],{color:[0,"color"]},null),(l()(),o._15(3,["\n        "])),(l()(),o._16(0,null,3,2,"ion-title",[],null,null,null,b.a,b.b)),o._17(49152,null,0,m.a,[_.c,o.H,o.I,[2,k.a],[2,f.a]],null,null),(l()(),o._15(0,["问题列表"])),(l()(),o._15(3,["\n    "])),(l()(),o._15(null,["\n\n"])),(l()(),o._15(null,["\n\n\n"])),(l()(),o._16(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,v.a,v.b)),o._17(4374528,null,0,g.a,[_.c,w.b,y.a,o.H,o.I,p.a,C.a,o.g,[2,d.a],[2,s.a]],null,null),(l()(),o._15(1,["\n    "])),(l()(),o._24(16777216,null,1,1,null,t)),o._17(802816,null,0,S.l,[o.L,o.N,o.t],{ngForOf:[0,"ngForOf"]},null),(l()(),o._15(1,["\n"]))],function(l,n){var u=n.component;l(n,5,0,"mblue"),l(n,17,0,u.data)},function(l,n){l(n,4,0,o._18(n,5)._hidden,o._18(n,5)._sbPadding),l(n,13,0,o._18(n,14).statusbarPadding,o._18(n,14)._hasRefresher)})}function i(l){return o._14(0,[(l()(),o._16(0,null,null,1,"page-question-list",[],null,null,null,e,M)),o._17(49152,null,0,I.a,[P.a,U.k,s.a,H.a],null,null)],null,null)}u.d(n,"a",function(){return x});var o=u(0),a=u(363),r=u(294),s=u(16),c=u(90),_=u(1),d=u(4),h=u(254),f=u(35),p=u(6),b=u(255),m=u(87),k=u(36),v=u(253),g=u(20),w=u(3),y=u(8),C=u(27),S=u(14),I=u(362),P=u(86),U=u(26),H=u(11),L=[],M=o._13({encapsulation:2,styles:L,data:{}}),x=o._19("page-question-list",I.a,i,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/9.main.js.map
+webpackJsonp([9],{
+
+/***/ 279:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FoundPageModule", function() { return FoundPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__found__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_swiper_swiper_module__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_share_share_module__ = __webpack_require__(330);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var FoundPageModule = (function () {
+    function FoundPageModule() {
+    }
+    return FoundPageModule;
+}());
+FoundPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__found__["a" /* FoundPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__components_swiper_swiper_module__["a" /* SwiperComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_4__components_share_share_module__["a" /* ShareComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__found__["a" /* FoundPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__found__["a" /* FoundPage */]
+        ]
+    })
+], FoundPageModule);
+
+//# sourceMappingURL=found.module.js.map
+
+/***/ }),
+
+/***/ 328:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__header__ = __webpack_require__(329);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var HeaderComponentModule = (function () {
+    function HeaderComponentModule() {
+    }
+    return HeaderComponentModule;
+}());
+HeaderComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__header__["a" /* HeaderComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__header__["a" /* HeaderComponent */]
+        ]
+    })
+], HeaderComponentModule);
+
+//# sourceMappingURL=header.module.js.map
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the HeaderComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var HeaderComponent = (function () {
+    function HeaderComponent(UserService, http, navCtrl) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.data = {};
+        //是否关注
+        this.isfork = false;
+    }
+    HeaderComponent.prototype.ngOnChanges = function (ch) {
+        try {
+            if (ch['data'].currentValue && ch['data'].currentValue.uid) {
+                //console.log( ch['data'].currentValue.uid );
+                this.checkfork();
+            }
+        }
+        catch (error) { }
+    };
+    //关注
+    HeaderComponent.prototype.fork = function () {
+        var _this = this;
+        this.checkfork();
+        if (this.isfork) {
+            return true;
+        }
+        this.UserService.presentLoadingDefault();
+        if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
+            var url = "http://www.devonhello.com/chihu2/forkuser";
+            var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Headers */]();
+            headers.append('Content-Type', 'application/x-www-form-urlencoded');
+            this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id + "&name=" + this.UserService._user.nickname + "&uname=" + this.data['name'] + "&userimg=" + this.UserService._user.userimg + "&uuserimg=" + this.data['userimg'], {
+                headers: headers
+            })
+                .subscribe(function (res) {
+                if (res.json()) {
+                    _this.isfork = true;
+                }
+                _this.UserService.get_fork_user();
+            });
+        }
+        else {
+            if (this.UserService._user._id) {
+                return true;
+            }
+            this.navCtrl.push("LoginPage");
+        }
+    };
+    //取消关注
+    HeaderComponent.prototype.unfork = function () {
+        var _this = this;
+        this.checkfork();
+        if (!this.isfork) {
+            return true;
+        }
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/unforkuser";
+        var headers = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "uid=" + this.data['uid'] + "&id=" + this.UserService._user._id, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            if (res.json()) {
+                _this.isfork = false;
+            }
+            _this.UserService.get_fork_user();
+        });
+    };
+    //检查是否已经关注
+    HeaderComponent.prototype.checkfork = function () {
+        this.isfork = this.UserService.checkisfork(this.data['uid']);
+    };
+    //查看TA的个人页面
+    HeaderComponent.prototype.pushPersonPage = function (_id) {
+        this.navCtrl.push('PersonalPage', {
+            _id: _id
+        });
+    };
+    return HeaderComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], HeaderComponent.prototype, "data", void 0);
+HeaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'header',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/share/header/header.html"*/'<!-- Generated template for the HeaderComponent component -->\n<section class="header">\n    <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">\n    <div class="it-left">\n        <h6>{{data.name}} 分享了心情</h6>\n        <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date}}</p>\n    </div>\n    <div [hidden]="isfork" class="fork" (click)="fork();"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>\n    <div [hidden]="!isfork" class="fork nofork" (click)="unfork();"><i class="fa fa-plus" aria-hidden="true"></i> 取消关注</div>\n</section>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/share/header/header.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], HeaderComponent);
+
+//# sourceMappingURL=header.js.map
+
+/***/ }),
+
+/***/ 330:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__share__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__header_header_module__ = __webpack_require__(328);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ShareComponentModule = (function () {
+    function ShareComponentModule() {
+    }
+    return ShareComponentModule;
+}());
+ShareComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__share__["a" /* ShareComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__header_header_module__["a" /* HeaderComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__share__["a" /* ShareComponent */]
+        ]
+    })
+], ShareComponentModule);
+
+//# sourceMappingURL=share.module.js.map
+
+/***/ }),
+
+/***/ 331:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the ShareComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var ShareComponent = (function () {
+    function ShareComponent(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.data = {};
+    }
+    ShareComponent.prototype.pushOpenSharePage = function (_id) {
+        this.navCtrl.push('OpenSharePage', {
+            _id: _id
+        });
+    };
+    return ShareComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], ShareComponent.prototype, "data", void 0);
+ShareComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'share',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/share/share.html"*/'<!-- Generated template for the ShareComponent component -->\n<section class="item" *ngFor="let item of data">\n    <header [data]="item"></header>\n    <section (click)="pushOpenSharePage( item._id );">\n        <p>{{item.text}}</p>\n        <section class="imgs-wrap">\n            <div *ngFor="let item2 of item.img" class="imgs" [style.background]="\'url(\'+item2.src+\')\'"></div>\n\n        </section>\n        <section class="mark">\n            <p><i class="fa fa-eye" aria-hidden="true"></i> 0</p>\n            <p class="cen"><i class="fa fa-commenting-o" aria-hidden="true"></i> {{item.mark.cont}}</p>\n            <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> {{item.mark.like}}</p>\n        </section>\n    </section>\n</section>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/share/share.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], ShareComponent);
+
+//# sourceMappingURL=share.js.map
+
+/***/ }),
+
+/***/ 356:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SwiperComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__swiper__ = __webpack_require__(357);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SwiperComponentModule = (function () {
+    function SwiperComponentModule() {
+    }
+    return SwiperComponentModule;
+}());
+SwiperComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__swiper__["a" /* SwiperComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__swiper__["a" /* SwiperComponent */]
+        ]
+    })
+], SwiperComponentModule);
+
+//# sourceMappingURL=swiper.module.js.map
+
+/***/ }),
+
+/***/ 357:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SwiperComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SwiperComponent = (function () {
+    function SwiperComponent() {
+        //存储swiper对象
+        this.oSwiper = null;
+    }
+    SwiperComponent.prototype.ngOnInit = function () {
+        this.oSwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+        });
+    };
+    return SwiperComponent;
+}());
+SwiperComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'swiper',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/swiper/swiper.html"*/'<!-- Generated template for the SwiperComponent component -->\n<div class="swiper-container">\n    <div class="swiper-wrapper">\n\n        <div class="swiper-slide" style="background: url(\'http://7xp2ia.com1.z0.glb.clouddn.com/banner5.png\')"></div>\n        <div class="swiper-slide" style="background: url(\'http://7xp2ia.com1.z0.glb.clouddn.com/banner2.png\')"></div>\n        <div class="swiper-slide" style="background: url(\'http://7xp2ia.com1.z0.glb.clouddn.com/banner3.png\')"></div>\n        <div class="swiper-slide" style="background: url(\'http://7xp2ia.com1.z0.glb.clouddn.com/banner4.png\')"></div>\n        <div class="swiper-slide" style="background: url(\'http://7xp2ia.com1.z0.glb.clouddn.com/banner1.png\')"></div>\n\n    </div>\n    <!-- 如果需要分页器 -->\n    <div class="swiper-pagination"></div>\n</div>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/swiper/swiper.html"*/
+    }),
+    __metadata("design:paramtypes", [])
+], SwiperComponent);
+
+//# sourceMappingURL=swiper.js.map
+
+/***/ }),
+
+/***/ 387:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FoundPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the FoundPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var FoundPage = (function () {
+    function FoundPage(UserService, http, navCtrl, navParams) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        //数据
+        this.data = [];
+        this._refresher = null;
+        this.getdata();
+    }
+    //获取分享数据
+    FoundPage.prototype.getdata = function () {
+        var _this = this;
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/share";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "len=" + this.data.length, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.data = _this.data.concat(res.json());
+            _this.UserService.presentLoadingDismiss();
+            if (_this._refresher) {
+                _this._refresher.complete();
+            }
+        });
+    };
+    FoundPage.prototype.pushQueList = function () {
+        this.navCtrl.push('QuestionListPage');
+    };
+    FoundPage.prototype.pushHotWork = function () {
+        this.navCtrl.push('HotWorkPage');
+    };
+    FoundPage.prototype.pushHotAnswer = function () {
+        this.navCtrl.push('HotAnswerPage');
+    };
+    FoundPage.prototype.pushHotShare = function () {
+        this.navCtrl.push('HotSharePage');
+    };
+    FoundPage.prototype.doRefresh = function (refresher) {
+        this.data = [];
+        this.getdata();
+        this._refresher = refresher;
+    };
+    FoundPage.prototype.doInfinite = function (infiniteScroll) {
+        //alert(1);
+        this.getdata();
+        setTimeout(function () {
+            infiniteScroll.complete();
+        }, 1500);
+    };
+    return FoundPage;
+}());
+FoundPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-found',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/found/found.html"*/'<!--\n  Generated template for the FoundPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>发现</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="doRefresh($event)">\n        <ion-refresher-content></ion-refresher-content>\n    </ion-refresher>\n\n    <!--banner切换组件-->\n    <swiper></swiper>\n\n    <section class="dv_box">\n        <div class="dv_items" (click)="pushQueList();">\n            <i style="color: #9c27b0;" class="fa fa-question-circle" aria-hidden="true"></i>\n            <p>问题列表</p>\n        </div>\n        <div class="dv_items" (click)="pushHotWork();">\n            <i style="color: #ffeb3b;" class="fa fa-industry" aria-hidden="true"></i>\n            <p>热门作品</p>\n        </div>\n        <div class="dv_items" (click)="pushHotAnswer();">\n            <i style="color: #03a9f4;" class="fa fa-bookmark" aria-hidden="true"></i>\n            <p>精品回答</p>\n        </div>\n        <div class="dv_items" (click)="pushHotShare();">\n            <i style="color: #8BC34A;" class="fa fa-shield" aria-hidden="true"></i>\n            <p>人气分享</p>\n        </div>\n    </section>\n\n    <share [data]="data"></share>\n\n    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n        <ion-infinite-scroll-content></ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/found/found.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], FoundPage);
+
+//# sourceMappingURL=found.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=9.main.js.map

@@ -1,2 +1,353 @@
-webpackJsonp([15],{228:function(l,n,u){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),u.d(n,"MySharePageModuleNgFactory",function(){return k});var t=u(0),a=u(451),e=u(14),o=u(28),i=u(88),r=u(274),s=u(275),_=u(145),c=u(146),d=u(147),h=u(148),f=u(149),b=u(452),p=u(348),m=u(89),g=this&&this.__extends||function(){var l=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(l,n){l.__proto__=n}||function(l,n){for(var u in n)n.hasOwnProperty(u)&&(l[u]=n[u])};return function(n,u){function t(){this.constructor=n}l(n,u),n.prototype=null===u?Object.create(u):(t.prototype=u.prototype,new t)}}(),v=function(l){function n(n){return l.call(this,n,[_.a,c.a,d.a,h.a,f.a,b.a],[])||this}return g(n,l),Object.defineProperty(n.prototype,"_NgLocalization_9",{get:function(){return null==this.__NgLocalization_9&&(this.__NgLocalization_9=new e.a(this.parent.get(t.c))),this.__NgLocalization_9},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵi_10",{get:function(){return null==this.__ɵi_10&&(this.__ɵi_10=new o.a),this.__ɵi_10},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_FormBuilder_11",{get:function(){return null==this.__FormBuilder_11&&(this.__FormBuilder_11=new o.b),this.__FormBuilder_11},enumerable:!0,configurable:!0}),n.prototype.createInternal=function(){return this._CommonModule_0=new e.d,this._ɵba_1=new o.c,this._FormsModule_2=new o.d,this._ReactiveFormsModule_3=new o.e,this._IonicModule_4=new i.b,this._HeaderComponentModule_5=new r.a,this._ShareComponentModule_6=new s.a,this._IonicPageModule_7=new i.c,this._MySharePageModule_8=new a.a,this._LAZY_LOADED_TOKEN_12=p.a,this._MySharePageModule_8},n.prototype.getInternal=function(l,n){return l===e.d?this._CommonModule_0:l===o.c?this._ɵba_1:l===o.d?this._FormsModule_2:l===o.e?this._ReactiveFormsModule_3:l===i.b?this._IonicModule_4:l===r.a?this._HeaderComponentModule_5:l===s.a?this._ShareComponentModule_6:l===i.c?this._IonicPageModule_7:l===a.a?this._MySharePageModule_8:l===e.e?this._NgLocalization_9:l===o.a?this._ɵi_10:l===o.b?this._FormBuilder_11:l===m.d?this._LAZY_LOADED_TOKEN_12:n},n.prototype.destroyInternal=function(){},n}(t.x),k=new t.y(v,a.a)},253:function(l,n,u){"use strict";function t(l){return e._14(2,[e._20(402653184,1,{_fixedContent:0}),e._20(402653184,2,{_scrollContent:0}),(l()(),e._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),e._21(null,0),(l()(),e._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),e._21(null,1),e._21(null,2)],null,null)}function a(l){return e._14(0,[(l()(),e._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,t,b)),e._17(4374528,null,0,o.a,[i.c,r.b,s.a,e.H,e.I,_.a,c.a,e.g,[2,d.a],[2,h.a]],null,null)],null,function(l,n){l(n,0,0,e._18(n,1).statusbarPadding,e._18(n,1)._hasRefresher)})}u.d(n,"b",function(){return b}),n.a=t;var e=u(0),o=u(20),i=u(1),r=u(3),s=u(8),_=u(6),c=u(27),d=u(4),h=u(16),f=[],b=e._13({encapsulation:2,styles:f,data:{}});e._19("ion-content",o.a,a,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(l,n,u){"use strict";function t(l){return e._14(0,[(l()(),e._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),e._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==a.backButtonClick(u)&&t}return t},r.a,r.b)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e._17(1097728,null,0,s.a,[[8,"bar-button"],_.c,e.H,e.I],null,null),(l()(),e._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e._17(147456,null,0,c.a,[_.c,e.H,e.I],{name:[0,"name"]},null),(l()(),e._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),e._15(null,["",""])),e._21(null,0),e._21(null,1),e._21(null,2),(l()(),e._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e._21(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode),l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb),l(n,5,0,e._18(n,7)._hidden),l(n,10,0,u._backText)})}function a(l){return e._14(0,[(l()(),e._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,t,p)),e._17(49152,null,0,i.a,[d.a,[2,h.a],[2,f.a],_.c,e.H,e.I],null,null)],null,function(l,n){l(n,0,0,e._18(n,1)._hidden,e._18(n,1)._sbPadding)})}u.d(n,"b",function(){return p}),n.a=t;var e=u(0),o=u(14),i=u(35),r=u(53),s=u(17),_=u(1),c=u(37),d=u(6),h=u(4),f=u(16),b=[],p=e._13({encapsulation:2,styles:b,data:{}});e._19("ion-navbar",i.a,a,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(l,n,u){"use strict";function t(l){return e._14(2,[(l()(),e._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),e._17(278528,null,0,o.k,[e.t,e.u,e.H,e.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),e._21(null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}function a(l){return e._14(0,[(l()(),e._16(0,null,null,1,"ion-title",[],null,null,null,t,d)),e._17(49152,null,0,i.a,[r.c,e.H,e.I,[2,s.a],[2,_.a]],null,null)],null,null)}u.d(n,"b",function(){return d}),n.a=t;var e=u(0),o=u(14),i=u(87),r=u(1),s=u(36),_=u(35),c=[],d=e._13({encapsulation:2,styles:c,data:{}});e._19("ion-title",i.a,a,{color:"color",mode:"mode"},{},["*"])},269:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),this&&this.__decorate,this&&this.__metadata,function(){function l(l){this.navCtrl=l,this.data={}}return l.prototype.pushPersonPage=function(l){this.navCtrl.push("PersonalPage",{_id:l})},l}())},270:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),this&&this.__decorate,this&&this.__metadata,function(){function l(l){this.navCtrl=l,this.data={}}return l.prototype.pushOpenSharePage=function(l){this.navCtrl.push("OpenSharePage",{_id:l})},l}())},274:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(269),this&&this.__decorate,function(){function l(){}return l}())},275:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(270),u(274),this&&this.__decorate,function(){function l(){}return l}())},292:function(l,n,u){"use strict";function t(l){return e._14(0,[e._26(0,o.n,[e.c]),(l()(),e._15(null,["\n"])),(l()(),e._16(0,null,null,14,"section",[["class","header"]],null,null,null,null,null)),(l()(),e._15(null,["\n    "])),(l()(),e._16(0,null,null,0,"img",[["alt",""]],[[8,"src",4]],[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==a.pushPersonPage(a.data.uid)&&t}return t},null,null)),(l()(),e._15(null,["\n    "])),(l()(),e._16(0,null,null,9,"div",[["class","it-left"]],null,null,null,null,null)),(l()(),e._15(null,["\n        "])),(l()(),e._16(0,null,null,1,"h6",[],null,null,null,null,null)),(l()(),e._15(null,[""," 分享了心情"])),(l()(),e._15(null,["\n        "])),(l()(),e._16(0,null,null,3,"p",[["class","time"]],null,null,null,null,null)),(l()(),e._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-clock-o"]],null,null,null,null,null)),(l()(),e._15(null,[":",""])),e._27(1),(l()(),e._15(null,["\n    "])),(l()(),e._15(null,["\n\n"]))],null,function(l,n){var u=n.component;l(n,4,0,u.data.userimg),l(n,9,0,u.data.name),l(n,13,0,e._28(n,13,0,l(n,14,0,e._18(n,0),u.data.time)))})}function a(l){return e._14(0,[(l()(),e._16(0,null,null,1,"header",[],null,null,null,t,_)),e._17(49152,null,0,i.a,[r.a],null,null)],null,null)}u.d(n,"b",function(){return _}),n.a=t;var e=u(0),o=u(14),i=u(269),r=u(16),s=[],_=e._13({encapsulation:2,styles:s,data:{}});e._19("header",i.a,a,{data:"data"},{},[])},293:function(l,n,u){"use strict";function t(l){return i._14(0,[(l()(),i._16(0,null,null,0,"div",[["class","imgs"]],[[4,"background",null]],null,null,null,null))],null,function(l,n){l(n,0,0,"url("+n.context.$implicit.src+")")})}function a(l){return i._14(0,[(l()(),i._16(0,null,null,31,"section",[["class","item"]],null,[[null,"click"]],function(l,n,u){var t=!0,a=l.component;if("click"===n){t=!1!==a.pushOpenSharePage(l.context.$implicit._id)&&t}return t},null,null)),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,1,"header",[],null,null,null,r.a,r.b)),i._17(49152,null,0,s.a,[_.a],{data:[0,"data"]},null),(l()(),i._15(null,["\n    "])),(l()(),i._16(0,null,null,25,"section",[],null,null,null,null,null)),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,1,"p",[],null,null,null,null,null)),(l()(),i._15(null,["",""])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,4,"section",[["class","imgs-wrap"]],null,null,null,null,null)),(l()(),i._15(null,["\n            "])),(l()(),i._24(16777216,null,null,1,null,t)),i._17(802816,null,0,c.l,[i.L,i.N,i.t],{ngForOf:[0,"ngForOf"]},null),(l()(),i._15(null,["\n\n        "])),(l()(),i._15(null,["\n        "])),(l()(),i._16(0,null,null,13,"section",[["class","mark"]],null,null,null,null,null)),(l()(),i._15(null,["\n            "])),(l()(),i._16(0,null,null,2,"p",[],null,null,null,null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-eye"]],null,null,null,null,null)),(l()(),i._15(null,[" 0"])),(l()(),i._15(null,["\n            "])),(l()(),i._16(0,null,null,2,"p",[["class","cen"]],null,null,null,null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-commenting-o"]],null,null,null,null,null)),(l()(),i._15(null,[" ",""])),(l()(),i._15(null,["\n            "])),(l()(),i._16(0,null,null,2,"p",[],null,null,null,null,null)),(l()(),i._16(0,null,null,0,"i",[["aria-hidden","true"],["class","fa fa-thumbs-o-up"]],null,null,null,null,null)),(l()(),i._15(null,[" ",""])),(l()(),i._15(null,["\n        "])),(l()(),i._15(null,["\n    "])),(l()(),i._15(null,["\n"]))],function(l,n){l(n,3,0,n.context.$implicit),l(n,13,0,n.context.$implicit.img)},function(l,n){l(n,8,0,n.context.$implicit.text),l(n,24,0,n.context.$implicit.mark.cont),l(n,28,0,n.context.$implicit.mark.like)})}function e(l){return i._14(0,[(l()(),i._15(null,["\n"])),(l()(),i._24(16777216,null,null,1,null,a)),i._17(802816,null,0,c.l,[i.L,i.N,i.t],{ngForOf:[0,"ngForOf"]},null)],function(l,n){l(n,2,0,n.component.data)},null)}function o(l){return i._14(0,[(l()(),i._16(0,null,null,1,"share",[],null,null,null,e,f)),i._17(49152,null,0,d.a,[_.a],null,null)],null,null)}u.d(n,"b",function(){return f}),n.a=e;var i=u(0),r=u(292),s=u(269),_=u(16),c=u(14),d=u(270),h=[],f=i._13({encapsulation:2,styles:h,data:{}});i._19("share",d.a,o,{data:"data"},{},[])},348:function(l,n,u){"use strict";u.d(n,"a",function(){return a});var t=(u(0),u(52),u(86),u(26)),a=(this&&this.__decorate,this&&this.__metadata,function(){function l(l,n,u,t){this.http=l,this.UserService=n,this.navCtrl=u,this.navParams=t,this.data=[],this.navParams.get("id")?this.uid=this.navParams.get("id"):this.uid=this.UserService._user._id,this.getdata()}return l.prototype.getdata=function(){var l=this;this.UserService.presentLoadingDefault();var n=new t.l;n.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu2/my_share","id="+this.uid,{headers:n}).subscribe(function(n){l.UserService.presentLoadingDismiss(),l.data=n.json()})},l}())},451:function(l,n,u){"use strict";u.d(n,"a",function(){return t});var t=(u(0),u(52),u(348),u(275),this&&this.__decorate,function(){function l(){}return l}())},452:function(l,n,u){"use strict";function t(l){return e._14(0,[(l()(),e._15(null,["\n"])),(l()(),e._16(0,null,null,10,"ion-header",[["no-border",""]],null,null,null,null,null)),e._17(16384,null,0,o.a,[i.c,e.H,e.I,[2,r.a]],null,null),(l()(),e._15(null,["\n\n    "])),(l()(),e._16(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,s.a,s.b)),e._17(49152,null,0,_.a,[c.a,[2,r.a],[2,d.a],i.c,e.H,e.I],{color:[0,"color"]},null),(l()(),e._15(3,["\n        "])),(l()(),e._16(0,null,3,2,"ion-title",[],null,null,null,h.a,h.b)),e._17(49152,null,0,f.a,[i.c,e.H,e.I,[2,b.a],[2,_.a]],null,null),(l()(),e._15(0,["我的分享"])),(l()(),e._15(3,["\n    "])),(l()(),e._15(null,["\n\n"])),(l()(),e._15(null,["\n\n\n"])),(l()(),e._16(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,p.a,p.b)),e._17(4374528,null,0,m.a,[i.c,g.b,v.a,e.H,e.I,c.a,k.a,e.g,[2,r.a],[2,d.a]],null,null),(l()(),e._15(1,["\n    "])),(l()(),e._16(0,null,1,1,"share",[],null,null,null,y.a,y.b)),e._17(49152,null,0,C.a,[d.a],{data:[0,"data"]},null),(l()(),e._15(1,["\n"]))],function(l,n){var u=n.component;l(n,5,0,"mblue"),l(n,17,0,u.data)},function(l,n){l(n,4,0,e._18(n,5)._hidden,e._18(n,5)._sbPadding),l(n,13,0,e._18(n,14).statusbarPadding,e._18(n,14)._hasRefresher)})}function a(l){return e._14(0,[(l()(),e._16(0,null,null,1,"page-my-share",[],null,null,null,t,S)),e._17(49152,null,0,P.a,[w.k,I.a,d.a,M.a],null,null)],null,null)}u.d(n,"a",function(){return x});var e=u(0),o=u(90),i=u(1),r=u(4),s=u(254),_=u(35),c=u(6),d=u(16),h=u(255),f=u(87),b=u(36),p=u(253),m=u(20),g=u(3),v=u(8),k=u(27),y=u(293),C=u(270),P=u(348),w=u(26),I=u(86),M=u(11),O=[],S=e._13({encapsulation:2,styles:O,data:{}}),x=e._19("page-my-share",P.a,a,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/15.main.js.map
+webpackJsonp([15],{
+
+/***/ 275:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommentsListPageModule", function() { return CommentsListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__comments_list__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_comments_comments_module__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__footer_footer_module__ = __webpack_require__(380);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var CommentsListPageModule = (function () {
+    function CommentsListPageModule() {
+    }
+    return CommentsListPageModule;
+}());
+CommentsListPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__comments_list__["a" /* CommentsListPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__components_comments_comments_module__["a" /* CommentsComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_4__footer_footer_module__["a" /* FooterComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__comments_list__["a" /* CommentsListPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__comments_list__["a" /* CommentsListPage */]
+        ]
+    })
+], CommentsListPageModule);
+
+//# sourceMappingURL=comments-list.module.js.map
+
+/***/ }),
+
+/***/ 350:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__comments__ = __webpack_require__(351);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var CommentsComponentModule = (function () {
+    function CommentsComponentModule() {
+    }
+    return CommentsComponentModule;
+}());
+CommentsComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__comments__["a" /* CommentsComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__comments__["a" /* CommentsComponent */]
+        ]
+    })
+], CommentsComponentModule);
+
+//# sourceMappingURL=comments.module.js.map
+
+/***/ }),
+
+/***/ 351:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CommentsComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var CommentsComponent = (function () {
+    function CommentsComponent(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.data = [];
+        this.type = [];
+    }
+    //评论回复列表
+    CommentsComponent.prototype.openComments = function (id) {
+        this.navCtrl.push('CommentsPage', {
+            id: id,
+            type: this.type
+        });
+    };
+    //查看TA的个人主页
+    CommentsComponent.prototype.pushPersonPage = function (_id) {
+        this.navCtrl.push('PersonalPage', {
+            _id: _id
+        });
+    };
+    return CommentsComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], CommentsComponent.prototype, "data", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], CommentsComponent.prototype, "type", void 0);
+CommentsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'comments',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/comments/comments.html"*/'<!-- Generated template for the CommentsComponent component -->\n<section class="item">\n    <header>\n        <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">\n        <div class="it-left">\n            <h6>{{data.name}}</h6>\n            <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date }}</p>\n        </div>\n        <div class="fork" (click)="openComments( data._id );"><i class="fa fa-plus" aria-hidden="true"></i> 回复&nbsp;&nbsp;{{data.commarr.length==\'0\'?\'\':data.commarr.length}}</div>\n    </header>\n    <p>{{data.text}}</p>\n\n</section>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/comments/comments.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
+], CommentsComponent);
+
+//# sourceMappingURL=comments.js.map
+
+/***/ }),
+
+/***/ 379:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsListPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the CommentsListPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var CommentsListPage = (function () {
+    function CommentsListPage(UserService, http, navCtrl, navParams) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.data = [];
+        this.isget = false;
+        this._id = this.navParams.get('_id');
+        this.type = this.navParams.get('type');
+        this.name = this.navParams.get('name');
+        this.uid = this.navParams.get('uid');
+        this.getComment();
+    }
+    //获取评论
+    CommentsListPage.prototype.getComment = function () {
+        var _this = this;
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/get_comment";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "&artid=" + this._id + "&type=" + this.type, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.data = res.json();
+            _this.isget = true;
+            _this.UserService.presentLoadingDismiss();
+        });
+    };
+    CommentsListPage.prototype.ionViewDidEnter = function () {
+        if (this.isget) {
+            this.getComment();
+        }
+    };
+    return CommentsListPage;
+}());
+CommentsListPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-comments-list',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/comments-list/comments-list.html"*/'<!--\n  Generated template for the CommentsListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="mblue">\n        <ion-title>评论列表</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <ion-list>\n        <ion-list-header>\n            {{data.length}} 个评论\n        </ion-list-header>\n    </ion-list>\n    <comments *ngFor="let item of data" [data]="item" [type]="type"></comments>\n</ion-content>\n\n<footer [name]="name" [_id]="_id" [type]="type" [uid]="uid"></footer>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/comments-list/comments-list.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], CommentsListPage);
+
+//# sourceMappingURL=comments-list.js.map
+
+/***/ }),
+
+/***/ 380:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__footer__ = __webpack_require__(381);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var FooterComponentModule = (function () {
+    function FooterComponentModule() {
+    }
+    return FooterComponentModule;
+}());
+FooterComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__footer__["a" /* FooterComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__footer__["a" /* FooterComponent */]
+        ]
+    })
+], FooterComponentModule);
+
+//# sourceMappingURL=footer.module.js.map
+
+/***/ }),
+
+/***/ 381:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_user_service_user_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(48);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the FooterComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var FooterComponent = (function () {
+    function FooterComponent(UserService, http, navCtrl) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.name = '';
+        this._id = '';
+        this.uid = '';
+        this.type = '';
+    }
+    FooterComponent.prototype.sendComment = function (pl, comid) {
+        if (this.UserService._user._id) {
+            this.navCtrl.push('SendCommentsPage', {
+                pl: pl,
+                artid: this._id,
+                comid: comid,
+                type: this.type,
+                targetid: this.uid
+            });
+        }
+        else {
+            this.navCtrl.push('LoginPage');
+        }
+    };
+    return FooterComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], FooterComponent.prototype, "name", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], FooterComponent.prototype, "_id", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], FooterComponent.prototype, "uid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Input */])(),
+    __metadata("design:type", Object)
+], FooterComponent.prototype, "type", void 0);
+FooterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'footer',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/comments-list/footer/footer.html"*/'<!-- Generated template for the FooterComponent component -->\n<ion-footer no-border (click)="sendComment( \'@\'+name, 0 )">\n    <ion-grid class="input-wrap">\n        <ion-row>\n\n            <ion-col col-10>\n                <ion-textarea #chat_input disabled=\'true\' placeholder="我要评论..."></ion-textarea>\n            </ion-col>\n            <ion-col col-2>\n                <button ion-button clear icon-only item-right>\n                    <ion-icon  name="ios-send" ios="ios-send" md="md-send"></ion-icon>\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-footer>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/comments-list/footer/footer.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* NavController */]])
+], FooterComponent);
+
+//# sourceMappingURL=footer.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=15.main.js.map

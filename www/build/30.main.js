@@ -1,2 +1,297 @@
-webpackJsonp([30],{208:function(n,l,t){"use strict";Object.defineProperty(l,"__esModule",{value:!0}),t.d(l,"ClassPageModuleNgFactory",function(){return k});var u=t(0),o=t(407),a=t(14),e=t(28),i=t(88),s=t(377),r=t(145),_=t(146),c=t(147),d=t(148),b=t(149),f=t(408),h=t(324),p=t(89),g=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var t in l)l.hasOwnProperty(t)&&(n[t]=l[t])};return function(l,t){function u(){this.constructor=l}n(l,t),l.prototype=null===t?Object.create(t):(u.prototype=t.prototype,new u)}}(),m=function(n){function l(l){return n.call(this,l,[r.a,_.a,c.a,d.a,b.a,f.a],[])||this}return g(l,n),Object.defineProperty(l.prototype,"_NgLocalization_8",{get:function(){return null==this.__NgLocalization_8&&(this.__NgLocalization_8=new a.a(this.parent.get(u.c))),this.__NgLocalization_8},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_9",{get:function(){return null==this.__ɵi_9&&(this.__ɵi_9=new e.a),this.__ɵi_9},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_10",{get:function(){return null==this.__FormBuilder_10&&(this.__FormBuilder_10=new e.b),this.__FormBuilder_10},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new a.d,this._ɵba_1=new e.c,this._FormsModule_2=new e.d,this._ReactiveFormsModule_3=new e.e,this._IonicModule_4=new i.b,this._ClassItemComponentModule_5=new s.a,this._IonicPageModule_6=new i.c,this._ClassPageModule_7=new o.a,this._LAZY_LOADED_TOKEN_11=h.a,this._ClassPageModule_7},l.prototype.getInternal=function(n,l){return n===a.d?this._CommonModule_0:n===e.c?this._ɵba_1:n===e.d?this._FormsModule_2:n===e.e?this._ReactiveFormsModule_3:n===i.b?this._IonicModule_4:n===s.a?this._ClassItemComponentModule_5:n===i.c?this._IonicPageModule_6:n===o.a?this._ClassPageModule_7:n===a.e?this._NgLocalization_8:n===e.a?this._ɵi_9:n===e.b?this._FormBuilder_10:n===p.d?this._LAZY_LOADED_TOKEN_11:l},l.prototype.destroyInternal=function(){},l}(u.x),k=new u.y(m,o.a)},253:function(n,l,t){"use strict";function u(n){return a._14(2,[a._20(402653184,1,{_fixedContent:0}),a._20(402653184,2,{_scrollContent:0}),(n()(),a._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),a._21(null,0),(n()(),a._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),a._21(null,1),a._21(null,2)],null,null)}function o(n){return a._14(0,[(n()(),a._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,u,h)),a._17(4374528,null,0,e.a,[i.c,s.b,r.a,a.H,a.I,_.a,c.a,a.g,[2,d.a],[2,b.a]],null,null)],null,function(n,l){n(l,0,0,a._18(l,1).statusbarPadding,a._18(l,1)._hasRefresher)})}t.d(l,"b",function(){return h}),l.a=u;var a=t(0),e=t(20),i=t(1),s=t(3),r=t(8),_=t(6),c=t(27),d=t(4),b=t(16),f=[],h=a._13({encapsulation:2,styles:f,data:{}});a._19("ion-content",e.a,o,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(n,l,t){"use strict";function u(n){return a._14(0,[(n()(),a._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),a._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,l,t){var u=!0,o=n.component;if("click"===l){u=!1!==o.backButtonClick(t)&&u}return u},s.a,s.b)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._17(1097728,null,0,r.a,[[8,"bar-button"],_.c,a.H,a.I],null,null),(n()(),a._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._17(147456,null,0,c.a,[_.c,a.H,a.I],{name:[0,"name"]},null),(n()(),a._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),a._15(null,["",""])),a._21(null,0),a._21(null,1),a._21(null,2),(n()(),a._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._21(null,3)],function(n,l){var t=l.component;n(l,1,0,"toolbar-background","toolbar-background-"+t._mode);n(l,3,0,"back-button","back-button-"+t._mode);n(l,6,0,"back-button-icon","back-button-icon-"+t._mode),n(l,7,0,t._bbIcon);n(l,9,0,"back-button-text","back-button-text-"+t._mode);n(l,15,0,"toolbar-content","toolbar-content-"+t._mode)},function(n,l){var t=l.component;n(l,2,0,t._hideBb),n(l,5,0,a._18(l,7)._hidden),n(l,10,0,t._backText)})}function o(n){return a._14(0,[(n()(),a._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,u,p)),a._17(49152,null,0,i.a,[d.a,[2,b.a],[2,f.a],_.c,a.H,a.I],null,null)],null,function(n,l){n(l,0,0,a._18(l,1)._hidden,a._18(l,1)._sbPadding)})}t.d(l,"b",function(){return p}),l.a=u;var a=t(0),e=t(14),i=t(35),s=t(53),r=t(17),_=t(1),c=t(37),d=t(6),b=t(4),f=t(16),h=[],p=a._13({encapsulation:2,styles:h,data:{}});a._19("ion-navbar",i.a,o,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(n,l,t){"use strict";function u(n){return a._14(2,[(n()(),a._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),a._17(278528,null,0,e.k,[a.t,a.u,a.H,a.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._21(null,0)],function(n,l){n(l,1,0,"toolbar-title","toolbar-title-"+l.component._mode)},null)}function o(n){return a._14(0,[(n()(),a._16(0,null,null,1,"ion-title",[],null,null,null,u,d)),a._17(49152,null,0,i.a,[s.c,a.H,a.I,[2,r.a],[2,_.a]],null,null)],null,null)}t.d(l,"b",function(){return d}),l.a=u;var a=t(0),e=t(14),i=t(87),s=t(1),r=t(36),_=t(35),c=[],d=a._13({encapsulation:2,styles:c,data:{}});a._19("ion-title",i.a,o,{color:"color",mode:"mode"},{},["*"])},313:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),this&&this.__decorate,this&&this.__metadata,function(){function n(n){this.navCtrl=n,this.arr=["家常菜","快手菜","下饭菜","早餐","肉","鱼","蔬菜","鸡蛋","汤羹","烘培","主食","面","素食","甜品","其他"]}return n.prototype.openClass=function(n){this.navCtrl.push("OpenClassPage",{class:n})},n}())},324:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),this&&this.__decorate,this&&this.__metadata,function(){function n(n,l){this.navCtrl=n,this.navParams=l}return n}())},377:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),t(313),this&&this.__decorate,function(){function n(){}return n}())},395:function(n,l,t){"use strict";function u(n){return e._14(0,[(n()(),e._16(0,null,null,6,"div",[["class","iclass"]],null,[[null,"click"]],function(n,l,t){var u=!0,o=n.component;if("click"===l){u=!1!==o.openClass(n.context.$implicit)&&u}return u},null,null)),(n()(),e._15(null,["\n        "])),(n()(),e._16(0,null,null,0,"i",[],[[8,"className",0]],null,null,null,null)),(n()(),e._15(null,["\n        "])),(n()(),e._16(0,null,null,1,"p",[],null,null,null,null,null)),(n()(),e._15(null,["",""])),(n()(),e._15(null,["\n    "]))],null,function(n,l){n(l,2,0,e._25(1,"top-",l.context.index,"")),n(l,5,0,l.context.$implicit)})}function o(n){return e._14(0,[(n()(),e._15(null,["\n"])),(n()(),e._16(0,null,null,4,"section",[["class","wrap"]],null,null,null,null,null)),(n()(),e._15(null,["\n    "])),(n()(),e._24(16777216,null,null,1,null,u)),e._17(802816,null,0,i.l,[e.L,e.N,e.t],{ngForOf:[0,"ngForOf"]},null),(n()(),e._15(null,["\n\n\n"]))],function(n,l){n(l,4,0,l.component.arr)},null)}function a(n){return e._14(0,[(n()(),e._16(0,null,null,1,"class-item",[],null,null,null,o,c)),e._17(49152,null,0,s.a,[r.a],null,null)],null,null)}t.d(l,"b",function(){return c}),l.a=o;var e=t(0),i=t(14),s=t(313),r=t(16),_=[],c=e._13({encapsulation:2,styles:_,data:{}});e._19("class-item",s.a,a,{},{},[])},407:function(n,l,t){"use strict";t.d(l,"a",function(){return u});var u=(t(0),t(52),t(324),t(377),this&&this.__decorate,function(){function n(){}return n}())},408:function(n,l,t){"use strict";function u(n){return a._14(0,[(n()(),a._15(null,["\n"])),(n()(),a._16(0,null,null,10,"ion-header",[],null,null,null,null,null)),a._17(16384,null,0,e.a,[i.c,a.H,a.I,[2,s.a]],null,null),(n()(),a._15(null,["\n\n    "])),(n()(),a._16(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,r.a,r.b)),a._17(49152,null,0,_.a,[c.a,[2,s.a],[2,d.a],i.c,a.H,a.I],{color:[0,"color"]},null),(n()(),a._15(3,["\n        "])),(n()(),a._16(0,null,3,2,"ion-title",[],null,null,null,b.a,b.b)),a._17(49152,null,0,f.a,[i.c,a.H,a.I,[2,h.a],[2,_.a]],null,null),(n()(),a._15(0,["分类"])),(n()(),a._15(3,["\n    "])),(n()(),a._15(null,["\n\n"])),(n()(),a._15(null,["\n\n\n"])),(n()(),a._16(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,p.a,p.b)),a._17(4374528,null,0,g.a,[i.c,m.b,k.a,a.H,a.I,c.a,C.a,a.g,[2,s.a],[2,d.a]],null,null),(n()(),a._15(1,["\n    "])),(n()(),a._16(0,null,1,1,"class-item",[],null,null,null,v.a,v.b)),a._17(49152,null,0,y.a,[d.a],null,null),(n()(),a._15(1,["\n"]))],function(n,l){n(l,5,0,"mblue")},function(n,l){n(l,4,0,a._18(l,5)._hidden,a._18(l,5)._sbPadding),n(l,13,0,a._18(l,14).statusbarPadding,a._18(l,14)._hasRefresher)})}function o(n){return a._14(0,[(n()(),a._16(0,null,null,1,"page-class",[],null,null,null,u,M)),a._17(49152,null,0,I.a,[d.a,w.a],null,null)],null,null)}t.d(l,"a",function(){return O});var a=t(0),e=t(90),i=t(1),s=t(4),r=t(254),_=t(35),c=t(6),d=t(16),b=t(255),f=t(87),h=t(36),p=t(253),g=t(20),m=t(3),k=t(8),C=t(27),v=t(395),y=t(313),I=t(324),w=t(11),P=[],M=a._13({encapsulation:2,styles:P,data:{}}),O=a._19("page-class",I.a,o,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/30.main.js.map
+webpackJsonp([30],{
+
+/***/ 295:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoticeInformPageModule", function() { return NoticeInformPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notice_inform__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_mes_item_mes_item_module__ = __webpack_require__(342);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var NoticeInformPageModule = (function () {
+    function NoticeInformPageModule() {
+    }
+    return NoticeInformPageModule;
+}());
+NoticeInformPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__notice_inform__["a" /* NoticeInformPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__components_mes_item_mes_item_module__["a" /* MesItemComponentModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__notice_inform__["a" /* NoticeInformPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__notice_inform__["a" /* NoticeInformPage */]
+        ]
+    })
+], NoticeInformPageModule);
+
+//# sourceMappingURL=notice-inform.module.js.map
+
+/***/ }),
+
+/***/ 342:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MesItemComponentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mes_item__ = __webpack_require__(343);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MesItemComponentModule = (function () {
+    function MesItemComponentModule() {
+    }
+    return MesItemComponentModule;
+}());
+MesItemComponentModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__mes_item__["a" /* MesItemComponent */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* IonicModule */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__mes_item__["a" /* MesItemComponent */]
+        ]
+    })
+], MesItemComponentModule);
+
+//# sourceMappingURL=mes-item.module.js.map
+
+/***/ }),
+
+/***/ 343:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MesItemComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Generated class for the MesItemComponent component.
+ *
+ * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+ * for more info on Angular Components.
+ */
+var MesItemComponent = (function () {
+    function MesItemComponent() {
+        this.items = [{
+                "_id": "594936e835b71e5004c7eb92",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "594935e835b71e5004c7eb91",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "594788b835b71e5004c7eb8a",
+                "isread": 0,
+                "title": "菜谱测试",
+                "type": "1",
+                "conttext": "112233445566  ❤️感谢了你的作品分享"
+            },
+            {
+                "_id": "5949e73db6c066e50e04a2a5",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "594935e835b71e5004c7eb91",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "59475afe35b71e5004c7eb88",
+                "isread": 0,
+                "title": "什么汤对胃好",
+                "type": "0",
+                "conttext": "112233445566  ❤️️感谢了你的回答"
+            },
+            {
+                "_id": "594b8b648063ec6f1b4ae728",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "594b8aa58063ec6f1b4ae724",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "594787e435b71e5004c7eb89",
+                "isread": 0,
+                "title": "昨天是父亲节，也是爷爷的生日，好开心啊🎉🎉🎉",
+                "type": "2",
+                "conttext": "123  👍点赞了你的分享"
+            },
+            {
+                "_id": "594b8b6a8063ec6f1b4ae72a",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "594b8aa58063ec6f1b4ae724",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "594787e435b71e5004c7eb89",
+                "isread": 0,
+                "title": "昨天是父亲节，也是爷爷的生日，好开心啊🎉🎉🎉",
+                "type": "2",
+                "conttext": "123  👍点赞了你的分享"
+            },
+            {
+                "_id": "594b8e5c8063ec6f1b4ae72c",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "5946a0f0285302bb09d9e601",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "594787e435b71e5004c7eb89",
+                "isread": 0,
+                "title": "昨天是父亲节，也是爷爷的生日，好开心啊🎉🎉🎉",
+                "type": "2",
+                "conttext": "zhangtao  👍点赞了你的分享"
+            },
+            {
+                "_id": "5950878b5b21b48108124705",
+                "uid": "59475a9e35b71e5004c7eb86",
+                "id": "594935e835b71e5004c7eb91",
+                "userimg": "https://avatars2.githubusercontent.com/u/11835988?v=3",
+                "artid": "594d378263a02f0cff548395",
+                "isread": 0,
+                "title": "\n带着满满的记忆味道~~~幹豆角烧肉在计划经济年代，物资匮乏是普遍现象；因为没有冰箱和一些其它防......",
+                "type": "2",
+                "conttext": "112233445566  👍点赞了你的分享"
+            }];
+    }
+    return MesItemComponent;
+}());
+MesItemComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'mes-item',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/components/mes-item/mes-item.html"*/'<!-- Generated template for the MesItemComponent component -->\n<ion-list>\n\n    <ion-item *ngFor="let item of items">\n        <ion-avatar item-left (click)="pushPersonPage( item.id )">\n            <img [src]="item.userimg">\n        </ion-avatar>\n        <div (click)="open( item.artid, item.type );">\n            <h2>{{item.conttext}}</h2>\n            <p>{{item.title}}</p>\n        </div>\n    </ion-item>\n\n\n</ion-list>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/components/mes-item/mes-item.html"*/
+    }),
+    __metadata("design:paramtypes", [])
+], MesItemComponent);
+
+//# sourceMappingURL=mes-item.js.map
+
+/***/ }),
+
+/***/ 403:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NoticeInformPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__ = __webpack_require__(197);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the NoticeInformPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var NoticeInformPage = (function () {
+    function NoticeInformPage(UserService, http, navCtrl, navParams) {
+        this.UserService = UserService;
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.items = [];
+        this.nomessage = true;
+        this.rootNavCtrl = navParams.get('rootNavCtrl');
+        this.getdata();
+    }
+    //获取数据
+    NoticeInformPage.prototype.getdata = function () {
+        var _this = this;
+        if (!this.UserService._user._id) {
+            //未登录
+            this.items = [];
+            return true;
+        }
+        var url = "http://www.devonhello.com/chihu2/getinform";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "uid=" + this.UserService._user._id, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.items = res.json();
+            if (res.json().length != '0') {
+                _this.nomessage = false;
+            }
+        });
+    };
+    //查看TA的个人主页
+    NoticeInformPage.prototype.pushPerson = function (_id) {
+        this.rootNavCtrl.push('PersonalPage', {
+            _id: _id
+        });
+    };
+    //打开文章
+    NoticeInformPage.prototype.pushPages = function (type, _id) {
+        switch (type) {
+            case '1':
+                this.rootNavCtrl.push('ArticlePage', {
+                    _id: _id
+                });
+                break;
+            case '2':
+                this.rootNavCtrl.push('AnswerPage', {
+                    _id: _id
+                });
+                break;
+            case '3':
+                this.rootNavCtrl.push('OpenSharePage', {
+                    _id: _id
+                });
+                break;
+            default:
+                break;
+        }
+    };
+    NoticeInformPage.prototype.ionViewDidEnter = function () {
+        this.getdata();
+    };
+    return NoticeInformPage;
+}());
+NoticeInformPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-notice-inform',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/notice/notice-inform/notice-inform.html"*/'<!--\n  Generated template for the NoticeInformPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n\n<ion-content [class.nomessage]="nomessage">\n\n    <ion-list>\n\n        <ion-item *ngFor="let item of items">\n            <ion-avatar item-left (click)="pushPerson( item.targetid );">\n                <img [src]="item.userimg">\n            </ion-avatar>\n            <h2 (click)="pushPages( item.type, item.artid );">{{item.name}}</h2>\n            <p (click)="pushPages( item.type, item.artid );">{{item.title}}</p>\n\n        </ion-item>\n\n\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/notice/notice-inform/notice-inform.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_user_service_user_service__["a" /* UserServiceProvider */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], NoticeInformPage);
+
+//# sourceMappingURL=notice-inform.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=30.main.js.map

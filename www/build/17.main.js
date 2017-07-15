@@ -1,3 +1,721 @@
-webpackJsonp([17],{250:function(n,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),t.d(e,"SettingPageModuleNgFactory",function(){return F});var r=t(0),i=t(498),l=t(14),o=t(28),u=t(88),s=t(281),a=t(262),c=t(282),p=t(145),f=t(146),_=t(147),d=t(148),g=t(149),y=t(499),h=t(374),m=t(89),v=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,e){n.__proto__=e}||function(n,e){for(var t in e)e.hasOwnProperty(t)&&(n[t]=e[t])};return function(e,t){function r(){this.constructor=e}n(e,t),e.prototype=null===t?Object.create(t):(r.prototype=t.prototype,new r)}}(),b=function(n){function e(e){return n.call(this,e,[p.a,f.a,_.a,d.a,g.a,y.a],[])||this}return v(e,n),Object.defineProperty(e.prototype,"_NgLocalization_7",{get:function(){return null==this.__NgLocalization_7&&(this.__NgLocalization_7=new l.a(this.parent.get(r.c))),this.__NgLocalization_7},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_ɵi_8",{get:function(){return null==this.__ɵi_8&&(this.__ɵi_8=new o.a),this.__ɵi_8},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_FormBuilder_9",{get:function(){return null==this.__FormBuilder_9&&(this.__FormBuilder_9=new o.b),this.__FormBuilder_9},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_FileOpener_11",{get:function(){return null==this.__FileOpener_11&&(this.__FileOpener_11=new s.a),this.__FileOpener_11},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_Transfer_12",{get:function(){return null==this.__Transfer_12&&(this.__Transfer_12=new a.a),this.__Transfer_12},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_TransferObject_13",{get:function(){return null==this.__TransferObject_13&&(this.__TransferObject_13=new a.b),this.__TransferObject_13},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_File_14",{get:function(){return null==this.__File_14&&(this.__File_14=new c.a),this.__File_14},enumerable:!0,configurable:!0}),e.prototype.createInternal=function(){return this._CommonModule_0=new l.d,this._ɵba_1=new o.c,this._FormsModule_2=new o.d,this._ReactiveFormsModule_3=new o.e,this._IonicModule_4=new u.b,this._IonicPageModule_5=new u.c,this._SettingPageModule_6=new i.a,this._LAZY_LOADED_TOKEN_10=h.a,this._SettingPageModule_6},e.prototype.getInternal=function(n,e){return n===l.d?this._CommonModule_0:n===o.c?this._ɵba_1:n===o.d?this._FormsModule_2:n===o.e?this._ReactiveFormsModule_3:n===u.b?this._IonicModule_4:n===u.c?this._IonicPageModule_5:n===i.a?this._SettingPageModule_6:n===l.e?this._NgLocalization_7:n===o.a?this._ɵi_8:n===o.b?this._FormBuilder_9:n===m.d?this._LAZY_LOADED_TOKEN_10:n===s.a?this._FileOpener_11:n===a.a?this._Transfer_12:n===a.b?this._TransferObject_13:n===c.a?this._File_14:e},e.prototype.destroyInternal=function(){},e}(r.x),F=new r.y(b,i.a)},253:function(n,e,t){"use strict";function r(n){return l._14(2,[l._20(402653184,1,{_fixedContent:0}),l._20(402653184,2,{_scrollContent:0}),(n()(),l._16(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),l._21(null,0),(n()(),l._16(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),l._21(null,1),l._21(null,2)],null,null)}function i(n){return l._14(0,[(n()(),l._16(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,r,g)),l._17(4374528,null,0,o.a,[u.c,s.b,a.a,l.H,l.I,c.a,p.a,l.g,[2,f.a],[2,_.a]],null,null)],null,function(n,e){n(e,0,0,l._18(e,1).statusbarPadding,l._18(e,1)._hasRefresher)})}t.d(e,"b",function(){return g}),e.a=r;var l=t(0),o=t(20),u=t(1),s=t(3),a=t(8),c=t(6),p=t(27),f=t(4),_=t(16),d=[],g=l._13({encapsulation:2,styles:d,data:{}});l._19("ion-content",o.a,i,{color:"color",mode:"mode",fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},254:function(n,e,t){"use strict";function r(n){return l._14(0,[(n()(),l._16(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),l._16(0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(n,e,t){var r=!0,i=n.component;if("click"===e){r=!1!==i.backButtonClick(t)&&r}return r},s.a,s.b)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),l._17(1097728,null,0,a.a,[[8,"bar-button"],c.c,l.H,l.I],null,null),(n()(),l._16(0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),l._17(147456,null,0,p.a,[c.c,l.H,l.I],{name:[0,"name"]},null),(n()(),l._16(0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(n()(),l._15(null,["",""])),l._21(null,0),l._21(null,1),l._21(null,2),(n()(),l._16(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),l._21(null,3)],function(n,e){var t=e.component;n(e,1,0,"toolbar-background","toolbar-background-"+t._mode);n(e,3,0,"back-button","back-button-"+t._mode);n(e,6,0,"back-button-icon","back-button-icon-"+t._mode),n(e,7,0,t._bbIcon);n(e,9,0,"back-button-text","back-button-text-"+t._mode);n(e,15,0,"toolbar-content","toolbar-content-"+t._mode)},function(n,e){var t=e.component;n(e,2,0,t._hideBb),n(e,5,0,l._18(e,7)._hidden),n(e,10,0,t._backText)})}function i(n){return l._14(0,[(n()(),l._16(0,null,null,1,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,r,y)),l._17(49152,null,0,u.a,[f.a,[2,_.a],[2,d.a],c.c,l.H,l.I],null,null)],null,function(n,e){n(e,0,0,l._18(e,1)._hidden,l._18(e,1)._sbPadding)})}t.d(e,"b",function(){return y}),e.a=r;var l=t(0),o=t(14),u=t(35),s=t(53),a=t(17),c=t(1),p=t(37),f=t(6),_=t(4),d=t(16),g=[],y=l._13({encapsulation:2,styles:g,data:{}});l._19("ion-navbar",u.a,i,{color:"color",mode:"mode",hideBackButton:"hideBackButton"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},255:function(n,e,t){"use strict";function r(n){return l._14(2,[(n()(),l._16(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),l._17(278528,null,0,o.k,[l.t,l.u,l.H,l.I],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),l._21(null,0)],function(n,e){n(e,1,0,"toolbar-title","toolbar-title-"+e.component._mode)},null)}function i(n){return l._14(0,[(n()(),l._16(0,null,null,1,"ion-title",[],null,null,null,r,f)),l._17(49152,null,0,u.a,[s.c,l.H,l.I,[2,a.a],[2,c.a]],null,null)],null,null)}t.d(e,"b",function(){return f}),e.a=r;var l=t(0),o=t(14),u=t(87),s=t(1),a=t(36),c=t(35),p=[],f=l._13({encapsulation:2,styles:p,data:{}});l._19("ion-title",u.a,i,{color:"color",mode:"mode"},{},["*"])},256:function(n,e,t){"use strict";t.d(e,"a",function(){return i});var r=(t(0),t(150)),i=function(){function n(n){this.elementRef=n,n.nativeElement.$ionComponent=this}return n.prototype.getReorderNode=function(){return t.i(r.b)(this.elementRef.nativeElement,null)},n.prototype.onClick=function(n){n.preventDefault(),n.stopPropagation()},n}()},257:function(n,e,t){"use strict";function r(n){return u._14(0,[(n()(),u._16(0,null,null,2,"ion-label",[],null,null,null,null,null)),u._17(16384,[[1,4]],0,s.a,[a.c,u.H,u.I,[8,null],[8,null],[8,null],[8,null]],null,null),u._21(null,2)],null,null)}function i(n){return u._14(0,[(n()(),u._16(0,null,null,1,"ion-reorder",[],null,[[null,"click"]],function(n,e,t){var r=!0;if("click"===e){r=!1!==u._18(n,1).onClick(t)&&r}return r},c.a,c.b)),u._17(49152,null,0,p.a,[u.H],null,null)],null,null)}function l(n){return u._14(2,[u._20(671088640,1,{viewLabel:0}),u._21(null,0),(n()(),u._16(0,null,null,8,"div",[["class","item-inner"]],null,null,null,null,null)),(n()(),u._16(0,null,null,4,"div",[["class","input-wrapper"]],null,null,null,null,null)),u._21(null,1),(n()(),u._24(16777216,null,null,1,null,r)),u._17(16384,null,0,f.m,[u.L,u.N],{ngIf:[0,"ngIf"]},null),u._21(null,3),u._21(null,4),(n()(),u._24(16777216,null,null,1,null,i)),u._17(16384,null,0,f.m,[u.L,u.N],{ngIf:[0,"ngIf"]},null),(n()(),u._16(0,null,null,0,"div",[["class","button-effect"]],null,null,null,null,null))],function(n,e){var t=e.component;n(e,6,0,t._viewLabel),n(e,10,0,t._hasReorder)},null)}function o(n){return u._14(0,[(n()(),u._16(0,null,null,4,"ion-list-header",[["class","item"]],null,null,null,l,h)),u._17(1097728,null,3,_.a,[d.a,a.c,u.H,u.I,[2,g.a]],null,null),u._20(335544320,1,{contentLabel:0}),u._20(603979776,2,{_buttons:1}),u._20(603979776,3,{_icons:1})],null,null)}t.d(e,"b",function(){return h}),e.a=l;var u=t(0),s=t(56),a=t(1),c=t(258),p=t(256),f=t(14),_=t(54),d=t(29),g=t(55),y=[],h=u._13({encapsulation:2,styles:y,data:{}});u._19("ion-list-header,ion-item,[ion-item],ion-item-divider",_.a,o,{color:"color",mode:"mode"},{},["[item-start],[item-left],ion-checkbox:not([item-end]):not([item-right])","ion-label","*","ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]","[item-end],[item-right],ion-radio,ion-toggle"])},258:function(n,e,t){"use strict";function r(n){return l._14(0,[(n()(),l._16(0,null,null,1,"ion-icon",[["name","reorder"],["role","img"]],[[2,"hide",null]],null,null,null,null)),l._17(147456,null,0,o.a,[u.c,l.H,l.I],{name:[0,"name"]},null)],function(n,e){n(e,1,0,"reorder")},function(n,e){n(e,0,0,l._18(e,1)._hidden)})}function i(n){return l._14(0,[(n()(),l._16(0,null,null,1,"ion-reorder",[],null,[[null,"click"]],function(n,e,t){var r=!0;if("click"===e){r=!1!==l._18(n,1).onClick(t)&&r}return r},r,c)),l._17(49152,null,0,s.a,[l.H],null,null)],null,null)}t.d(e,"b",function(){return c}),e.a=r;var l=t(0),o=t(37),u=t(1),s=t(256),a=[],c=l._13({encapsulation:2,styles:a,data:{}});l._19("ion-reorder",s.a,i,{},{},[])},262:function(n,e,t){"use strict";t.d(e,"a",function(){return s}),t.d(e,"b",function(){return a});var r=t(0),i=t(57),l=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,e){n.__proto__=e}||function(n,e){for(var t in e)e.hasOwnProperty(t)&&(n[t]=e[t])};return function(e,t){function r(){this.constructor=e}n(e,t),e.prototype=null===t?Object.create(t):(r.prototype=t.prototype,new r)}}(),o=this&&this.__decorate||function(n,e,t,r){var i,l=arguments.length,o=l<3?e:null===r?r=Object.getOwnPropertyDescriptor(e,t):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(n,e,t,r);else for(var u=n.length-1;u>=0;u--)(i=n[u])&&(o=(l<3?i(o):l>3?i(e,t,o):i(e,t))||o);return l>3&&o&&Object.defineProperty(e,t,o),o},u=this&&this.__metadata||function(n,e){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(n,e)},s=function(n){function e(){var e=null!==n&&n.apply(this,arguments)||this;return e.FileTransferErrorCode={FILE_NOT_FOUND_ERR:1,INVALID_URL_ERR:2,CONNECTION_ERR:3,ABORT_ERR:4,NOT_MODIFIED_ERR:5},e}return l(e,n),e.prototype.create=function(){return new a},e}(i.a);s.decorators=[{type:r.C}],s.ctorParameters=function(){return[]},s=o([t.i(i.d)({pluginName:"FileTransfer",plugin:"cordova-plugin-file-transfer",pluginRef:"FileTransfer",repo:"https://github.com/apache/cordova-plugin-file-transfer",platforms:["Amazon Fire OS","Android","Browser","iOS","Ubuntu","Windows","Windows Phone"]})],s);var a=function(){function n(){!0===t.i(i.e)("FileTransfer",null,"FileTransfer")&&(this._objectInstance=new FileTransfer)}return n.prototype.upload=function(n,e,t,r){},n.prototype.download=function(n,e,t,r){},n.prototype.onProgress=function(n){this._objectInstance.onprogress=n},n.prototype.abort=function(){},n}();o([t.i(i.f)({successIndex:2,errorIndex:3}),u("design:type",Function),u("design:paramtypes",[String,String,Object,Boolean]),u("design:returntype",Promise)],a.prototype,"upload",null),o([t.i(i.f)({successIndex:2,errorIndex:3}),u("design:type",Function),u("design:paramtypes",[String,String,Boolean,Object]),u("design:returntype",Promise)],a.prototype,"download",null),o([t.i(i.g)({sync:!0}),u("design:type",Function),u("design:paramtypes",[Function]),u("design:returntype",void 0)],a.prototype,"onProgress",null),o([t.i(i.f)({sync:!0}),u("design:type",Function),u("design:paramtypes",[]),u("design:returntype",void 0)],a.prototype,"abort",null),a=o([t.i(i.d)({plugin:"cordova-plugin-file-transfer",pluginName:"FileTransfer"}),u("design:paramtypes",[])],a)},281:function(n,e,t){"use strict";t.d(e,"a",function(){return s});var r=t(0),i=t(57),l=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,e){n.__proto__=e}||function(n,e){for(var t in e)e.hasOwnProperty(t)&&(n[t]=e[t])};return function(e,t){function r(){this.constructor=e}n(e,t),e.prototype=null===t?Object.create(t):(r.prototype=t.prototype,new r)}}(),o=this&&this.__decorate||function(n,e,t,r){var i,l=arguments.length,o=l<3?e:null===r?r=Object.getOwnPropertyDescriptor(e,t):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(n,e,t,r);else for(var u=n.length-1;u>=0;u--)(i=n[u])&&(o=(l<3?i(o):l>3?i(e,t,o):i(e,t))||o);return l>3&&o&&Object.defineProperty(e,t,o),o},u=this&&this.__metadata||function(n,e){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(n,e)},s=function(n){function e(){return null!==n&&n.apply(this,arguments)||this}return l(e,n),e.prototype.open=function(n,e){},e.prototype.uninstall=function(n){},e.prototype.appIsInstalled=function(n){},e}(i.a);s.decorators=[{type:r.C}],s.ctorParameters=function(){return[]},o([t.i(i.h)({callbackStyle:"object",successName:"success",errorName:"error"}),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"open",null),o([t.i(i.h)({callbackStyle:"object",successName:"success",errorName:"error"}),u("design:type",Function),u("design:paramtypes",[String]),u("design:returntype",Promise)],s.prototype,"uninstall",null),o([t.i(i.h)({callbackStyle:"object",successName:"success",errorName:"error"}),u("design:type",Function),u("design:paramtypes",[String]),u("design:returntype",Promise)],s.prototype,"appIsInstalled",null),s=o([t.i(i.d)({pluginName:"FileOpener",plugin:"cordova-plugin-file-opener2",pluginRef:"cordova.plugins.fileOpener2",repo:"https://github.com/pwlin/cordova-plugin-file-opener2",platforms:["Android","iOS","Windows","Windows Phone 8"]})],s)},282:function(n,e,t){"use strict";t.d(e,"a",function(){return s});var r=t(0),i=t(57),l=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,e){n.__proto__=e}||function(n,e){for(var t in e)e.hasOwnProperty(t)&&(n[t]=e[t])};return function(e,t){function r(){this.constructor=e}n(e,t),e.prototype=null===t?Object.create(t):(r.prototype=t.prototype,new r)}}(),o=this&&this.__decorate||function(n,e,t,r){var i,l=arguments.length,o=l<3?e:null===r?r=Object.getOwnPropertyDescriptor(e,t):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(n,e,t,r);else for(var u=n.length-1;u>=0;u--)(i=n[u])&&(o=(l<3?i(o):l>3?i(e,t,o):i(e,t))||o);return l>3&&o&&Object.defineProperty(e,t,o),o},u=this&&this.__metadata||function(n,e){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(n,e)},s=function(n){function e(){var e=null!==n&&n.apply(this,arguments)||this;return e.cordovaFileError={1:"NOT_FOUND_ERR",2:"SECURITY_ERR",3:"ABORT_ERR",4:"NOT_READABLE_ERR",5:"ENCODING_ERR",6:"NO_MODIFICATION_ALLOWED_ERR",7:"INVALID_STATE_ERR",8:"SYNTAX_ERR",9:"INVALID_MODIFICATION_ERR",10:"QUOTA_EXCEEDED_ERR",11:"TYPE_MISMATCH_ERR",12:"PATH_EXISTS_ERR",13:"WRONG_ENTRY_TYPE",14:"DIR_READ_ERR"},e}return l(e,n),e.prototype.getFreeDiskSpace=function(){return new Promise(function(n,e){cordova.exec(n,e,"File","getFreeDiskSpace",[])})},e.prototype.checkDir=function(n,e){if(/^\//.test(e)){var t=new FileError(5);return t.message="directory cannot start with /",Promise.reject(t)}var r=n+e;return this.resolveDirectoryUrl(r).then(function(){return!0})},e.prototype.createDir=function(n,e,t){var r=this;if(/^\//.test(e)){var i=new FileError(5);return i.message="directory cannot start with /",Promise.reject(i)}var l={create:!0};return t||(l.exclusive=!0),this.resolveDirectoryUrl(n).then(function(n){return r.getDirectory(n,e,l)})},e.prototype.removeDir=function(n,e){var t=this;if(/^\//.test(e)){var r=new FileError(5);return r.message="directory cannot start with /",Promise.reject(r)}return this.resolveDirectoryUrl(n).then(function(n){return t.getDirectory(n,e,{create:!1})}).then(function(n){return t.remove(n)})},e.prototype.moveDir=function(n,e,t,r){var i=this;if(r=r||e,/^\//.test(r)){var l=new FileError(5);return l.message="directory cannot start with /",Promise.reject(l)}return this.resolveDirectoryUrl(n).then(function(n){return i.getDirectory(n,e,{create:!1})}).then(function(n){return i.resolveDirectoryUrl(t).then(function(e){return i.move(n,e,r)})})},e.prototype.copyDir=function(n,e,t,r){var i=this;if(/^\//.test(r)){var l=new FileError(5);return l.message="directory cannot start with /",Promise.reject(l)}return this.resolveDirectoryUrl(n).then(function(n){return i.getDirectory(n,e,{create:!1})}).then(function(n){return i.resolveDirectoryUrl(t).then(function(e){return i.copy(n,e,r)})})},e.prototype.listDir=function(n,e){var t=this;if(/^\//.test(e)){var r=new FileError(5);return r.message="directory cannot start with /",Promise.reject(r)}return this.resolveDirectoryUrl(n).then(function(n){return t.getDirectory(n,e,{create:!1,exclusive:!1})}).then(function(n){var e=n.createReader();return t.readEntries(e)})},e.prototype.removeRecursively=function(n,e){var t=this;if(/^\//.test(e)){var r=new FileError(5);return r.message="directory cannot start with /",Promise.reject(r)}return this.resolveDirectoryUrl(n).then(function(n){return t.getDirectory(n,e,{create:!1})}).then(function(n){return t.rimraf(n)})},e.prototype.checkFile=function(n,e){if(/^\//.test(e)){var t=new FileError(5);return t.message="file cannot start with /",Promise.reject(t)}return this.resolveLocalFilesystemUrl(n+e).then(function(n){if(n.isFile)return!0;var e=new FileError(13);return e.message="input is not a file",Promise.reject(e)})},e.prototype.createFile=function(n,e,t){var r=this;if(/^\//.test(e)){var i=new FileError(5);return i.message="file-name cannot start with /",Promise.reject(i)}var l={create:!0};return t||(l.exclusive=!0),this.resolveDirectoryUrl(n).then(function(n){return r.getFile(n,e,l)})},e.prototype.removeFile=function(n,e){var t=this;if(/^\//.test(e)){var r=new FileError(5);return r.message="file-name cannot start with /",Promise.reject(r)}return this.resolveDirectoryUrl(n).then(function(n){return t.getFile(n,e,{create:!1})}).then(function(n){return t.remove(n)})},e.prototype.writeFile=function(n,e,t,r){var i=this;if(void 0===r&&(r={}),/^\//.test(e)){var l=new FileError(5);return l.message="file-name cannot start with /",Promise.reject(l)}var o={create:!r.append,exclusive:!r.replace};return this.resolveDirectoryUrl(n).then(function(n){return i.getFile(n,e,o)}).then(function(n){return i.writeFileEntry(n,t,r)})},e.prototype.writeFileEntry=function(n,e,t){var r=this;return this.createWriter(n).then(function(n){return t.append&&n.seek(n.length),t.truncate&&n.truncate(t.truncate),r.write(n,e)}).then(function(){return n})},e.prototype.writeExistingFile=function(n,e,t){return this.writeFile(n,e,t,{replace:!0})},e.prototype.readAsText=function(n,e){return this.readFile(n,e,"Text")},e.prototype.readAsDataURL=function(n,e){return this.readFile(n,e,"DataURL")},e.prototype.readAsBinaryString=function(n,e){return this.readFile(n,e,"BinaryString")},e.prototype.readAsArrayBuffer=function(n,e){return this.readFile(n,e,"ArrayBuffer")},e.prototype.readFile=function(n,e,t){var r=this;if(/^\//.test(e)){var i=new FileError(5);return i.message="file-name cannot start with /",Promise.reject(i)}return this.resolveDirectoryUrl(n).then(function(n){return r.getFile(n,e,{create:!1})}).then(function(n){var e=new FileReader;return new Promise(function(r,i){e.onloadend=function(){void 0!==e.result||null!==e.result?r(e.result):i(void 0!==e.error||null!==e.error?e.error:{code:null,message:"READER_ONLOADEND_ERR"})},n.file(function(n){e["readAs"+t].call(e,n)},function(n){i(n)})})})},e.prototype.moveFile=function(n,e,t,r){var i=this;if(r=r||e,/^\//.test(r)){var l=new FileError(5);return l.message="file name cannot start with /",Promise.reject(l)}return this.resolveDirectoryUrl(n).then(function(n){return i.getFile(n,e,{create:!1})}).then(function(n){return i.resolveDirectoryUrl(t).then(function(e){return i.move(n,e,r)})})},e.prototype.copyFile=function(n,e,t,r){var i=this;if(r=r||e,/^\//.test(r)){var l=new FileError(5);return l.message="file name cannot start with /",Promise.reject(l)}return this.resolveDirectoryUrl(n).then(function(n){return i.getFile(n,e,{create:!1})}).then(function(n){return i.resolveDirectoryUrl(t).then(function(e){return i.copy(n,e,r)})})},e.prototype.fillErrorMessage=function(n){try{n.message=this.cordovaFileError[n.code]}catch(n){}},e.prototype.resolveLocalFilesystemUrl=function(n){var e=this;return new Promise(function(t,r){try{window.resolveLocalFileSystemURL(n,function(n){t(n)},function(n){e.fillErrorMessage(n),r(n)})}catch(n){e.fillErrorMessage(n),r(n)}})},e.prototype.resolveDirectoryUrl=function(n){return this.resolveLocalFilesystemUrl(n).then(function(n){if(n.isDirectory)return n;var e=new FileError(13);return e.message="input is not a directory",Promise.reject(e)})},e.prototype.getDirectory=function(n,e,t){var r=this;return new Promise(function(i,l){try{n.getDirectory(e,t,function(n){i(n)},function(n){r.fillErrorMessage(n),l(n)})}catch(n){r.fillErrorMessage(n),l(n)}})},e.prototype.getFile=function(n,e,t){var r=this;return new Promise(function(i,l){try{n.getFile(e,t,i,function(n){r.fillErrorMessage(n),l(n)})}catch(n){r.fillErrorMessage(n),l(n)}})},e.prototype.remove=function(n){var e=this;return new Promise(function(t,r){n.remove(function(){t({success:!0,fileRemoved:n})},function(n){e.fillErrorMessage(n),r(n)})})},e.prototype.move=function(n,e,t){var r=this;return new Promise(function(i,l){n.moveTo(e,t,function(n){i(n)},function(n){r.fillErrorMessage(n),l(n)})})},e.prototype.copy=function(n,e,t){var r=this;return new Promise(function(i,l){n.copyTo(e,t,function(n){i(n)},function(n){r.fillErrorMessage(n),l(n)})})},e.prototype.readEntries=function(n){var e=this;return new Promise(function(t,r){n.readEntries(function(n){t(n)},function(n){e.fillErrorMessage(n),r(n)})})},e.prototype.rimraf=function(n){var e=this;return new Promise(function(t,r){n.removeRecursively(function(){t({success:!0,fileRemoved:n})},function(n){e.fillErrorMessage(n),r(n)})})},e.prototype.createWriter=function(n){var e=this;return new Promise(function(t,r){n.createWriter(function(n){t(n)},function(n){e.fillErrorMessage(n),r(n)})})},e.prototype.write=function(n,e){return e instanceof Blob?this.writeFileInChunks(n,e):new Promise(function(t,r){n.onwriteend=function(e){n.error?r(n.error):t(e)},n.write(e)})},e.prototype.writeFileInChunks=function(n,e){function t(){var t=Math.min(r,e.size-i),l=e.slice(i,i+t);i+=t,n.write(l)}var r=1048576,i=0;return new Promise(function(r,l){n.onerror=l,n.onwrite=function(){i<e.size?t():r()},t()})},e}(i.a);s.decorators=[{type:r.C}],s.ctorParameters=function(){return[]},o([i.b,u("design:type",String)],s.prototype,"applicationDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"applicationStorageDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"dataDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"cacheDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"externalApplicationStorageDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"externalDataDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"externalCacheDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"externalRootDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"tempDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"syncedDataDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"documentsDirectory",void 0),o([i.b,u("design:type",String)],s.prototype,"sharedDirectory",void 0),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[]),u("design:returntype",Promise)],s.prototype,"getFreeDiskSpace",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"checkDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,Boolean]),u("design:returntype",Promise)],s.prototype,"createDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"removeDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,String,String]),u("design:returntype",Promise)],s.prototype,"moveDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,String,String]),u("design:returntype",Promise)],s.prototype,"copyDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"listDir",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"removeRecursively",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"checkFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,Boolean]),u("design:returntype",Promise)],s.prototype,"createFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"removeFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,Object,Object]),u("design:returntype",Promise)],s.prototype,"writeFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,Object]),u("design:returntype",Promise)],s.prototype,"writeExistingFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"readAsText",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"readAsDataURL",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"readAsBinaryString",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String]),u("design:returntype",Promise)],s.prototype,"readAsArrayBuffer",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,String,String]),u("design:returntype",Promise)],s.prototype,"moveFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String,String,String,String]),u("design:returntype",Promise)],s.prototype,"copyFile",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String]),u("design:returntype",Promise)],s.prototype,"resolveLocalFilesystemUrl",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[String]),u("design:returntype",Promise)],s.prototype,"resolveDirectoryUrl",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[Object,String,Object]),u("design:returntype",Promise)],s.prototype,"getDirectory",null),o([t.i(i.c)(),u("design:type",Function),u("design:paramtypes",[Object,String,Object]),u("design:returntype",Promise)],s.prototype,"getFile",null),s=o([t.i(i.d)({pluginName:"File",plugin:"cordova-plugin-file",pluginRef:"cordova.file",repo:"https://github.com/apache/cordova-plugin-file",platforms:["Android","BlackBerry 10","Browser","Firefox OS","iOS","macOS","Ubuntu","Windows","Windows Phone"]})],s)},374:function(n,e,t){"use strict";t.d(e,"a",function(){return i});var r=(t(0),t(52),t(86),t(26)),i=(t(281),t(262),t(282),this&&this.__decorate,this&&this.__metadata,function(){function n(n,e,t,r,i,l,o,u){this.alertCtrl=n,this.file=e,this.fileOpener=t,this.transfer=r,this.http=i,this.UserService=l,this.navCtrl=o,this.navParams=u,this.Version="",this.ishide=!0,this.apkDownloadUrl="",this.Version=this.UserService.Version,this.UserService._user._id&&(this.ishide=!1)}return n.prototype.out=function(){this.UserService.clearStorage(),this.navCtrl.pop()},n.prototype.getAppVersion=function(){var n=this;this.UserService.presentLoadingDefault();var e=new r.l;e.append("Content-Type","application/x-www-form-urlencoded"),this.http.post("http://www.devonhello.com/chihu/appversion","",{headers:e}).subscribe(function(e){e.json()[0].v!=n.UserService.Version?(n.apkDownloadUrl=e.json()[0].url,n.fileTransfer=n.transfer.create(),n.AppV()):(n.UserService.presentLoadingDismiss(),alert("已经是最新版了..."))})},n.prototype.download=function(){var n=this;alert("新版吃乎正在后台下载中...稍后安装");var e=this.file.externalDataDirectory+"chihu.apk";this.fileTransfer.download(this.apkDownloadUrl,e).then(function(t){n.fileOpener.open(e,"application/vnd.android.package-archive").then(function(){return console.log("File is opened")}).catch(function(n){return alert("Error："+n)})},function(n){})},n.prototype.AppV=function(){var n=this;this.UserService.presentLoadingDismiss(),this.alertCtrl.create({title:"提示",message:"是否要更新到最新版本?",buttons:[{text:"取消",role:"cancel",handler:function(){}},{text:"确定",handler:function(){n.download()}}]}).present()},n}())},498:function(n,e,t){"use strict";t.d(e,"a",function(){return r});var r=(t(0),t(52),t(374),t(281),t(262),t(282),this&&this.__decorate,function(){function n(){}return n}())},499:function(n,e,t){"use strict";function r(n){return l._14(0,[(n()(),l._15(null,["\n"])),(n()(),l._16(0,null,null,10,"ion-header",[["no-border",""]],null,null,null,null,null)),l._17(16384,null,0,o.a,[u.c,l.H,l.I,[2,s.a]],null,null),(n()(),l._15(null,["\n\n    "])),(n()(),l._16(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","mblue"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,a.a,a.b)),l._17(49152,null,0,c.a,[p.a,[2,s.a],[2,f.a],u.c,l.H,l.I],{color:[0,"color"]},null),(n()(),l._15(3,["\n        "])),(n()(),l._16(0,null,3,2,"ion-title",[],null,null,null,_.a,_.b)),l._17(49152,null,0,d.a,[u.c,l.H,l.I,[2,g.a],[2,c.a]],null,null),(n()(),l._15(0,["设置"])),(n()(),l._15(3,["\n\n    "])),(n()(),l._15(null,["\n\n"])),(n()(),l._15(null,["\n\n\n"])),(n()(),l._16(0,null,null,58,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,y.a,y.b)),l._17(4374528,null,0,h.a,[u.c,m.b,v.a,l.H,l.I,p.a,b.a,l.g,[2,s.a],[2,f.a]],null,null),(n()(),l._15(1,["\n    "])),(n()(),l._16(0,null,1,54,"ion-list",[],null,null,null,null,null)),l._17(16384,null,0,F.a,[u.c,l.H,l.I,m.b,w.a,v.a],null,null),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,1,{contentLabel:0}),l._20(603979776,2,{_buttons:1}),l._20(603979776,3,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["清除缓存"])),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,10,"ion-item",[["class","item item-block"]],null,null,null,S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,4,{contentLabel:0}),l._20(603979776,5,{_buttons:1}),l._20(603979776,6,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["\n            当前版本\n            "])),(n()(),l._16(0,null,4,2,"ion-note",[["item-right",""]],null,null,null,null,null)),l._17(16384,null,0,E.a,[u.c,l.H,l.I],null,null),(n()(),
-l._15(null,["\n                ","\n            "])),(n()(),l._15(2,["\n        "])),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,6,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(n,e,t){var r=!0,i=n.component;if("click"===e){r=!1!==i.getAppVersion()&&r}return r},S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,7,{contentLabel:0}),l._20(603979776,8,{_buttons:1}),l._20(603979776,9,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["检查更新"])),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,10,{contentLabel:0}),l._20(603979776,11,{_buttons:1}),l._20(603979776,12,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["意见反馈"])),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,13,{contentLabel:0}),l._20(603979776,14,{_buttons:1}),l._20(603979776,15,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["关于吃乎"])),(n()(),l._15(null,["\n        "])),(n()(),l._16(0,null,null,6,"ion-item",[["class","logout item item-block"]],[[8,"hidden",0]],[[null,"click"]],function(n,e,t){var r=!0,i=n.component;if("click"===e){r=!1!==i.out()&&r}return r},S.a,S.b)),l._17(1097728,null,3,P.a,[D.a,u.c,l.H,l.I,[2,O.a]],null,null),l._20(335544320,16,{contentLabel:0}),l._20(603979776,17,{_buttons:1}),l._20(603979776,18,{_icons:1}),l._17(16384,null,0,R.a,[],null,null),(n()(),l._15(2,["退出账号"])),(n()(),l._15(null,["\n\n    "])),(n()(),l._15(1,["\n"]))],function(n,e){n(e,5,0,"mblue")},function(n,e){var t=e.component;n(e,4,0,l._18(e,5)._hidden,l._18(e,5)._sbPadding),n(e,13,0,l._18(e,14).statusbarPadding,l._18(e,14)._hasRefresher),n(e,36,0,t.Version),n(e,63,0,t.ishide)})}function i(n){return l._14(0,[(n()(),l._16(0,null,null,1,"page-setting",[],null,null,null,r,x)),l._17(49152,null,0,k.a,[I.a,j.a,T.a,A.a,U.k,C.a,f.a,L.a],null,null)],null,null)}t.d(e,"a",function(){return M});var l=t(0),o=t(90),u=t(1),s=t(4),a=t(254),c=t(35),p=t(6),f=t(16),_=t(255),d=t(87),g=t(36),y=t(253),h=t(20),m=t(3),v=t(8),b=t(27),F=t(91),w=t(7),S=t(257),P=t(54),D=t(29),O=t(55),R=t(93),E=t(109),k=t(374),I=t(59),j=t(282),T=t(281),A=t(262),U=t(26),C=t(86),L=t(11),N=[],x=l._13({encapsulation:2,styles:N,data:{}}),M=l._19("page-setting",k.a,i,{},{},[])}});
-//# sourceMappingURL=/Users/apple/Documents/ionic2/3.4/chihu/www/build/17.main.js.map
+webpackJsonp([17],{
+
+/***/ 313:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendWorkPageModule", function() { return SendWorkPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__send_work__ = __webpack_require__(427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__ = __webpack_require__(321);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var SendWorkPageModule = (function () {
+    function SendWorkPageModule() {
+    }
+    return SendWorkPageModule;
+}());
+SendWorkPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__send_work__["a" /* SendWorkPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__send_work__["a" /* SendWorkPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__send_work__["a" /* SendWorkPage */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__["b" /* TransferObject */]
+        ]
+    })
+], SendWorkPageModule);
+
+//# sourceMappingURL=send-work.module.js.map
+
+/***/ }),
+
+/***/ 321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Transfer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return TransferObject; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(49);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * @name Transfer
+ *
+ * @description
+ * This plugin allows you to upload and download files.
+ *
+ * @usage
+ * ```typescript
+ * import { Transfer, FileUploadOptions, TransferObject } from '@ionic-native/transfer';
+ * import { File } from '@ionic-native/file';
+ *
+ * constructor(private transfer: Transfer, private file: File) { }
+ *
+ * ...
+ *
+ * const fileTransfer: TransferObject = this.transfer.create();
+ *
+ * // Upload a file:
+ * fileTransfer.upload(..).then(..).catch(..);
+ *
+ * // Download a file:
+ * fileTransfer.download(..).then(..).catch(..);
+ *
+ * // Abort active transfer:
+ * fileTransfer.abort();
+ *
+ * // full example
+ * upload() {
+ *   let options: FileUploadOptions = {
+ *      fileKey: 'file',
+ *      fileName: 'name.jpg',
+ *      headers: {}
+ *      .....
+ *   }
+ *
+ *   fileTransfer.upload('<file path>', '<api endpoint>', options)
+ *    .then((data) => {
+ *      // success
+ *    }, (err) => {
+ *      // error
+ *    })
+ * }
+ **
+ * download() {
+ *   const url = 'http://www.example.com/file.pdf';
+ *   fileTransfer.download(url, this.file.dataDirectory + 'file.pdf').then((entry) => {
+ *     console.log('download complete: ' + entry.toURL());
+ *   }, (error) => {
+ *     // handle error
+ *   });
+ * }
+ *
+ * ```
+ *
+ * To store files in a different/publicly accessible directory, please refer to the following link
+ * https://github.com/apache/cordova-plugin-file#where-to-store-files
+ *
+ * @interfaces
+ * FileUploadOptions
+ * FileUploadResult
+ * FileTransferError
+ * @classes
+ * TransferObject
+ */
+var Transfer = (function (_super) {
+    __extends(Transfer, _super);
+    function Transfer() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * Error code rejected from upload with FileTransferError
+         * Defined in FileTransferError.
+         *      FILE_NOT_FOUND_ERR: 1   Return when file was not found
+         *      INVALID_URL_ERR: 2,     Return when url was invalid
+         *      CONNECTION_ERR: 3,      Return on connection error
+         *      ABORT_ERR: 4,           Return on aborting
+         *      NOT_MODIFIED_ERR: 5     Return on '304 Not Modified' HTTP response
+         * @enum {number}
+         */
+        _this.FileTransferErrorCode = {
+            FILE_NOT_FOUND_ERR: 1,
+            INVALID_URL_ERR: 2,
+            CONNECTION_ERR: 3,
+            ABORT_ERR: 4,
+            NOT_MODIFIED_ERR: 5
+        };
+        return _this;
+    }
+    /**
+     * Creates a new FileTransfer object
+     * @return {TransferObject}
+     */
+    Transfer.prototype.create = function () {
+        return new TransferObject();
+    };
+    return Transfer;
+}(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* IonicNativePlugin */]));
+Transfer.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */] },
+];
+/** @nocollapse */
+Transfer.ctorParameters = function () { return []; };
+Transfer = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Plugin */])({
+        pluginName: 'FileTransfer',
+        plugin: 'cordova-plugin-file-transfer',
+        pluginRef: 'FileTransfer',
+        repo: 'https://github.com/apache/cordova-plugin-file-transfer',
+        platforms: ['Amazon Fire OS', 'Android', 'Browser', 'iOS', 'Ubuntu', 'Windows', 'Windows Phone']
+    })
+], Transfer);
+
+/**
+ * @hidden
+ */
+var TransferObject = (function () {
+    function TransferObject() {
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["e" /* checkAvailability */])('FileTransfer', null, 'FileTransfer') === true) {
+            this._objectInstance = new FileTransfer();
+        }
+    }
+    /**
+     * Sends a file to a server.
+     *
+     * @param {string} fileUrl  Filesystem URL representing the file on the device or a data URI. For backwards compatibility, this can also be the full path of the file on the device.
+     * @param {string} url  URL of the server to receive the file, as encoded by encodeURI().
+     * @param {FileUploadOptions} options  Optional parameters.
+     * @param {boolean} trustAllHosts  Optional parameter, defaults to false. If set to true, it accepts all security certificates. This is useful since Android rejects self-signed security certificates. Not recommended for production use. Supported on Android and iOS.
+     * @returns {Promise<FileUploadResult>} Returns a Promise that resolves to a FileUploadResult and rejects with FileTransferError.
+     */
+    TransferObject.prototype.upload = function (fileUrl, url, options, trustAllHosts) {
+        return;
+    };
+    /**
+     * Downloads a file from server.
+     *
+     * @param {string} source  URL of the server to download the file, as encoded by encodeURI().
+     * @param {stirng} target  Filesystem url representing the file on the device. For backwards compatibility, this can also be the full path of the file on the device.
+     * @param {boolean} trustAllHosts  Optional parameter, defaults to false. If set to true, it accepts all security certificates. This is useful because Android rejects self-signed security certificates. Not recommended for production use. Supported on Android and iOS.
+     * @param {object} Optional parameters, currently only supports headers (such as Authorization (Basic Authentication), etc).
+     * @returns {Promise<any>} Returns a Promise that resolves to a FileEntry object.
+     */
+    TransferObject.prototype.download = function (source, target, trustAllHosts, options) {
+        return;
+    };
+    /**
+     * Registers a listener that gets called whenever a new chunk of data is transferred.
+     * @param listener {function} Listener that takes a progress event.
+     */
+    TransferObject.prototype.onProgress = function (listener) {
+        this._objectInstance.onprogress = listener;
+    };
+    /**
+     * Aborts an in-progress transfer. The onerror callback is passed a FileTransferError
+     * object which has an error code of FileTransferError.ABORT_ERR.
+     */
+    TransferObject.prototype.abort = function () { };
+    return TransferObject;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["f" /* CordovaInstance */])({
+        successIndex: 2,
+        errorIndex: 3
+    }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String, Object, Boolean]),
+    __metadata("design:returntype", Promise)
+], TransferObject.prototype, "upload", null);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["f" /* CordovaInstance */])({
+        successIndex: 2,
+        errorIndex: 3
+    }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String, Boolean, Object]),
+    __metadata("design:returntype", Promise)
+], TransferObject.prototype, "download", null);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["g" /* InstanceCheck */])({ sync: true }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Function]),
+    __metadata("design:returntype", void 0)
+], TransferObject.prototype, "onProgress", null);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["f" /* CordovaInstance */])({
+        sync: true
+    }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], TransferObject.prototype, "abort", null);
+TransferObject = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Plugin */])({
+        plugin: 'cordova-plugin-file-transfer',
+        pluginName: 'FileTransfer'
+    }),
+    __metadata("design:paramtypes", [])
+], TransferObject);
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 327:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Camera; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__ = __webpack_require__(49);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * @name Camera
+ * @description
+ * Take a photo or capture video.
+ *
+ * Requires and the Cordova plugin: `cordova-plugin-camera`. For more info, please see the [Cordova Camera Plugin Docs](https://github.com/apache/cordova-plugin-camera).
+ *
+ * @usage
+ * ```typescript
+ * import { Camera, CameraOptions } from '@ionic-native/camera';
+ *
+ * constructor(private camera: Camera) { }
+ *
+ * ...
+ *
+ *
+ * const options: CameraOptions = {
+ *   quality: 100,
+ *   destinationType: this.camera.DestinationType.DATA_URL,
+ *   encodingType: this.camera.EncodingType.JPEG,
+ *   mediaType: this.camera.MediaType.PICTURE
+ * }
+ *
+ * this.camera.getPicture(options).then((imageData) => {
+ *  // imageData is either a base64 encoded string or a file URI
+ *  // If it's base64:
+ *  let base64Image = 'data:image/jpeg;base64,' + imageData;
+ * }, (err) => {
+ *  // Handle error
+ * });
+ * ```
+ * @interfaces
+ * CameraOptions
+ * CameraPopoverOptions
+ */
+var Camera = (function (_super) {
+    __extends(Camera, _super);
+    function Camera() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * Constant for possible destination types
+         */
+        _this.DestinationType = {
+            /** Return base64 encoded string. DATA_URL can be very memory intensive and cause app crashes or out of memory errors. Use FILE_URI or NATIVE_URI if possible */
+            DATA_URL: 0,
+            /** Return file uri (content://media/external/images/media/2 for Android) */
+            FILE_URI: 1,
+            /** Return native uri (eg. asset-library://... for iOS) */
+            NATIVE_URI: 2
+        };
+        /**
+         * Convenience constant
+         */
+        _this.EncodingType = {
+            /** Return JPEG encoded image */
+            JPEG: 0,
+            /** Return PNG encoded image */
+            PNG: 1
+        };
+        /**
+         * Convenience constant
+         */
+        _this.MediaType = {
+            /** Allow selection of still pictures only. DEFAULT. Will return format specified via DestinationType */
+            PICTURE: 0,
+            /** Allow selection of video only, ONLY RETURNS URL */
+            VIDEO: 1,
+            /** Allow selection from all media types */
+            ALLMEDIA: 2
+        };
+        /**
+         * Convenience constant
+         */
+        _this.PictureSourceType = {
+            /** Choose image from picture library (same as SAVEDPHOTOALBUM for Android) */
+            PHOTOLIBRARY: 0,
+            /** Take picture from camera */
+            CAMERA: 1,
+            /** Choose image from picture library (same as PHOTOLIBRARY for Android) */
+            SAVEDPHOTOALBUM: 2
+        };
+        /**
+         * Convenience constant
+         */
+        _this.PopoverArrowDirection = {
+            ARROW_UP: 1,
+            ARROW_DOWN: 2,
+            ARROW_LEFT: 4,
+            ARROW_RIGHT: 8,
+            ARROW_ANY: 15
+        };
+        /**
+         * Convenience constant
+         */
+        _this.Direction = {
+            /** Use the back-facing camera */
+            BACK: 0,
+            /** Use the front-facing camera */
+            FRONT: 1
+        };
+        return _this;
+    }
+    /**
+     * Take a picture or video, or load one from the library.
+     * @param {CameraOptions} [options] Options that you want to pass to the camera. Encoding type, quality, etc. Platform-specific quirks are described in the [Cordova plugin docs](https://github.com/apache/cordova-plugin-camera#cameraoptions-errata-).
+     * @returns {Promise<any>} Returns a Promise that resolves with Base64 encoding of the image data, or the image file URI, depending on cameraOptions, otherwise rejects with an error.
+     */
+    Camera.prototype.getPicture = function (options) { return; };
+    /**
+     * Remove intermediate image files that are kept in temporary storage after calling camera.getPicture.
+     * Applies only when the value of Camera.sourceType equals Camera.PictureSourceType.CAMERA and the Camera.destinationType equals Camera.DestinationType.FILE_URI.
+     * @returns {Promise<any>}
+     */
+    Camera.prototype.cleanup = function () { return; };
+    ;
+    return Camera;
+}(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* IonicNativePlugin */]));
+Camera.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */] },
+];
+/** @nocollapse */
+Camera.ctorParameters = function () { return []; };
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["h" /* Cordova */])({
+        callbackOrder: 'reverse'
+    }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], Camera.prototype, "getPicture", null);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["h" /* Cordova */])({
+        platforms: ['iOS']
+    }),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], Camera.prototype, "cleanup", null);
+Camera = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Plugin */])({
+        pluginName: 'Camera',
+        plugin: 'cordova-plugin-camera',
+        pluginRef: 'navigator.camera',
+        repo: 'https://github.com/apache/cordova-plugin-camera',
+        platforms: ['Android', 'BlackBerry 10', 'Browser', 'Firefox OS', 'iOS', 'Ubuntu', 'Windows', 'Windows Phone 8']
+    })
+], Camera);
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 427:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendWorkPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_work_data_work_data__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_user_service_user_service__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__ = __webpack_require__(321);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the SendWorkPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var SendWorkPage = (function () {
+    function SendWorkPage(http, navCtrl, transfer, alertCtrl, navParams, camera, actionSheetCtrl, WorkService, UserService) {
+        this.http = http;
+        this.navCtrl = navCtrl;
+        this.transfer = transfer;
+        this.alertCtrl = alertCtrl;
+        this.navParams = navParams;
+        this.camera = camera;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.WorkService = WorkService;
+        this.UserService = UserService;
+        this.title = '';
+        this.text = '';
+        this.tip = '';
+        this.items = [];
+        this.foods = [];
+        this.isReordering = false;
+        this.sphide = false;
+        this.banner = "assets/icon/work_banner.png";
+        this.title = this.WorkService._title;
+        this.fileTransfer = this.transfer.create();
+        this.init();
+    }
+    SendWorkPage.prototype.init = function () {
+        this.items = this.WorkService._item;
+    };
+    SendWorkPage.prototype.ionViewDidEnter = function () {
+        this.init();
+    };
+    SendWorkPage.prototype.reorderItems = function (indexes) {
+        var element = this.items[indexes.from];
+        this.items.splice(indexes.from, 1);
+        this.items.splice(indexes.to, 0, element);
+    };
+    SendWorkPage.prototype.edit = function () {
+        this.sphide = !this.sphide;
+        this.isReordering = !this.isReordering;
+    };
+    SendWorkPage.prototype.showPrompt = function () {
+        var _this = this;
+        var prompt = this.alertCtrl.create({
+            title: '食材',
+            message: "输入你要添加的材料和用量，例如：鸡蛋，一只",
+            inputs: [
+                {
+                    name: 'name',
+                    placeholder: '材料：如鸡蛋'
+                },
+                {
+                    name: 'len',
+                    placeholder: '用量：如一只'
+                },
+            ],
+            buttons: [
+                {
+                    text: '取消',
+                    handler: function (data) {
+                    }
+                },
+                {
+                    text: '添加',
+                    handler: function (data) {
+                        _this.foods.push({
+                            name: data.name,
+                            len: data.len
+                        });
+                        //alert(data.name);
+                        //alert(data.len);
+                    }
+                }
+            ]
+        });
+        prompt.present();
+    };
+    //发布
+    SendWorkPage.prototype.send = function () {
+        if (this.items.length < 1 && this.foods.length < 1 && this.title.length < 1 && this.banner == "assets/icon/work_banner.png") {
+            alert("抱歉，请填写完整...");
+        }
+        else {
+            this.postdata();
+        }
+    };
+    SendWorkPage.prototype.postdata = function () {
+        var _this = this;
+        this.UserService.presentLoadingDefault();
+        var url = "http://www.devonhello.com/chihu2/send_article";
+        var headers = new __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "uid=" + this.UserService._user._id + "&name=" + this.UserService._user.nickname + "&userimg=" + this.UserService._user.userimg + "&work=" + JSON.stringify(this.items) + "&text=" + this.text + "&food=" + JSON.stringify(this.foods) + "&workbanner=" + this.banner + "&tip=" + this.tip + "&type=" + "1" + "&title=" + this.title, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.UserService.presentLoadingDismiss();
+            if (res.json()['result']['ok'] == '1') {
+                _this.navCtrl.popToRoot();
+            }
+        });
+    };
+    //长按删除事件
+    SendWorkPage.prototype.pressEvent = function (idx) {
+        //alert(idx);
+        this.showConfirm(idx);
+    };
+    //删除提示
+    SendWorkPage.prototype.showConfirm = function (idx) {
+        var _this = this;
+        var confirm = this.alertCtrl.create({
+            title: '提示',
+            message: '是否删除此材料?',
+            buttons: [
+                {
+                    text: '在想想',
+                    handler: function () {
+                        console.log('Disagree clicked');
+                    }
+                },
+                {
+                    text: '确定',
+                    handler: function () {
+                        _this.foods.splice(idx, 1);
+                    }
+                }
+            ]
+        });
+        confirm.present();
+    };
+    SendWorkPage.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: '图片来源',
+            buttons: [
+                {
+                    text: '相册',
+                    icon: 'images',
+                    handler: function () {
+                        _this.seleImgType(0);
+                    }
+                },
+                {
+                    text: '相机',
+                    icon: 'camera',
+                    handler: function () {
+                        _this.seleImgType(1);
+                    }
+                },
+                {
+                    text: '取消',
+                    role: 'cancel',
+                    handler: function () {
+                        //console.log('Cancel clicked');
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    //成品图片
+    SendWorkPage.prototype.seleImgType = function (type) {
+        var _this = this;
+        var _that = this;
+        this.camera.getPicture({
+            quality: 80,
+            allowEdit: true,
+            sourceType: type,
+            correctOrientation: true,
+        }).then(function (imageData) {
+            _this.up(imageData);
+        }, function (err) {
+            // Handle error
+        });
+    };
+    SendWorkPage.prototype.up = function (path) {
+        var _this = this;
+        this.UserService.presentLoadingDefault();
+        this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
+            .then(function (data) {
+            // success
+            //alert(JSON.stringify(data));
+            var response = JSON.parse(data["response"]);
+            _this.banner = response['src'];
+            _this.UserService.presentLoadingDismiss();
+        }, function (err) {
+            // error
+            _this.UserService.presentLoadingDismiss();
+            alert('err');
+        });
+    };
+    //添加步骤
+    SendWorkPage.prototype.addItem = function () {
+        this.navCtrl.push('SendWorkItemPage', {
+            idx: -1
+        });
+    };
+    //修改步骤信息
+    SendWorkPage.prototype.editItem = function (idx) {
+        this.navCtrl.push('SendWorkItemPage', {
+            idx: idx
+        });
+    };
+    return SendWorkPage;
+}());
+SendWorkPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPage */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+        selector: 'page-send-work',template:/*ion-inline-start:"/Users/apple/Desktop/github/chihu2/src/pages/send-work/send-work.html"*/'<!--\n  Generated template for the SendWorkPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header no-border>\n\n    <ion-navbar color="mblue">\n        <ion-title>发布作品</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <section class="work_top">\n        <section (click)="presentActionSheet();" class="work_banner" [style.background]="\'url(\'+ banner +\')\'"></section>\n        <input class="dv_work_title" [(ngModel)]="title" type="text" placeholder="写下你的菜谱名吧" />\n    </section>\n    <ion-list-header>\n        心得：\n    </ion-list-header>\n    <ion-textarea [(ngModel)]="text" placeholder="输入这道美食背后的故事"></ion-textarea>\n    <ion-list-header>\n        用料：\n    </ion-list-header>\n    <section class="dv_food_list">\n        <ion-row (press)="pressEvent(i)" *ngFor="let food of foods; let i=index">\n            <ion-col>\n                <div>{{food.name}}</div>\n            </ion-col>\n            <ion-col>\n                <div>{{food.len}}</div>\n            </ion-col>\n        </ion-row>\n    </section>\n    <br/>\n    <button (click)="showPrompt();" class="dv_button" ion-button round outline>添加材料</button>\n\n    <ion-list>\n        <ion-list-header>做法：（ 点击编辑步骤后，长按可删除 ）</ion-list-header>\n        <ion-item-group [reorder]="isReordering" (ionItemReorder)="reorderItems($event)">\n\n            <div class="sp" [class.sp_hide]="sphide"></div>\n\n            <ion-item (press)="pressEvent(i)" (click)="editItem(i)" *ngFor="let item of items; let i=index">\n\n                <section *ngIf="item.src != \'\'" class="imgs" [style.background]="\'url(\'+ item.src +\')\'"></section>\n\n                <p>\n                    {{item.text}}\n                </p>\n            </ion-item>\n\n\n        </ion-item-group>\n    </ion-list>\n\n    <ion-grid>\n        <ion-row>\n            <ion-col width-50>\n                <button (click)="addItem();" class="dv_edit_button" ion-button icon-left round outline>\n                    <ion-icon name="star"></ion-icon>\n                    添加步骤\n                </button>\n            </ion-col>\n            <ion-col width-50>\n                <button (click)="edit()" class="dv_edit_button" ion-button icon-left round outline>\n                    <ion-icon name="reorder"></ion-icon>\n                    编辑步骤\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n    <ion-list-header>\n        Tip：\n    </ion-list-header>\n    <ion-textarea [(ngModel)]="tip" placeholder="温馨提示"></ion-textarea>\n\n    <button (click)="send();" class="dv_button" ion-button round outline>发布菜谱</button>\n    <br/>\n    <br/>\n    <br/>\n\n</ion-content>'/*ion-inline-end:"/Users/apple/Desktop/github/chihu2/src/pages/send-work/send-work.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__["a" /* Transfer */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* AlertController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ActionSheetController */],
+        __WEBPACK_IMPORTED_MODULE_3__providers_work_data_work_data__["a" /* WorkDataProvider */],
+        __WEBPACK_IMPORTED_MODULE_4__providers_user_service_user_service__["a" /* UserServiceProvider */]])
+], SendWorkPage);
+
+//# sourceMappingURL=send-work.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=17.main.js.map
