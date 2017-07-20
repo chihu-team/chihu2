@@ -20,6 +20,8 @@ export class UserServiceProvider {
   }
   public _user: any;
   Version = '1.0';
+  isopenimg = false;
+  galleryOBJ = null;
   
   loading;
 

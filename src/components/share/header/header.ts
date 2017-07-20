@@ -70,7 +70,7 @@ export class HeaderComponent implements OnChanges {
       return true;
     }
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/unforkuser";
+    let url = "http://www.devonhello.com/chihu2/disfork_user";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -79,6 +79,7 @@ export class HeaderComponent implements OnChanges {
       headers: headers
     })
       .subscribe((res) => {
+        console.log(res);
         if (res.json()) {
           this.isfork = false;
         }

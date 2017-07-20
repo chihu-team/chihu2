@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { StepsComponent } from './steps';
+import { PhotoswipeComponentModule } from '../../../components/photoswipe/photoswipe.module';
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { StepsComponent } from './steps';
   ],
   imports: [
     IonicModule,
+    PhotoswipeComponentModule
   ],
   exports: [
     StepsComponent

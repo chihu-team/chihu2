@@ -6,6 +6,7 @@ import { FoodComponentModule } from './food/food.module';
 import { StepsComponentModule } from './steps/steps.module';
 import { FooterComponentModule } from './footer/footer.module';
 
+
 @NgModule({
   declarations: [
     ArticlePage,
@@ -15,7 +16,7 @@ import { FooterComponentModule } from './footer/footer.module';
     FoodComponentModule,
     StepsComponentModule,
     FooterComponentModule,
-    IonicPageModule.forChild(ArticlePage),
+    IonicPageModule.forChild(ArticlePage)
   ],
   exports: [
     ArticlePage

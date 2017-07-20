@@ -104,6 +104,14 @@ export class TabsPage {
       this.appVersion.getVersionNumber().then((version) => {
         this.UserService.Version = version;
       });
+
+      if (this.UserService.isopenimg) {
+        this.UserService.galleryOBJ.close();
+        this.UserService.isopenimg = false;
+        return false;
+      }
+
+
       let activeVC = this.navCtrl.getActive();
       let page = activeVC.instance;
       page.tabs

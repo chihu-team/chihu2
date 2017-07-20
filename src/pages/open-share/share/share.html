@@ -3,7 +3,7 @@
     <header [data]="data"></header>
     <p>{{data.text}}</p>
     <section class="imgs-wrap">
-        <div *ngFor="let item of data.img" class="imgs" [style.background]="'url('+item.src+')'"></div>
+        <div *ngFor="let item of data.img; let i=index" (click)="pswpElementInit(i);" class="imgs" [style.background]="'url('+item.src+')'"></div>
 
     </section>
     <section class="mark">
@@ -12,3 +12,5 @@
         <p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> {{like}}</p>
     </section>
 </section>
+
+<photoswipe></photoswipe>
