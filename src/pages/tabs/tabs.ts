@@ -58,7 +58,7 @@ export class TabsPage {
   //下载最新版本
   download() {
     var _that = this;
-    var apkurl = this.file.externalDataDirectory + 'chihu.apk';
+    var apkurl = this.file.externalDataDirectory + 'chihu2.apk';
     this.fileTransfer.download(this.apkDownloadUrl, apkurl).then((entry) => {
       //打开apk
       this.fileOpener.open(apkurl, 'application/vnd.android.package-archive')

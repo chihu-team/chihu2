@@ -99,6 +99,9 @@
     <plugin name="cordova-plugin-app-version" spec="~0.1.9" />
     <plugin name="cordova-hot-code-push-plugin" spec="~1.5.3" />
     <chcp>
-        <config-file url=" http://www.devonhello.com/hotcode/chcp.json"/>
+        <config-file url=" http://www.devonhello.com/hotcode/chcp.json" />
     </chcp>
+    <plugin name="jmessage-phonegap-plugin" spec="~2.4.9">
+        <variable name="APP_KEY" value="941091783c37cd0fcb5a0737" />
+    </plugin>
 </widget>

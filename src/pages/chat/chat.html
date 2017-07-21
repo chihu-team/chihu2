@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+    <ion-navbar color="mblue">
+        <ion-title>{{targetId}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="message-wrap">
+
+        <div *ngFor="let msg of msgList" class="message" [class.left]=" msg['direct'] == 'receive' " [class.right]=" msg['direct'] == 'send' ">
+            <img class="user-img" alt="" src="https://avatars2.githubusercontent.com/u/11835988?v=3&u=2a181779eb2164666606366a1df31f9c17cf7a20&s=100" />
+
+            <div class="msg-detail">
+                <div class="msg-info">
+                    <p>{{msg.lastMsgDate | date}}</p>
+                </div>
+                <div class="msg-content">
+                    <span class="triangle"></span>
+                    <p class="line-breaker ">{{msg.latestMessage.content.text}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</ion-content>
+
+<ion-footer no-border>
+    <ion-grid class="input-wrap">
+        <ion-row>
+
+            <ion-col col-10>
+                <ion-textarea #chat_input placeholder="Text Input" [(ngModel)]="editorMsg" (keyup.enter)="sendMsg()" (focus)="scrollToBottom()"></ion-textarea>
+            </ion-col>
+            <ion-col col-2>
+                <button ion-button clear icon-only item-right (click)="sendMsg()">
+          <ion-icon  name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+        </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

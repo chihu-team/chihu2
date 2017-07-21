@@ -46,10 +46,6 @@
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.chihu.plue"
         },
-        "jmessage-phonegap-plugin": {
-            "APP_KEY": "941091783c37cd0fcb5a0737",
-            "PACKAGE_NAME": "com.chihu.plue"
-        },
         "jpush-phonegap-plugin": {
             "APP_KEY": "941091783c37cd0fcb5a0737",
             "PACKAGE_NAME": "com.chihu.plue"
@@ -58,6 +54,10 @@
             "PACKAGE_NAME": "com.chihu.plue"
         },
         "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "com.chihu.plue"
+        },
+        "jmessage-phonegap-plugin": {
+            "APP_KEY": "941091783c37cd0fcb5a0737",
             "PACKAGE_NAME": "com.chihu.plue"
         }
     },

@@ -39,7 +39,7 @@ export class SettingPage {
   //app版本获取
   getAppVersion() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu/appversion";
+    let url = "http://www.devonhello.com/chihu2/appversion";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -65,7 +65,7 @@ export class SettingPage {
   download() {
     alert("新版吃乎正在后台下载中...稍后安装");
     var _that = this;
-    var apkurl = this.file.externalDataDirectory + 'chihu.apk';
+    var apkurl = this.file.externalDataDirectory + 'chihu2.apk';
     this.fileTransfer.download(this.apkDownloadUrl, apkurl).then((entry) => {
       //打开apk
       this.fileOpener.open(apkurl, 'application/vnd.android.package-archive')
