@@ -19,6 +19,9 @@ Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 <br/>
 ⚠️⚠️⚠️<a href="https://github.com/kongdewen1994/chihu/blob/master/README.md">「吃乎1」，请跳转</a>
 <br/>
+
+> 关于【吃乎】官网---> https://github.com/chihu2/chihu-web-angular
+
 > 作者：Devon。
 
 > 此版本为内测版本，有时间将不断改进，如果发现bug或有什么好的建议请提交Issues，更多请关注ionic2交流群
