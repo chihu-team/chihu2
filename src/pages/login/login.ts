@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
@@ -18,7 +18,7 @@ export class LoginPage {
   name: '';
   pass: '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public UserService: UserServiceProvider, public http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public UserService: UserServiceProvider, public http: Http, public alertCtrl: AlertController) {
   }
 
   login() {
@@ -45,7 +45,13 @@ export class LoginPage {
 
   //注册
   regist() {
-    this.navCtrl.push('RegisterPage');
+    let alert = this.alertCtrl.create({
+      title: '吃乎提示!',
+      subTitle: '请前往【吃乎官网】进行注册，http://www.devonhello.com/chihu',
+      buttons: ['确定']
+    });
+    alert.present();
+    //this.navCtrl.push('RegisterPage');
   }
 
 }
