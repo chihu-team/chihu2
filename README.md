@@ -86,7 +86,7 @@ Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 - QQ ：849996781
 
 ## Download
-- 手机版：https://github.com/chihu2/chihu2/blob/master/android-debug.apk
+- 手机版：https://github.com/chihu2/chihu2/raw/master/android-debug.apk
 
 ## ⚠️注意
 - 吃乎1  和 吃乎2  数据库不共享
