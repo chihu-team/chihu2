@@ -31,7 +31,7 @@
     "@ionic-native/status-bar": "3.12.1",
     "@ionic-native/transfer": "^3.12.1",
     "@ionic/storage": "^2.0.1",
-    "ionic-angular": "3.4.2",
+    "ionic-angular": "^3.6.0",
     "ionic2-super-tabs": "^2.6.3",
     "ionicons": "3.0.0",
     "rxjs": "5.4.0",
@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "1.3.8",
-    "@ionic/cli-plugin-cordova": "1.5.0",
-    "@ionic/cli-plugin-ionic-angular": "1.4.0",
-    "ionic": "3.6.0",
+    "@ionic/cli-plugin-cordova": "1.6.2",
+    "@ionic/cli-plugin-ionic-angular": "1.4.1",
+    "ionic": "3.7.0",
     "typescript": "2.3.4"
   },
   "description": "An Ionic project"
