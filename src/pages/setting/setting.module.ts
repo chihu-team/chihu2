@@ -4,6 +4,7 @@ import { SettingPage } from './setting';
 import { FileOpener } from '@ionic-native/file-opener';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
+import { AppVersion } from '@ionic-native/app-version';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { File } from '@ionic-native/file';
     FileOpener,
     Transfer,
     TransferObject,
-    File
+    File,
+    AppVersion
   ]
 })
 export class SettingPageModule {}

@@ -5,6 +5,7 @@ import { Headers, Http } from '@angular/http';
 import { FileOpener } from '@ionic-native/file-opener';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
+import { AppVersion } from '@ionic-native/app-version';
 /**
  * Generated class for the SettingPage page.
  *
@@ -24,8 +25,13 @@ export class SettingPage {
 
   fileTransfer: TransferObject;
 
-  constructor(public alertCtrl: AlertController, public file: File, public fileOpener: FileOpener, public transfer: Transfer, public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public alertCtrl: AlertController, public appVersion: AppVersion, public file: File, public fileOpener: FileOpener, public transfer: Transfer, public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+
     this.Version = this.UserService.Version;
+    this.appVersion.getVersionNumber().then((version) => {
+      this.UserService.Version = version;
+      this.Version = this.UserService.Version;
+    });
     if (this.UserService._user._id) {
       this.ishide = false;
     }
