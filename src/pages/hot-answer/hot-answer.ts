@@ -29,7 +29,7 @@ export class HotAnswerPage {
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post(url, "type=0", {
+    this.http.post(url, "type=0" + "&len=" + this.data.length, {
       headers: headers
     })
       .subscribe((res) => {

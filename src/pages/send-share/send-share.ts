@@ -35,11 +35,14 @@ export class SendSharePage {
   }
 
   send() {
-    if (this.text.length) {
-      this.postdata();
-    } else {
-      alert("请说上两句...");
-    }
+
+    alert("后台正在开发，暂时停止发布功能");
+    
+    // if (this.text.length) {
+    //   this.postdata();
+    // } else {
+    //   alert("请说上两句...");
+    // }
   }
 
   postdata() {

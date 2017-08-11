@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { JmessageProvider } from '../../providers/jmessage/jmessage';
+import { RongCloudProvider } from '../../providers/rong-cloud/rong-cloud';
 
 /**
  * Generated class for the MessagePage page.
@@ -17,24 +17,21 @@ declare var document: any;
 export class MessagePage {
 
   data:any = [];
+  eventSub;
 
-  constructor(public jm: JmessageProvider, public navCtrl: NavController, public navParams: NavParams) {
-    this.getAllSingleConversation();
-    this.onReceiveCustomMessage();
-  }
-
-  getAllSingleConversation(){
-    this.jm.getAllSingleConversation().then((res)=>{
-      this.data = res;
-      
+  constructor( public rc: RongCloudProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.rc.getConversationList().then((list)=>{
+      alert( JSON.stringify(list) );
     });
+    this.eventSub = this.rc.rong_data.subscribe((message) => {
+      alert('sub:'+JSON.stringify( message ));
+    })
   }
 
-  onReceiveCustomMessage() {
-    var _that = this;
-    document.addEventListener('jmessage.onReceiveCustomMessage', function (msg) {
-      _that.getAllSingleConversation();
-    }, false);
+  ionViewCanLeave(){
+    if(this.eventSub){
+      this.eventSub.unsubscribe();
+    }
   }
 
   chat( targetId ){

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
-import { JmessageProvider } from '../../providers/jmessage/jmessage';
 /**
  * Generated class for the RegisterPage page.
  *
@@ -22,7 +21,7 @@ export class RegisterPage {
   pass: any = '';
   userdata: any = null;
 
-  constructor(public jm: JmessageProvider, public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   regist() {

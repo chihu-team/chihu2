@@ -9,8 +9,8 @@ import { AppVersion } from '@ionic-native/app-version';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { UserServiceProvider } from '../providers/user-service/user-service';
-import { JmessageProvider } from '../providers/jmessage/jmessage';
 import { WorkDataProvider } from '../providers/work-data/work-data';
+import { RongCloudProvider } from '../providers/rong-cloud/rong-cloud';
 
 
 @NgModule({
@@ -35,8 +35,8 @@ import { WorkDataProvider } from '../providers/work-data/work-data';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserServiceProvider,
-    JmessageProvider,
-    WorkDataProvider
+    WorkDataProvider,
+    RongCloudProvider
   ]
 })
 export class AppModule {}

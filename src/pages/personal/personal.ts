@@ -60,4 +60,11 @@ export class PersonalPage {
       });
   }
 
+  chart(){
+    this.navCtrl.push("ChatPage",{
+      targetId: this._id,
+      targetName: this.UserService._user.nickname
+    });
+  }
+
 }

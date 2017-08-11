@@ -55,10 +55,6 @@
         },
         "cordova-plugin-code-push": {
             "PACKAGE_NAME": "com.chihu.plue"
-        },
-        "jmessage-phonegap-plugin": {
-            "APP_KEY": "941091783c37cd0fcb5a0737",
-            "PACKAGE_NAME": "com.chihu.plue"
         }
     },
     "dependent_plugins": {

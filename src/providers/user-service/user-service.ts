@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { Headers, Http } from '@angular/http';
 import { AlertController, LoadingController } from 'ionic-angular';
-import { JmessageProvider } from '../jmessage/jmessage';
+import { RongCloudProvider } from '../rong-cloud/rong-cloud';
 import 'rxjs/add/operator/map';
 
 /*
@@ -30,9 +30,9 @@ export class UserServiceProvider {
   //关注的人
   _my_fork_user:any = [];
 
-  constructor( public jm: JmessageProvider, public http: Http, public storage: Storage, public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+  constructor( public rc: RongCloudProvider, public http: Http, public storage: Storage, public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
     this._user = this._init;
-
+    this.rc.init();
     this.storage.ready().then(() => {
       this.storageGet();
     });
@@ -81,8 +81,8 @@ export class UserServiceProvider {
     this.storage.get('user').then((val) => {
       if (val && val._id) {
         this._user = val;
-        this.jm.login( this._user.nickname+"", this._user._id+'' );
         this.get_fork_user();
+        this.rc.gettoken(this._user._id, this._user.nickname, this._user.userimg);
       }
     });
   }
