@@ -1,4 +1,4 @@
-import { Component, Input, Output, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { UserServiceProvider } from '../../../providers/user-service/user-service';
 
 /**

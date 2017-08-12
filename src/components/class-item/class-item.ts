@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-/**
- * Generated class for the ClassItemComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
+
 @Component({
   selector: 'class-item',
   templateUrl: 'class-item.html'
@@ -30,9 +25,11 @@ export class ClassItemComponent {
     '其他'
   ];
 
-  constructor(public navCtrl: NavController) {
-    
-  }
+  constructor(
+    public navCtrl: NavController
+  )
+  {}
+
   openClass( name ){
     
     this.navCtrl.push( 'OpenClassPage',{

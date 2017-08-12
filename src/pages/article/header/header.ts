@@ -1,18 +1,13 @@
-import { Component, Input, Output, OnChanges } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { UserServiceProvider } from '../../../providers/user-service/user-service';
 import { Headers, Http } from '@angular/http';
 import { NavController } from 'ionic-angular';
-/**
- * Generated class for the HeaderComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
+
 @Component({
   selector: 'header',
   templateUrl: 'header.html'
 })
-export class HeaderComponent implements OnChanges {
+export class HeaderComponent implements OnInit {
 
   @Input() data: any = {};
   //是否关注
@@ -22,18 +17,10 @@ export class HeaderComponent implements OnChanges {
     
   }
 
-  ngOnChanges(ch) {
-
-    try {
-      if (ch['data'].currentValue && ch['data'].currentValue.uid) {
-        //console.log( ch['data'].currentValue.uid );
-        this.checkfork();
-      }
-    } catch (error) {
-
-    }
-
+  ngOnInit(){
+    this.checkfork();
   }
+
 
   //关注
   fork() {

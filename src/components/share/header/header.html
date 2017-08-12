@@ -1,10 +1,8 @@
 <!-- Generated template for the HeaderComponent component -->
-<section class="header">
-    <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">
-    <div class="it-left">
-        <h6>{{data.name}}</h6>
+<section class="share-header">
+    <div class="iheader">
+        <img [src]="data.userimg" alt="">
+        <h4>{{data.name}}</h4>
         <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{data.time | date}}</p>
     </div>
-    <div [hidden]="isfork" class="fork" (click)="fork();"><i class="fa fa-plus" aria-hidden="true"></i> 关注</div>
-    <div [hidden]="!isfork" class="fork nofork" (click)="unfork();"><i class="fa fa-plus" aria-hidden="true"></i> 取消关注</div>
 </section>

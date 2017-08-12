@@ -2,12 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
-/**
- * Generated class for the HotSharePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 @IonicPage()
 @Component({
   selector: 'page-hot-share',

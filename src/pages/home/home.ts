@@ -3,12 +3,6 @@ import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
 
-/**
- * Generated class for the HomePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-home',

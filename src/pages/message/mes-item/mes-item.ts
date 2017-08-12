@@ -2,12 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 
-/**
- * Generated class for the MesItemComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
 @Component({
   selector: 'mes-item',
   templateUrl: 'mes-item.html'

@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-/**
- * Generated class for the SwiperComponent component.
- *
- * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- * for more info on Angular Components.
- */
 declare var $: any;
 declare var Swiper: any;
 @Component({
@@ -17,9 +11,7 @@ export class SwiperComponent implements OnInit {
   //存储swiper对象
   oSwiper: any = null;
 
-  constructor() {
-    
-  }
+  constructor() {}
 
   ngOnInit(){
     this.oSwiper = new Swiper('.swiper-container', {
