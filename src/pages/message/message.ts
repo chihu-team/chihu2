@@ -20,12 +20,22 @@ export class MessagePage {
   eventSub;
 
   constructor( public rc: RongCloudProvider, public navCtrl: NavController, public navParams: NavParams) {
-    this.rc.getConversationList().then((list)=>{
-      alert( JSON.stringify(list) );
-    });
+    
     this.eventSub = this.rc.rong_data.subscribe((message) => {
-      alert('sub:'+JSON.stringify( message ));
+      //alert('sub:'+JSON.stringify( message ));
+      this.init();
     })
+  };
+
+  ionViewDidEnter() {
+    this.init();
+  }
+
+  init(){
+    this.rc.getConversationList().then((list)=>{
+      this.data = list;
+      //alert( JSON.stringify(list) );
+    });
   }
 
   ionViewCanLeave(){

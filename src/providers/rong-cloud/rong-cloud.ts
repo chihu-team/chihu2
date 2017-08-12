@@ -36,7 +36,7 @@ export class RongCloudProvider {
       onChanged: function (status) {
         switch (status) {
           case RongIMLib.ConnectionStatus.CONNECTED:
-            alert('融云链接成功');
+            //alert('融云链接成功');
             break;
         }
       }
@@ -155,5 +155,110 @@ export class RongCloudProvider {
         this.connect(res.json()["token"]);
       });
   }
+
+  //清楚会话列表
+  clearConversations() {
+    return new Promise(function (resolve, reject) {
+      RongIMClient.getInstance().clearConversations({
+        onSuccess: function () {
+          // 清除会话成功
+          resolve('1');
+        },
+        onError: function (error) {
+          // error => 清除会话错误码。
+          reject(error)
+        }
+      });
+    })
+  }
+
+  //获取所有会话总未读消息数
+  getTotalUnreadCount(){
+    return new Promise(function (resolve, reject) {
+      RongIMClient.getInstance().getTotalUnreadCount({
+        onSuccess:function(count){
+            // count => 所有会话总未读数。
+            resolve(count);
+        },
+        onError:function(error){
+            // error => 获取总未读数错误码。
+            reject(error);
+        }
+      });
+    })
+  };
+
+  //清除未读消息数
+  clearUnreadCount( targetId ){
+    return new Promise(function (resolve, reject) {
+      
+      RongIMClient.getInstance().clearUnreadCount(RongIMLib.ConversationType.PRIVATE,targetId,{
+          onSuccess:function(){
+              // 清除未读消息成功。
+              resolve('1');
+          },
+          onError:function(error){
+              // error => 清除未读消息数错误码。
+              reject(error);
+          }
+      });
+    })
+  }
+
+  //拉取服务器历史消息记录
+  getRemoteHistoryMessages( targetId,count ){
+    return new Promise(function (resolve, reject) {
+
+      RongIMLib.RongIMClient.getInstance().getRemoteHistoryMessages(RongIMLib.ConversationType.PRIVATE, targetId, null, count*1, {
+        onSuccess: function(list, hasMsg) {
+             //list 历史消息数组，hasMsg为boolean值，如果为true则表示还有剩余历史消息可拉取，为false的话表示没有剩余历史消息可供拉取。
+             var data = {
+               "list": list,
+               "hasMsg": hasMsg
+             }
+             resolve(data);
+            },
+        onError: function(error) {
+            //getRemoteHistoryMessages error
+            reject(error);
+        }
+       });
+
+    })
+  }
+
+  //获取指定会话
+  getConversation( targetId ){
+    return new Promise(function (resolve, reject) {
+      RongIMClient.getInstance().getConversation(RongIMLib.ConversationType.PRIVATE, targetId, {
+        onSuccess: function(conver) {
+           //成功 conver 为Conversation对象
+           resolve(conver);
+        },
+        onError: function(error) {
+          //失败
+          reject(error);
+        }
+      });
+    })
+  }
+
+  //指定清除本地会话中的未读消息状态
+  clearMessagesUnreadStatus( targetId ){
+    RongIMClient.getInstance().clearMessagesUnreadStatus(RongIMLib.ConversationType.PRIVATE,targetId,{
+      onSuccess:function(isClear){
+           // isClear true 清除成功 ， false 清除失败
+      },
+      onError:function(){
+          //清除遇到错误。
+      }
+    });
+  }
+
+  //连接
+  disconnect(){
+    RongIMClient.getInstance().disconnect();
+  }
+
 
 }

@@ -6,6 +6,7 @@ import { FileOpener } from '@ionic-native/file-opener';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { File } from '@ionic-native/file';
 import { AppVersion } from '@ionic-native/app-version';
+import { RongCloudProvider } from '../../providers/rong-cloud/rong-cloud';
 /**
  * Generated class for the SettingPage page.
  *
@@ -25,7 +26,7 @@ export class SettingPage {
 
   fileTransfer: TransferObject;
 
-  constructor(public alertCtrl: AlertController, public appVersion: AppVersion, public file: File, public fileOpener: FileOpener, public transfer: Transfer, public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public rc: RongCloudProvider, public alertCtrl: AlertController, public appVersion: AppVersion, public file: File, public fileOpener: FileOpener, public transfer: Transfer, public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
 
     this.Version = this.UserService.Version;
     this.appVersion.getVersionNumber().then((version) => {
@@ -38,8 +39,14 @@ export class SettingPage {
   }
 
   out() {
-    this.UserService.clearStorage();
-    this.navCtrl.pop();
+    this.UserService.presentLoadingDefault();
+    this.rc.clearConversations().then((res)=>{
+      this.UserService.presentLoadingDismiss();
+      this.rc.disconnect();
+      this.UserService.clearStorage();
+      this.navCtrl.pop();
+    });
+    
   }
 
   //app版本获取

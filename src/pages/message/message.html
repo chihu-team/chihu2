@@ -14,15 +14,7 @@
 
 
 <ion-content class="list-avatar-page">
-    <ion-list>
 
-        <ion-item (click)="chat( item.targetId );" *ngFor="let item of data; let i=index">
-            <ion-avatar item-start>
-                <img src="https://avatars2.githubusercontent.com/u/11835988?v=3&u=2a181779eb2164666606366a1df31f9c17cf7a20&s=100">
-            </ion-avatar>
-            <h2>{{item.targetId}}</h2>
-            <p>{{item.latestMessage.content.text}}</p>
-            <ion-note item-end>{{item.lastMsgDate | date}}</ion-note>
-        </ion-item>
-    </ion-list>
+    <mes-item *ngFor="let mesdata of data" [uid]="mesdata.targetId" [text]="mesdata.latestMessage.content.content"></mes-item>
+
 </ion-content>
