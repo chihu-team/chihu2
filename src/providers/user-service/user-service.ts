@@ -5,12 +5,6 @@ import { AlertController, LoadingController } from 'ionic-angular';
 import { RongCloudProvider } from '../rong-cloud/rong-cloud';
 import 'rxjs/add/operator/map';
 
-/*
-  Generated class for the UserServiceProvider provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular DI.
-*/
 declare var window: any;
 @Injectable()
 export class UserServiceProvider {

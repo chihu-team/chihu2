@@ -6,4 +6,10 @@ page-message {
             margin-top: 14px;
         }
     }
+    .nomessage {
+        background-image: url('../assets/icon/nomessage.png') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+    }
 }

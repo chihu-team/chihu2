@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
 
@@ -10,6 +10,7 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 })
 export class MyCirclePage {
 
+  @ViewChild(Content) content: Content;
   data: any = [];
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
@@ -32,6 +33,11 @@ export class MyCirclePage {
         console.log(this.data);
         this.data = res.json();
       });
+  }
+
+  //点击到顶部
+  tapEvent(e) {
+    this.content.scrollToTop();
   }
 
 }

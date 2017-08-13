@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { UserServiceProvider } from '../../../providers/user-service/user-service';
 import { Headers, Http } from '@angular/http';
 import { NavController } from 'ionic-angular';
@@ -12,7 +12,7 @@ import { NavController } from 'ionic-angular';
   selector: 'footer',
   templateUrl: 'footer.html'
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent implements OnChanges {
 
   @Input() tabanimate: boolean = false;
   @Input() data: any = {};
@@ -26,10 +26,17 @@ export class FooterComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-    
-    this.conts = this.data.mark.cont;
-    this.checkcoll();
+  ngOnChanges(ch) {
+    try {
+      if (ch['data'].currentValue && ch['data'].currentValue.uid) {
+        //console.log( ch['data'].currentValue.uid );
+        this.conts = this.data.mark.cont;
+        this.checkcoll();
+      }
+    } catch (error) {
+
+    }
+
 
   }
 

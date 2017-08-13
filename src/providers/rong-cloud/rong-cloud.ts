@@ -1,7 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Rx';
 
 declare var RongCloudLibPlugin: any;
 declare var SHA1: any;
@@ -47,6 +46,7 @@ export class RongCloudProvider {
   getConversationList() {
 
     return new Promise(function (resolve, reject) {
+      
       RongIMClient.getInstance().getConversationList({
         onSuccess: function (list) {
           //list 会话列表

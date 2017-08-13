@@ -312,6 +312,10 @@
     "hash": "05e51b1db558320f1939f9789ccf5c8f"
   },
   {
+    "file": "assets/js/jquery-3.2.1.min.js",
+    "hash": "515d78fce4986c31878c8369bfd4806c"
+  },
+  {
     "file": "assets/js/RongIMLib-2.2.6.min.js",
     "hash": "8b463cea9563c67389599f9b5ad402d8"
   },
@@ -537,15 +541,15 @@
   },
   {
     "file": "build/10.js",
-    "hash": "7ec0d3a630e49340ef5d2ba9b6e4b498"
+    "hash": "d7cd7c49766264e98252089d463d6728"
   },
   {
     "file": "build/11.js",
-    "hash": "47f5aff61187ac7b0686835c944a1c78"
+    "hash": "6466162cdc93bb5ffd2742d29b85063c"
   },
   {
     "file": "build/12.js",
-    "hash": "4021ea41a8e9c5c4a49c474c3e94ac48"
+    "hash": "e4de4192ed3f959f0b30b64cdb9ddc72"
   },
   {
     "file": "build/13.js",
@@ -557,7 +561,7 @@
   },
   {
     "file": "build/15.js",
-    "hash": "3c4cbedcb185c48486032b2c4d7d4023"
+    "hash": "c0fc38106be503dca1d32d4348e63523"
   },
   {
     "file": "build/16.js",
@@ -565,15 +569,15 @@
   },
   {
     "file": "build/17.js",
-    "hash": "2b01f0a5d49476bb8802e434c0a8fb95"
+    "hash": "e7e761d3611b8bf1766219ce92f64039"
   },
   {
     "file": "build/18.js",
-    "hash": "0a96867ebead759bb786533a404daf93"
+    "hash": "c6483e66e6d61f672a86e9cc0ba58c7d"
   },
   {
     "file": "build/19.js",
-    "hash": "35aa6bd3e9bdedf7c0ac9327ae1bbbed"
+    "hash": "3f492f40b99b01b015521913ae635abb"
   },
   {
     "file": "build/2.js",
@@ -581,7 +585,7 @@
   },
   {
     "file": "build/20.js",
-    "hash": "c945f472b395db4426d1123be8c62c99"
+    "hash": "02d770c1c7324dd01c40fe79274a3d03"
   },
   {
     "file": "build/21.js",
@@ -633,15 +637,15 @@
   },
   {
     "file": "build/32.js",
-    "hash": "5430242bb28ffde81ca6a4e52bc8aa1c"
+    "hash": "19ee6b179f9d0e1e6b67659c63229989"
   },
   {
     "file": "build/33.js",
-    "hash": "219a344eb7f33297313f55b83c0c396e"
+    "hash": "2a79b355ab602956173ddc14ec993d0e"
   },
   {
     "file": "build/34.js",
-    "hash": "e6ebf76a827cc871929d139353e2df3f"
+    "hash": "d204f545ec0b1a1cd79433aae7a07c66"
   },
   {
     "file": "build/35.js",
@@ -705,7 +709,7 @@
   },
   {
     "file": "build/6.js",
-    "hash": "5b2048344e2d61536f1e829b55ff4c51"
+    "hash": "ee957a80ce0cb82be7c92e4e3a1ffc28"
   },
   {
     "file": "build/7.js",
@@ -713,7 +717,7 @@
   },
   {
     "file": "build/8.js",
-    "hash": "f583ac4a8fb49a9de85fc8c12225a57c"
+    "hash": "edb22d88a31b1add8fd5cac24ef102ba"
   },
   {
     "file": "build/9.js",
@@ -721,7 +725,7 @@
   },
   {
     "file": "build/main.css",
-    "hash": "b77a63461046df34670a85b5db2cd59b"
+    "hash": "65383330bdb24858da15ff4154047988"
   },
   {
     "file": "build/main.js",
@@ -741,7 +745,7 @@
   },
   {
     "file": "index.html",
-    "hash": "737da9fc043e2b14a2aaa63081a93f45"
+    "hash": "1ea5187af55c06bc9c89a4a591849b11"
   },
   {
     "file": "manifest.json",

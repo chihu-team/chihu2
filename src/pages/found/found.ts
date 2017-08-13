@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
 
@@ -9,6 +9,8 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
   templateUrl: 'found.html',
 })
 export class FoundPage {
+
+  @ViewChild(Content) content: Content;
 
   //数据
   data: any = [];
@@ -71,6 +73,11 @@ export class FoundPage {
     setTimeout(() => {
       infiniteScroll.complete();
     }, 1500);
+  }
+
+  //点击到顶部
+  tapEvent(e) {
+    this.content.scrollToTop();
   }
 
 }

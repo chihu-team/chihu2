@@ -1,6 +1,5 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Events, Content, TextInput } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events, Content, TextInput } from 'ionic-angular';
 import { UserServiceProvider } from '../../providers/user-service/user-service';
 import { RongCloudProvider } from '../../providers/rong-cloud/rong-cloud';
 
@@ -79,6 +78,9 @@ export class ChatPage {
     }
   }
 
-
+  //点击到顶部
+  tapEvent(e) {
+    this.content.scrollToTop();
+  }
 
 }

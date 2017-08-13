@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { RongCloudProvider } from '../../providers/rong-cloud/rong-cloud';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 declare var document: any;
 @IonicPage()
@@ -10,10 +11,13 @@ declare var document: any;
 })
 export class MessagePage {
 
+  @ViewChild(Content) content: Content;
   data:any = [];
   eventSub;
+  //是否有消息class控制
+  nomessage: boolean = true;
 
-  constructor( public rc: RongCloudProvider, public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public rc: RongCloudProvider, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
     
     this.eventSub = this.rc.rong_data.subscribe((message) => {
       //alert('sub:'+JSON.stringify( message ));
@@ -26,10 +30,17 @@ export class MessagePage {
   }
 
   init(){
-    this.rc.getConversationList().then((list)=>{
-      this.data = list;
+    this.UserService.presentLoadingDefault();
+    this.rc.getConversationList().then((list:any)=>{
+      if(list.length > 0){
+        this.nomessage = false;
+        this.data = list;
+      }
+      this.UserService.presentLoadingDismiss();
       //alert( JSON.stringify(list) );
-    });
+    }).catch((err)=>{
+      this.UserService.presentLoadingDismiss();
+    })
   }
 
   ionViewCanLeave(){
@@ -42,6 +53,11 @@ export class MessagePage {
     this.navCtrl.push('ChatPage',{
       targetId: targetId
     } );
+  }
+
+  //点击到顶部
+  tapEvent(e) {
+    this.content.scrollToTop();
   }
 
 }

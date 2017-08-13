@@ -1,5 +1,5 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser'
 import { UserServiceProvider } from '../../providers/user-service/user-service';
@@ -10,6 +10,8 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
   templateUrl: 'answer.html',
 })
 export class AnswerPage {
+
+  @ViewChild(Content) content: Content;
 
   //头部导航动画class属性控制
   tabanimate: boolean = false;
@@ -71,6 +73,11 @@ export class AnswerPage {
     }
     this.old_scrollTop = scrollTop;
     this.ref.detectChanges();
+  }
+
+  //点击到顶部
+  tapEvent(e) {
+    this.content.scrollToTop();
   }
 
 }
