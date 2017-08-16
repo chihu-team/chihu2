@@ -25,9 +25,10 @@ export class SendCommentsPage {
   targetid = '';
   _id = '';
   isreply = '';
-
+  isIdark;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public UserService: UserServiceProvider, public http: Http) {
+    this.isIdark = this.UserService.isIdark;
     this.pl = this.navParams.get('pl');
     this.artid = this.navParams.get('artid');
     this.comid = this.navParams.get('comid');

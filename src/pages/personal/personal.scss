@@ -26,4 +26,20 @@ page-personal {
     super-tabs {
         padding-top: 75px;
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+        .dv_top_ban {
+            background: #37474f !important;
+        }
+        .item {
+            background: #212b30 !important;
+        }
+    }
 }

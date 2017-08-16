@@ -17,4 +17,17 @@ page-personal-home {
         border: none !important;
         margin-bottom: 0 !important;
     }
+    .idark_content {
+        .dv_ban_top {
+            background: #212b30 !important;
+            .dv_ban_top_div {
+                h2 {
+                    color: #fff !important;
+                }
+            }
+        }
+        .item-md {
+            color: #fff !important;
+        }
+    }
 }

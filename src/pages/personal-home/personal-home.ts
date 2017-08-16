@@ -15,8 +15,10 @@ export class PersonalHomePage {
   rootNavCtrl: NavController;
   tar: any = '';
   ishide: boolean = true;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.rootNavCtrl = navParams.get('rootNavCtrl');
     this.tar = this.navParams.data.tar;
     this.id = this.navParams.data._id;

@@ -2,4 +2,23 @@ page-open-class {
     ion-thumbnail img {
         width: 110px !important;
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        .toolbar-background {
+            background: #212b30 !important;
+        }
+        .item {
+            background: #212b30 !important;
+        }
+        h2 {
+            color: #d6d9db !important;
+        }
+        p {
+            color: #848e93 !important;
+        }
+    }
 }

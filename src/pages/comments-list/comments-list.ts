@@ -16,8 +16,10 @@ export class CommentsListPage {
   uid:any;
   name:any;
   isget = false;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this._id = this.navParams.get('_id');
     this.type = this.navParams.get('type');
     this.name = this.navParams.get('name');

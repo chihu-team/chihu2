@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header [class.idark]="isIdark">
 
     <ion-navbar color="mblue">
         <ion-title>评论列表</ion-title>
@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content [class.idark_content]="isIdark">
     <ion-list>
         <ion-list-header>
             {{data.length}} 个评论
@@ -21,5 +21,4 @@
     </ion-list>
     <comments *ngFor="let item of data" [data]="item" [type]="type"></comments>
 </ion-content>
-
 <footer [name]="name" [_id]="_id" [type]="type" [uid]="uid"></footer>

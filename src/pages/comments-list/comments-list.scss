@@ -1,6 +1,19 @@
-page-comments-list {
-    ion-list-header,
-    ion-list {
-        margin-bottom: 0 !important;
+    page-comments-list {
+        ion-list-header,
+        ion-list {
+            margin-bottom: 0 !important;
+        }
+        .idark {
+            .toolbar-background {
+                background: #37474f !important;
+            }
+        }
+        .idark_content {
+            .toolbar-background {
+                background: #212b30 !important;
+            }
+            .item {
+                background: #212b30 !important;
+            }
+        }
     }
-}

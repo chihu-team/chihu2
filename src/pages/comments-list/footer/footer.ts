@@ -18,9 +18,10 @@ export class FooterComponent {
   @Input() _id:any = '';
   @Input() uid:any = '';
   @Input() type:any = '';
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
-    
+    this.isIdark = this.UserService.isIdark;
   }
 
   sendComment( pl, comid ){
