@@ -1,4 +1,4 @@
-.tabs-md .tab-button {
+.tabs .tab-button {
     min-height: 5rem;
 }
 
@@ -8,4 +8,9 @@
 
 .tab-button[aria-selected=true] .tab-button-icon {
     color: #387ef5 !important;
+}
+
+html,
+body .idark .tabbar {
+    background: #212b30 !important;
 }

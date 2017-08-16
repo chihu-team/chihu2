@@ -1,4 +1,13 @@
 steps {
+    .idark {
+        p {
+            color: #d6d9db;
+        }
+        .dv_tips {
+            background: #37474f !important;
+            color: #d6d9db !important;
+        }
+    }
     .dv_content {
         width: 100%;
         padding: 3%;

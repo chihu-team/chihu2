@@ -1,5 +1,5 @@
 <!-- Generated template for the HeaderComponent component -->
-<section class="header">
+<section class="header" [class.idark]="isIdark">
     <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" alt="">
     <div class="it-left">
         <h6>{{data.name}} 分享了心情</h6>

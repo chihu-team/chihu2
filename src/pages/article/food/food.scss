@@ -1,4 +1,18 @@
 food {
+    .idark {
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #d6d9db;
+        }
+        ion-col {
+            color: #d6d9db;
+        }
+        ion-row {
+            -webkit-border-after: 1px solid #606c77;
+        }
+    }
     .dv_content {
         width: 100%;
         padding: 3%;

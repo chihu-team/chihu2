@@ -11,8 +11,12 @@ export class MorePage {
 
   name:any='';
   mimg:any='';
+  isIdark;
 
   constructor(public UserService : UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.UserService.SetIdark.subscribe((data) => {
+      this.isIdark = data;
+    })
     this.init();
   }
 
@@ -21,6 +25,7 @@ export class MorePage {
   }
 
   init(){
+    this.isIdark = this.UserService.isIdark;
     this.name = this.UserService._user.nickname;
     this.mimg = this.UserService._user.userimg;
   }
@@ -70,10 +75,6 @@ export class MorePage {
     }else{
       this.navCtrl.push( 'LoginPage' );
     }
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MorePage');
   }
 
 }

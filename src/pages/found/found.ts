@@ -11,12 +11,16 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 export class FoundPage {
 
   @ViewChild(Content) content: Content;
-
+  isIdark;
   //数据
   data: any = [];
   _refresher = null;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
+    this.UserService.SetIdark.subscribe((data) => {
+      this.isIdark = data;
+    })
     this.getdata();
 }
 

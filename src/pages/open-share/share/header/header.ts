@@ -12,9 +12,10 @@ export class HeaderComponent implements OnInit {
   @Input() data: any = {};
   //是否关注
   isfork: boolean = false;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
-
+    this.isIdark = this.UserService.isIdark;
   }
 
   ngOnInit() {

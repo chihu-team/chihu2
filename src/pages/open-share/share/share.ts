@@ -25,9 +25,10 @@ export class ShareComponent implements OnChanges {
   gallery: any = null;
 
   items: any = [];
+  isIdark;
 
   constructor(public UserService: UserServiceProvider) {
-    
+    this.isIdark = this.UserService.isIdark;
   }
 
   ngOnChanges(ch) {

@@ -19,9 +19,10 @@ export class FooterComponent implements OnChanges {
   conts: any = 0;
   islike: boolean = false;
   ischecking = false;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController) {
-
+    this.isIdark = this.UserService.isIdark;
   }
 
   ngOnChanges(ch) {

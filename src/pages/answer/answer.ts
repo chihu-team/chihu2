@@ -27,10 +27,12 @@ export class AnswerPage {
   iscoll: boolean = false;
   isthank: boolean = false;
   conts = 0;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public sanitizer: DomSanitizer, public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get("_id");
     this.getdata();
+    this.isIdark = this.UserService.isIdark;
 }
 
 //获取文章数据

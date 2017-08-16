@@ -24,8 +24,11 @@ export class StepsComponent implements OnChanges {
   gallery: any = null;
 
   items: any = [];
+  isIdark;
 
-  constructor(public UserService: UserServiceProvider) { }
+  constructor(public UserService: UserServiceProvider) {
+    this.isIdark = this.UserService.isIdark;
+  }
 
   ngOnChanges(ch) {
 

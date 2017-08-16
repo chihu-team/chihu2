@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<super-tabs height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">
+<super-tabs [class.idark]="isIdark" height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">
     <super-tab [root]="page1" title="通知"></super-tab>
     <super-tab [root]="page2" title="赞与感谢"></super-tab>
     <super-tab [root]="page3" title="关注"></super-tab>

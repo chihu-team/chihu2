@@ -1,5 +1,5 @@
 <!-- Generated template for the StepsComponent component -->
-<section class="dv_content">
+<section class="dv_content" [class.idark]="isIdark">
     <h6>做法：</h6>
     <div *ngFor="let item of data.work; let i=index">
         <p><span>{{i+1}}：</span>{{item.text}}</p>

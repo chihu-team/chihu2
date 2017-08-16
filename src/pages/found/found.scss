@@ -1,4 +1,9 @@
 page-found {
+    .idark_content {
+        .toolbar-background {
+            background: #212b30 !important;
+        }
+    }
     ion-content {
         background: #eee !important;
         .fixed-content,
@@ -29,5 +34,13 @@ page-found {
     }
     ion-refresher {
         z-index: 99 !important;
+    }
+    .idark {
+        .dv_box {
+            background: #37474f !important;
+            .dv_items p {
+                color: #848e93 !important;
+            }
+        }
     }
 }

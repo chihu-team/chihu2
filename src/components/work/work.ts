@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 @Component({
   selector: 'work',
@@ -12,9 +13,14 @@ export class WorkComponent implements OnChanges {
   @Input() rootNavCtrl: any = null;
 
   irootNavCtrl: NavController;
+  isIdark;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public UserService: UserServiceProvider) {
+    this.isIdark = this.UserService.isIdark;
     this.irootNavCtrl = this.navCtrl;
+    this.UserService.SetIdark.subscribe((data) => {
+      this.isIdark = data;
+    })
   }
 
   ngOnChanges(ch) {

@@ -11,7 +11,6 @@ comments {
         header {
             color: #828282;
             width: 100%;
-            background: #fff;
             overflow: hidden;
             .it-left {
                 width: 50%;
@@ -46,6 +45,11 @@ comments {
                 float: left;
                 border-radius: 9999px;
             }
+        }
+    }
+    .idark {
+        p {
+            color: #d6d9db;
         }
     }
 }

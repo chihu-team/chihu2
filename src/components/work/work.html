@@ -1,16 +1,16 @@
 <!-- Generated template for the WorkComponent component -->
-<section class="item" *ngFor="let item of data">
-    <header>
+<section class="item" [class.idark]="isIdark" *ngFor="let item of data">
+    <header [class.idarkC3]="isIdark">
         <img [src]="item.userimg" alt="">
         <h4 *ngIf="item.type == '0'">{{item.name}} 回答了问题</h4>
         <h4 *ngIf="item.type == '1'">{{item.name}} 分享的作品</h4>
         <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{item.time | date}}</p>
     </header>
     <section *ngIf="item.type == '1'" class="banner" (click)="pushArticlePage( item._id );" [style.background]="'url('+item.workbanner+')'"></section>
-    <h5 [hidden]="ishideTitle" *ngIf="item.type == '0'" (click)="pushQuestionPage( item.answerid );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
-    <h5 *ngIf="item.type == '1'" (click)="pushArticlePage( item._id );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
-    <p *ngIf="item.type == '0'" (click)="pushAnswerPage( item._id );">{{item.dec}}</p>
-    <p *ngIf="item.type == '1'" (click)="pushArticlePage( item._id );">{{item.text}}</p>
+    <h5 [class.idarkC1]="isIdark" [hidden]="ishideTitle" *ngIf="item.type == '0'" (click)="pushQuestionPage( item.answerid );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
+    <h5 [class.idarkC1]="isIdark" *ngIf="item.type == '1'" (click)="pushArticlePage( item._id );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
+    <p [class.idarkC2]="isIdark" *ngIf="item.type == '0'" (click)="pushAnswerPage( item._id );">{{item.dec}}</p>
+    <p [class.idarkC2]="isIdark" *ngIf="item.type == '1'" (click)="pushArticlePage( item._id );">{{item.text}}</p>
     <section class="mark">
         <p><i class="fa fa-heart" aria-hidden="true"></i> 感谢:{{item.mark.think}} • <i class="fa fa-file" aria-hidden="true"></i> 收藏:{{item.mark.collect}} • <i class="fa fa-comment" aria-hidden="true"></i> 评论:{{item.mark.cont}}</p>
     </section>

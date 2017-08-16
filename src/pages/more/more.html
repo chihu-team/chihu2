@@ -4,17 +4,17 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
+<ion-header no-border [class.idark]="isIdark">
 
-    <ion-navbar color="mblue">
+    <ion-navbar color="mblue" [class.idark_content]="isIdark">
         <ion-title>更多</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
-    <section class="dv_data" (click)="PersonalPage();">
+<ion-content [class.idark]="isIdark">
+    <section class="dv_data" (click)="PersonalPage();" [class.idark_content]="isIdark">
         <img [src]="mimg" />
         <section class="dv_name_wrap">
             <h5>{{name}}</h5>

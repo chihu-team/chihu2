@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Headers, Http } from '@angular/http';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 @IonicPage()
 @Component({
@@ -15,10 +16,12 @@ export class OpenSharePage {
   cont = 0;
   items:any = [];
   type = 3;
+  isIdark;
 
-  constructor(public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this._id = this.navParams.get('_id');
     this.getdata();
+    this.isIdark = this.UserService.isIdark;
 }
 
   getdata() {

@@ -4,9 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
+<ion-header no-border [class.idark]="isIdark">
 
-    <ion-navbar color="mblue">
+    <ion-navbar color="mblue" [class.idark_content]="isIdark">
         <ion-title>设置</ion-title>
 
     </ion-navbar>
@@ -14,7 +14,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content [class.idark]="isIdark">
     <ion-list>
 
         <ion-item>
@@ -24,7 +24,13 @@
             </ion-note>
         </ion-item>
         <ion-item (click)="getAppVersion();">检查更新</ion-item>
+        <ion-item>
+            <ion-toggle [(ngModel)]="isIdark" (ionChange)="notify()"></ion-toggle>
+            <ion-label>
+                夜间模式
+            </ion-label>
 
+        </ion-item>
         <ion-item [hidden]="ishide" class="logout" (click)="out();">退出账号</ion-item>
 
     </ion-list>

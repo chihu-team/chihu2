@@ -12,9 +12,11 @@ export class HotSharePage {
 
   @ViewChild(Content) content: Content;
   data: any = [];
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
     this.getdata();
+    this.isIdark = this.UserService.isIdark;
   }
 
   getdata() {

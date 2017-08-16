@@ -1,5 +1,5 @@
 import { Component, Input, Output } from '@angular/core';
-
+import { UserServiceProvider } from '../../../providers/user-service/user-service';
 /**
  * Generated class for the FoodComponent component.
  *
@@ -13,9 +13,10 @@ import { Component, Input, Output } from '@angular/core';
 export class FoodComponent {
 
   @Input() data:any = {};
+  isIdark;
 
-  constructor() {
-    
+  constructor(public UserService: UserServiceProvider) {
+    this.isIdark = this.UserService.isIdark;
   }
 
 }

@@ -1,6 +1,6 @@
 <!-- Generated template for the HeaderComponent component -->
 <section class="dv_banner" [style.background]="'url('+data.workbanner+')'"></section>
-<section class="user">
+<section class="user" [class.idark]="isIdark">
     <img (click)="pushPersonPage( data.uid );" [src]="data.userimg" />
     <section (click)="pushPersonPage( data.uid );" class="data">
         <h4>{{data.name}}</h4>

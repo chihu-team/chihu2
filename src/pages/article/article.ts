@@ -23,11 +23,12 @@ export class ArticlePage {
   tabbule: boolean = false;
   old_scrollTop = 0;
   conts = 0;
+  isIdark
 
   constructor( public UserService: UserServiceProvider, public ref: ChangeDetectorRef, public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this._id = this.navParams.get("_id");
     this.getdata();
-    
+    this.isIdark = this.UserService.isIdark;
 }
 
 //获取文章数据

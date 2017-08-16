@@ -1,5 +1,5 @@
 <!-- Generated template for the HeaderComponent component -->
-<section class="dv_title">
+<section class="dv_title" [class.idark]="isIdark">
     <h2 (click)="pushQuestionPage( data.answerid );">{{data.title}}</h2>
     <section class="user">
         <img (click)="pushPersonPage(data.uid);" [src]="data.userimg" />

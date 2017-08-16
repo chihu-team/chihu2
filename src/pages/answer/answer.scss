@@ -4,9 +4,15 @@ page-answer {
         transition: all 1000ms cubic-bezier(.19, 1.12, .65, .91);
     }
     .dv_content {
+        width: 90%;
         padding: 5%;
         padding-top: 18%;
         padding-bottom: 50px;
+        overflow: hidden;
+        img {
+            display: inline-block !important;
+            max-width: 100% !important;
+        }
     }
     .scroll-content {
         margin-top: 0 !important;
@@ -15,5 +21,16 @@ page-answer {
     }
     .animate {
         top: -90px;
+    }
+    .idark {
+        .toolbar-background {
+            background: #212b30 !important;
+        }
+        .dv_content {
+            p {
+                color: #d6d9db !important;
+            }
+            color: #d6d9db !important;
+        }
     }
 }

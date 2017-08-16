@@ -55,3 +55,23 @@ ion-backdrop {
     box-shadow: 0px 0px 50px rgba(23, 23, 23, 0.68) !important;
     color: rgb(71, 137, 252) !important;
 }
+
+html,
+body .idark {
+    background: #37474f !important;
+    .idark_content {
+        background: #212b30 !important;
+    }
+    .idark_wrap {
+        background: #37474f !important;
+    }
+    .idarkC1 {
+        color: #d6d9db;
+    }
+    .idarkC2 {
+        color: #848e93;
+    }
+    .idarkC3 {
+        color: #748992;
+    }
+}

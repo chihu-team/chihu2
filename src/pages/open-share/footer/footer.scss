@@ -14,7 +14,9 @@ footer {
     .footanimate {
         bottom: -78px;
     }
-    .toolbar-background-md {
-        background: #fff !important;
+    .idark {
+        .toolbar-background {
+            background: #212b30 !important;
+        }
     }
 }

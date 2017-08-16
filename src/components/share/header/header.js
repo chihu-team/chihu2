@@ -4,7 +4,6 @@ export default StyleSheet.create({
   'share-header iheader': {
     'color': '#828282',
     'width': [{ 'unit': '%H', 'value': 1 }],
-    'background': '#fff',
     'overflow': 'hidden'
   },
   'share-header iheader img': {

@@ -16,10 +16,15 @@ export class HomePage {
   public new_scrollTop = 0;
   _refresher = null;
 
+  isIdark;
   //数据
   items = [];
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
+    this.isIdark = this.UserService.isIdark;
+    this.UserService.SetIdark.subscribe((data) => {
+      this.isIdark = data;
+    })
     this.getdata();
   }
 

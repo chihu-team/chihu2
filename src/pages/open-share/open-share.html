@@ -4,9 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
+<ion-header no-border [class.idark]="isIdark">
 
-    <ion-navbar color="mblue">
+    <ion-navbar color="mblue" [class.idark_content]="isIdark">
         <ion-title>
             {{title}}
         </ion-title>
@@ -15,11 +15,11 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content [class.idark_content]="isIdark">
     <share [data]="data"></share>
     <section class="wrap">
         <ion-list>
-            <ion-list-header>
+            <ion-list-header [class.idark]="isIdark">
                 {{cont}} 个评论
             </ion-list-header>
         </ion-list>

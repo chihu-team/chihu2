@@ -1,6 +1,6 @@
 <!-- Generated template for the FooterComponent component -->
 <ion-footer>
-    <ion-toolbar color='fff'>
+    <ion-toolbar color='fff' [class.idark]="isIdark">
         <div class="dv_f" (click)="sendComment( '@'+data.name, 0 );">
             <ion-icon name="text"></ion-icon>
             评论

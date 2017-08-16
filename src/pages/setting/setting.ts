@@ -23,11 +23,11 @@ export class SettingPage {
   Version = '';
   ishide: boolean = true;
   apkDownloadUrl = '';
-
+  isIdark;
   fileTransfer: TransferObject;
 
   constructor(public rc: RongCloudProvider, public alertCtrl: AlertController, public appVersion: AppVersion, public file: File, public fileOpener: FileOpener, public transfer: Transfer, public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
-
+    this.isIdark = this.UserService.isIdark;
     this.Version = this.UserService.Version;
     this.appVersion.getVersionNumber().then((version) => {
       this.UserService.Version = version;
@@ -36,6 +36,11 @@ export class SettingPage {
     if (this.UserService._user._id) {
       this.ishide = false;
     }
+  }
+
+  notify(){
+    this.UserService.setIdari();
+    this.isIdark = this.UserService.isIdark;
   }
 
   out() {

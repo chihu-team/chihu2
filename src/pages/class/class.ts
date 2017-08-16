@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 
 /**
  * Generated class for the ClassPage page.
@@ -14,7 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ClassPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  isIdark;
+
+  constructor(public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
+    this.UserService.SetIdark.subscribe((data) => {
+      this.isIdark = data;
+    })
   }
 
 }

@@ -4,16 +4,16 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border (tap)="tapEvent($event)">
+<ion-header no-border (tap)="tapEvent($event)" [class.idark]="isIdark">
 
-    <ion-navbar color="mblue">
+    <ion-navbar color="mblue" [class.idark_content]="isIdark">
         <ion-title>人气分享</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content [class.idark_content]="isIdark">
     <share [data]="data"></share>
 
     <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
