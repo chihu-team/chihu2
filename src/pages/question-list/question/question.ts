@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { UserServiceProvider } from '../../../providers/user-service/user-service';
 /**
  * Generated class for the QuestionComponent component.
  *
@@ -13,9 +14,10 @@ import { NavController } from 'ionic-angular';
 export class QuestionComponent {
 
   @Input() data:any = {};
+  isIdark;
 
-  constructor(public navCtrl: NavController) {
-    
+  constructor(public UserService: UserServiceProvider, public navCtrl: NavController) {
+    this.isIdark = this.UserService.isIdark;
   }
 
   //打开问题

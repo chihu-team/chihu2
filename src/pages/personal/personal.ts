@@ -56,11 +56,16 @@ export class PersonalPage {
       });
   }
 
-  chart(){
-    this.navCtrl.push("ChatPage",{
-      targetId: this._id,
-      targetName: this.name
-    });
+  chart() {
+    if (this.UserService._user._id) {
+      this.navCtrl.push("ChatPage", {
+        targetId: this._id,
+        targetName: this.name
+      });
+    } else {
+      this.navCtrl.push('LoginPage');
+    }
+
   }
 
 }

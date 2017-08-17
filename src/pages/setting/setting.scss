@@ -1,13 +1,14 @@
 page-setting {
     .idark_content {
-        .toolbar-background {
-            background: #212b30 !important;
-        }
-    }
-    .idark {
+        background: #212b30 !important;
         .item-md {
             background: transparent;
             color: #d6d9db !important;
+        }
+    }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
         }
     }
     ion-label {

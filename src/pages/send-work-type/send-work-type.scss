@@ -9,4 +9,19 @@ page-send-work-type {
         margin: 0 auto;
         border: none;
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        background: #212b30 !important;
+        .dv_work_title {
+            color: #fff !important;
+            background: #37474f !important;
+        }
+        .list-md .item-block .item-inner {
+            border: none !important;
+        }
+    }
 }

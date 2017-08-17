@@ -22,6 +22,7 @@ export class SendSharePage {
   items = [];
   postimg = [];
   fileTransfer: TransferObject;
+  isIdark;
 
   constructor(public http: Http,
     public transfer: Transfer,
@@ -31,6 +32,7 @@ export class SendSharePage {
     private camera: Camera,
     public alertCtrl: AlertController,
     public UserService: UserServiceProvider) {
+    this.isIdark = this.UserService.isIdark;
     this.fileTransfer = this.transfer.create();
   }
 

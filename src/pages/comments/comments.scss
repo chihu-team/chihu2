@@ -70,4 +70,23 @@ page-comments {
             }
         }
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        .scroll-content {
+            background: #364146 !important;
+        }
+        .dv_list {
+            .dv_item {
+                width: 100%;
+                background: #212b30;
+                p {
+                    color: #f5f5f5 !important;
+                }
+            }
+        }
+    }
 }

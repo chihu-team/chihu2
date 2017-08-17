@@ -1,5 +1,5 @@
 <!-- Generated template for the FooterComponent component -->
-<ion-footer no-border (click)="sendComment( '@'+data.name, data._id, data.name, data.uid, data._id, '' )">
+<ion-footer [class.idark]="isIdark" no-border (click)="sendComment( '@'+data.name, data._id, data.name, data.uid, data._id, '' )">
     <ion-grid class="input-wrap">
         <ion-row>
 

@@ -69,4 +69,24 @@ page-send-work {
             display: none;
         }
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        background: #212b30 !important;
+        .item-md,
+        .work_top .dv_work_title {
+            background: #37474f !important;
+        }
+        .item-md,
+        textarea,
+        .work_top .dv_work_title {
+            color: #fff !important;
+        }
+        .list-md .item-block .item-inner {
+            border: none !important;
+        }
+    }
 }

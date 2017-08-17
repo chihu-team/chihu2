@@ -6,7 +6,7 @@
 -->
 <ion-header no-border>
 
-    <ion-navbar color="mblue">
+    <ion-navbar color="mblue" [class.idark]="isIdark">
         <ion-title>我的收藏</ion-title>
     </ion-navbar>
 
@@ -14,7 +14,7 @@
 
 
 <ion-content>
-    <super-tabs height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">
+    <super-tabs [class.idark]="isIdark" height="100%" selectedTabIndex="0" tabColor="light" toolbarColor="light" indicatorColor="light" toolbarBackground="mblue" sliderColor="light">
         <super-tab [root]="page1" [rootParams]="chatParams" title="作品收藏"></super-tab>
         <super-tab [root]="page2" [rootParams]="chatParams" title="回答收藏"></super-tab>
     </super-tabs>

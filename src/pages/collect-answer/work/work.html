@@ -1,10 +1,10 @@
 <!-- Generated template for the WorkComponent component -->
-<section class="item" *ngFor="let item of data">
-    <header (click)="pushAnswerPage( item.artid );">
+<section [class.idark]="isIdark" class="item" *ngFor="let item of data">
+    <header [class.idarkC3]="isIdark" (click)="pushAnswerPage( item.artid );">
         <img [src]="item.userimg" alt="">
         <h4>{{item.name}} 回答了问题</h4>
         <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{item.time | date}}</p>
     </header>
-    <h5 (click)="pushQuestionPage( item.answerid );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
-    <p (click)="pushAnswerPage( item.artid );">{{item.dec}}</p>
+    <h5 [class.idarkC1]="isIdark" (click)="pushQuestionPage( item.answerid );"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
+    <p [class.idarkC2]="isIdark" (click)="pushAnswerPage( item.artid );">{{item.dec}}</p>
 </section>

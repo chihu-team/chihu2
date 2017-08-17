@@ -6,6 +6,12 @@ export default StyleSheet.create({
     'alignSelf': 'flex-start',
     'marginTop': [{ 'unit': 'px', 'value': 14 }]
   },
+  'page-message idark toolbar-background': {
+    'background': '#37474f !important'
+  },
+  'page-message idark_content': {
+    'background': '#212b30 !important'
+  },
   'page-message nomessage': {
     'backgroundImage': 'url("../assets/icon/nomessage.png") !important',
     'backgroundSize': 'cover !important',

@@ -13,8 +13,10 @@ export class ForkQuestionPage {
   data: any = [];
   rootNavCtrl: NavController;
   uid;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.rootNavCtrl = navParams.get('rootNavCtrl');
     if (this.navParams.get('id')) {
       this.uid = this.navParams.get('id');

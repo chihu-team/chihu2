@@ -2,4 +2,22 @@ page-send-question {
     textarea {
         height: 15rem !important;
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        background: #212b30 !important;
+        .item-md {
+            background: #37474f !important;
+        }
+        .item-md,
+        textarea {
+            color: #fff !important;
+        }
+        .list-md .item-block .item-inner {
+            border: none !important;
+        }
+    }
 }

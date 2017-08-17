@@ -11,8 +11,10 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 export class QuestionListPage {
 
   data: any = [];
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.getdata();
   }
 

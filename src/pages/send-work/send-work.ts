@@ -27,6 +27,7 @@ export class SendWorkPage {
   sphide: boolean = false;
   banner = "assets/icon/work_banner.png";
   fileTransfer: TransferObject;
+  isIdark;
 
   constructor(
     public http: Http,
@@ -39,6 +40,7 @@ export class SendWorkPage {
     public WorkService: WorkDataProvider,
     public UserService: UserServiceProvider
   ) {
+    this.isIdark = this.UserService.isIdark;
     this.title = this.WorkService._title;
     this.fileTransfer = this.transfer.create();
     this.init();

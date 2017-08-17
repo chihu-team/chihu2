@@ -16,8 +16,10 @@ export class QuestionPage {
   items:any = [];
   _id;
   ishide:boolean = true;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public ref: ChangeDetectorRef, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this._id = this.navParams.get("_id");
     this.getdata();
   }

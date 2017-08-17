@@ -14,8 +14,10 @@ export class MyAnswerPage {
   //数据存储
   items = [];
   uid: any;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     if (this.navParams.get('id')) {
       this.uid = this.navParams.get('id');
     } else {

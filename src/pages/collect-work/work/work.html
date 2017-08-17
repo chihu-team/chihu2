@@ -1,11 +1,11 @@
 <!-- Generated template for the WorkComponent component -->
-<section class="item" *ngFor="let item of data" (click)="pushArticlePage( item.artid );">
-    <header>
+<section [class.idark]="isIdark" class="item" *ngFor="let item of data" (click)="pushArticlePage( item.artid );">
+    <header [class.idarkC3]="isIdark">
         <img [src]="item.userimg" alt="">
         <h4>{{item.name}} 分享的作品</h4>
         <p class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>:{{item.time | date}}</p>
     </header>
     <section class="banner" [style.background]="'url('+item.workbanner+')'"></section>
-    <h5><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
-    <p>{{item.text}}</p>
+    <h5 [class.idarkC1]="isIdark"><i class="fa fa-cutlery" aria-hidden="true"></i> &nbsp;{{item.title}}</h5>
+    <p [class.idarkC2]="isIdark">{{item.text}}</p>
 </section>

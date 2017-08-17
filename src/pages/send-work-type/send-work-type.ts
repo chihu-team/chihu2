@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { WorkDataProvider } from '../../providers/work-data/work-data';
-
+import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the SendWorkTypePage page.
  *
@@ -16,8 +16,10 @@ import { WorkDataProvider } from '../../providers/work-data/work-data';
 export class SendWorkTypePage {
 
   title = '';
+  isIdark;
 
-  constructor(public WorkService: WorkDataProvider, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public UserService: UserServiceProvider, public WorkService: WorkDataProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
   }
 
   //继续

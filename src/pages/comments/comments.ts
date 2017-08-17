@@ -14,8 +14,10 @@ export class CommentsPage {
   data: any = {};
   ishide: boolean = true;
   type;
+  isIdark;
 
   constructor(public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.id = this.navParams.get('id');
     this.type = this.navParams.get('type');
     this.getComment();

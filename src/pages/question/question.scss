@@ -65,4 +65,24 @@ page-question {
             }
         }
     }
+    .idark {
+        .toolbar-background {
+            background: #37474f !important;
+        }
+    }
+    .idark_content {
+        background: #37474f !important;
+        .dv_top_ban {
+            background: #37474f !important;
+        }
+        .item {
+            background: #212b30 !important;
+        }
+        h2 {
+            color: #fff !important;
+        }
+        p {
+            color: #f2f4f7 !important;
+        }
+    }
 }

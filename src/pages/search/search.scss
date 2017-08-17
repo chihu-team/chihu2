@@ -1,3 +1,14 @@
 page-search {
-
+    .idark_content {
+        .toolbar-background,
+        .fab {
+            background: #212b30 !important;
+        }
+        .searchbar-input {
+            background: #37474f !important;
+        }
+        ion-icon {
+            color: #848e93 !important;
+        }
+    }
 }

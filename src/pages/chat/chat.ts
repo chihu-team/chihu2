@@ -20,8 +20,10 @@ export class ChatPage {
   //输入文本信息
   editorMsg = '';
   eventSub;
+  isIdark;
 
   constructor(public rc: RongCloudProvider, public events: Events, public ref: ChangeDetectorRef, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.targetId = navParams.get('targetId');
     this.targetName = navParams.get('targetName');
     this.eventSub = this.rc.rong_data.subscribe((message) => {

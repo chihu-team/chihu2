@@ -16,9 +16,10 @@ export class MessagePage {
   eventSub;
   //是否有消息class控制
   nomessage: boolean = true;
+  isIdark;
 
   constructor( public rc: RongCloudProvider, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
-    
+    this.isIdark = this.UserService.isIdark;
     this.eventSub = this.rc.rong_data.subscribe((message) => {
       //alert('sub:'+JSON.stringify( message ));
       this.init();

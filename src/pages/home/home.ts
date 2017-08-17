@@ -85,7 +85,7 @@ export class HomePage {
   }
 
   openMmessage() {
-    this.navCtrl.push('MessagePage');
+    this.checkLogin('MessagePage');
   }
 
   //创建菜谱

@@ -14,8 +14,10 @@ export class ForkUserPage {
   items = [];
   rootNavCtrl: NavController;
   id: any;
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this.rootNavCtrl = navParams.get('rootNavCtrl');
     this.id = this.navParams.data._id;
     this.getdata();

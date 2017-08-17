@@ -13,8 +13,10 @@ export class MySharePage {
   @ViewChild(Content) content: Content;
   data: any = [];
   uid: any;
+  isIdark;
 
   constructor(public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     if (this.navParams.get("id")) {
       this.uid = this.navParams.get("id");
     } else {

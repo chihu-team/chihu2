@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header [class.idark]="isIdark">
 
     <ion-navbar color="mblue">
         <ion-title>评论详情</ion-title>
@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content [class.idark_content]="isIdark">
     <section class="dv_list">
         <section class="dv_list">
             <!--重复-->

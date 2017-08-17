@@ -18,8 +18,10 @@ export class SendQuestionPage {
 
   title = '';
   text = '';
+  isIdark;
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
   }
 
   send() {

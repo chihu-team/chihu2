@@ -15,8 +15,10 @@ export class MyForkPage {
   chatParams = {
     _id: this._id
   };
+  isIdark;
 
   constructor(public UserService : UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     if (this.navParams.get("id")) {
       this._id = this.navParams.get("id");
       this.chatParams._id = this._id;

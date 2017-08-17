@@ -1,5 +1,5 @@
 <!-- Generated template for the QuestionComponent component -->
-<section class="dv_top_ban">
+<section class="dv_top_ban" [class.idark]="isIdark">
     <header [data]="data"></header>
     <section (click)="pushQuestionPage(data._id);">
         <h2>{{data.title}}</h2>

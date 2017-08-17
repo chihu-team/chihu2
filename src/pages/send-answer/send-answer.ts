@@ -20,8 +20,10 @@ export class SendAnswerPage implements OnInit {
   _id;
   title;
   text;
+  isIdark;
 
   constructor(public http: Http, public UserService: UserServiceProvider, public navCtrl: NavController, public navParams: NavParams) {
+    this.isIdark = this.UserService.isIdark;
     this._id = this.navParams.get('id');
     this.title = this.navParams.get('title');
   }
