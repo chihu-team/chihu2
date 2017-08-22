@@ -10,7 +10,7 @@ import { RongCloudProvider } from '../../providers/rong-cloud/rong-cloud';
 /**
  * Generated class for the SettingPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
@@ -57,7 +57,7 @@ export class SettingPage {
   //app版本获取
   getAppVersion() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/appversion";
+    let url = "https://www.devonhello.com/chihu2/appversion";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

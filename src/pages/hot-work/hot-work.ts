@@ -21,7 +21,7 @@ export class HotWorkPage {
 
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/hot_work";
+    let url = "https://www.devonhello.com/chihu2/hot_work";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

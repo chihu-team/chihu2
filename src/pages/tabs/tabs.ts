@@ -43,7 +43,7 @@ export class TabsPage {
   //app版本获取
   getAppVersion() {
 
-    let url = "http://www.devonhello.com/chihu2/appversion";
+    let url = "https://www.devonhello.com/chihu2/appversion";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

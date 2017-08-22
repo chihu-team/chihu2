@@ -30,7 +30,7 @@ export class CommentsListPage {
 //获取评论
   getComment() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/get_comment";
+    let url = "https://www.devonhello.com/chihu2/get_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

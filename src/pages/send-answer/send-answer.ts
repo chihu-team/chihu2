@@ -5,7 +5,7 @@ import { Headers, Http } from '@angular/http';
 /**
  * Generated class for the SendAnswerPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 declare var $: any;
@@ -62,13 +62,13 @@ export class SendAnswerPage implements OnInit {
       data: _data,
       dataType: 'text',
       type: "POST",
-      url: "http://www.devonhello.com/cfdkAdmin/uploadimg",
+      url: "https://www.devonhello.com/cfdkAdmin/uploadimg",
       cache: false,
       contentType: false,
       processData: false,
       success: function (url) {
 
-        _that.summernote.summernote('insertImage', "http://7xp2ia.com1.z0.glb.clouddn.com/" + url, 'image name'); // the insertImage API  
+        _that.summernote.summernote('insertImage', "https://7xp2ia.com1.z0.glb.clouddn.com/" + url, 'image name'); // the insertImage API  
         _that.UserService.presentLoadingDismiss();
     }
     });
@@ -84,7 +84,7 @@ export class SendAnswerPage implements OnInit {
     // }
     // this.UserService.presentLoadingDefault();
 
-    // let url = "http://www.devonhello.com/chihu2/send_answer";
+    // let url = "https://www.devonhello.com/chihu2/send_answer";
 
     // var headers = new Headers();
     // headers.append('Content-Type', 'application/x-www-form-urlencoded');

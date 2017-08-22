@@ -55,7 +55,7 @@ export class FooterComponent implements OnChanges {
 
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id && !this.ischecking) {
       this.ischecking = true;
-      let url = "http://www.devonhello.com/chihu2/checkcollshare";
+      let url = "https://www.devonhello.com/chihu2/checkcollshare";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -86,7 +86,7 @@ export class FooterComponent implements OnChanges {
 
     if (!this.ischecking) {
       this.UserService.presentLoadingDefault();
-      let url = "http://www.devonhello.com/chihu2/thank";
+      let url = "https://www.devonhello.com/chihu2/thank";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -110,7 +110,7 @@ export class FooterComponent implements OnChanges {
 
   unlike() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/discoll_share";
+    let url = "https://www.devonhello.com/chihu2/discoll_share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

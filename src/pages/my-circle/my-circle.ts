@@ -22,7 +22,7 @@ export class MyCirclePage {
   //获取关注的分享
   getforkdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/getmyforkshare";
+    let url = "https://www.devonhello.com/chihu2/getmyforkshare";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

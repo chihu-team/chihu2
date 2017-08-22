@@ -48,7 +48,7 @@ export class HeaderComponent implements OnChanges {
     }
     this.UserService.presentLoadingDefault();
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id) {
-      let url = "http://www.devonhello.com/chihu2/forkuser";
+      let url = "https://www.devonhello.com/chihu2/forkuser";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -78,7 +78,7 @@ export class HeaderComponent implements OnChanges {
       return true;
     }
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/disfork_user";
+    let url = "https://www.devonhello.com/chihu2/disfork_user";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

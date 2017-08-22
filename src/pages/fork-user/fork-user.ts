@@ -26,7 +26,7 @@ export class ForkUserPage {
   //获取数据
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/myfork";
+    let url = "https://www.devonhello.com/chihu2/myfork";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

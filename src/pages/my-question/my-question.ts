@@ -27,7 +27,7 @@ export class MyQuestionPage {
 
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/my_question";
+    let url = "https://www.devonhello.com/chihu2/my_question";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

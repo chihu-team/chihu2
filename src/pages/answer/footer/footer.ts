@@ -55,7 +55,7 @@ export class FooterComponent implements OnChanges {
 
     if (this.UserService._user._id != this.data['uid'] && this.UserService._user._id && !this.ischecking) {
       this.ischecking = true;
-      let url = "http://www.devonhello.com/chihu2/checkcollart";
+      let url = "https://www.devonhello.com/chihu2/checkcollart";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -76,7 +76,7 @@ export class FooterComponent implements OnChanges {
 
   discollect() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/discoll_article";
+    let url = "https://www.devonhello.com/chihu2/discoll_article";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -93,7 +93,7 @@ export class FooterComponent implements OnChanges {
   //检查是否已经关注
   checkthank() {
 
-    let url = "http://www.devonhello.com/chihu2/checkthank";
+    let url = "https://www.devonhello.com/chihu2/checkthank";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -118,7 +118,7 @@ export class FooterComponent implements OnChanges {
         return true;
       }
       this.UserService.presentLoadingDefault();
-      let url = "http://www.devonhello.com/chihu2/thank";
+      let url = "https://www.devonhello.com/chihu2/thank";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -152,7 +152,7 @@ export class FooterComponent implements OnChanges {
         return true;
       }
       this.UserService.presentLoadingDefault();
-      let url = "http://www.devonhello.com/chihu2/coll_article";
+      let url = "https://www.devonhello.com/chihu2/coll_article";
 
       var headers = new Headers();
       headers.append('Content-Type', 'application/x-www-form-urlencoded');

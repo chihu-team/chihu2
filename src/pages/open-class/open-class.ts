@@ -22,7 +22,7 @@ export class OpenClassPage {
 
   getdata(){
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/workclass";
+    let url = "https://www.devonhello.com/chihu2/workclass";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

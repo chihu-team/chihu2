@@ -27,7 +27,7 @@ export class FoundPage {
   //获取分享数据
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/share";
+    let url = "https://www.devonhello.com/chihu2/share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

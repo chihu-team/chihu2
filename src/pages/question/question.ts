@@ -26,7 +26,7 @@ export class QuestionPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu2/question";
+    let url = "https://www.devonhello.com/chihu2/question";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -44,7 +44,7 @@ export class QuestionPage {
   //获取数据
   getlist() {
     
-    let url = "http://www.devonhello.com/chihu2/answer_list";
+    let url = "https://www.devonhello.com/chihu2/answer_list";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

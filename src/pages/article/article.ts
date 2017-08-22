@@ -34,7 +34,7 @@ export class ArticlePage {
 //获取文章数据
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/article_dec";
+    let url = "https://www.devonhello.com/chihu2/article_dec";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

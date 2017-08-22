@@ -6,7 +6,7 @@ import { Headers, Http } from '@angular/http';
 /**
  * Generated class for the SendQuestionPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
@@ -35,7 +35,7 @@ export class SendQuestionPage {
 
   postdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/send_question";
+    let url = "https://www.devonhello.com/chihu2/send_question";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

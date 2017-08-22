@@ -29,7 +29,7 @@ export class ForkQuestionPage {
   //关注的问题
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu2/getforkquestion";
+    let url = "https://www.devonhello.com/chihu2/getforkquestion";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

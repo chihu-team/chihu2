@@ -21,7 +21,7 @@ export class HotSharePage {
 
   getdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/hot_share";
+    let url = "https://www.devonhello.com/chihu2/hot_share";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -5,7 +5,7 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the SendCommentsPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
@@ -56,7 +56,7 @@ export class SendCommentsPage {
   postdata() {
     
     //this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/send_comment";
+    let url = "https://www.devonhello.com/chihu2/send_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -77,7 +77,7 @@ export class SendCommentsPage {
   reply() {
 
     //this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/reply_comment";
+    let url = "https://www.devonhello.com/chihu2/reply_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -22,7 +22,7 @@ export class LoginPage {
       return true;
     }
 
-    let url = "http://www.devonhello.com/chihu2/login";
+    let url = "https://www.devonhello.com/chihu2/login";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -42,7 +42,7 @@ export class LoginPage {
   regist() {
     let alert = this.alertCtrl.create({
       title: '吃乎提示!',
-      subTitle: '请前往【吃乎官网】进行注册，http://www.devonhello.com/chihu',
+      subTitle: '请前往【吃乎官网】进行注册，https://chihu2.github.io',
       buttons: ['确定']
     });
     alert.present();

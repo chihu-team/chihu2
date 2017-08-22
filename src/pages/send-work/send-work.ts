@@ -8,7 +8,7 @@ import { Transfer, TransferObject } from '@ionic-native/transfer';
 /**
  * Generated class for the SendWorkPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
@@ -114,7 +114,7 @@ export class SendWorkPage {
 
   postdata() {
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/send_article";
+    let url = "https://www.devonhello.com/chihu2/send_article";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -209,7 +209,7 @@ export class SendWorkPage {
 
   up(path) {
     this.UserService.presentLoadingDefault();
-    this.fileTransfer.upload(path, "http://www.devonhello.com/chihu2/upload", {})
+    this.fileTransfer.upload(path, "https://www.devonhello.com/chihu2/upload", {})
       .then((data) => {
         // success
         //alert(JSON.stringify(data));

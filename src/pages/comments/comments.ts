@@ -26,7 +26,7 @@ export class CommentsPage {
   //获取评论
   getComment() {
 
-    let url = "http://www.devonhello.com/chihu2/see_comment";
+    let url = "https://www.devonhello.com/chihu2/see_comment";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

@@ -5,7 +5,7 @@ import { UserServiceProvider } from '../../providers/user-service/user-service';
 /**
  * Generated class for the RegisterPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See https://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 declare var window;
@@ -31,7 +31,7 @@ export class RegisterPage {
       return true;
     }
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/register";
+    let url = "https://www.devonhello.com/chihu2/register";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');

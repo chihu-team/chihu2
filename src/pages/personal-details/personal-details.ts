@@ -33,7 +33,7 @@ export class PersonalDetailsPage {
 
   getdata() {
 
-    let url = "http://www.devonhello.com/chihu2/getuserdata";
+    let url = "https://www.devonhello.com/chihu2/getuserdata";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -70,7 +70,7 @@ export class PersonalDetailsPage {
       return true;
     }
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/forkuser";
+    let url = "https://www.devonhello.com/chihu2/forkuser";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -94,7 +94,7 @@ export class PersonalDetailsPage {
       return true;
     }
     this.UserService.presentLoadingDefault();
-    let url = "http://www.devonhello.com/chihu2/disfork_user";
+    let url = "https://www.devonhello.com/chihu2/disfork_user";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
