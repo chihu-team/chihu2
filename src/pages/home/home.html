@@ -20,7 +20,7 @@
 
 <ion-content (ionScroll)="onScroll($event)" scrollY="false" [class.idark]="isIdark">
 
-    <div [class.idark_content]="isIdark">
+    <div class="ihome_wrap" [class.idark_content]="isIdark">
         <ion-refresher (ionRefresh)="doRefresh($event)">
             <ion-refresher-content></ion-refresher-content>
         </ion-refresher>
@@ -32,14 +32,14 @@
         </ion-infinite-scroll>
 
         <!--发布按钮-->
-        <ion-fab right bottom edge #327eff>
+        <!-- <ion-fab right bottom edge #327eff>
             <button ion-fab><ion-icon name="arrow-dropup"></ion-icon></button>
             <ion-fab-list side="top">
                 <button (click)="CreateQuestion()" ion-fab><ion-icon name="help"></ion-icon></button>
                 <button (click)="CreateShare()" ion-fab><ion-icon name="images"></ion-icon></button>
                 <button (click)="CreateCook()" ion-fab><ion-icon name="clipboard"></ion-icon></button>
             </ion-fab-list>
-        </ion-fab>
+        </ion-fab> -->
     </div>
 
 </ion-content>

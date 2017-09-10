@@ -1,4 +1,6 @@
 page-home {
+    position: relative;
+    min-height: 100% !important;
     .idark_content {
         .toolbar-background,
         .fab {
@@ -19,9 +21,14 @@ page-home {
             margin-top: 0 !important;
             border-top: none !important;
         }
+        ion-fab {
+            position: fixed !important;
+            bottom: 100px !important;
+        }
     }
     ion-refresher {
         z-index: 99 !important;
+        top: 0 !important;
     }
     ion-header {
         transition: top 1000ms cubic-bezier(.19, 1.12, .65, .91) !important;

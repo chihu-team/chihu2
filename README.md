@@ -4,7 +4,7 @@
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/APP-吃乎2-blue.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/QQ%20Group-513752928-red.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/alpha-1.1.0-blue.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/ionic2-3.6.0-blue.svg" alt=""></a>
+  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/ionic2-3.6.1-blue.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/platforms-Android-lightgrey.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/WeChat-Devon1994-brightgreen.svg" alt=""></a>
   
@@ -42,9 +42,7 @@ Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 <a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-39-040_com.chihu.plue.png"></a>
 <a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-55-749_com.chihu.plue.png"></a>
 <a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-11-35-615_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-11-53-333_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-28-36-783_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-29-07-018_com.chihu.plue.png"></a>
+
 </p>
 
 ## 文件目录

@@ -19,6 +19,7 @@ export class HomePage {
   isIdark;
   //数据
   items = [];
+  old_items = [];
 
   constructor(public UserService: UserServiceProvider, public http: Http, public navCtrl: NavController, public navParams: NavParams, public ref: ChangeDetectorRef) {
     this.isIdark = this.UserService.isIdark;
@@ -44,7 +45,12 @@ export class HomePage {
         if (this._refresher) {
           this._refresher.complete();
         }
+        
         this.items = this.items.concat(res.json());
+        if(this.old_items.length > 0){
+          this.items.splice(0,this.old_items.length);
+          this.old_items = [];
+        }
         this.UserService.presentLoadingDismiss();
       });
   }
@@ -54,7 +60,7 @@ export class HomePage {
   }
 
   doRefresh(refresher) {
-    this.items = [];
+    this.old_items = this.items;
     this.getdata();
 
     this._refresher = refresher;

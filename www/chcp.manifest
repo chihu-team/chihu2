@@ -184,100 +184,12 @@
     "hash": "0663f55e174df97955e2de42ddf52e2d"
   },
   {
-    "file": "assets/fonts/ionicons.eot",
-    "hash": "bdf1d30681cf87986c385eea78e8de9a"
-  },
-  {
-    "file": "assets/fonts/ionicons.scss",
-    "hash": "c1fdfabf9cbd412b444f064d27641f10"
-  },
-  {
-    "file": "assets/fonts/ionicons.svg",
-    "hash": "d9496a234c81179afbca6bf5959cc30a"
-  },
-  {
-    "file": "assets/fonts/ionicons.ttf",
-    "hash": "74c652671225d6ded874a648502e5f0a"
-  },
-  {
     "file": "assets/fonts/ionicons.woff",
     "hash": "81414686e99c00d2921e03dd53c0ab04"
   },
   {
     "file": "assets/fonts/ionicons.woff2",
     "hash": "311d81961c5880647fec7eaca1221b2a"
-  },
-  {
-    "file": "assets/fonts/noto-sans-bold.ttf",
-    "hash": "a165a42685795361b25593effb32fdb1"
-  },
-  {
-    "file": "assets/fonts/noto-sans-bold.woff",
-    "hash": "ce3d777f2c41cca1494021cfa3fcd72c"
-  },
-  {
-    "file": "assets/fonts/noto-sans-regular.ttf",
-    "hash": "2fd9c16b805724d590c0cff96da070a4"
-  },
-  {
-    "file": "assets/fonts/noto-sans-regular.woff",
-    "hash": "ce8ba1a4ff970db896192c41fc3c96b1"
-  },
-  {
-    "file": "assets/fonts/noto-sans.scss",
-    "hash": "47d5f7264952ccee8cead7b6dcb6d1bd"
-  },
-  {
-    "file": "assets/fonts/roboto-bold.ttf",
-    "hash": "1f4fd7e4df65487f07ba9148f7ca095d"
-  },
-  {
-    "file": "assets/fonts/roboto-bold.woff",
-    "hash": "43183beef21370d8a4b0d64152287eba"
-  },
-  {
-    "file": "assets/fonts/roboto-bold.woff2",
-    "hash": "28d80f43ae4cc35f19e1f1a6ab670f25"
-  },
-  {
-    "file": "assets/fonts/roboto-light.ttf",
-    "hash": "9ff15bd34ea83e4dd3f23c20c7f5090e"
-  },
-  {
-    "file": "assets/fonts/roboto-light.woff",
-    "hash": "7e2d32e7141050d758a38b4ec96390c0"
-  },
-  {
-    "file": "assets/fonts/roboto-light.woff2",
-    "hash": "a826ff848e9f52b1732fed7d154afa97"
-  },
-  {
-    "file": "assets/fonts/roboto-medium.ttf",
-    "hash": "a937e2cae14e68262a45aa91204c2fdf"
-  },
-  {
-    "file": "assets/fonts/roboto-medium.woff",
-    "hash": "0f3b7101a8adc1afe1fbe89775553c32"
-  },
-  {
-    "file": "assets/fonts/roboto-medium.woff2",
-    "hash": "b2c9c262e089411e20689ed393c00796"
-  },
-  {
-    "file": "assets/fonts/roboto-regular.ttf",
-    "hash": "07f8fb6acbabeb10d3fad9ab02d65e0b"
-  },
-  {
-    "file": "assets/fonts/roboto-regular.woff",
-    "hash": "f94d5e5102359961c44a1da1b58d37c9"
-  },
-  {
-    "file": "assets/fonts/roboto-regular.woff2",
-    "hash": "e6b9d54811307f98da62eae992ae05ba"
-  },
-  {
-    "file": "assets/fonts/roboto.scss",
-    "hash": "e7c30075bc0f0b11422bfbdb2236f9e7"
   },
   {
     "file": "assets/icon/addimg.png",
@@ -533,103 +445,103 @@
   },
   {
     "file": "build/0.js",
-    "hash": "a0f9dd2dd5939802a9f161ba1540d9f7"
+    "hash": "543f52433af241279782ca6f735d76b8"
   },
   {
     "file": "build/1.js",
-    "hash": "c2c5f0d62fb4508a1329145d4671a690"
+    "hash": "97446a4a96554e12ab4967c414e71186"
   },
   {
     "file": "build/10.js",
-    "hash": "5d866ce2e637dcf477ac0afc7d74b157"
+    "hash": "5dc71bab04a82470ec867499efa51b9f"
   },
   {
     "file": "build/11.js",
-    "hash": "8a649d5e72d2ba12bafee2ab3b5b1ef2"
+    "hash": "d4aaa53278ee146a7dcd84b553d3625f"
   },
   {
     "file": "build/12.js",
-    "hash": "cfc26be69b9a2b06efbabd8f9112f451"
+    "hash": "dcf18f40784044ece5036c2ea777282d"
   },
   {
     "file": "build/13.js",
-    "hash": "90441738e26c75e0599b949f4e29260d"
+    "hash": "f77d7ea638664e450702ad7e0b6e5fd0"
   },
   {
     "file": "build/14.js",
-    "hash": "106b22016bf0d1ca42af7ef3d51e417c"
+    "hash": "49f151ce30308a874e63c5de9b18de67"
   },
   {
     "file": "build/15.js",
-    "hash": "2b5a470ff2de7ed623cb0466ed81ff8e"
+    "hash": "dfe0d6d5a0578b720c50ee07e8298f58"
   },
   {
     "file": "build/16.js",
-    "hash": "055f0b8a6dbfe5f85608f50478546d75"
+    "hash": "484ea951b4c641fe0ae36e51834a7504"
   },
   {
     "file": "build/17.js",
-    "hash": "e59daeeff473fa769d7378fc8bc3e43b"
+    "hash": "3229dc60426fade47e503a2cb76e3f44"
   },
   {
     "file": "build/18.js",
-    "hash": "7a9ba26bf3a591e559a78a987ff98ca9"
+    "hash": "5e61a8584acc5cb6ffb786453b7b1efd"
   },
   {
     "file": "build/19.js",
-    "hash": "e2f1a1875cf6282fd2a5abf863b6610c"
+    "hash": "c70ed86213d278ac7b86ab36455b57d9"
   },
   {
     "file": "build/2.js",
-    "hash": "fb6f7eb0490b1297a9afcf6cdcc86d1d"
+    "hash": "e8824a3543884c8afc36665abe9621d3"
   },
   {
     "file": "build/20.js",
-    "hash": "10763ef929e8d1d5f671739021f6265e"
+    "hash": "73a566cbcb6b389be8dcf5a95aacbf7e"
   },
   {
     "file": "build/21.js",
-    "hash": "53d73065d85ea8717f0f43ad974ea42d"
+    "hash": "f35fd620f132a4668da96e383554c911"
   },
   {
     "file": "build/22.js",
-    "hash": "aaaee2e2fb647d40b631bcd0c0c81216"
+    "hash": "f239c8e14ea83a723641155ccd930e3d"
   },
   {
     "file": "build/23.js",
-    "hash": "b666476423aac910a23db098600ce434"
+    "hash": "62f2585c759c4d53f50c4706696e244d"
   },
   {
     "file": "build/24.js",
-    "hash": "c79d4fd92ed8d13b7d4f7687d805ea53"
+    "hash": "f2b352312a051fe9c323a515830e395e"
   },
   {
     "file": "build/25.js",
-    "hash": "07bd2f57ded5533483d17180de492ce7"
+    "hash": "5314b839b417d6b2c9d7d7245967d623"
   },
   {
     "file": "build/26.js",
-    "hash": "4345be022983422751bcefabd81fd7fd"
+    "hash": "91e163b4a76e5274c1e2cb761bf79315"
   },
   {
     "file": "build/27.js",
-    "hash": "ec3baac9ca9ef8b6b3a198094c5554ba"
+    "hash": "c778d4fbfe5af3aa8cf4069300791519"
   },
   {
     "file": "build/28.js",
-    "hash": "7d55c591696db8da2e97c1cad2a4681a"
+    "hash": "8b043420152aa5d876b578fb4a984eaa"
   },
   {
     "file": "build/29.js",
-    "hash": "79bb7ce01ad4d0048618aec948ddb8a2"
+    "hash": "8fc59eae59129bcc4aec7c3fc548f6e1"
   },
   {
     "file": "build/3.js",
-    "hash": "98f33e378226a24907358672a81f95d3"
+    "hash": "08e5feb4fcf7434705edaa43f2c56d05"
   },
   {
     "file": "build/30.js",
-    "hash": "8694de39cbe4cc06c03b587c0c9ce73b"
+    "hash": "90686cb473ec7d9a907a9543076cb02b"
   },
   {
     "file": "build/31.js",
@@ -637,15 +549,15 @@
   },
   {
     "file": "build/32.js",
-    "hash": "19dce41c4eea4d692079d1631e6ed82d"
+    "hash": "aed025abc3166e824914041cd26d8bf9"
   },
   {
     "file": "build/33.js",
-    "hash": "b42b607da052f463225cc3dc9a68a0ad"
+    "hash": "24ade82c853729e994abb71a2484ab2d"
   },
   {
     "file": "build/34.js",
-    "hash": "dc7b06b8bdfb8d3f785245a2a5b2eb32"
+    "hash": "264993b1af9227cb5b2a247dabdedab3"
   },
   {
     "file": "build/35.js",
@@ -657,7 +569,7 @@
   },
   {
     "file": "build/37.js",
-    "hash": "6e8a2709fc7389f355cb823412124c04"
+    "hash": "274b65f0f7ccb7b9825cca78f57dea84"
   },
   {
     "file": "build/38.js",
@@ -665,71 +577,71 @@
   },
   {
     "file": "build/39.js",
-    "hash": "0edc97a290db9ca0168f4d77949ffe30"
+    "hash": "492fd92b82e3a77d9801c52fb22e98bf"
   },
   {
     "file": "build/4.js",
-    "hash": "0399261e6b56eb4db09074b5169943be"
+    "hash": "2ae3e16c3a19d097ef362be698b97786"
   },
   {
     "file": "build/40.js",
-    "hash": "1cdb243638dacff0ddf96cea56ea93f3"
+    "hash": "8c9ded155c813c7697bee390f2face10"
   },
   {
     "file": "build/41.js",
-    "hash": "0bc58644baebc71b293a6b5367ac5578"
+    "hash": "df3293712714c6ec9f8674bf4b63e026"
   },
   {
     "file": "build/42.js",
-    "hash": "b6361f0b253ffd36343bc3dece1a5591"
+    "hash": "2ef1b2188dc0afc60898c8e29d9e9131"
   },
   {
     "file": "build/43.js",
-    "hash": "1d4194a73a466e4a1bd2d867cb4f47c4"
+    "hash": "aeed0495b0bf19bb61fcee921ee86777"
   },
   {
     "file": "build/44.js",
-    "hash": "905dd769a7dd03bde6482009c941bb32"
+    "hash": "e14a91c11fd497b10dea935c0fd999ae"
   },
   {
     "file": "build/45.js",
-    "hash": "32d3d0c4b915e6851cdfd6b73755410b"
+    "hash": "1e6198245c4f8c91b03ff190090cce06"
   },
   {
     "file": "build/46.js",
-    "hash": "e06bc8f3587cc07d82568c42d5e120cf"
+    "hash": "907370a05e0998b04f594b256a04d7b7"
   },
   {
     "file": "build/47.js",
-    "hash": "2530d464a50adfc8813753c55481ccc2"
+    "hash": "4c66ffd8738eacd17dc9756584d931c3"
   },
   {
     "file": "build/5.js",
-    "hash": "b649bb1ec05f0e53ce4e09d761886a60"
+    "hash": "52f2af57b3b809da9bdd1127dddd995c"
   },
   {
     "file": "build/6.js",
-    "hash": "b0151c47ee3126f7f728ab96c78c0ecc"
+    "hash": "8b58174cd1932c5c354b8ceffc4ce6f5"
   },
   {
     "file": "build/7.js",
-    "hash": "b2fedaab67dfd9fc37971186afd225e6"
+    "hash": "5a91564704435ac3ac2ad4c214f8e659"
   },
   {
     "file": "build/8.js",
-    "hash": "0b11432f864a919ff8d2a2c78599c386"
+    "hash": "d81cf09b02dfc5b726ba64c6872e520e"
   },
   {
     "file": "build/9.js",
-    "hash": "b6c24d63b45eca25a21017e58d13cd38"
+    "hash": "451b6f432accec6461b0aa97302cf97d"
   },
   {
     "file": "build/main.css",
-    "hash": "b8a97f4f1554a80766bf6197d178cbac"
+    "hash": "9fd3bf1f6e87f22e4f15113a737053a5"
   },
   {
     "file": "build/main.js",
-    "hash": "edc40f8509f40ad651200941092173e0"
+    "hash": "af3a280003c29634e9c76d8b9c8ae146"
   },
   {
     "file": "build/polyfills.js",
@@ -741,11 +653,11 @@
   },
   {
     "file": "build/vendor.js",
-    "hash": "928dade301a7fae28979be8747f37688"
+    "hash": "1c9670635b60ad049557f2b1094330f2"
   },
   {
     "file": "index.html",
-    "hash": "1ea5187af55c06bc9c89a4a591849b11"
+    "hash": "924fdab3975ddeab31a9b20eaddade74"
   },
   {
     "file": "manifest.json",

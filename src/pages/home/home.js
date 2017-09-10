@@ -1,6 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  'page-home': {
+    'position': 'relative',
+    'minHeight': [{ 'unit': '%V', 'value': 1 }, { 'unit': 'string', 'value': '!important' }]
+  },
   'page-home idark_content toolbar-background': {
     'background': '#212b30 !important'
   },
@@ -26,8 +30,13 @@ export default StyleSheet.create({
     'marginTop': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'string', 'value': '!important' }],
     'borderTop': [{ 'unit': 'string', 'value': 'none' }, { 'unit': 'string', 'value': '!important' }]
   },
+  'page-home ion-content ion-fab': {
+    'position': 'fixed !important',
+    'bottom': [{ 'unit': 'px', 'value': 100 }, { 'unit': 'string', 'value': '!important' }]
+  },
   'page-home ion-refresher': {
-    'zIndex': '99 !important'
+    'zIndex': '99 !important',
+    'top': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'string', 'value': '!important' }]
   },
   'page-home ion-header': {
     'transition': 'top 1000ms cubic-bezier(0.19, 1.12, 0.65, 0.91) !important'
