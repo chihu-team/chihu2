@@ -42,7 +42,7 @@ export class LoginPage {
   regist() {
     let alert = this.alertCtrl.create({
       title: '吃乎提示!',
-      subTitle: '请前往【吃乎官网】进行注册，https://chihu2.github.io',
+      subTitle: '请前往【吃乎官网】进行注册，https://chihu-team.github.io',
       buttons: ['确定']
     });
     alert.present();
