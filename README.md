@@ -4,7 +4,7 @@
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/APP-吃乎2-blue.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/QQ%20Group-513752928-red.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/alpha-1.1.0-blue.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/ionic2-3.7.1-blue.svg" alt=""></a>
+  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/ionic2-3.8.0-blue.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/platforms-Android-lightgrey.svg" alt=""></a>
   <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/WeChat-Devon1994-brightgreen.svg" alt=""></a>
   
