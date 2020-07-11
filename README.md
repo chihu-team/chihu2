@@ -1,12 +1,12 @@
-<p align="center"><a href="" target="_blank"><img width="100"src="https://github.com/kongdewen1994/chihu2/blob/master/resources/android/icon/drawable-xxhdpi-icon.png"></a></p>
+<p align="center"><a href="" target="_blank"><img width="100"src="https://github.com/Devon3818/chihu2/blob/master/resources/android/icon/drawable-xxhdpi-icon.png"></a></p>
 
 <p align="center">
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/APP-吃乎2-blue.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/QQ%20Group-513752928-red.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/alpha-1.1.0-blue.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/ionic2-3.8.0-blue.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/platforms-Android-lightgrey.svg" alt=""></a>
-  <a href="https://github.com/kongdewen1994/chihu2"><img src="https://img.shields.io/badge/WeChat-Devon1994-brightgreen.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/APP-吃乎2-blue.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/QQ%20Group-513752928-red.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/alpha-1.1.0-blue.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/ionic2-3.8.0-blue.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/platforms-Android-lightgrey.svg" alt=""></a>
+  <a href="https://github.com/Devon3818/chihu2"><img src="https://img.shields.io/badge/WeChat-Devon1994-brightgreen.svg" alt=""></a>
   
 </p>
 
@@ -19,7 +19,7 @@
 Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 <br/>
 <br/>
-⚠️⚠️⚠️<a href="https://github.com/kongdewen1994/chihu/blob/master/README.md">「吃乎1」，请跳转</a>
+⚠️⚠️⚠️<a href="https://github.com/Devon3818/chihu/blob/master/README.md">「吃乎1」，请跳转</a>
 <br/>
 
 > 关于【吃乎】官网---> https://github.com/chihu2/chihu-web-angular
@@ -35,15 +35,15 @@ Android 的 ionic2例子，吃乎1的升级版，更小，更快，组件化
 
 <br/>
 
-<p align="center"><a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-14-16-662_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-15-680_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-32-117_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-38-322_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-03-268_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-20-192_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-39-040_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-55-749_com.chihu.plue.png"></a>
-<a href="" target="_blank"><img width="278"src="https://github.com/kongdewen1994/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-11-35-615_com.chihu.plue.png"></a>
+<p align="center"><a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-14-16-662_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-15-680_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-32-117_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-06-38-322_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-03-268_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-20-192_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-39-040_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-07-55-749_com.chihu.plue.png"></a>
+<a href="" target="_blank"><img width="278"src="https://github.com/Devon3818/chihu2/blob/master/imgs/Screenshot_2017-07-04-17-11-35-615_com.chihu.plue.png"></a>
 
 </p>
 
