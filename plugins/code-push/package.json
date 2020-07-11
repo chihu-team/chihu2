@@ -17,7 +17,7 @@
     "q": "^1.4.1",
     "recursive-fs": "0.1.4",
     "slash": "1.0.0",
-    "superagent": "^1.7.2",
+    "superagent": "^5.3.1",
     "superagent-proxy": "^1.0.0",
     "yazl": "^2.4.1"
   }
